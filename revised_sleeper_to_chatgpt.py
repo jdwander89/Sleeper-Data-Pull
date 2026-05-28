@@ -44,22 +44,50 @@ def extract_league_rules(league):
         "league_average_match": settings.get("league_average_match"),
     }
 
+def build_draft_order(picks):
+    """Creates a clean draft order structure from draft picks."""
+    draft_order = {}
+
+    for pick in picks:
+        rnd = pick.get("round")
+        if rnd not in draft_order:
+            draft_order[rnd] = []
+
+        draft_order[rnd].append({
+            "pick_no": pick.get("pick_no"),
+            "roster_id": pick.get("roster_id"),
+            "owner_id": pick.get("owner_id"),
+            "player_id": pick.get("player_id"),
+        })
+
+    # Sort each round by pick number
+    for rnd in draft_order:
+        draft_order[rnd] = sorted(draft_order[rnd], key=lambda x: x["pick_no"])
+
+    return draft_order
+
 def fetch_draft_data(league_id):
-    """Fetches draft metadata, picks, and traded picks for the league."""
+    """Fetches draft metadata, picks, traded picks, and draft order."""
 
     drafts = get(f"league/{league_id}/drafts")
 
     if not drafts:
-        return {"drafts": [], "draft_picks": {}, "traded_picks": {}}
+        return {
+            "drafts": [],
+            "draft_picks": {},
+            "traded_picks": {},
+            "draft_order": {}
+        }
 
     draft_results = []
     draft_picks_map = {}
     traded_picks_map = {}
+    draft_order_map = {}
 
     for draft in drafts:
         draft_id = draft.get("draft_id")
 
-        # Fetch picks for this draft
+        # Fetch picks + traded picks
         picks = get(f"draft/{draft_id}/picks")
         traded = get(f"draft/{draft_id}/traded_picks")
 
@@ -67,10 +95,14 @@ def fetch_draft_data(league_id):
         draft_picks_map[draft_id] = picks
         traded_picks_map[draft_id] = traded
 
+        # Build draft order from picks
+        draft_order_map[draft_id] = build_draft_order(picks)
+
     return {
         "drafts": draft_results,
         "draft_picks": draft_picks_map,
         "traded_picks": traded_picks_map,
+        "draft_order": draft_order_map
     }
 
 def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
@@ -81,10 +113,10 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
 
     matchups = get(f"league/{league_id}/matchups/{week}") if week else []
 
-    # ⭐ Extract league rules including scoring
+    # League rules
     league_rules = extract_league_rules(league)
 
-    # ⭐ Fetch draft results + traded picks
+    # ⭐ Draft data (picks, traded picks, draft order)
     draft_data = fetch_draft_data(league_id)
 
     # Map user_id → display_name
@@ -134,7 +166,7 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
         "week": week,
         "generated_at": datetime.utcnow().isoformat(),
         "league_rules": league_rules,
-        "draft_data": draft_data,        # ⭐ NEW SECTION
+        "draft_data": draft_data,   # ⭐ includes draft picks, traded picks, draft order
         "teams": list(roster_map.values()),
         "matchups": formatted_matchups,
     }
