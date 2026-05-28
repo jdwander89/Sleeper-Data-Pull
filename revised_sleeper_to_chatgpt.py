@@ -23,12 +23,17 @@ def fetch_players():
 
 def extract_league_rules(league):
     """Extracts league rules/settings from the Sleeper league object."""
+
+    # ⭐ Correct scoring settings location
+    scoring = league.get("scoring_settings", {})
+
+    # Other league settings live inside "settings"
     settings = league.get("settings", {})
 
     return {
         "type": league.get("type"),
         "season_type": league.get("season_type"),
-        "scoring_settings": settings.get("scoring_settings", {}),
+        "scoring_settings": scoring,          # ⭐ FIXED
         "roster_positions": league.get("roster_positions", []),
         "playoff_teams": settings.get("playoff_teams"),
         "playoff_rounds": settings.get("playoff_rounds"),
@@ -50,7 +55,7 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
 
     matchups = get(f"league/{league_id}/matchups/{week}") if week else []
 
-    # Extract league rules
+    # ⭐ Extract league rules including scoring
     league_rules = extract_league_rules(league)
 
     # Map user_id → display_name
@@ -99,7 +104,7 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
         "season": league.get("season"),
         "week": week,
         "generated_at": datetime.utcnow().isoformat(),
-        "league_rules": league_rules,   # ⭐ NEW SECTION
+        "league_rules": league_rules,   # ⭐ Includes scoring settings
         "teams": list(roster_map.values()),
         "matchups": formatted_matchups,
     }
