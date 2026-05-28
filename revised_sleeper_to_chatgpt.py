@@ -66,8 +66,11 @@ def build_draft_order(picks):
 
     return draft_order
 
-def fetch_draft_data(league_id):
-    """Fetches draft metadata, picks, traded picks, and draft order."""
+def fetch_draft_data(league_id, players):
+    """
+    Fetches draft metadata, picks (with full player objects),
+    traded picks, and draft order.
+    """
 
     drafts = get(f"league/{league_id}/drafts")
 
@@ -79,6 +82,16 @@ def fetch_draft_data(league_id):
             "draft_order": {}
         }
 
+    def resolve_player(pid):
+        p = players.get(pid, {})
+        return {
+            "id": pid,
+            "name": p.get("full_name"),
+            "team": p.get("team"),
+            "position": p.get("position"),
+            "status": p.get("status"),
+        }
+
     draft_results = []
     draft_picks_map = {}
     traded_picks_map = {}
@@ -87,22 +100,64 @@ def fetch_draft_data(league_id):
     for draft in drafts:
         draft_id = draft.get("draft_id")
 
-        # Fetch picks + traded picks
+        # Raw picks + traded picks for this draft
         picks = get(f"draft/{draft_id}/picks")
         traded = get(f"draft/{draft_id}/traded_picks")
 
+        # Enrich picks with player objects
+        enriched_picks = []
+        for p in picks:
+            player_id = p.get("player_id")
+            enriched_picks.append({
+                **p,
+                "player": resolve_player(player_id) if player_id else None
+            })
+
         draft_results.append(draft)
-        draft_picks_map[draft_id] = picks
+        draft_picks_map[draft_id] = enriched_picks
         traded_picks_map[draft_id] = traded
 
-        # Build draft order from picks
-        draft_order_map[draft_id] = build_draft_order(picks)
+        # Build draft order from enriched picks
+        draft_order_map[draft_id] = build_draft_order(enriched_picks)
 
     return {
         "drafts": draft_results,
         "draft_picks": draft_picks_map,
         "traded_picks": traded_picks_map,
         "draft_order": draft_order_map
+    }
+
+def fetch_future_picks(league_id):
+    """
+    Fetches league-level traded picks (future picks) and groups them by team.
+    This does NOT fabricate non-traded original picks; it reflects what Sleeper returns.
+    """
+
+    traded_future = get(f"league/{league_id}/traded_picks")
+
+    # Raw list straight from Sleeper
+    raw = traded_future
+
+    # Group by roster (current owner)
+    by_team = {}
+    for tp in traded_future:
+        # Sleeper fields typically: season, round, roster_id (original), owner_id (new)
+        season = tp.get("season")
+        current_owner = tp.get("owner_id")  # roster_id of current owner
+        if current_owner is None:
+            continue
+
+        if current_owner not in by_team:
+            by_team[current_owner] = {}
+
+        if season not in by_team[current_owner]:
+            by_team[current_owner][season] = []
+
+        by_team[current_owner][season].append(tp)
+
+    return {
+        "raw_traded_future_picks": raw,
+        "future_picks_by_team": by_team
     }
 
 def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
@@ -116,13 +171,16 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
     # League rules
     league_rules = extract_league_rules(league)
 
-    # ⭐ Draft data (picks, traded picks, draft order)
-    draft_data = fetch_draft_data(league_id)
+    # Draft data (picks, traded picks, draft order) with full player objects
+    draft_data = fetch_draft_data(league_id, players)
+
+    # Future picks (league-level traded picks), grouped by team
+    future_picks = fetch_future_picks(league_id)
 
     # Map user_id → display_name
     user_map = {u["user_id"]: u.get("display_name", "Unknown") for u in users}
 
-    # Player resolver
+    # Player resolver for rosters/matchups
     def resolve_player(pid):
         p = players.get(pid, {})
         return {
@@ -166,7 +224,8 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
         "week": week,
         "generated_at": datetime.utcnow().isoformat(),
         "league_rules": league_rules,
-        "draft_data": draft_data,   # ⭐ includes draft picks, traded picks, draft order
+        "draft_data": draft_data,        # drafts, draft_picks (with players), traded_picks, draft_order
+        "future_picks": future_picks,    # league-level traded future picks, grouped by team
         "teams": list(roster_map.values()),
         "matchups": formatted_matchups,
     }
