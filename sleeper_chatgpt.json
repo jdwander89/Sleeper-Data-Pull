@@ -3,7 +3,7 @@
     "league_name": "Schwieters",
     "season": "2026",
     "week": 1,
-    "generated_at": "2026-05-28T21:44:23.455200",
+    "generated_at": "2026-05-28T21:50:58.180638",
     "league_rules": {
         "type": null,
         "season_type": "regular",
@@ -248,7 +248,14 @@
                     "player_id": "13287",
                     "reactions": null,
                     "roster_id": 12,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13287",
+                        "name": "Jeremiyah Love",
+                        "team": "ARI",
+                        "position": "RB",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -274,7 +281,14 @@
                     "player_id": "13279",
                     "reactions": null,
                     "roster_id": 4,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13279",
+                        "name": "Carnell Tate",
+                        "team": "TEN",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -300,7 +314,14 @@
                     "player_id": "13286",
                     "reactions": null,
                     "roster_id": 10,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13286",
+                        "name": "Jadarian Price",
+                        "team": "SEA",
+                        "position": "RB",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -326,7 +347,14 @@
                     "player_id": "13281",
                     "reactions": null,
                     "roster_id": 1,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13281",
+                        "name": "Jordyn Tyson",
+                        "team": "NO",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -352,7 +380,14 @@
                     "player_id": "13294",
                     "reactions": null,
                     "roster_id": 2,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13294",
+                        "name": "Makai Lemon",
+                        "team": "PHI",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -378,7 +413,14 @@
                     "player_id": "13298",
                     "reactions": null,
                     "roster_id": 7,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13298",
+                        "name": "KC Concepcion",
+                        "team": "CLE",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -404,7 +446,14 @@
                     "player_id": "13346",
                     "reactions": null,
                     "roster_id": 8,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13346",
+                        "name": "Denzel Boston",
+                        "team": "CLE",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -430,7 +479,14 @@
                     "player_id": "13276",
                     "reactions": null,
                     "roster_id": 6,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13276",
+                        "name": "Omar Cooper",
+                        "team": "NYJ",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -456,7 +512,14 @@
                     "player_id": "13330",
                     "reactions": null,
                     "roster_id": 9,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13330",
+                        "name": "Kenyon Sadiq",
+                        "team": "NYJ",
+                        "position": "TE",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -482,7 +545,14 @@
                     "player_id": "13288",
                     "reactions": null,
                     "roster_id": 5,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13288",
+                        "name": "Nicholas Singleton",
+                        "team": "TEN",
+                        "position": "RB",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -508,7 +578,14 @@
                     "player_id": "13269",
                     "reactions": null,
                     "roster_id": 3,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13269",
+                        "name": "Fernando Mendoza",
+                        "team": "LV",
+                        "position": "QB",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -534,7 +611,14 @@
                     "player_id": "13320",
                     "reactions": null,
                     "roster_id": 11,
-                    "round": 1
+                    "round": 1,
+                    "player": {
+                        "id": "13320",
+                        "name": "Zachariah Branch",
+                        "team": "ATL",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -560,7 +644,14 @@
                     "player_id": "13274",
                     "reactions": null,
                     "roster_id": 12,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13274",
+                        "name": "Germie Bernard",
+                        "team": "PIT",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -586,7 +677,14 @@
                     "player_id": "13345",
                     "reactions": null,
                     "roster_id": 4,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13345",
+                        "name": "Jonah Coleman",
+                        "team": "DEN",
+                        "position": "RB",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -612,7 +710,14 @@
                     "player_id": "13337",
                     "reactions": null,
                     "roster_id": 10,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13337",
+                        "name": "Emmett Johnson",
+                        "team": "KC",
+                        "position": "RB",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -638,7 +743,14 @@
                     "player_id": "13349",
                     "reactions": null,
                     "roster_id": 1,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13349",
+                        "name": "Eli Stowers",
+                        "team": "PHI",
+                        "position": "TE",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -664,7 +776,14 @@
                     "player_id": "13417",
                     "reactions": null,
                     "roster_id": 2,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13417",
+                        "name": "De'Zhaun Stribling",
+                        "team": "SF",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -690,7 +809,14 @@
                     "player_id": "13311",
                     "reactions": null,
                     "roster_id": 7,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13311",
+                        "name": "Chris Bell",
+                        "team": "MIA",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -716,7 +842,14 @@
                     "player_id": "13301",
                     "reactions": null,
                     "roster_id": 8,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13301",
+                        "name": "Antonio Williams",
+                        "team": "WAS",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -742,7 +875,14 @@
                     "player_id": "13353",
                     "reactions": null,
                     "roster_id": 6,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13353",
+                        "name": "Chris Brazzell",
+                        "team": "CAR",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -768,7 +908,14 @@
                     "player_id": "13285",
                     "reactions": null,
                     "roster_id": 9,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13285",
+                        "name": "Malachi Fields",
+                        "team": "NYG",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -794,7 +941,14 @@
                     "player_id": "13317",
                     "reactions": null,
                     "roster_id": 5,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13317",
+                        "name": "Ted Hurst",
+                        "team": "TB",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -820,7 +974,14 @@
                     "player_id": "13268",
                     "reactions": null,
                     "roster_id": 3,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13268",
+                        "name": "Elijah Sarratt",
+                        "team": "BAL",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -846,7 +1007,14 @@
                     "player_id": "13402",
                     "reactions": null,
                     "roster_id": 1,
-                    "round": 2
+                    "round": 2,
+                    "player": {
+                        "id": "13402",
+                        "name": "Skyler Bell",
+                        "team": "BUF",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 },
                 {
                     "draft_id": "1312581067298836480",
@@ -872,7 +1040,14 @@
                     "player_id": "13275",
                     "reactions": null,
                     "roster_id": 7,
-                    "round": 3
+                    "round": 3,
+                    "player": {
+                        "id": "13275",
+                        "name": "Ty Simpson",
+                        "team": "LAR",
+                        "position": "QB",
+                        "status": "Active"
+                    }
                 }
             ]
         },
@@ -1078,6 +1253,176 @@
                         "roster_id": 7,
                         "owner_id": null,
                         "player_id": "13275"
+                    }
+                ]
+            }
+        }
+    },
+    "future_picks": {
+        "raw_traded_future_picks": [
+            {
+                "round": 5,
+                "season": "2026",
+                "roster_id": 1,
+                "owner_id": 2,
+                "previous_owner_id": 1
+            },
+            {
+                "round": 2,
+                "season": "2027",
+                "roster_id": 1,
+                "owner_id": 11,
+                "previous_owner_id": 1
+            },
+            {
+                "round": 3,
+                "season": "2026",
+                "roster_id": 2,
+                "owner_id": 1,
+                "previous_owner_id": 2
+            },
+            {
+                "round": 4,
+                "season": "2026",
+                "roster_id": 2,
+                "owner_id": 1,
+                "previous_owner_id": 2
+            },
+            {
+                "round": 3,
+                "season": "2027",
+                "roster_id": 2,
+                "owner_id": 1,
+                "previous_owner_id": 2
+            },
+            {
+                "round": 3,
+                "season": "2026",
+                "roster_id": 7,
+                "owner_id": 12,
+                "previous_owner_id": 7
+            },
+            {
+                "round": 4,
+                "season": "2027",
+                "roster_id": 7,
+                "owner_id": 12,
+                "previous_owner_id": 7
+            },
+            {
+                "round": 2,
+                "season": "2026",
+                "roster_id": 11,
+                "owner_id": 1,
+                "previous_owner_id": 11
+            },
+            {
+                "round": 1,
+                "season": "2027",
+                "roster_id": 11,
+                "owner_id": 1,
+                "previous_owner_id": 11
+            },
+            {
+                "round": 3,
+                "season": "2026",
+                "roster_id": 12,
+                "owner_id": 7,
+                "previous_owner_id": 12
+            }
+        ],
+        "future_picks_by_team": {
+            "2": {
+                "2026": [
+                    {
+                        "round": 5,
+                        "season": "2026",
+                        "roster_id": 1,
+                        "owner_id": 2,
+                        "previous_owner_id": 1
+                    }
+                ]
+            },
+            "11": {
+                "2027": [
+                    {
+                        "round": 2,
+                        "season": "2027",
+                        "roster_id": 1,
+                        "owner_id": 11,
+                        "previous_owner_id": 1
+                    }
+                ]
+            },
+            "1": {
+                "2026": [
+                    {
+                        "round": 3,
+                        "season": "2026",
+                        "roster_id": 2,
+                        "owner_id": 1,
+                        "previous_owner_id": 2
+                    },
+                    {
+                        "round": 4,
+                        "season": "2026",
+                        "roster_id": 2,
+                        "owner_id": 1,
+                        "previous_owner_id": 2
+                    },
+                    {
+                        "round": 2,
+                        "season": "2026",
+                        "roster_id": 11,
+                        "owner_id": 1,
+                        "previous_owner_id": 11
+                    }
+                ],
+                "2027": [
+                    {
+                        "round": 3,
+                        "season": "2027",
+                        "roster_id": 2,
+                        "owner_id": 1,
+                        "previous_owner_id": 2
+                    },
+                    {
+                        "round": 1,
+                        "season": "2027",
+                        "roster_id": 11,
+                        "owner_id": 1,
+                        "previous_owner_id": 11
+                    }
+                ]
+            },
+            "12": {
+                "2026": [
+                    {
+                        "round": 3,
+                        "season": "2026",
+                        "roster_id": 7,
+                        "owner_id": 12,
+                        "previous_owner_id": 7
+                    }
+                ],
+                "2027": [
+                    {
+                        "round": 4,
+                        "season": "2027",
+                        "roster_id": 7,
+                        "owner_id": 12,
+                        "previous_owner_id": 7
+                    }
+                ]
+            },
+            "7": {
+                "2026": [
+                    {
+                        "round": 3,
+                        "season": "2026",
+                        "roster_id": 12,
+                        "owner_id": 7,
+                        "previous_owner_id": 12
                     }
                 ]
             }
