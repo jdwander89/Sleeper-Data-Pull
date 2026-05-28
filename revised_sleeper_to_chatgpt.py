@@ -3,35 +3,6 @@ Sleeper → ChatGPT Formatter
 League ID: 1312581067286282240
 
 This script is designed to be run manually OR automatically by GitHub Actions.
-
-GitHub Action (placed in .github/workflows/sleeper_daily.yml):
-
-name: Daily Sleeper League Update
-on:
-  schedule:
-    - cron: "0 6 * * *"
-  workflow_dispatch:
-
-  permissions:
-  contents: write
-
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - run: pip install requests
-      - run: python revised_sleeper_to_chatgpt.py --week 1
-      - run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sleeper_chatgpt.json
-          git commit -m "Daily Sleeper data update" || echo "No changes"
-          git push
 """
 
 import os
@@ -50,6 +21,27 @@ def get(endpoint):
 def fetch_players():
     return get("players/nfl")
 
+def extract_league_rules(league):
+    """Extracts league rules/settings from the Sleeper league object."""
+    settings = league.get("settings", {})
+
+    return {
+        "type": league.get("type"),
+        "season_type": league.get("season_type"),
+        "scoring_settings": settings.get("scoring_settings", {}),
+        "roster_positions": league.get("roster_positions", []),
+        "playoff_teams": settings.get("playoff_teams"),
+        "playoff_rounds": settings.get("playoff_rounds"),
+        "trade_deadline": settings.get("trade_deadline"),
+        "waiver_type": settings.get("waiver_type"),
+        "waiver_budget": settings.get("waiver_budget"),
+        "max_keepers": settings.get("max_keepers"),
+        "taxi_slots": settings.get("taxi_slots"),
+        "reserve_slots": settings.get("reserve_slots"),
+        "bench_slots": settings.get("bench_slots"),
+        "league_average_match": settings.get("league_average_match"),
+    }
+
 def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
     league = get(f"league/{league_id}")
     users = get(f"league/{league_id}/users")
@@ -58,8 +50,13 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
 
     matchups = get(f"league/{league_id}/matchups/{week}") if week else []
 
+    # Extract league rules
+    league_rules = extract_league_rules(league)
+
+    # Map user_id → display_name
     user_map = {u["user_id"]: u.get("display_name", "Unknown") for u in users}
 
+    # Player resolver
     def resolve_player(pid):
         p = players.get(pid, {})
         return {
@@ -70,6 +67,7 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
             "status": p.get("status"),
         }
 
+    # Build roster map
     roster_map = {}
     for r in rosters:
         roster_map[r["roster_id"]] = {
@@ -82,6 +80,7 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
             "points": r.get("settings", {}).get("fpts", 0),
         }
 
+    # Format matchups
     formatted_matchups = []
     for m in matchups:
         roster = roster_map.get(m["roster_id"], {})
@@ -93,12 +92,14 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
             "points": m.get("points", 0),
         })
 
+    # Final output
     return {
         "league_id": league_id,
         "league_name": league.get("name"),
         "season": league.get("season"),
         "week": week,
         "generated_at": datetime.utcnow().isoformat(),
+        "league_rules": league_rules,   # ⭐ NEW SECTION
         "teams": list(roster_map.values()),
         "matchups": formatted_matchups,
     }
