@@ -24,16 +24,13 @@ def fetch_players():
 def extract_league_rules(league):
     """Extracts league rules/settings from the Sleeper league object."""
 
-    # ⭐ Correct scoring settings location
     scoring = league.get("scoring_settings", {})
-
-    # Other league settings live inside "settings"
     settings = league.get("settings", {})
 
     return {
         "type": league.get("type"),
         "season_type": league.get("season_type"),
-        "scoring_settings": scoring,          # ⭐ FIXED
+        "scoring_settings": scoring,
         "roster_positions": league.get("roster_positions", []),
         "playoff_teams": settings.get("playoff_teams"),
         "playoff_rounds": settings.get("playoff_rounds"),
@@ -47,6 +44,35 @@ def extract_league_rules(league):
         "league_average_match": settings.get("league_average_match"),
     }
 
+def fetch_draft_data(league_id):
+    """Fetches draft metadata, picks, and traded picks for the league."""
+
+    drafts = get(f"league/{league_id}/drafts")
+
+    if not drafts:
+        return {"drafts": [], "draft_picks": {}, "traded_picks": {}}
+
+    draft_results = []
+    draft_picks_map = {}
+    traded_picks_map = {}
+
+    for draft in drafts:
+        draft_id = draft.get("draft_id")
+
+        # Fetch picks for this draft
+        picks = get(f"draft/{draft_id}/picks")
+        traded = get(f"draft/{draft_id}/traded_picks")
+
+        draft_results.append(draft)
+        draft_picks_map[draft_id] = picks
+        traded_picks_map[draft_id] = traded
+
+    return {
+        "drafts": draft_results,
+        "draft_picks": draft_picks_map,
+        "traded_picks": traded_picks_map,
+    }
+
 def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
     league = get(f"league/{league_id}")
     users = get(f"league/{league_id}/users")
@@ -57,6 +83,9 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
 
     # ⭐ Extract league rules including scoring
     league_rules = extract_league_rules(league)
+
+    # ⭐ Fetch draft results + traded picks
+    draft_data = fetch_draft_data(league_id)
 
     # Map user_id → display_name
     user_map = {u["user_id"]: u.get("display_name", "Unknown") for u in users}
@@ -104,7 +133,8 @@ def fetch_league_data(league_id=DEFAULT_LEAGUE_ID, week=None):
         "season": league.get("season"),
         "week": week,
         "generated_at": datetime.utcnow().isoformat(),
-        "league_rules": league_rules,   # ⭐ Includes scoring settings
+        "league_rules": league_rules,
+        "draft_data": draft_data,        # ⭐ NEW SECTION
         "teams": list(roster_map.values()),
         "matchups": formatted_matchups,
     }
