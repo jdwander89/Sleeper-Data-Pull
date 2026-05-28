@@ -3,7 +3,7 @@
     "league_name": "Schwieters",
     "season": "2026",
     "week": 1,
-    "generated_at": "2026-05-28T21:50:58.180638",
+    "generated_at": "2026-05-28T23:17:03.338234",
     "league_rules": {
         "type": null,
         "season_type": "regular",
@@ -183,9 +183,9 @@
                     "471724614532198400": 12,
                     "471744678006353920": 1
                 },
-                "last_message_id": "1365710480638775296",
-                "last_message_time": 1779973261560,
-                "last_picked": 1779973261550,
+                "last_message_id": "1365853600797954048",
+                "last_message_time": 1780007384065,
+                "last_picked": 1780007384056,
                 "league_id": "1312581067286282240",
                 "metadata": {
                     "description": "",
@@ -1048,6 +1048,39 @@
                         "position": "QB",
                         "status": "Active"
                     }
+                },
+                {
+                    "draft_id": "1312581067298836480",
+                    "draft_slot": 2,
+                    "is_keeper": null,
+                    "metadata": {
+                        "first_name": "Ja'Kobi",
+                        "injury_status": "",
+                        "last_name": "Lane",
+                        "news_updated": "1778690426516",
+                        "number": "6",
+                        "player_id": "13293",
+                        "position": "WR",
+                        "sport": "nfl",
+                        "status": "Active",
+                        "team": "BAL",
+                        "team_abbr": "",
+                        "team_changed_at": "",
+                        "years_exp": "0"
+                    },
+                    "pick_no": 26,
+                    "picked_by": "471415316501491712",
+                    "player_id": "13293",
+                    "reactions": null,
+                    "roster_id": 4,
+                    "round": 3,
+                    "player": {
+                        "id": "13293",
+                        "name": "Ja'Kobi Lane",
+                        "team": "BAL",
+                        "position": "WR",
+                        "status": "Active"
+                    }
                 }
             ]
         },
@@ -1253,6 +1286,12 @@
                         "roster_id": 7,
                         "owner_id": null,
                         "player_id": "13275"
+                    },
+                    {
+                        "pick_no": 26,
+                        "roster_id": 4,
+                        "owner_id": null,
+                        "player_id": "13293"
                     }
                 ]
             }
