@@ -3,7 +3,7 @@
     "league_name": "Schwieters",
     "season": "2026",
     "week": 1,
-    "generated_at": "2026-05-28T23:17:03.338234",
+    "generated_at": "2026-05-29T17:58:16.847142",
     "league_rules": {
         "type": null,
         "season_type": "regular",
@@ -183,9 +183,9 @@
                     "471724614532198400": 12,
                     "471744678006353920": 1
                 },
-                "last_message_id": "1365853600797954048",
-                "last_message_time": 1780007384065,
-                "last_picked": 1780007384056,
+                "last_message_id": "1366144830203260928",
+                "last_message_time": 1780076818566,
+                "last_picked": 1780076818550,
                 "league_id": "1312581067286282240",
                 "metadata": {
                     "description": "",
@@ -1081,6 +1081,105 @@
                         "position": "WR",
                         "status": "Active"
                     }
+                },
+                {
+                    "draft_id": "1312581067298836480",
+                    "draft_slot": 3,
+                    "is_keeper": null,
+                    "metadata": {
+                        "first_name": "Chig",
+                        "injury_status": "",
+                        "last_name": "Okonkwo",
+                        "news_updated": "1780071039136",
+                        "number": "85",
+                        "player_id": "8210",
+                        "position": "TE",
+                        "sport": "nfl",
+                        "status": "Active",
+                        "team": "WAS",
+                        "team_abbr": "",
+                        "team_changed_at": "",
+                        "years_exp": "4"
+                    },
+                    "pick_no": 27,
+                    "picked_by": "471403228244733952",
+                    "player_id": "8210",
+                    "reactions": null,
+                    "roster_id": 2,
+                    "round": 3,
+                    "player": {
+                        "id": "8210",
+                        "name": "Chig Okonkwo",
+                        "team": "WAS",
+                        "position": "TE",
+                        "status": "Active"
+                    }
+                },
+                {
+                    "draft_id": "1312581067298836480",
+                    "draft_slot": 4,
+                    "is_keeper": null,
+                    "metadata": {
+                        "first_name": "Mike",
+                        "injury_status": "",
+                        "last_name": "Washington",
+                        "news_updated": "1778767832946",
+                        "number": "30",
+                        "player_id": "13305",
+                        "position": "RB",
+                        "sport": "nfl",
+                        "status": "Active",
+                        "team": "LV",
+                        "team_abbr": "",
+                        "team_changed_at": "",
+                        "years_exp": "0"
+                    },
+                    "pick_no": 28,
+                    "picked_by": "464915162038530048",
+                    "player_id": "13305",
+                    "reactions": null,
+                    "roster_id": 1,
+                    "round": 3,
+                    "player": {
+                        "id": "13305",
+                        "name": "Mike Washington",
+                        "team": "LV",
+                        "position": "RB",
+                        "status": "Active"
+                    }
+                },
+                {
+                    "draft_id": "1312581067298836480",
+                    "draft_slot": 5,
+                    "is_keeper": null,
+                    "metadata": {
+                        "first_name": "Adam",
+                        "injury_status": "",
+                        "last_name": "Randall",
+                        "news_updated": "1779294042335",
+                        "number": "23",
+                        "player_id": "13302",
+                        "position": "RB",
+                        "sport": "nfl",
+                        "status": "Active",
+                        "team": "BAL",
+                        "team_abbr": "",
+                        "team_changed_at": "",
+                        "years_exp": "0"
+                    },
+                    "pick_no": 29,
+                    "picked_by": "464915162038530048",
+                    "player_id": "13302",
+                    "reactions": null,
+                    "roster_id": 1,
+                    "round": 3,
+                    "player": {
+                        "id": "13302",
+                        "name": "Adam Randall",
+                        "team": "BAL",
+                        "position": "RB",
+                        "status": "Active"
+                    }
                 }
             ]
         },
@@ -1108,11 +1207,25 @@
                     "previous_owner_id": 2
                 },
                 {
+                    "round": 5,
+                    "season": "2026",
+                    "roster_id": 2,
+                    "owner_id": 10,
+                    "previous_owner_id": 2
+                },
+                {
                     "round": 3,
                     "season": "2026",
                     "roster_id": 7,
                     "owner_id": 12,
                     "previous_owner_id": 7
+                },
+                {
+                    "round": 3,
+                    "season": "2026",
+                    "roster_id": 10,
+                    "owner_id": 2,
+                    "previous_owner_id": 10
                 },
                 {
                     "round": 2,
@@ -1292,6 +1405,24 @@
                         "roster_id": 4,
                         "owner_id": null,
                         "player_id": "13293"
+                    },
+                    {
+                        "pick_no": 27,
+                        "roster_id": 2,
+                        "owner_id": null,
+                        "player_id": "8210"
+                    },
+                    {
+                        "pick_no": 28,
+                        "roster_id": 1,
+                        "owner_id": null,
+                        "player_id": "13305"
+                    },
+                    {
+                        "pick_no": 29,
+                        "roster_id": 1,
+                        "owner_id": null,
+                        "player_id": "13302"
                     }
                 ]
             }
@@ -1328,10 +1459,24 @@
                 "previous_owner_id": 2
             },
             {
+                "round": 5,
+                "season": "2026",
+                "roster_id": 2,
+                "owner_id": 10,
+                "previous_owner_id": 2
+            },
+            {
                 "round": 3,
                 "season": "2027",
                 "roster_id": 2,
                 "owner_id": 1,
+                "previous_owner_id": 2
+            },
+            {
+                "round": 3,
+                "season": "2028",
+                "roster_id": 2,
+                "owner_id": 10,
                 "previous_owner_id": 2
             },
             {
@@ -1347,6 +1492,13 @@
                 "roster_id": 7,
                 "owner_id": 12,
                 "previous_owner_id": 7
+            },
+            {
+                "round": 3,
+                "season": "2026",
+                "roster_id": 10,
+                "owner_id": 2,
+                "previous_owner_id": 10
             },
             {
                 "round": 2,
@@ -1379,6 +1531,13 @@
                         "roster_id": 1,
                         "owner_id": 2,
                         "previous_owner_id": 1
+                    },
+                    {
+                        "round": 3,
+                        "season": "2026",
+                        "roster_id": 10,
+                        "owner_id": 2,
+                        "previous_owner_id": 10
                     }
                 ]
             },
@@ -1431,6 +1590,26 @@
                         "roster_id": 11,
                         "owner_id": 1,
                         "previous_owner_id": 11
+                    }
+                ]
+            },
+            "10": {
+                "2026": [
+                    {
+                        "round": 5,
+                        "season": "2026",
+                        "roster_id": 2,
+                        "owner_id": 10,
+                        "previous_owner_id": 2
+                    }
+                ],
+                "2028": [
+                    {
+                        "round": 3,
+                        "season": "2028",
+                        "roster_id": 2,
+                        "owner_id": 10,
+                        "previous_owner_id": 2
                     }
                 ]
             },
