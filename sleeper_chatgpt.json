@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-05-29T20:55:32.025573Z",
+    "generated_at": "2026-05-29T20:57:05.832888Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -3281,8 +3281,8 @@
         }
       },
       {
-        "p": 5,
         "m": 5,
+        "p": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -3296,8 +3296,8 @@
         }
       },
       {
-        "p": 1,
         "m": 6,
+        "p": 1,
         "r": 3,
         "l": null,
         "w": null,
@@ -3311,8 +3311,8 @@
         }
       },
       {
-        "p": 3,
         "m": 7,
+        "p": 3,
         "r": 3,
         "l": null,
         "w": null,
@@ -8437,7 +8437,7 @@
       "league_id": "1312581067286282240",
       "league_name": "Schwieters",
       "season": "2026",
-      "source_generated_at": "2026-05-29T20:55:32.025573Z",
+      "source_generated_at": "2026-05-29T20:57:05.832888Z",
       "note": "Compact derived summary for ChatGPT: teams, resolved rosters, and current/future draft pick inventory."
     },
     "assumptions": {
