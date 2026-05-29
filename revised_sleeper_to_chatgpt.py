@@ -307,9 +307,27 @@ def team_ref(roster_id: Any, teams_by_roster_id: Dict[str, Dict[str, Any]]) -> D
 def normalize_draft_pick(
     pick: Dict[str, Any],
     teams_by_roster_id: Dict[str, Dict[str, Any]],
+    users_map: Optional[Dict[str, Dict[str, Any]]] = None,
 ) -> Dict[str, Any]:
     metadata = pick.get("metadata") or {}
     roster_id = pick.get("roster_id")
+
+    picked_by_user_id = str(pick.get("picked_by")) if pick.get("picked_by") is not None else None
+
+    picked_by_name = None
+    picked_by_team_name = None
+
+    if picked_by_user_id and users_map:
+        picked_by_user = users_map.get(picked_by_user_id, {})
+        picked_by_name = (
+            picked_by_user.get("display_name")
+            or picked_by_user.get("username")
+            or picked_by_user_id
+        )
+        picked_by_team_name = picked_by_user.get("team_name") or picked_by_name
+    elif picked_by_user_id:
+        picked_by_name = picked_by_user_id
+        picked_by_team_name = picked_by_user_id
 
     return {
         "pick_no": pick.get("pick_no"),
@@ -317,8 +335,9 @@ def normalize_draft_pick(
         "draft_slot": pick.get("draft_slot"),
         "player_id": str(pick.get("player_id")) if pick.get("player_id") is not None else None,
         "roster": team_ref(roster_id, teams_by_roster_id),
-        "picked_by_user_id": str(pick.get("picked_by")) if pick.get("picked_by") is not None else None,
-        "picked_by_name": pick.get("picked_by"),
+        "picked_by_user_id": picked_by_user_id,
+        "picked_by_name": picked_by_name,
+        "picked_by_team_name": picked_by_team_name,
         "metadata": {
             "first_name": metadata.get("first_name"),
             "last_name": metadata.get("last_name"),
@@ -342,12 +361,19 @@ def normalize_draft_pick(
 def group_picks_by_round(
     picks: List[Dict[str, Any]],
     teams_by_roster_id: Dict[str, Dict[str, Any]],
+    users_map: Optional[Dict[str, Dict[str, Any]]] = None,
 ) -> Dict[str, List[Dict[str, Any]]]:
     rounds = defaultdict(list)
 
     for pick in picks or []:
         round_no = str(pick.get("round"))
-        rounds[round_no].append(normalize_draft_pick(pick, teams_by_roster_id))
+        rounds[round_no].append(
+            normalize_draft_pick(
+                pick,
+                teams_by_roster_id,
+                users_map=users_map,
+            )
+        )
 
     for round_no in rounds:
         rounds[round_no] = sorted(
@@ -363,6 +389,7 @@ def normalize_draft(
     picks: List[Dict[str, Any]],
     traded_picks: List[Dict[str, Any]],
     teams_by_roster_id: Dict[str, Dict[str, Any]],
+    users_map: Optional[Dict[str, Dict[str, Any]]] = None,
 ) -> Dict[str, Any]:
     return {
         "draft_id": draft.get("draft_id"),
@@ -377,7 +404,11 @@ def normalize_draft(
         "metadata": draft.get("metadata"),
         "draft_order": draft.get("draft_order"),
         "slot_to_roster_id": draft.get("slot_to_roster_id"),
-        "rounds": group_picks_by_round(picks, teams_by_roster_id),
+        "rounds": group_picks_by_round(
+            picks,
+            teams_by_roster_id,
+            users_map=users_map,
+        ),
         "traded_picks": traded_picks or [],
     }
 
@@ -759,6 +790,8 @@ def build_team_roster_and_picks_summary(export_data: Dict[str, Any], future_year
                     "player_id": pick.get("player_id"),
                     "player": f"{name} ({', '.join(details)})" if details else name,
                     "picked_by": pick.get("picked_by_name"),
+                    "picked_by_team": pick.get("picked_by_team_name"),
+                    "picked_by_user_id": pick.get("picked_by_user_id"),
                 })
 
     result = {
@@ -941,6 +974,7 @@ def build_export(
                 draft_picks_by_draft.get(draft.get("draft_id"), []),
                 draft_traded_picks_by_draft.get(draft.get("draft_id"), []),
                 teams_by_roster_id,
+                users_map=users_map,
             )
             for draft in drafts
         ],
@@ -1108,7 +1142,14 @@ def main() -> None:
         ext = ".json"
 
     summary_path = f"{base}_team_roster_and_picks_summary{ext}"
+
+    if "team_roster_and_picks_summary" not in export_data:
+        raise RuntimeError("team_roster_and_picks_summary was not created before writing files.")
+
     write_json(summary_path, export_data["team_roster_and_picks_summary"])
+
+    if not os.path.exists(summary_path):
+        raise RuntimeError(f"Failed to write summary file: {summary_path}")
 
     print(f"Wrote main ChatGPT export to: {output_path}")
     print(f"Wrote compact roster/picks summary to: {summary_path}")
