@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-05-29T20:57:05.832888Z",
+    "generated_at": "2026-05-29T21:09:11.664950Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -1760,7 +1760,8 @@
                 "owner_name": "gullickson"
               },
               "picked_by_user_id": "471744678006353920",
-              "picked_by_name": "471744678006353920",
+              "picked_by_name": "gullickson",
+              "picked_by_team_name": "gullickson",
               "metadata": {
                 "first_name": "Jeremiyah",
                 "last_name": "Love",
@@ -1790,7 +1791,8 @@
                 "owner_name": "TonsOfBuns"
               },
               "picked_by_user_id": "471415316501491712",
-              "picked_by_name": "471415316501491712",
+              "picked_by_name": "TonsOfBuns",
+              "picked_by_team_name": "Puka Troopas",
               "metadata": {
                 "first_name": "Carnell",
                 "last_name": "Tate",
@@ -1820,7 +1822,8 @@
                 "owner_name": "NC79"
               },
               "picked_by_user_id": "471717089472671744",
-              "picked_by_name": "471717089472671744",
+              "picked_by_name": "NC79",
+              "picked_by_team_name": "Goin in Ra",
               "metadata": {
                 "first_name": "Jadarian",
                 "last_name": "Price",
@@ -1850,7 +1853,8 @@
                 "owner_name": "jwander"
               },
               "picked_by_user_id": "464915162038530048",
-              "picked_by_name": "464915162038530048",
+              "picked_by_name": "jwander",
+              "picked_by_team_name": "It’s Herbie Hancock",
               "metadata": {
                 "first_name": "Jordyn",
                 "last_name": "Tyson",
@@ -1880,7 +1884,8 @@
                 "owner_name": "Logs24"
               },
               "picked_by_user_id": "471403228244733952",
-              "picked_by_name": "471403228244733952",
+              "picked_by_name": "Logs24",
+              "picked_by_team_name": "A B CeeDee",
               "metadata": {
                 "first_name": "Makai",
                 "last_name": "Lemon",
@@ -1910,7 +1915,8 @@
                 "owner_name": "lex11"
               },
               "picked_by_user_id": "459751268567478272",
-              "picked_by_name": "459751268567478272",
+              "picked_by_name": "lex11",
+              "picked_by_team_name": "I ❤️ Commish",
               "metadata": {
                 "first_name": "KC",
                 "last_name": "Concepcion",
@@ -1940,7 +1946,8 @@
                 "owner_name": "johnwander"
               },
               "picked_by_user_id": "471457570825957376",
-              "picked_by_name": "471457570825957376",
+              "picked_by_name": "johnwander",
+              "picked_by_team_name": "Back to the Future",
               "metadata": {
                 "first_name": "Denzel",
                 "last_name": "Boston",
@@ -1970,7 +1977,8 @@
                 "owner_name": "andrewwelle"
               },
               "picked_by_user_id": "471451909446692864",
-              "picked_by_name": "471451909446692864",
+              "picked_by_name": "andrewwelle",
+              "picked_by_team_name": "andrewwelle",
               "metadata": {
                 "first_name": "Omar",
                 "last_name": "Cooper",
@@ -2000,7 +2008,8 @@
                 "owner_name": "alexwelle"
               },
               "picked_by_user_id": "471501409838166016",
-              "picked_by_name": "471501409838166016",
+              "picked_by_name": "alexwelle",
+              "picked_by_team_name": "alexwelle",
               "metadata": {
                 "first_name": "Kenyon",
                 "last_name": "Sadiq",
@@ -2030,7 +2039,8 @@
                 "owner_name": "jchrz"
               },
               "picked_by_user_id": "471424563457028096",
-              "picked_by_name": "471424563457028096",
+              "picked_by_name": "jchrz",
+              "picked_by_team_name": "White Ice",
               "metadata": {
                 "first_name": "Nicholas",
                 "last_name": "Singleton",
@@ -2060,7 +2070,8 @@
                 "owner_name": "GarrettHol"
               },
               "picked_by_user_id": "471415197991432192",
-              "picked_by_name": "471415197991432192",
+              "picked_by_name": "GarrettHol",
+              "picked_by_team_name": "Pol Hol",
               "metadata": {
                 "first_name": "Fernando",
                 "last_name": "Mendoza",
@@ -2090,7 +2101,8 @@
                 "owner_name": "amoritko"
               },
               "picked_by_user_id": "471724614532198400",
-              "picked_by_name": "471724614532198400",
+              "picked_by_name": "amoritko",
+              "picked_by_team_name": "MOJO",
               "metadata": {
                 "first_name": "Zachariah",
                 "last_name": "Branch",
@@ -2122,7 +2134,8 @@
                 "owner_name": "gullickson"
               },
               "picked_by_user_id": "471744678006353920",
-              "picked_by_name": "471744678006353920",
+              "picked_by_name": "gullickson",
+              "picked_by_team_name": "gullickson",
               "metadata": {
                 "first_name": "Germie",
                 "last_name": "Bernard",
@@ -2152,7 +2165,8 @@
                 "owner_name": "TonsOfBuns"
               },
               "picked_by_user_id": "471415316501491712",
-              "picked_by_name": "471415316501491712",
+              "picked_by_name": "TonsOfBuns",
+              "picked_by_team_name": "Puka Troopas",
               "metadata": {
                 "first_name": "Jonah",
                 "last_name": "Coleman",
@@ -2182,7 +2196,8 @@
                 "owner_name": "NC79"
               },
               "picked_by_user_id": "471717089472671744",
-              "picked_by_name": "471717089472671744",
+              "picked_by_name": "NC79",
+              "picked_by_team_name": "Goin in Ra",
               "metadata": {
                 "first_name": "Emmett",
                 "last_name": "Johnson",
@@ -2212,7 +2227,8 @@
                 "owner_name": "jwander"
               },
               "picked_by_user_id": "464915162038530048",
-              "picked_by_name": "464915162038530048",
+              "picked_by_name": "jwander",
+              "picked_by_team_name": "It’s Herbie Hancock",
               "metadata": {
                 "first_name": "Eli",
                 "last_name": "Stowers",
@@ -2242,7 +2258,8 @@
                 "owner_name": "Logs24"
               },
               "picked_by_user_id": "471403228244733952",
-              "picked_by_name": "471403228244733952",
+              "picked_by_name": "Logs24",
+              "picked_by_team_name": "A B CeeDee",
               "metadata": {
                 "first_name": "De'Zhaun",
                 "last_name": "Stribling",
@@ -2272,7 +2289,8 @@
                 "owner_name": "lex11"
               },
               "picked_by_user_id": "459751268567478272",
-              "picked_by_name": "459751268567478272",
+              "picked_by_name": "lex11",
+              "picked_by_team_name": "I ❤️ Commish",
               "metadata": {
                 "first_name": "Chris",
                 "last_name": "Bell",
@@ -2302,7 +2320,8 @@
                 "owner_name": "johnwander"
               },
               "picked_by_user_id": "471457570825957376",
-              "picked_by_name": "471457570825957376",
+              "picked_by_name": "johnwander",
+              "picked_by_team_name": "Back to the Future",
               "metadata": {
                 "first_name": "Antonio",
                 "last_name": "Williams",
@@ -2332,7 +2351,8 @@
                 "owner_name": "andrewwelle"
               },
               "picked_by_user_id": "471451909446692864",
-              "picked_by_name": "471451909446692864",
+              "picked_by_name": "andrewwelle",
+              "picked_by_team_name": "andrewwelle",
               "metadata": {
                 "first_name": "Chris",
                 "last_name": "Brazzell",
@@ -2362,7 +2382,8 @@
                 "owner_name": "alexwelle"
               },
               "picked_by_user_id": "471501409838166016",
-              "picked_by_name": "471501409838166016",
+              "picked_by_name": "alexwelle",
+              "picked_by_team_name": "alexwelle",
               "metadata": {
                 "first_name": "Malachi",
                 "last_name": "Fields",
@@ -2392,7 +2413,8 @@
                 "owner_name": "jchrz"
               },
               "picked_by_user_id": "471424563457028096",
-              "picked_by_name": "471424563457028096",
+              "picked_by_name": "jchrz",
+              "picked_by_team_name": "White Ice",
               "metadata": {
                 "first_name": "Ted",
                 "last_name": "Hurst",
@@ -2422,7 +2444,8 @@
                 "owner_name": "GarrettHol"
               },
               "picked_by_user_id": "471415197991432192",
-              "picked_by_name": "471415197991432192",
+              "picked_by_name": "GarrettHol",
+              "picked_by_team_name": "Pol Hol",
               "metadata": {
                 "first_name": "Elijah",
                 "last_name": "Sarratt",
@@ -2452,7 +2475,8 @@
                 "owner_name": "jwander"
               },
               "picked_by_user_id": "464915162038530048",
-              "picked_by_name": "464915162038530048",
+              "picked_by_name": "jwander",
+              "picked_by_team_name": "It’s Herbie Hancock",
               "metadata": {
                 "first_name": "Skyler",
                 "last_name": "Bell",
@@ -2484,7 +2508,8 @@
                 "owner_name": "lex11"
               },
               "picked_by_user_id": "459751268567478272",
-              "picked_by_name": "459751268567478272",
+              "picked_by_name": "lex11",
+              "picked_by_team_name": "I ❤️ Commish",
               "metadata": {
                 "first_name": "Ty",
                 "last_name": "Simpson",
@@ -2514,7 +2539,8 @@
                 "owner_name": "TonsOfBuns"
               },
               "picked_by_user_id": "471415316501491712",
-              "picked_by_name": "471415316501491712",
+              "picked_by_name": "TonsOfBuns",
+              "picked_by_team_name": "Puka Troopas",
               "metadata": {
                 "first_name": "Ja'Kobi",
                 "last_name": "Lane",
@@ -2544,7 +2570,8 @@
                 "owner_name": "Logs24"
               },
               "picked_by_user_id": "471403228244733952",
-              "picked_by_name": "471403228244733952",
+              "picked_by_name": "Logs24",
+              "picked_by_team_name": "A B CeeDee",
               "metadata": {
                 "first_name": "Chig",
                 "last_name": "Okonkwo",
@@ -2574,7 +2601,8 @@
                 "owner_name": "jwander"
               },
               "picked_by_user_id": "464915162038530048",
-              "picked_by_name": "464915162038530048",
+              "picked_by_name": "jwander",
+              "picked_by_team_name": "It’s Herbie Hancock",
               "metadata": {
                 "first_name": "Mike",
                 "last_name": "Washington",
@@ -2604,7 +2632,8 @@
                 "owner_name": "jwander"
               },
               "picked_by_user_id": "464915162038530048",
-              "picked_by_name": "464915162038530048",
+              "picked_by_name": "jwander",
+              "picked_by_team_name": "It’s Herbie Hancock",
               "metadata": {
                 "first_name": "Adam",
                 "last_name": "Randall",
@@ -8437,7 +8466,7 @@
       "league_id": "1312581067286282240",
       "league_name": "Schwieters",
       "season": "2026",
-      "source_generated_at": "2026-05-29T20:57:05.832888Z",
+      "source_generated_at": "2026-05-29T21:09:11.664950Z",
       "note": "Compact derived summary for ChatGPT: teams, resolved rosters, and current/future draft pick inventory."
     },
     "assumptions": {
@@ -8804,7 +8833,9 @@
             "draft_slot": 4,
             "player_id": "13281",
             "player": "Jordyn Tyson (WR, NO)",
-            "picked_by": "464915162038530048"
+            "picked_by": "jwander",
+            "picked_by_team": "It’s Herbie Hancock",
+            "picked_by_user_id": "464915162038530048"
           },
           {
             "pick_no": 16,
@@ -8812,7 +8843,9 @@
             "draft_slot": 4,
             "player_id": "13349",
             "player": "Eli Stowers (TE, PHI)",
-            "picked_by": "464915162038530048"
+            "picked_by": "jwander",
+            "picked_by_team": "It’s Herbie Hancock",
+            "picked_by_user_id": "464915162038530048"
           },
           {
             "pick_no": 24,
@@ -8820,7 +8853,9 @@
             "draft_slot": 12,
             "player_id": "13402",
             "player": "Skyler Bell (WR, BUF)",
-            "picked_by": "464915162038530048"
+            "picked_by": "jwander",
+            "picked_by_team": "It’s Herbie Hancock",
+            "picked_by_user_id": "464915162038530048"
           },
           {
             "pick_no": 28,
@@ -8828,7 +8863,9 @@
             "draft_slot": 4,
             "player_id": "13305",
             "player": "Mike Washington (RB, LV)",
-            "picked_by": "464915162038530048"
+            "picked_by": "jwander",
+            "picked_by_team": "It’s Herbie Hancock",
+            "picked_by_user_id": "464915162038530048"
           },
           {
             "pick_no": 29,
@@ -8836,7 +8873,9 @@
             "draft_slot": 5,
             "player_id": "13302",
             "player": "Adam Randall (RB, BAL)",
-            "picked_by": "464915162038530048"
+            "picked_by": "jwander",
+            "picked_by_team": "It’s Herbie Hancock",
+            "picked_by_user_id": "464915162038530048"
           }
         ]
       },
@@ -9166,7 +9205,9 @@
             "draft_slot": 5,
             "player_id": "13294",
             "player": "Makai Lemon (WR, PHI)",
-            "picked_by": "471403228244733952"
+            "picked_by": "Logs24",
+            "picked_by_team": "A B CeeDee",
+            "picked_by_user_id": "471403228244733952"
           },
           {
             "pick_no": 17,
@@ -9174,7 +9215,9 @@
             "draft_slot": 5,
             "player_id": "13417",
             "player": "De'Zhaun Stribling (WR, SF)",
-            "picked_by": "471403228244733952"
+            "picked_by": "Logs24",
+            "picked_by_team": "A B CeeDee",
+            "picked_by_user_id": "471403228244733952"
           },
           {
             "pick_no": 27,
@@ -9182,7 +9225,9 @@
             "draft_slot": 3,
             "player_id": "8210",
             "player": "Chig Okonkwo (TE, WAS)",
-            "picked_by": "471403228244733952"
+            "picked_by": "Logs24",
+            "picked_by_team": "A B CeeDee",
+            "picked_by_user_id": "471403228244733952"
           }
         ]
       },
@@ -9490,7 +9535,9 @@
             "draft_slot": 11,
             "player_id": "13269",
             "player": "Fernando Mendoza (QB, LV)",
-            "picked_by": "471415197991432192"
+            "picked_by": "GarrettHol",
+            "picked_by_team": "Pol Hol",
+            "picked_by_user_id": "471415197991432192"
           },
           {
             "pick_no": 23,
@@ -9498,7 +9545,9 @@
             "draft_slot": 11,
             "player_id": "13268",
             "player": "Elijah Sarratt (WR, BAL)",
-            "picked_by": "471415197991432192"
+            "picked_by": "GarrettHol",
+            "picked_by_team": "Pol Hol",
+            "picked_by_user_id": "471415197991432192"
           }
         ]
       },
@@ -9805,7 +9854,9 @@
             "draft_slot": 2,
             "player_id": "13279",
             "player": "Carnell Tate (WR, TEN)",
-            "picked_by": "471415316501491712"
+            "picked_by": "TonsOfBuns",
+            "picked_by_team": "Puka Troopas",
+            "picked_by_user_id": "471415316501491712"
           },
           {
             "pick_no": 14,
@@ -9813,7 +9864,9 @@
             "draft_slot": 2,
             "player_id": "13345",
             "player": "Jonah Coleman (RB, DEN)",
-            "picked_by": "471415316501491712"
+            "picked_by": "TonsOfBuns",
+            "picked_by_team": "Puka Troopas",
+            "picked_by_user_id": "471415316501491712"
           },
           {
             "pick_no": 26,
@@ -9821,7 +9874,9 @@
             "draft_slot": 2,
             "player_id": "13293",
             "player": "Ja'Kobi Lane (WR, BAL)",
-            "picked_by": "471415316501491712"
+            "picked_by": "TonsOfBuns",
+            "picked_by_team": "Puka Troopas",
+            "picked_by_user_id": "471415316501491712"
           }
         ]
       },
@@ -10132,7 +10187,9 @@
             "draft_slot": 10,
             "player_id": "13288",
             "player": "Nicholas Singleton (RB, TEN)",
-            "picked_by": "471424563457028096"
+            "picked_by": "jchrz",
+            "picked_by_team": "White Ice",
+            "picked_by_user_id": "471424563457028096"
           },
           {
             "pick_no": 22,
@@ -10140,7 +10197,9 @@
             "draft_slot": 10,
             "player_id": "13317",
             "player": "Ted Hurst (WR, TB)",
-            "picked_by": "471424563457028096"
+            "picked_by": "jchrz",
+            "picked_by_team": "White Ice",
+            "picked_by_user_id": "471424563457028096"
           }
         ]
       },
@@ -10451,7 +10510,9 @@
             "draft_slot": 8,
             "player_id": "13276",
             "player": "Omar Cooper (WR, NYJ)",
-            "picked_by": "471451909446692864"
+            "picked_by": "andrewwelle",
+            "picked_by_team": "andrewwelle",
+            "picked_by_user_id": "471451909446692864"
           },
           {
             "pick_no": 20,
@@ -10459,7 +10520,9 @@
             "draft_slot": 8,
             "player_id": "13353",
             "player": "Chris Brazzell (WR, CAR)",
-            "picked_by": "471451909446692864"
+            "picked_by": "andrewwelle",
+            "picked_by_team": "andrewwelle",
+            "picked_by_user_id": "471451909446692864"
           }
         ]
       },
@@ -10780,7 +10843,9 @@
             "draft_slot": 6,
             "player_id": "13298",
             "player": "KC Concepcion (WR, CLE)",
-            "picked_by": "459751268567478272"
+            "picked_by": "lex11",
+            "picked_by_team": "I ❤️ Commish",
+            "picked_by_user_id": "459751268567478272"
           },
           {
             "pick_no": 18,
@@ -10788,7 +10853,9 @@
             "draft_slot": 6,
             "player_id": "13311",
             "player": "Chris Bell (WR, MIA)",
-            "picked_by": "459751268567478272"
+            "picked_by": "lex11",
+            "picked_by_team": "I ❤️ Commish",
+            "picked_by_user_id": "459751268567478272"
           },
           {
             "pick_no": 25,
@@ -10796,7 +10863,9 @@
             "draft_slot": 1,
             "player_id": "13275",
             "player": "Ty Simpson (QB, LAR)",
-            "picked_by": "459751268567478272"
+            "picked_by": "lex11",
+            "picked_by_team": "I ❤️ Commish",
+            "picked_by_user_id": "459751268567478272"
           }
         ]
       },
@@ -11105,7 +11174,9 @@
             "draft_slot": 7,
             "player_id": "13346",
             "player": "Denzel Boston (WR, CLE)",
-            "picked_by": "471457570825957376"
+            "picked_by": "johnwander",
+            "picked_by_team": "Back to the Future",
+            "picked_by_user_id": "471457570825957376"
           },
           {
             "pick_no": 19,
@@ -11113,7 +11184,9 @@
             "draft_slot": 7,
             "player_id": "13301",
             "player": "Antonio Williams (WR, WAS)",
-            "picked_by": "471457570825957376"
+            "picked_by": "johnwander",
+            "picked_by_team": "Back to the Future",
+            "picked_by_user_id": "471457570825957376"
           }
         ]
       },
@@ -11419,7 +11492,9 @@
             "draft_slot": 9,
             "player_id": "13330",
             "player": "Kenyon Sadiq (TE, NYJ)",
-            "picked_by": "471501409838166016"
+            "picked_by": "alexwelle",
+            "picked_by_team": "alexwelle",
+            "picked_by_user_id": "471501409838166016"
           },
           {
             "pick_no": 21,
@@ -11427,7 +11502,9 @@
             "draft_slot": 9,
             "player_id": "13285",
             "player": "Malachi Fields (WR, NYG)",
-            "picked_by": "471501409838166016"
+            "picked_by": "alexwelle",
+            "picked_by_team": "alexwelle",
+            "picked_by_user_id": "471501409838166016"
           }
         ]
       },
@@ -11757,7 +11834,9 @@
             "draft_slot": 3,
             "player_id": "13286",
             "player": "Jadarian Price (RB, SEA)",
-            "picked_by": "471717089472671744"
+            "picked_by": "NC79",
+            "picked_by_team": "Goin in Ra",
+            "picked_by_user_id": "471717089472671744"
           },
           {
             "pick_no": 15,
@@ -11765,7 +11844,9 @@
             "draft_slot": 3,
             "player_id": "13337",
             "player": "Emmett Johnson (RB, KC)",
-            "picked_by": "471717089472671744"
+            "picked_by": "NC79",
+            "picked_by_team": "Goin in Ra",
+            "picked_by_user_id": "471717089472671744"
           }
         ]
       },
@@ -12086,7 +12167,9 @@
             "draft_slot": 12,
             "player_id": "13320",
             "player": "Zachariah Branch (WR, ATL)",
-            "picked_by": "471724614532198400"
+            "picked_by": "amoritko",
+            "picked_by_team": "MOJO",
+            "picked_by_user_id": "471724614532198400"
           }
         ]
       },
@@ -12415,7 +12498,9 @@
             "draft_slot": 1,
             "player_id": "13287",
             "player": "Jeremiyah Love (RB, ARI)",
-            "picked_by": "471744678006353920"
+            "picked_by": "gullickson",
+            "picked_by_team": "gullickson",
+            "picked_by_user_id": "471744678006353920"
           },
           {
             "pick_no": 13,
@@ -12423,7 +12508,9 @@
             "draft_slot": 1,
             "player_id": "13274",
             "player": "Germie Bernard (WR, PIT)",
-            "picked_by": "471744678006353920"
+            "picked_by": "gullickson",
+            "picked_by_team": "gullickson",
+            "picked_by_user_id": "471744678006353920"
           }
         ]
       }
