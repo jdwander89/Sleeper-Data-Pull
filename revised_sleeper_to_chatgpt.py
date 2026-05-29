@@ -1,7 +1,15 @@
 """
-Sleeper → ChatGPT Optimized JSON Exporter
+Sleeper → ChatGPT Full Data Exporter
 
-Produces a clean, analysis-first JSON file for ChatGPT.
+Pulls Sleeper league data and writes ChatGPT-friendly JSON files.
+
+Outputs:
+1. sleeper_chatgpt.json
+   - Main full export.
+
+2. sleeper_chatgpt_team_roster_and_picks_summary.json
+   - Compact derived file for ChatGPT questions like:
+     "List each team, its roster, and all current/future draft picks."
 
 Default League ID:
 1312581067286282240
@@ -12,8 +20,9 @@ import json
 import os
 import time
 from collections import defaultdict
+from copy import deepcopy
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 
@@ -22,628 +31,930 @@ DEFAULT_LEAGUE_ID = "1312581067286282240"
 BASE_URL = "https://api.sleeper.app/v1"
 
 
-REMOVED_KEYS = {
-    "avatar",
-    "birth_date",
-    "birth_city",
-    "birth_state",
-    "birth_country",
-    "high_school",
-    "hometown",
-    "height",
-    "weight",
-    "bmi",
-    "hand_size",
-    "arm_length",
-    "wingspan",
-    "forty_time",
-    "forty",
-    "shuttle",
-    "three_cone",
-    "cone",
-    "vertical",
-    "vertical_jump",
-    "broad_jump",
-    "bench_press",
-    "bench_reps",
-    "player_image",
-    "image",
-    "headshot",
-    "taxi",
-    "taxi_slots",
-    "taxi_years",
-    "taxi_allow_vets",
-    "taxi_deadline",
-}
+# ==========================================================
+# HTTP HELPERS
+# ==========================================================
+
+def sleeper_get(path: str, *, retries: int = 3, sleep_seconds: float = 0.4) -> Any:
+    url = f"{BASE_URL}{path}"
+
+    last_error = None
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.get(url, timeout=30)
+            if response.status_code == 404:
+                return None
+            response.raise_for_status()
+            return response.json()
+        except Exception as exc:
+            last_error = exc
+            if attempt < retries:
+                time.sleep(sleep_seconds * attempt)
+
+    raise RuntimeError(f"Failed GET {url}: {last_error}")
 
 
-def utc_now() -> str:
+def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
-def sleeper_get(endpoint: str, default: Any = None, pause_seconds: float = 0.05) -> Any:
-    url = f"{BASE_URL}/{endpoint.lstrip('/')}"
+def safe_int(value: Any, default: Optional[int] = None) -> Optional[int]:
     try:
-        response = requests.get(url, timeout=30)
-        if response.status_code == 404:
-            return default
-        response.raise_for_status()
-        if pause_seconds:
-            time.sleep(pause_seconds)
-        return response.json()
-    except requests.RequestException as exc:
-        return {
-            "_error": True,
-            "endpoint": endpoint,
-            "message": str(exc),
-        }
+        return int(value)
+    except (TypeError, ValueError):
+        return default
 
 
-def sanitize(value: Any) -> Any:
-    if isinstance(value, dict):
-        clean = {}
-        for key, item in value.items():
-            if key in REMOVED_KEYS or key.startswith("taxi"):
-                continue
-            clean[key] = sanitize(item)
-        return clean
-
-    if isinstance(value, list):
-        return [sanitize(item) for item in value]
-
-    return value
+def write_json(path: str, data: Any) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=False)
 
 
-def parse_weeks(value: Optional[str]) -> Optional[List[int]]:
-    if not value:
-        return None
+# ==========================================================
+# PLAYER HELPERS
+# ==========================================================
 
-    weeks = []
-
-    for part in value.split(","):
-        part = part.strip()
-        if "-" in part:
-            start, end = part.split("-", 1)
-            weeks.extend(range(int(start), int(end) + 1))
-        else:
-            weeks.append(int(part))
-
-    return sorted(set(weeks))
-
-
-def player_record(player_id: Optional[str], players: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-    if not player_id:
-        return None
-
-    p = players.get(str(player_id), {}) or {}
+def normalize_player(player_id: str, raw: Dict[str, Any]) -> Dict[str, Any]:
+    first = raw.get("first_name") or ""
+    last = raw.get("last_name") or ""
+    full_name = raw.get("full_name") or f"{first} {last}".strip()
 
     return {
         "player_id": str(player_id),
-        "name": p.get("full_name"),
-        "first_name": p.get("first_name"),
-        "last_name": p.get("last_name"),
-        "search_full_name": p.get("search_full_name"),
-        "position": p.get("position"),
-        "fantasy_positions": p.get("fantasy_positions"),
-        "team": p.get("team"),
-        "active": p.get("active"),
-        "status": p.get("status"),
-        "college": p.get("college"),
-        "age": p.get("age"),
-        "years_exp": p.get("years_exp"),
-        "draft": {
-            "year": p.get("draft_year"),
-            "round": p.get("draft_round"),
-            "pick": p.get("draft_pick"),
-            "team": p.get("draft_team"),
-        },
-        "injury": {
-            "status": p.get("injury_status"),
-            "notes": p.get("injury_notes"),
-            "body_part": p.get("injury_body_part"),
-            "start_date": p.get("injury_start_date"),
-        },
-        "depth_chart": {
-            "position": p.get("depth_chart_position"),
-            "order": p.get("depth_chart_order"),
-        },
-        "fantasy_metadata": {
-            "search_rank": p.get("search_rank"),
-            "practice_participation": p.get("practice_participation"),
-            "practice_description": p.get("practice_description"),
-        },
-        "jersey_number": p.get("number"),
+        "full_name": full_name or str(player_id),
+        "first_name": raw.get("first_name"),
+        "last_name": raw.get("last_name"),
+        "position": raw.get("position"),
+        "team": raw.get("team"),
+        "status": raw.get("status"),
+        "injury_status": raw.get("injury_status"),
+        "years_exp": raw.get("years_exp"),
+        "age": raw.get("age"),
+        "fantasy_positions": raw.get("fantasy_positions"),
+        "depth_chart_position": raw.get("depth_chart_position"),
+        "depth_chart_order": raw.get("depth_chart_order"),
+        "college": raw.get("college"),
+        "search_rank": raw.get("search_rank"),
     }
 
 
-def compact_player_ids(player_ids: Optional[List[str]]) -> List[str]:
-    return [str(pid) for pid in (player_ids or []) if pid]
+def player_display_name(player_id: Any, players_lookup: Dict[str, Dict[str, Any]]) -> str:
+    if player_id is None:
+        return "Unknown"
+
+    player_id = str(player_id)
+    p = players_lookup.get(player_id, {})
+
+    name = p.get("full_name")
+    if not name:
+        first = p.get("first_name") or ""
+        last = p.get("last_name") or ""
+        name = f"{first} {last}".strip()
+
+    if not name:
+        name = player_id
+
+    details = []
+    if p.get("position"):
+        details.append(str(p["position"]))
+    if p.get("team"):
+        details.append(str(p["team"]))
+
+    if details:
+        return f"{name} ({', '.join(details)})"
+
+    return name
 
 
-def build_players_lookup(player_ids: List[str], players: Dict[str, Any]) -> Dict[str, Any]:
-    lookup = {}
-    for pid in sorted(set(compact_player_ids(player_ids))):
-        record = player_record(pid, players)
-        if record:
-            lookup[pid] = record
-    return lookup
+def make_players_lookup(players: Dict[str, Any], include_all_players: bool) -> Dict[str, Dict[str, Any]]:
+    if not include_all_players:
+        return {}
 
-
-def group_player_ids_by_position(player_ids: List[str], players: Dict[str, Any]) -> Dict[str, List[str]]:
-    grouped = defaultdict(list)
-
-    for pid in compact_player_ids(player_ids):
-        position = players.get(pid, {}).get("position") or "UNKNOWN"
-        grouped[position].append(pid)
-
-    return dict(sorted(grouped.items()))
-
-
-def get_primary_position(player_id: str, players: Dict[str, Any]) -> str:
-    return players.get(str(player_id), {}).get("position") or "UNKNOWN"
-
-
-def build_user_maps(users: List[Dict[str, Any]]) -> Dict[str, Any]:
-    by_user_id = {}
-
-    for user in users:
-        user_id = user.get("user_id")
-        if not user_id:
+    output = {}
+    for pid, raw in players.items():
+        if not isinstance(raw, dict):
             continue
-
-        metadata = sanitize(user.get("metadata", {}))
-
-        by_user_id[user_id] = {
-            "user_id": user_id,
-            "username": user.get("username"),
-            "display_name": user.get("display_name"),
-            "is_bot": user.get("is_bot"),
-            "metadata": metadata,
-            "team_name": (
-                metadata.get("team_name")
-                or metadata.get("nickname")
-                or user.get("display_name")
-                or user.get("username")
-                or "Unknown Team"
-            ),
-        }
-
-    return {
-        "by_user_id": by_user_id,
-        "display_name_by_user_id": {
-            uid: u.get("display_name") or u.get("username") or uid
-            for uid, u in by_user_id.items()
-        },
-        "team_name_by_user_id": {
-            uid: u.get("team_name") or u.get("display_name") or uid
-            for uid, u in by_user_id.items()
-        },
-    }
+        output[str(pid)] = normalize_player(str(pid), raw)
+    return output
 
 
-def build_roster_maps(rosters: List[Dict[str, Any]], user_maps: Dict[str, Any]) -> Dict[str, Any]:
-    by_roster_id = {}
-    roster_id_by_owner_id = {}
-
-    for roster in rosters:
-        roster_id = roster.get("roster_id")
-        owner_id = roster.get("owner_id")
-
-        if roster_id is None:
+def build_limited_players_lookup(
+    player_ids_needed: List[Any],
+    all_players: Dict[str, Any],
+) -> Dict[str, Dict[str, Any]]:
+    output = {}
+    for pid in player_ids_needed:
+        if pid is None:
             continue
-
-        by_roster_id[str(roster_id)] = {
-            "roster_id": roster_id,
-            "owner_id": owner_id,
-            "owner_name": user_maps["display_name_by_user_id"].get(owner_id, "Unknown"),
-            "team_name": user_maps["team_name_by_user_id"].get(owner_id, "Unknown Team"),
-            "settings": sanitize(roster.get("settings", {})),
-        }
-
-        if owner_id:
-            roster_id_by_owner_id[owner_id] = roster_id
-
-    return {
-        "by_roster_id": by_roster_id,
-        "roster_id_by_owner_id": roster_id_by_owner_id,
-    }
-
-
-def roster_label(roster_id: Any, roster_maps: Dict[str, Any]) -> Dict[str, Any]:
-    roster = roster_maps["by_roster_id"].get(str(roster_id), {})
-    return {
-        "roster_id": roster_id,
-        "team_name": roster.get("team_name", "Unknown Team"),
-        "owner_name": roster.get("owner_name", "Unknown"),
-    }
+        pid = str(pid)
+        raw = all_players.get(pid)
+        if isinstance(raw, dict):
+            output[pid] = normalize_player(pid, raw)
+        else:
+            output[pid] = {
+                "player_id": pid,
+                "full_name": pid,
+                "first_name": None,
+                "last_name": None,
+                "position": None,
+                "team": None,
+                "status": None,
+                "injury_status": None,
+                "years_exp": None,
+                "age": None,
+                "fantasy_positions": None,
+                "depth_chart_position": None,
+                "depth_chart_order": None,
+                "college": None,
+                "search_rank": None,
+            }
+    return output
 
 
-def summarize_league(league: Dict[str, Any], nfl_state: Dict[str, Any]) -> Dict[str, Any]:
-    settings = sanitize(league.get("settings", {}))
+# ==========================================================
+# USER / TEAM HELPERS
+# ==========================================================
 
-    return {
-        "league_id": league.get("league_id"),
-        "name": league.get("name"),
-        "season": league.get("season"),
-        "season_type": league.get("season_type"),
-        "sport": league.get("sport"),
-        "status": league.get("status"),
-        "league_type": league.get("type"),
-        "total_rosters": league.get("total_rosters"),
-        "previous_league_id": league.get("previous_league_id"),
-        "draft_id": league.get("draft_id"),
-        "current_nfl_state": sanitize(nfl_state),
-        "roster_positions": league.get("roster_positions", []),
-        "scoring_settings": sanitize(league.get("scoring_settings", {})),
-        "settings_summary": {
-            "teams": settings.get("num_teams"),
-            "playoff_teams": settings.get("playoff_teams"),
-            "playoff_rounds": settings.get("playoff_rounds"),
-            "trade_deadline": settings.get("trade_deadline"),
-            "waiver_type": settings.get("waiver_type"),
-            "waiver_budget": settings.get("waiver_budget"),
-            "reserve_slots": settings.get("reserve_slots"),
-            "bench_slots": settings.get("bench_slots"),
-            "max_keepers": settings.get("max_keepers"),
-            "best_ball": settings.get("best_ball"),
-            "median_scoring": settings.get("median_scoring"),
-            "daily_waivers": settings.get("daily_waivers"),
-        },
-        "all_settings": settings,
-        "metadata": sanitize(league.get("metadata", {})),
-    }
-
-
-def summarize_teams(rosters, players, roster_maps):
-    teams = []
-
-    for roster in rosters:
-        roster_id = roster.get("roster_id")
-        settings = sanitize(roster.get("settings", {}))
-        label = roster_label(roster_id, roster_maps)
-
-        all_player_ids = compact_player_ids(roster.get("players", []))
-        starter_ids = compact_player_ids(roster.get("starters", []))
-        reserve_ids = compact_player_ids(roster.get("reserve", []))
-
-        position_counts = defaultdict(int)
-        starter_position_counts = defaultdict(int)
-        ages_by_position = defaultdict(list)
-
-        for pid in all_player_ids:
-            pos = get_primary_position(pid, players)
-            position_counts[pos] += 1
-            age = players.get(pid, {}).get("age")
-            if isinstance(age, (int, float)):
-                ages_by_position[pos].append(age)
-
-        for pid in starter_ids:
-            starter_position_counts[get_primary_position(pid, players)] += 1
-
-        avg_age_by_position = {
-            pos: round(sum(ages) / len(ages), 2)
-            for pos, ages in ages_by_position.items()
-            if ages
-        }
-
-        teams.append({
-            "roster_id": roster_id,
-            "team_name": label["team_name"],
-            "owner_name": label["owner_name"],
-            "owner_id": roster.get("owner_id"),
-            "record": {
-                "wins": settings.get("wins", 0),
-                "losses": settings.get("losses", 0),
-                "ties": settings.get("ties", 0),
-                "points_for": settings.get("fpts", 0),
-                "points_for_decimal": settings.get("fpts_decimal", 0),
-                "points_against": settings.get("fpts_against", 0),
-                "points_against_decimal": settings.get("fpts_against_decimal", 0),
-                "potential_points": settings.get("ppts"),
-                "potential_points_decimal": settings.get("ppts_decimal"),
-            },
-            "waivers": {
-                "waiver_position": settings.get("waiver_position"),
-                "waiver_budget_used": settings.get("waiver_budget_used"),
-            },
-            "team_summary": {
-                "total_players": len(all_player_ids),
-                "starter_count": len(starter_ids),
-                "reserve_count": len(reserve_ids),
-                "position_counts": dict(sorted(position_counts.items())),
-                "starter_position_counts": dict(sorted(starter_position_counts.items())),
-                "average_age_by_position": avg_age_by_position,
-            },
-            "players_by_position": group_player_ids_by_position(all_player_ids, players),
-            "starters": starter_ids,
-            "reserve": reserve_ids,
-            "settings": settings,
-        })
-
-    return sorted(teams, key=lambda t: t["roster_id"] or 0)
-
-
-def summarize_matchups(matchups_by_week, roster_maps):
-    weekly_results = {}
-
-    for week, matchups in matchups_by_week.items():
-        grouped = defaultdict(list)
-
-        for matchup in matchups:
-            matchup_id = matchup.get("matchup_id")
-            key = str(matchup_id) if matchup_id is not None else "no_matchup_id"
-            roster_id = matchup.get("roster_id")
-            label = roster_label(roster_id, roster_maps)
-
-            grouped[key].append({
-                "roster_id": roster_id,
-                "team_name": label["team_name"],
-                "owner_name": label["owner_name"],
-                "points": matchup.get("points"),
-                "custom_points": matchup.get("custom_points"),
-                "starters": compact_player_ids(matchup.get("starters", [])),
-                "players": compact_player_ids(matchup.get("players", [])),
-                "starters_points": matchup.get("starters_points", []),
-                "players_points": matchup.get("players_points", {}),
-            })
-
-        weekly_results[str(week)] = dict(grouped)
-
-    return weekly_results
-
-
-def summarize_transactions(transactions_by_week, roster_maps):
+def build_users_map(users: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
     output = {}
 
-    for week, transactions in transactions_by_week.items():
-        clean = []
+    for u in users or []:
+        user_id = str(u.get("user_id"))
+        metadata = u.get("metadata") or {}
+        display_name = u.get("display_name") or u.get("username") or user_id
+        team_name = metadata.get("team_name") or display_name
 
-        for tx in transactions:
-            adds = tx.get("adds") or {}
-            drops = tx.get("drops") or {}
-
-            clean.append({
-                "transaction_id": tx.get("transaction_id"),
-                "type": tx.get("type"),
-                "status": tx.get("status"),
-                "created": tx.get("created"),
-                "creator": tx.get("creator"),
-                "roster_ids": tx.get("roster_ids", []),
-                "teams": [
-                    roster_label(rid, roster_maps)
-                    for rid in tx.get("roster_ids", [])
-                ],
-                "adds": [
-                    {
-                        "player_id": str(pid),
-                        "to": roster_label(rid, roster_maps),
-                    }
-                    for pid, rid in adds.items()
-                ],
-                "drops": [
-                    {
-                        "player_id": str(pid),
-                        "from": roster_label(rid, roster_maps),
-                    }
-                    for pid, rid in drops.items()
-                ],
-                "draft_picks": sanitize(tx.get("draft_picks", [])),
-                "waiver_budget": sanitize(tx.get("waiver_budget", [])),
-                "settings": sanitize(tx.get("settings", {})),
-                "metadata": sanitize(tx.get("metadata", {})),
-                "consenter_ids": tx.get("consenter_ids", []),
-            })
-
-        output[str(week)] = clean
+        output[user_id] = {
+            "user_id": user_id,
+            "username": u.get("username"),
+            "display_name": display_name,
+            "is_bot": u.get("is_bot"),
+            "metadata": metadata,
+            "team_name": team_name,
+        }
 
     return output
 
 
-def summarize_drafts(drafts, draft_details, draft_picks, draft_traded_picks, roster_maps, user_maps):
-    draft_room = {
-        "drafts": [],
+def get_owner_name(owner_id: Any, users_map: Dict[str, Dict[str, Any]]) -> str:
+    if owner_id is None:
+        return "Unknown"
+    owner_id = str(owner_id)
+    return users_map.get(owner_id, {}).get("display_name") or owner_id
+
+
+def get_team_name(owner_id: Any, users_map: Dict[str, Dict[str, Any]]) -> str:
+    if owner_id is None:
+        return "Unknown"
+    owner_id = str(owner_id)
+    user = users_map.get(owner_id, {})
+    return user.get("team_name") or user.get("display_name") or owner_id
+
+
+def build_team_object(
+    roster: Dict[str, Any],
+    users_map: Dict[str, Dict[str, Any]],
+    players_lookup: Dict[str, Dict[str, Any]],
+) -> Dict[str, Any]:
+    owner_id = roster.get("owner_id")
+    roster_id = roster.get("roster_id")
+    settings = roster.get("settings") or {}
+
+    players = [str(p) for p in roster.get("players") or []]
+    starters = [str(p) for p in roster.get("starters") or []]
+    reserve = [str(p) for p in roster.get("reserve") or []]
+
+    players_by_position = defaultdict(list)
+    position_counts = defaultdict(int)
+
+    for pid in players:
+        p = players_lookup.get(pid, {})
+        pos = p.get("position") or "UNKNOWN"
+        players_by_position[pos].append(pid)
+        position_counts[pos] += 1
+
+    starter_position_counts = defaultdict(int)
+    for pid in starters:
+        p = players_lookup.get(pid, {})
+        pos = p.get("position") or "UNKNOWN"
+        starter_position_counts[pos] += 1
+
+    ages_by_position = defaultdict(list)
+    for pid in players:
+        p = players_lookup.get(pid, {})
+        pos = p.get("position") or "UNKNOWN"
+        age = p.get("age")
+        if isinstance(age, (int, float)):
+            ages_by_position[pos].append(age)
+
+    average_age_by_position = {}
+    for pos, ages in ages_by_position.items():
+        if ages:
+            average_age_by_position[pos] = round(sum(ages) / len(ages), 2)
+
+    return {
+        "roster_id": roster_id,
+        "team_name": get_team_name(owner_id, users_map),
+        "owner_name": get_owner_name(owner_id, users_map),
+        "owner_id": str(owner_id) if owner_id is not None else None,
+        "record": {
+            "wins": settings.get("wins", 0),
+            "losses": settings.get("losses", 0),
+            "ties": settings.get("ties", 0),
+            "points_for": settings.get("fpts", 0),
+            "points_for_decimal": settings.get("fpts_decimal", 0),
+            "points_against": settings.get("fpts_against", 0),
+            "points_against_decimal": settings.get("fpts_against_decimal", 0),
+            "potential_points": settings.get("ppts"),
+            "potential_points_decimal": settings.get("ppts_decimal"),
+        },
+        "waivers": {
+            "waiver_position": settings.get("waiver_position"),
+            "waiver_budget_used": settings.get("waiver_budget_used"),
+        },
+        "team_summary": {
+            "total_players": len(players),
+            "starter_count": len(starters),
+            "reserve_count": len(reserve),
+            "position_counts": dict(sorted(position_counts.items())),
+            "starter_position_counts": dict(sorted(starter_position_counts.items())),
+            "average_age_by_position": dict(sorted(average_age_by_position.items())),
+        },
+        "players_by_position": {
+            pos: sorted(pids, key=lambda x: player_display_name(x, players_lookup))
+            for pos, pids in sorted(players_by_position.items())
+        },
+        "starters": starters,
+        "reserve": reserve,
+        "settings": settings,
     }
 
-    for draft in drafts:
-        draft_id = draft.get("draft_id")
-        details = sanitize(draft_details.get(draft_id, draft))
-        picks = draft_picks.get(draft_id, [])
-        traded = sanitize(draft_traded_picks.get(draft_id, []))
 
-        rounds = defaultdict(list)
+def team_ref(roster_id: Any, teams_by_roster_id: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
+    roster_id_str = str(roster_id)
+    t = teams_by_roster_id.get(roster_id_str, {})
+    return {
+        "roster_id": safe_int(roster_id),
+        "team_name": t.get("team_name") or f"Roster {roster_id}",
+        "owner_name": t.get("owner_name"),
+    }
 
-        for pick in picks:
-            roster_id = pick.get("roster_id")
-            picked_by = pick.get("picked_by")
 
-            rounds[str(pick.get("round"))].append({
-                "pick_no": pick.get("pick_no"),
-                "round": pick.get("round"),
-                "draft_slot": pick.get("draft_slot"),
-                "player_id": str(pick.get("player_id")) if pick.get("player_id") else None,
-                "roster": roster_label(roster_id, roster_maps),
-                "picked_by_user_id": picked_by,
-                "picked_by_name": user_maps["display_name_by_user_id"].get(picked_by, picked_by),
-                "metadata": sanitize(pick.get("metadata", {})),
-                "is_keeper": pick.get("is_keeper"),
-                "picked_at": pick.get("picked_at"),
+# ==========================================================
+# DRAFT HELPERS
+# ==========================================================
+
+def normalize_draft_pick(
+    pick: Dict[str, Any],
+    teams_by_roster_id: Dict[str, Dict[str, Any]],
+) -> Dict[str, Any]:
+    metadata = pick.get("metadata") or {}
+    roster_id = pick.get("roster_id")
+
+    return {
+        "pick_no": pick.get("pick_no"),
+        "round": pick.get("round"),
+        "draft_slot": pick.get("draft_slot"),
+        "player_id": str(pick.get("player_id")) if pick.get("player_id") is not None else None,
+        "roster": team_ref(roster_id, teams_by_roster_id),
+        "picked_by_user_id": str(pick.get("picked_by")) if pick.get("picked_by") is not None else None,
+        "picked_by_name": pick.get("picked_by"),
+        "metadata": {
+            "first_name": metadata.get("first_name"),
+            "last_name": metadata.get("last_name"),
+            "position": metadata.get("position"),
+            "team": metadata.get("team"),
+            "status": metadata.get("status"),
+            "injury_status": metadata.get("injury_status"),
+            "years_exp": metadata.get("years_exp"),
+            "number": metadata.get("number"),
+            "player_id": metadata.get("player_id"),
+            "sport": metadata.get("sport"),
+            "news_updated": metadata.get("news_updated"),
+            "team_abbr": metadata.get("team_abbr"),
+            "team_changed_at": metadata.get("team_changed_at"),
+        },
+        "is_keeper": pick.get("is_keeper"),
+        "picked_at": pick.get("picked_at"),
+    }
+
+
+def group_picks_by_round(
+    picks: List[Dict[str, Any]],
+    teams_by_roster_id: Dict[str, Dict[str, Any]],
+) -> Dict[str, List[Dict[str, Any]]]:
+    rounds = defaultdict(list)
+
+    for pick in picks or []:
+        round_no = str(pick.get("round"))
+        rounds[round_no].append(normalize_draft_pick(pick, teams_by_roster_id))
+
+    for round_no in rounds:
+        rounds[round_no] = sorted(
+            rounds[round_no],
+            key=lambda p: safe_int(p.get("pick_no"), 0) or 0,
+        )
+
+    return dict(sorted(rounds.items(), key=lambda kv: safe_int(kv[0], 0) or 0))
+
+
+def normalize_draft(
+    draft: Dict[str, Any],
+    picks: List[Dict[str, Any]],
+    traded_picks: List[Dict[str, Any]],
+    teams_by_roster_id: Dict[str, Dict[str, Any]],
+) -> Dict[str, Any]:
+    return {
+        "draft_id": draft.get("draft_id"),
+        "season": draft.get("season"),
+        "status": draft.get("status"),
+        "type": draft.get("type"),
+        "sport": draft.get("sport"),
+        "start_time": draft.get("start_time"),
+        "created": draft.get("created"),
+        "last_picked": draft.get("last_picked"),
+        "settings": draft.get("settings"),
+        "metadata": draft.get("metadata"),
+        "draft_order": draft.get("draft_order"),
+        "slot_to_roster_id": draft.get("slot_to_roster_id"),
+        "rounds": group_picks_by_round(picks, teams_by_roster_id),
+        "traded_picks": traded_picks or [],
+    }
+
+
+# ==========================================================
+# MATCHUP / TRANSACTION HELPERS
+# ==========================================================
+
+def normalize_matchup(
+    matchup: Dict[str, Any],
+    teams_by_roster_id: Dict[str, Dict[str, Any]],
+) -> Dict[str, Any]:
+    roster_id = matchup.get("roster_id")
+    return {
+        "roster": team_ref(roster_id, teams_by_roster_id),
+        "matchup_id": matchup.get("matchup_id"),
+        "points": matchup.get("points"),
+        "custom_points": matchup.get("custom_points"),
+        "players": [str(p) for p in matchup.get("players") or []],
+        "starters": [str(p) for p in matchup.get("starters") or []],
+        "players_points": matchup.get("players_points") or {},
+        "starters_points": matchup.get("starters_points") or {},
+    }
+
+
+def normalize_transaction(
+    tx: Dict[str, Any],
+    teams_by_roster_id: Dict[str, Dict[str, Any]],
+) -> Dict[str, Any]:
+    roster_ids = tx.get("roster_ids") or []
+
+    def normalize_player_move_map(move_map: Optional[Dict[str, Any]], direction: str) -> List[Dict[str, Any]]:
+        output = []
+        if not move_map:
+            return output
+
+        for player_id, roster_id in move_map.items():
+            output.append({
+                "player_id": str(player_id),
+                direction: team_ref(roster_id, teams_by_roster_id),
             })
 
-        sorted_rounds = {
-            round_no: sorted(items, key=lambda x: x.get("pick_no") or 0)
-            for round_no, items in sorted(rounds.items(), key=lambda x: int(x[0]) if x[0].isdigit() else 999)
-        }
+        return output
 
-        draft_room["drafts"].append({
-            "draft_id": draft_id,
-            "season": details.get("season"),
-            "status": details.get("status"),
-            "type": details.get("type"),
-            "sport": details.get("sport"),
-            "start_time": details.get("start_time"),
-            "created": details.get("created"),
-            "last_picked": details.get("last_picked"),
-            "settings": sanitize(details.get("settings", {})),
-            "metadata": sanitize(details.get("metadata", {})),
-            "draft_order": details.get("draft_order", {}),
-            "slot_to_roster_id": details.get("slot_to_roster_id", {}),
-            "rounds": sorted_rounds,
-            "traded_picks": traded,
-        })
-
-    return draft_room
-
-
-def summarize_traded_future_picks(traded_picks, roster_maps):
-    by_current_owner = defaultdict(list)
-
-    for pick in traded_picks:
-        current_owner_roster_id = pick.get("owner_id")
-        original_owner_roster_id = pick.get("roster_id")
-        previous_owner_roster_id = pick.get("previous_owner_id")
-        current = roster_label(current_owner_roster_id, roster_maps)
-
-        by_current_owner[current["team_name"]].append({
-            "season": pick.get("season"),
-            "round": pick.get("round"),
-            "current_owner": current,
-            "original_owner": roster_label(original_owner_roster_id, roster_maps),
-            "previous_owner": roster_label(previous_owner_roster_id, roster_maps),
-        })
-
-    return dict(by_current_owner)
-
-
-def summarize_trending(trending):
     return {
-        trend_type: [
-            {
-                "player_id": str(row.get("player_id")),
-                "count": row.get("count"),
-            }
-            for row in rows
-        ]
-        for trend_type, rows in trending.items()
+        "transaction_id": tx.get("transaction_id"),
+        "type": tx.get("type"),
+        "status": tx.get("status"),
+        "created": tx.get("created"),
+        "creator": str(tx.get("creator")) if tx.get("creator") is not None else None,
+        "roster_ids": roster_ids,
+        "teams": [team_ref(rid, teams_by_roster_id) for rid in roster_ids],
+        "adds": normalize_player_move_map(tx.get("adds"), "to"),
+        "drops": normalize_player_move_map(tx.get("drops"), "from"),
+        "draft_picks": tx.get("draft_picks") or [],
+        "waiver_budget": tx.get("waiver_budget") or [],
+        "settings": tx.get("settings"),
+        "metadata": tx.get("metadata"),
+        "consenter_ids": tx.get("consenter_ids"),
     }
 
 
-def collect_referenced_player_ids(
-    rosters,
-    matchups_by_week,
-    transactions_by_week,
-    drafts_picks,
-    trending,
-) -> List[str]:
-    ids = set()
+# ==========================================================
+# COMPACT ROSTER + PICKS SUMMARY HELPERS
+# ==========================================================
 
-    for roster in rosters:
-        ids.update(compact_player_ids(roster.get("players", [])))
-        ids.update(compact_player_ids(roster.get("starters", [])))
-        ids.update(compact_player_ids(roster.get("reserve", [])))
+def get_team_key_maps(teams: List[Dict[str, Any]]) -> Tuple[Dict[str, Dict[str, Any]], Dict[str, Dict[str, Any]]]:
+    by_roster_id = {}
+    by_team_name = {}
 
-    for matchups in matchups_by_week.values():
-        for matchup in matchups:
-            ids.update(compact_player_ids(matchup.get("players", [])))
-            ids.update(compact_player_ids(matchup.get("starters", [])))
-            ids.update(str(pid) for pid in (matchup.get("players_points") or {}).keys())
+    for team in teams or []:
+        roster_id = team.get("roster_id")
+        if roster_id is None:
+            continue
 
-    for transactions in transactions_by_week.values():
-        for tx in transactions:
-            ids.update(str(pid) for pid in (tx.get("adds") or {}).keys())
-            ids.update(str(pid) for pid in (tx.get("drops") or {}).keys())
+        roster_id_str = str(roster_id)
+        by_roster_id[roster_id_str] = {
+            "roster_id": roster_id,
+            "team_name": team.get("team_name"),
+            "owner_name": team.get("owner_name"),
+            "owner_id": team.get("owner_id"),
+        }
 
-    for picks in drafts_picks.values():
-        for pick in picks:
-            if pick.get("player_id"):
-                ids.add(str(pick.get("player_id")))
+        if team.get("team_name"):
+            by_team_name[team["team_name"]] = by_roster_id[roster_id_str]
 
-    for rows in trending.values():
-        for row in rows:
-            if row.get("player_id"):
-                ids.add(str(row.get("player_id")))
-
-    return sorted(ids)
+    return by_roster_id, by_team_name
 
 
-def endpoint_ok(value: Any) -> bool:
-    return not (isinstance(value, dict) and value.get("_error"))
+def build_roster_summary_by_team(
+    teams: List[Dict[str, Any]],
+    players_lookup: Dict[str, Dict[str, Any]],
+) -> Dict[str, Dict[str, Any]]:
+    output = {}
+
+    for team in teams or []:
+        roster_id = team.get("roster_id")
+        players_by_position = team.get("players_by_position") or {}
+
+        roster = {}
+        for position in sorted(players_by_position.keys()):
+            roster[position] = [
+                player_display_name(pid, players_lookup)
+                for pid in players_by_position.get(position, [])
+            ]
+
+        starters = [
+            player_display_name(pid, players_lookup)
+            for pid in team.get("starters", [])
+        ]
+
+        reserve = [
+            player_display_name(pid, players_lookup)
+            for pid in team.get("reserve", [])
+        ]
+
+        output[str(roster_id)] = {
+            "roster_id": roster_id,
+            "team_name": team.get("team_name"),
+            "owner_name": team.get("owner_name"),
+            "summary": deepcopy(team.get("team_summary", {})),
+            "roster_by_position": roster,
+            "starters": starters,
+            "reserve": reserve,
+        }
+
+    return output
 
 
-def fetch_all_sleeper_data(
-    league_id: str,
-    weeks: Optional[List[int]],
-    include_trending: bool,
-    trending_hours: int,
-    trending_limit: int,
+def describe_pick(
+    pick: Dict[str, Any],
+    by_roster_id: Dict[str, Dict[str, Any]],
 ) -> Dict[str, Any]:
+    """
+    Sleeper traded pick fields:
+    - roster_id = original roster/team
+    - owner_id = current owner roster_id
+    - previous_owner_id = previous owner roster_id
+    """
+    season = str(pick.get("season"))
+    round_no = safe_int(pick.get("round"))
 
-    nfl_state = sleeper_get("state/nfl", default={})
-    league = sleeper_get(f"league/{league_id}", default={})
-    users = sleeper_get(f"league/{league_id}/users", default=[])
-    rosters = sleeper_get(f"league/{league_id}/rosters", default=[])
-    players = sleeper_get("players/nfl", default={})
+    original_roster_id = safe_int(pick.get("roster_id"))
+    current_owner_roster_id = safe_int(pick.get("owner_id"))
+    previous_owner_roster_id = safe_int(pick.get("previous_owner_id"))
 
-    season = league.get("season") or nfl_state.get("season")
-    current_week = nfl_state.get("week") or nfl_state.get("display_week")
+    original_team = by_roster_id.get(str(original_roster_id), {})
+    current_owner = by_roster_id.get(str(current_owner_roster_id), {})
+    previous_owner = by_roster_id.get(str(previous_owner_roster_id), {})
 
-    if weeks is None:
-        weeks = list(range(1, int(current_week) + 1)) if current_week else list(range(1, 18))
+    original_team_name = original_team.get("team_name") or f"Roster {original_roster_id}"
+    current_owner_name = current_owner.get("team_name") or f"Roster {current_owner_roster_id}"
+    previous_owner_name = previous_owner.get("team_name") or f"Roster {previous_owner_roster_id}"
 
-    user_maps = build_user_maps(users)
-    roster_maps = build_roster_maps(rosters, user_maps)
+    return {
+        "season": season,
+        "round": round_no,
+        "label": f"{season} Round {round_no} from {original_team_name}",
+        "original_roster_id": original_roster_id,
+        "original_team": original_team_name,
+        "current_owner_roster_id": current_owner_roster_id,
+        "current_owner_team": current_owner_name,
+        "previous_owner_roster_id": previous_owner_roster_id,
+        "previous_owner_team": previous_owner_name,
+    }
 
-    matchups_by_week = {}
-    transactions_by_week = {}
+
+def build_default_pick_inventory(
+    teams: List[Dict[str, Any]],
+    seasons: List[int],
+    rounds: int,
+) -> Dict[str, List[Dict[str, Any]]]:
+    inventory = defaultdict(list)
+
+    for team in teams or []:
+        roster_id = team.get("roster_id")
+        team_name = team.get("team_name")
+
+        if roster_id is None:
+            continue
+
+        for season in seasons:
+            for round_no in range(1, rounds + 1):
+                inventory[str(roster_id)].append({
+                    "season": str(season),
+                    "round": round_no,
+                    "label": f"{season} Round {round_no} own",
+                    "original_roster_id": roster_id,
+                    "original_team": team_name,
+                    "current_owner_roster_id": roster_id,
+                    "current_owner_team": team_name,
+                    "previous_owner_roster_id": roster_id,
+                    "previous_owner_team": team_name,
+                })
+
+    return inventory
+
+
+def apply_traded_picks_to_inventory(
+    inventory: Dict[str, List[Dict[str, Any]]],
+    traded_picks: List[Dict[str, Any]],
+    by_roster_id: Dict[str, Dict[str, Any]],
+) -> Dict[str, List[Dict[str, Any]]]:
+    for pick in traded_picks or []:
+        desc = describe_pick(pick, by_roster_id)
+
+        season = desc["season"]
+        round_no = desc["round"]
+        original_roster_id = desc["original_roster_id"]
+        current_owner_roster_id = desc["current_owner_roster_id"]
+
+        if original_roster_id is None or current_owner_roster_id is None or round_no is None:
+            continue
+
+        for roster_id, picks in inventory.items():
+            inventory[roster_id] = [
+                p for p in picks
+                if not (
+                    str(p.get("season")) == str(season)
+                    and safe_int(p.get("round")) == round_no
+                    and safe_int(p.get("original_roster_id")) == original_roster_id
+                )
+            ]
+
+        inventory[str(current_owner_roster_id)].append(desc)
+
+    return inventory
+
+
+def sort_pick_inventory(inventory: Dict[str, List[Dict[str, Any]]]) -> Dict[str, List[Dict[str, Any]]]:
+    sorted_inventory = {}
+
+    for roster_id, picks in inventory.items():
+        sorted_inventory[str(roster_id)] = sorted(
+            picks,
+            key=lambda p: (
+                str(p.get("season", "")),
+                safe_int(p.get("round"), 0) or 0,
+                safe_int(p.get("original_roster_id"), 0) or 0,
+            )
+        )
+
+    return sorted_inventory
+
+
+def flatten_draft_room_traded_picks(draft_room: Dict[str, Any]) -> List[Dict[str, Any]]:
+    traded = []
+
+    for draft in (draft_room or {}).get("drafts", []):
+        traded.extend(draft.get("traded_picks") or [])
+
+    return traded
+
+
+def collect_transaction_traded_picks(transactions: Any) -> List[Dict[str, Any]]:
+    traded = []
+
+    if isinstance(transactions, dict):
+        tx_groups = transactions.values()
+    else:
+        tx_groups = transactions or []
+
+    for group in tx_groups:
+        if isinstance(group, dict):
+            tx_list = group.get("transactions") or group.get("items") or []
+        else:
+            tx_list = group or []
+
+        for tx in tx_list:
+            if not isinstance(tx, dict):
+                continue
+            if tx.get("type") != "trade":
+                continue
+            if tx.get("status") != "complete":
+                continue
+
+            for pick in tx.get("draft_picks") or []:
+                traded.append(pick)
+
+    return traded
+
+
+def dedupe_traded_picks(picks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen = set()
+    output = []
+
+    for p in picks or []:
+        key = (
+            str(p.get("season")),
+            safe_int(p.get("round"), 0) or 0,
+            safe_int(p.get("roster_id"), 0) or 0,
+            safe_int(p.get("owner_id"), 0) or 0,
+            safe_int(p.get("previous_owner_id"), 0) or 0,
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+        output.append(p)
+
+    return output
+
+
+def build_team_roster_and_picks_summary(export_data: Dict[str, Any], future_years: int = 3) -> Dict[str, Any]:
+    teams = export_data.get("teams") or []
+    players_lookup = export_data.get("players_lookup") or {}
+    draft_room = export_data.get("draft_room") or {}
+    transactions = export_data.get("transactions") or {}
+
+    league_context = export_data.get("league_context") or {}
+    season = str(
+        league_context.get("season")
+        or export_data.get("read_me_first", {}).get("season")
+        or ""
+    )
+    current_season_int = safe_int(season)
+
+    rounds = (
+        safe_int(league_context.get("all_settings", {}).get("draft_rounds"))
+        or safe_int(league_context.get("settings_summary", {}).get("draft_rounds"))
+        or 5
+    )
+
+    if current_season_int:
+        seasons = [current_season_int + i for i in range(0, future_years + 1)]
+    else:
+        seasons = []
+
+    by_roster_id, _ = get_team_key_maps(teams)
+    roster_summary = build_roster_summary_by_team(teams, players_lookup)
+
+    draft_room_trades = flatten_draft_room_traded_picks(draft_room)
+    transaction_pick_trades = collect_transaction_traded_picks(transactions)
+    all_traded_picks = dedupe_traded_picks(draft_room_trades + transaction_pick_trades)
+
+    pick_inventory = build_default_pick_inventory(teams, seasons, rounds)
+    pick_inventory = apply_traded_picks_to_inventory(
+        pick_inventory,
+        all_traded_picks,
+        by_roster_id,
+    )
+    pick_inventory = sort_pick_inventory(pick_inventory)
+
+    traded_away = defaultdict(list)
+    for pick in all_traded_picks:
+        desc = describe_pick(pick, by_roster_id)
+        original_roster_id = desc.get("original_roster_id")
+        current_owner_roster_id = desc.get("current_owner_roster_id")
+
+        if (
+            original_roster_id is not None
+            and current_owner_roster_id is not None
+            and original_roster_id != current_owner_roster_id
+        ):
+            traded_away[str(original_roster_id)].append(desc)
+
+    current_draft_picks_made = defaultdict(list)
+
+    for draft in draft_room.get("drafts", []):
+        for _, picks in (draft.get("rounds") or {}).items():
+            for pick in picks or []:
+                roster = pick.get("roster") or {}
+                roster_id = roster.get("roster_id")
+                metadata = pick.get("metadata") or {}
+
+                first = metadata.get("first_name") or ""
+                last = metadata.get("last_name") or ""
+                name = f"{first} {last}".strip() or str(pick.get("player_id"))
+
+                position = metadata.get("position")
+                nfl_team = metadata.get("team")
+                details = [x for x in [position, nfl_team] if x]
+
+                current_draft_picks_made[str(roster_id)].append({
+                    "pick_no": pick.get("pick_no"),
+                    "round": pick.get("round"),
+                    "draft_slot": pick.get("draft_slot"),
+                    "player_id": pick.get("player_id"),
+                    "player": f"{name} ({', '.join(details)})" if details else name,
+                    "picked_by": pick.get("picked_by_name"),
+                })
+
+    result = {
+        "generated_from": {
+            "league_id": league_context.get("league_id"),
+            "league_name": league_context.get("name"),
+            "season": season,
+            "source_generated_at": export_data.get("read_me_first", {}).get("generated_at"),
+            "note": (
+                "Compact derived summary for ChatGPT: teams, resolved rosters, "
+                "and current/future draft pick inventory."
+            ),
+        },
+        "assumptions": {
+            "future_years_included": future_years,
+            "draft_rounds_per_year": rounds,
+            "pick_inventory_method": (
+                "Starts with each team owning its own picks for included seasons, "
+                "then applies traded picks from draft_room and complete trade transactions."
+            ),
+        },
+        "teams": [],
+    }
+
+    for team in sorted(teams, key=lambda t: safe_int(t.get("roster_id"), 0) or 0):
+        roster_id = str(team.get("roster_id"))
+
+        result["teams"].append({
+            "roster_id": team.get("roster_id"),
+            "team_name": team.get("team_name"),
+            "owner_name": team.get("owner_name"),
+            "roster": roster_summary.get(roster_id, {}),
+            "current_and_future_picks_owned": pick_inventory.get(roster_id, []),
+            "picks_traded_away": sorted(
+                traded_away.get(roster_id, []),
+                key=lambda p: (
+                    str(p.get("season", "")),
+                    safe_int(p.get("round"), 0) or 0,
+                    safe_int(p.get("original_roster_id"), 0) or 0,
+                )
+            ),
+            "current_draft_picks_made": sorted(
+                current_draft_picks_made.get(roster_id, []),
+                key=lambda p: safe_int(p.get("pick_no"), 0) or 0,
+            ),
+        })
+
+    return result
+
+
+# ==========================================================
+# MAIN EXPORT BUILD
+# ==========================================================
+
+def collect_needed_player_ids(
+    rosters: List[Dict[str, Any]],
+    matchup_weeks: Dict[int, List[Dict[str, Any]]],
+    draft_picks_by_draft: Dict[str, List[Dict[str, Any]]],
+    transactions_by_week: Dict[int, List[Dict[str, Any]]],
+) -> List[str]:
+    needed = set()
+
+    for roster in rosters or []:
+        for key in ["players", "starters", "reserve"]:
+            for pid in roster.get(key) or []:
+                needed.add(str(pid))
+
+    for matchups in matchup_weeks.values():
+        for matchup in matchups or []:
+            for pid in matchup.get("players") or []:
+                needed.add(str(pid))
+            for pid in matchup.get("starters") or []:
+                needed.add(str(pid))
+            for pid in (matchup.get("players_points") or {}).keys():
+                needed.add(str(pid))
+
+    for picks in draft_picks_by_draft.values():
+        for pick in picks or []:
+            if pick.get("player_id") is not None:
+                needed.add(str(pick.get("player_id")))
+
+    for txs in transactions_by_week.values():
+        for tx in txs or []:
+            for move_map in [tx.get("adds"), tx.get("drops")]:
+                for pid in (move_map or {}).keys():
+                    needed.add(str(pid))
+
+    return sorted(needed)
+
+
+def build_export(
+    league_id: str,
+    *,
+    weeks: List[int],
+    include_all_players: bool,
+    include_trending: bool,
+    future_years: int,
+) -> Dict[str, Any]:
+    nfl_state = sleeper_get("/state/nfl")
+    league = sleeper_get(f"/league/{league_id}")
+    if not league:
+        raise RuntimeError(f"League not found: {league_id}")
+
+    users = sleeper_get(f"/league/{league_id}/users") or []
+    rosters = sleeper_get(f"/league/{league_id}/rosters") or []
+    users_map = build_users_map(users)
+
+    matchup_weeks = {}
+    transaction_weeks = {}
 
     for week in weeks:
-        matchups_by_week[str(week)] = sleeper_get(f"league/{league_id}/matchups/{week}", default=[])
-        transactions_by_week[str(week)] = sleeper_get(f"league/{league_id}/transactions/{week}", default=[])
+        matchup_weeks[week] = sleeper_get(f"/league/{league_id}/matchups/{week}") or []
+        transaction_weeks[week] = sleeper_get(f"/league/{league_id}/transactions/{week}") or []
 
-    winners_bracket = sleeper_get(f"league/{league_id}/winners_bracket", default=[])
-    losers_bracket = sleeper_get(f"league/{league_id}/losers_bracket", default=[])
-    league_traded_picks = sleeper_get(f"league/{league_id}/traded_picks", default=[])
-    drafts = sleeper_get(f"league/{league_id}/drafts", default=[])
+    winners_bracket = sleeper_get(f"/league/{league_id}/winners_bracket") or []
+    losers_bracket = sleeper_get(f"/league/{league_id}/losers_bracket") or []
 
-    draft_details = {}
-    draft_picks = {}
-    draft_traded_picks = {}
+    league_traded_picks = sleeper_get(f"/league/{league_id}/traded_picks") or []
+    drafts = sleeper_get(f"/league/{league_id}/drafts") or []
 
-    for draft in drafts:
+    draft_picks_by_draft = {}
+    draft_traded_picks_by_draft = {}
+
+    for draft in drafts or []:
         draft_id = draft.get("draft_id")
         if not draft_id:
             continue
-
-        draft_details[draft_id] = sleeper_get(f"draft/{draft_id}", default={})
-        draft_picks[draft_id] = sleeper_get(f"draft/{draft_id}/picks", default=[])
-        draft_traded_picks[draft_id] = sleeper_get(f"draft/{draft_id}/traded_picks", default=[])
+        draft_picks_by_draft[draft_id] = sleeper_get(f"/draft/{draft_id}/picks") or []
+        draft_traded_picks_by_draft[draft_id] = sleeper_get(f"/draft/{draft_id}/traded_picks") or []
 
     trending = {}
     if include_trending:
-        trending["adds"] = sleeper_get(
-            f"players/nfl/trending/add?lookback_hours={trending_hours}&limit={trending_limit}",
-            default=[],
-        )
-        trending["drops"] = sleeper_get(
-            f"players/nfl/trending/drop?lookback_hours={trending_hours}&limit={trending_limit}",
-            default=[],
-        )
+        trending = {
+            "adds": sleeper_get("/players/nfl/trending/add?lookback_hours=24&limit=50") or [],
+            "drops": sleeper_get("/players/nfl/trending/drop?lookback_hours=24&limit=50") or [],
+        }
 
-    referenced_player_ids = collect_referenced_player_ids(
-        rosters=rosters,
-        matchups_by_week=matchups_by_week,
-        transactions_by_week=transactions_by_week,
-        drafts_picks=draft_picks,
-        trending=trending,
+    all_players = sleeper_get("/players/nfl") or {}
+
+    needed_player_ids = collect_needed_player_ids(
+        rosters,
+        matchup_weeks,
+        draft_picks_by_draft,
+        transaction_weeks,
     )
 
-    return {
+    if include_all_players:
+        players_lookup = make_players_lookup(all_players, include_all_players=True)
+    else:
+        players_lookup = build_limited_players_lookup(needed_player_ids, all_players)
+
+    teams = [
+        build_team_object(roster, users_map, players_lookup)
+        for roster in sorted(rosters, key=lambda r: safe_int(r.get("roster_id"), 0) or 0)
+    ]
+
+    teams_by_roster_id = {str(t["roster_id"]): t for t in teams}
+
+    weekly_results = {}
+    for week, matchups in matchup_weeks.items():
+        weekly_results[str(week)] = {
+            "week": week,
+            "matchups": [
+                normalize_matchup(m, teams_by_roster_id)
+                for m in matchups
+            ],
+        }
+
+    transactions = {}
+    for week, txs in transaction_weeks.items():
+        transactions[str(week)] = [
+            normalize_transaction(tx, teams_by_roster_id)
+            for tx in txs
+        ]
+
+    draft_room = {
+        "drafts": [
+            normalize_draft(
+                draft,
+                draft_picks_by_draft.get(draft.get("draft_id"), []),
+                draft_traded_picks_by_draft.get(draft.get("draft_id"), []),
+                teams_by_roster_id,
+            )
+            for draft in drafts
+        ],
+        "league_traded_future_picks": league_traded_picks,
+    }
+
+    export_data = {
         "read_me_first": {
             "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-            "generated_at": utc_now(),
+            "generated_at": utc_now_iso(),
             "league_id": league_id,
-            "season": season,
+            "season": str(league.get("season")),
             "weeks_included": weeks,
-            "current_week": current_week,
+            "current_week": nfl_state.get("week") if isinstance(nfl_state, dict) else None,
             "how_to_read": [
                 "Use league_context first for scoring, roster format, and settings.",
                 "Use teams for roster construction, records, nicknames, and team-level summaries.",
@@ -651,6 +962,7 @@ def fetch_all_sleeper_data(
                 "Use draft_room for draft history and traded draft picks.",
                 "Use weekly_results for matchups, scores, starters, and player scoring.",
                 "Use transactions for trades, waivers, free-agent moves, FAAB, and picks.",
+                "Use team_roster_and_picks_summary for compact team roster and pick inventory analysis.",
             ],
             "excluded_sections": [
                 "birth date",
@@ -660,104 +972,146 @@ def fetch_all_sleeper_data(
                 "athletic testing",
                 "headshots and visuals",
                 "avatars and media",
-                "taxi squad",
+                "taxi squad raw objects",
                 "raw Sleeper payload dumps",
             ],
         },
-        "league_context": summarize_league(league, nfl_state),
-        "users": user_maps["by_user_id"],
-        "teams": summarize_teams(rosters, players, roster_maps),
-        "draft_room": {
-            **summarize_drafts(
-                drafts,
-                draft_details,
-                draft_picks,
-                draft_traded_picks,
-                roster_maps,
-                user_maps,
-            ),
-            "future_traded_picks_by_current_owner": summarize_traded_future_picks(
-                league_traded_picks,
-                roster_maps,
-            ),
-        },
-        "weekly_results": summarize_matchups(matchups_by_week, roster_maps),
-        "transactions": summarize_transactions(transactions_by_week, roster_maps),
-        "playoff_brackets": {
-            "winners": sanitize(winners_bracket),
-            "losers": sanitize(losers_bracket),
-        },
-        "trending_players": summarize_trending(trending) if include_trending else {},
-        "players_lookup": build_players_lookup(referenced_player_ids, players),
-        "data_quality": {
-            "source": "Sleeper API",
-            "endpoints_checked": {
-                "state_nfl": endpoint_ok(nfl_state),
-                "league": endpoint_ok(league),
-                "league_users": endpoint_ok(users),
-                "league_rosters": endpoint_ok(rosters),
-                "players_nfl": endpoint_ok(players),
-                "matchups_by_week": {
-                    week: endpoint_ok(data)
-                    for week, data in matchups_by_week.items()
-                },
-                "transactions_by_week": {
-                    week: endpoint_ok(data)
-                    for week, data in transactions_by_week.items()
-                },
-                "winners_bracket": endpoint_ok(winners_bracket),
-                "losers_bracket": endpoint_ok(losers_bracket),
-                "league_traded_picks": endpoint_ok(league_traded_picks),
-                "drafts": endpoint_ok(drafts),
-                "trending": {
-                    key: endpoint_ok(value)
-                    for key, value in trending.items()
-                },
+        "league_context": {
+            "league_id": league.get("league_id"),
+            "name": league.get("name"),
+            "season": league.get("season"),
+            "season_type": league.get("season_type"),
+            "sport": league.get("sport"),
+            "status": league.get("status"),
+            "league_type": league.get("league_type"),
+            "total_rosters": league.get("total_rosters"),
+            "previous_league_id": league.get("previous_league_id"),
+            "draft_id": league.get("draft_id"),
+            "current_nfl_state": nfl_state,
+            "roster_positions": league.get("roster_positions"),
+            "scoring_settings": league.get("scoring_settings"),
+            "settings_summary": {
+                "teams": league.get("settings", {}).get("num_teams"),
+                "playoff_teams": league.get("settings", {}).get("playoff_teams"),
+                "playoff_rounds": league.get("settings", {}).get("playoff_rounds"),
+                "trade_deadline": league.get("settings", {}).get("trade_deadline"),
+                "waiver_type": league.get("settings", {}).get("waiver_type"),
+                "waiver_budget": league.get("settings", {}).get("waiver_budget"),
+                "reserve_slots": league.get("settings", {}).get("reserve_slots"),
+                "bench_slots": league.get("settings", {}).get("bench_slots"),
+                "max_keepers": league.get("settings", {}).get("max_keepers"),
+                "best_ball": league.get("settings", {}).get("best_ball"),
+                "median_scoring": league.get("settings", {}).get("league_average_match"),
+                "daily_waivers": league.get("settings", {}).get("daily_waivers"),
+                "draft_rounds": league.get("settings", {}).get("draft_rounds"),
             },
-            "known_limitations": [
-                "Sleeper exposes traded future picks, but not a clean endpoint for every untraded future pick owned by each team.",
-                "Derived rankings, dynasty trade values, projections, and expert rankings are not provided by Sleeper.",
-                "Team names are taken from Sleeper user metadata team_name or nickname when available.",
-            ],
+            "all_settings": league.get("settings"),
+            "metadata": league.get("metadata"),
         },
+        "users": users_map,
+        "teams": teams,
+        "draft_room": draft_room,
+        "weekly_results": weekly_results,
+        "transactions": transactions,
+        "playoff_brackets": {
+            "winners": winners_bracket,
+            "losers": losers_bracket,
+        },
+        "players_lookup": players_lookup,
+        "trending": trending,
     }
 
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Export Sleeper league data into a ChatGPT-optimized JSON file."
+    export_data["team_roster_and_picks_summary"] = build_team_roster_and_picks_summary(
+        export_data,
+        future_years=future_years,
     )
 
-    parser.add_argument("--league", default=DEFAULT_LEAGUE_ID, help="Sleeper league ID")
-    parser.add_argument("--weeks", default=None, help="Weeks to pull, e.g. 1,2,3 or 1-17")
-    parser.add_argument("--out", default="sleeper_chatgpt.json", help="Output JSON file")
+    return export_data
+
+
+# ==========================================================
+# CLI
+# ==========================================================
+
+def parse_weeks(value: str) -> List[int]:
+    value = value.strip()
+
+    if not value:
+        return [1]
+
+    if "-" in value:
+        start, end = value.split("-", 1)
+        return list(range(int(start), int(end) + 1))
+
+    return [int(x.strip()) for x in value.split(",") if x.strip()]
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Export Sleeper fantasy football league data to ChatGPT-friendly JSON."
+    )
+
+    parser.add_argument(
+        "--league-id",
+        default=DEFAULT_LEAGUE_ID,
+        help=f"Sleeper league ID. Default: {DEFAULT_LEAGUE_ID}",
+    )
+
+    parser.add_argument(
+        "--output",
+        default="sleeper_chatgpt.json",
+        help="Main output JSON file path. Default: sleeper_chatgpt.json",
+    )
+
+    parser.add_argument(
+        "--weeks",
+        default="1",
+        help="Weeks to include, such as '1', '1,2,3', or '1-17'. Default: 1",
+    )
+
+    parser.add_argument(
+        "--include-all-players",
+        action="store_true",
+        help="Include the full Sleeper NFL player database. This makes the output much larger.",
+    )
 
     parser.add_argument(
         "--include-trending",
         action="store_true",
-        help="Include trending adds and drops.",
+        help="Include Sleeper trending adds/drops.",
     )
 
-    parser.add_argument("--trending-hours", type=int, default=24)
-    parser.add_argument("--trending-limit", type=int, default=50)
+    parser.add_argument(
+        "--future-years",
+        type=int,
+        default=3,
+        help="How many future years of draft picks to include in compact summary. Default: 3",
+    )
 
     args = parser.parse_args()
 
-    if os.getenv("GITHUB_ACTIONS") == "true":
-        print("Running inside GitHub Actions CI pipeline")
+    weeks = parse_weeks(args.weeks)
 
-    data = fetch_all_sleeper_data(
-        league_id=args.league,
-        weeks=parse_weeks(args.weeks),
+    export_data = build_export(
+        args.league_id,
+        weeks=weeks,
+        include_all_players=args.include_all_players,
         include_trending=args.include_trending,
-        trending_hours=args.trending_hours,
-        trending_limit=args.trending_limit,
+        future_years=args.future_years,
     )
 
-    with open(args.out, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=False)
+    output_path = args.output
+    write_json(output_path, export_data)
 
-    print(f"Saved ChatGPT-optimized Sleeper export to {args.out}")
+    base, ext = os.path.splitext(output_path)
+    if not ext:
+        ext = ".json"
+
+    summary_path = f"{base}_team_roster_and_picks_summary{ext}"
+    write_json(summary_path, export_data["team_roster_and_picks_summary"])
+
+    print(f"Wrote main ChatGPT export to: {output_path}")
+    print(f"Wrote compact roster/picks summary to: {summary_path}")
 
 
 if __name__ == "__main__":
