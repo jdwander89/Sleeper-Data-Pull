@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-05-29T21:11:22.150681Z",
+    "generated_at": "2026-05-30T11:06:23.673190Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -9,24 +9,8 @@
     ],
     "current_week": 0,
     "how_to_read": [
-      "Use league_context first for scoring, roster format, and settings.",
-      "Use teams for roster construction, records, nicknames, and team-level summaries.",
-      "Use players_lookup to resolve player_ids found throughout the file.",
-      "Use draft_room for draft history and traded draft picks.",
-      "Use weekly_results for matchups, scores, starters, and player scoring.",
-      "Use transactions for trades, waivers, free-agent moves, FAAB, and picks.",
-      "Use team_roster_and_picks_summary for compact team roster and pick inventory analysis."
-    ],
-    "excluded_sections": [
-      "birth date",
-      "high school",
-      "hometown",
-      "physical attributes",
-      "athletic testing",
-      "headshots and visuals",
-      "avatars and media",
-      "taxi squad raw objects",
-      "raw Sleeper payload dumps"
+      "Use league_context first.",
+      "Use team_roster_and_picks_summary for roster and pick inventory questions."
     ]
   },
   "league_context": {
@@ -36,9 +20,7 @@
     "season_type": "regular",
     "sport": "nfl",
     "status": "drafting",
-    "league_type": null,
     "total_rosters": 12,
-    "previous_league_id": "1257102737267503104",
     "draft_id": "1312581067298836480",
     "current_nfl_state": {
       "week": 0,
@@ -195,21 +177,6 @@
       "pts_allow_7_13": 3.0,
       "st_ff": 1.0
     },
-    "settings_summary": {
-      "teams": 12,
-      "playoff_teams": 6,
-      "playoff_rounds": null,
-      "trade_deadline": 12,
-      "waiver_type": 2,
-      "waiver_budget": 100,
-      "reserve_slots": 2,
-      "bench_slots": null,
-      "max_keepers": 1,
-      "best_ball": 0,
-      "median_scoring": 0,
-      "daily_waivers": 0,
-      "draft_rounds": 5
-    },
     "all_settings": {
       "best_ball": 0,
       "waiver_budget": 100,
@@ -262,9 +229,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "30",
+      "current_pick_no": "31",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471744678006353920"
+      "on_the_clock_user_id": "471457570825957376"
     }
   },
   "users": {
@@ -272,7 +239,7 @@
       "user_id": "459751268567478272",
       "username": null,
       "display_name": "lex11",
-      "is_bot": false,
+      "team_name": "I ❤️ Commish",
       "metadata": {
         "allow_pn": "on",
         "mascot_item_type_id_leg_1": "trash",
@@ -297,13 +264,13 @@
         "mention_pn": "on",
         "team_name": "I ❤️ Commish"
       },
-      "team_name": "I ❤️ Commish"
+      "is_bot": false
     },
     "464915162038530048": {
       "user_id": "464915162038530048",
       "username": null,
       "display_name": "jwander",
-      "is_bot": false,
+      "team_name": "It’s Herbie Hancock",
       "metadata": {
         "allow_sms": "on",
         "allow_pn": "on",
@@ -340,13 +307,13 @@
         "mascot_item_type_id_leg_16": "trash",
         "transaction_trade": "off"
       },
-      "team_name": "It’s Herbie Hancock"
+      "is_bot": false
     },
     "471403228244733952": {
       "user_id": "471403228244733952",
       "username": null,
       "display_name": "Logs24",
-      "is_bot": false,
+      "team_name": "A B CeeDee",
       "metadata": {
         "allow_pn": "on",
         "allow_sms": "on",
@@ -374,61 +341,61 @@
         "mention_pn": "on",
         "team_name": "A B CeeDee"
       },
-      "team_name": "A B CeeDee"
+      "is_bot": false
     },
     "471415197991432192": {
       "user_id": "471415197991432192",
       "username": null,
       "display_name": "GarrettHol",
-      "is_bot": false,
+      "team_name": "Pol Hol",
       "metadata": {
         "allow_pn": "on",
         "allow_sms": "on",
         "mention_pn": "on",
         "team_name": "Pol Hol"
       },
-      "team_name": "Pol Hol"
+      "is_bot": false
     },
     "471415316501491712": {
       "user_id": "471415316501491712",
       "username": null,
       "display_name": "TonsOfBuns",
-      "is_bot": false,
+      "team_name": "Puka Troopas",
       "metadata": {
         "allow_pn": "on",
         "mention_pn": "on",
         "team_name": "Puka Troopas"
       },
-      "team_name": "Puka Troopas"
+      "is_bot": false
     },
     "471424563457028096": {
       "user_id": "471424563457028096",
       "username": null,
       "display_name": "jchrz",
-      "is_bot": false,
+      "team_name": "White Ice",
       "metadata": {
         "allow_pn": "on",
         "mention_pn": "on",
         "team_name": "White Ice"
       },
-      "team_name": "White Ice"
+      "is_bot": false
     },
     "471451909446692864": {
       "user_id": "471451909446692864",
       "username": null,
       "display_name": "andrewwelle",
-      "is_bot": false,
+      "team_name": "andrewwelle",
       "metadata": {
         "allow_pn": "on",
         "mention_pn": "on"
       },
-      "team_name": "andrewwelle"
+      "is_bot": false
     },
     "471457570825957376": {
       "user_id": "471457570825957376",
       "username": null,
       "display_name": "johnwander",
-      "is_bot": false,
+      "team_name": "Back to the Future",
       "metadata": {
         "allow_pn": "on",
         "archived": "off",
@@ -454,13 +421,13 @@
         "mention_pn": "on",
         "team_name": "Back to the Future"
       },
-      "team_name": "Back to the Future"
+      "is_bot": false
     },
     "471501409838166016": {
       "user_id": "471501409838166016",
       "username": null,
       "display_name": "alexwelle",
-      "is_bot": false,
+      "team_name": "alexwelle",
       "metadata": {
         "allow_pn": "on",
         "archived": "off",
@@ -477,13 +444,13 @@
         "transaction_waiver": "off",
         "user_message_pn": "off"
       },
-      "team_name": "alexwelle"
+      "is_bot": false
     },
     "471717089472671744": {
       "user_id": "471717089472671744",
       "username": null,
       "display_name": "NC79",
-      "is_bot": false,
+      "team_name": "Goin in Ra",
       "metadata": {
         "allow_pn": "on",
         "archived": "off",
@@ -501,13 +468,13 @@
         "mention_pn": "on",
         "team_name": "Goin in Ra"
       },
-      "team_name": "Goin in Ra"
+      "is_bot": false
     },
     "471724614532198400": {
       "user_id": "471724614532198400",
       "username": null,
       "display_name": "amoritko",
-      "is_bot": false,
+      "team_name": "MOJO",
       "metadata": {
         "allow_pn": "on",
         "allow_sms": "on",
@@ -517,13 +484,13 @@
         "mention_pn": "on",
         "team_name": "MOJO"
       },
-      "team_name": "MOJO"
+      "is_bot": false
     },
     "471744678006353920": {
       "user_id": "471744678006353920",
       "username": null,
       "display_name": "gullickson",
-      "is_bot": false,
+      "team_name": "gullickson",
       "metadata": {
         "allow_pn": "on",
         "allow_sms": "on",
@@ -549,7 +516,7 @@
         "mascot_message_leg_6": "",
         "mention_pn": "on"
       },
-      "team_name": "gullickson"
+      "is_bot": false
     }
   },
   "teams": [
@@ -563,11 +530,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 9,
@@ -656,11 +620,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 3,
@@ -750,11 +711,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 5,
@@ -845,11 +803,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 8,
@@ -939,11 +894,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 4,
@@ -1037,11 +989,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 11,
@@ -1135,11 +1084,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 10,
@@ -1231,11 +1177,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 1,
@@ -1327,11 +1270,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 7,
@@ -1420,11 +1360,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 2,
@@ -1514,11 +1451,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 12,
@@ -1610,11 +1544,8 @@
         "losses": 0,
         "ties": 0,
         "points_for": 0,
-        "points_for_decimal": 0,
         "points_against": 0,
-        "points_against_decimal": 0,
-        "potential_points": null,
-        "potential_points_decimal": null
+        "potential_points": null
       },
       "waivers": {
         "waiver_position": 6,
@@ -1704,7 +1635,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780076818550,
+        "last_picked": 1780093173100,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -1772,10 +1703,7 @@
                 "years_exp": "0",
                 "number": "4",
                 "player_id": "13287",
-                "sport": "nfl",
-                "news_updated": "1778619320223",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -1803,10 +1731,7 @@
                 "years_exp": "0",
                 "number": "14",
                 "player_id": "13279",
-                "sport": "nfl",
-                "news_updated": "1779394848547",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -1834,10 +1759,7 @@
                 "years_exp": "0",
                 "number": "8",
                 "player_id": "13286",
-                "sport": "nfl",
-                "news_updated": "1779047758863",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -1865,10 +1787,7 @@
                 "years_exp": "0",
                 "number": "0",
                 "player_id": "13281",
-                "sport": "nfl",
-                "news_updated": "1779549355771",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -1896,10 +1815,7 @@
                 "years_exp": "0",
                 "number": "9",
                 "player_id": "13294",
-                "sport": "nfl",
-                "news_updated": "1779111904259",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -1927,10 +1843,7 @@
                 "years_exp": "0",
                 "number": "1",
                 "player_id": "13298",
-                "sport": "nfl",
-                "news_updated": "1778959851311",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -1958,10 +1871,7 @@
                 "years_exp": "0",
                 "number": "12",
                 "player_id": "13346",
-                "sport": "nfl",
-                "news_updated": "1778680525862",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -1989,10 +1899,7 @@
                 "years_exp": "0",
                 "number": "83",
                 "player_id": "13276",
-                "sport": "nfl",
-                "news_updated": "1778600451045",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2020,10 +1927,7 @@
                 "years_exp": "0",
                 "number": "16",
                 "player_id": "13330",
-                "sport": "nfl",
-                "news_updated": "1778678725538",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2051,10 +1955,7 @@
                 "years_exp": "0",
                 "number": "32",
                 "player_id": "13288",
-                "sport": "nfl",
-                "news_updated": "1778774433469",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2082,10 +1983,7 @@
                 "years_exp": "0",
                 "number": "15",
                 "player_id": "13269",
-                "sport": "nfl",
-                "news_updated": "1779384647212",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2113,10 +2011,7 @@
                 "years_exp": "0",
                 "number": "17",
                 "player_id": "13320",
-                "sport": "nfl",
-                "news_updated": "1778689526462",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2146,10 +2041,7 @@
                 "years_exp": "0",
                 "number": "17",
                 "player_id": "13274",
-                "sport": "nfl",
-                "news_updated": "1779375948316",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2177,10 +2069,7 @@
                 "years_exp": "0",
                 "number": "20",
                 "player_id": "13345",
-                "sport": "nfl",
-                "news_updated": "1779290443464",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2208,10 +2097,7 @@
                 "years_exp": "0",
                 "number": "10",
                 "player_id": "13337",
-                "sport": "nfl",
-                "news_updated": "1779463847319",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2239,10 +2125,7 @@
                 "years_exp": "0",
                 "number": "87",
                 "player_id": "13349",
-                "sport": "nfl",
-                "news_updated": "1779172519040",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2270,10 +2153,7 @@
                 "years_exp": "0",
                 "number": "15",
                 "player_id": "13417",
-                "sport": "nfl",
-                "news_updated": "1778691326585",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2301,10 +2181,7 @@
                 "years_exp": "0",
                 "number": "18",
                 "player_id": "13311",
-                "sport": "nfl",
-                "news_updated": "1778703927579",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2332,10 +2209,7 @@
                 "years_exp": "0",
                 "number": "14",
                 "player_id": "13301",
-                "sport": "nfl",
-                "news_updated": "1777432827947",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2363,10 +2237,7 @@
                 "years_exp": "0",
                 "number": "19",
                 "player_id": "13353",
-                "sport": "nfl",
-                "news_updated": "1778692226701",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2394,10 +2265,7 @@
                 "years_exp": "0",
                 "number": "0",
                 "player_id": "13285",
-                "sport": "nfl",
-                "news_updated": "1779311443179",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2425,10 +2293,7 @@
                 "years_exp": "0",
                 "number": "17",
                 "player_id": "13317",
-                "sport": "nfl",
-                "news_updated": "1778703327475",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2456,10 +2321,7 @@
                 "years_exp": "0",
                 "number": "13",
                 "player_id": "13268",
-                "sport": "nfl",
-                "news_updated": "1779803116657",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2487,10 +2349,7 @@
                 "years_exp": "0",
                 "number": "13",
                 "player_id": "13402",
-                "sport": "nfl",
-                "news_updated": "1778853040636",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2520,10 +2379,7 @@
                 "years_exp": "0",
                 "number": "15",
                 "player_id": "13275",
-                "sport": "nfl",
-                "news_updated": "1779384947237",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2551,10 +2407,7 @@
                 "years_exp": "0",
                 "number": "6",
                 "player_id": "13293",
-                "sport": "nfl",
-                "news_updated": "1778690426516",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2582,10 +2435,7 @@
                 "years_exp": "4",
                 "number": "85",
                 "player_id": "8210",
-                "sport": "nfl",
-                "news_updated": "1780071039136",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2613,10 +2463,7 @@
                 "years_exp": "0",
                 "number": "30",
                 "player_id": "13305",
-                "sport": "nfl",
-                "news_updated": "1778767832946",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -2644,10 +2491,35 @@
                 "years_exp": "0",
                 "number": "23",
                 "player_id": "13302",
-                "sport": "nfl",
-                "news_updated": "1779294042335",
-                "team_abbr": "",
-                "team_changed_at": ""
+                "sport": "nfl"
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 30,
+              "round": 3,
+              "draft_slot": 6,
+              "player_id": "13278",
+              "roster": {
+                "roster_id": 12,
+                "team_name": "gullickson",
+                "owner_name": "gullickson"
+              },
+              "picked_by_user_id": "471744678006353920",
+              "picked_by_name": "gullickson",
+              "picked_by_team_name": "gullickson",
+              "metadata": {
+                "first_name": "Max",
+                "last_name": "Klare",
+                "position": "TE",
+                "team": "LAR",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "86",
+                "player_id": "13278",
+                "sport": "nfl"
               },
               "is_keeper": null,
               "picked_at": null
@@ -3266,178 +3138,6 @@
         "consenter_ids": [
           9
         ]
-      }
-    ]
-  },
-  "playoff_brackets": {
-    "winners": [
-      {
-        "m": 1,
-        "r": 1,
-        "l": null,
-        "w": null,
-        "t1": 5,
-        "t2": 3
-      },
-      {
-        "m": 2,
-        "r": 1,
-        "l": null,
-        "w": null,
-        "t1": 12,
-        "t2": 2
-      },
-      {
-        "m": 3,
-        "r": 2,
-        "l": null,
-        "w": null,
-        "t1": 8,
-        "t2": null,
-        "t2_from": {
-          "w": 1
-        }
-      },
-      {
-        "m": 4,
-        "r": 2,
-        "l": null,
-        "w": null,
-        "t1": 10,
-        "t2": null,
-        "t2_from": {
-          "w": 2
-        }
-      },
-      {
-        "m": 5,
-        "p": 5,
-        "r": 2,
-        "l": null,
-        "w": null,
-        "t1": null,
-        "t2": null,
-        "t2_from": {
-          "l": 2
-        },
-        "t1_from": {
-          "l": 1
-        }
-      },
-      {
-        "m": 6,
-        "p": 1,
-        "r": 3,
-        "l": null,
-        "w": null,
-        "t1": null,
-        "t2": null,
-        "t2_from": {
-          "w": 4
-        },
-        "t1_from": {
-          "w": 3
-        }
-      },
-      {
-        "m": 7,
-        "p": 3,
-        "r": 3,
-        "l": null,
-        "w": null,
-        "t1": null,
-        "t2": null,
-        "t2_from": {
-          "l": 4
-        },
-        "t1_from": {
-          "l": 3
-        }
-      }
-    ],
-    "losers": [
-      {
-        "m": 1,
-        "r": 1,
-        "l": null,
-        "w": null,
-        "t1": 7,
-        "t2": 6
-      },
-      {
-        "m": 2,
-        "r": 1,
-        "l": null,
-        "w": null,
-        "t1": 11,
-        "t2": 1
-      },
-      {
-        "m": 3,
-        "r": 2,
-        "l": null,
-        "w": null,
-        "t1": 9,
-        "t2": null,
-        "t2_from": {
-          "w": 1
-        }
-      },
-      {
-        "m": 4,
-        "r": 2,
-        "l": null,
-        "w": null,
-        "t1": 4,
-        "t2": null,
-        "t2_from": {
-          "w": 2
-        }
-      },
-      {
-        "p": 5,
-        "m": 5,
-        "r": 2,
-        "l": null,
-        "w": null,
-        "t1": null,
-        "t2": null,
-        "t2_from": {
-          "l": 2
-        },
-        "t1_from": {
-          "l": 1
-        }
-      },
-      {
-        "p": 1,
-        "m": 6,
-        "r": 3,
-        "l": null,
-        "w": null,
-        "t1": null,
-        "t2": null,
-        "t2_from": {
-          "w": 4
-        },
-        "t1_from": {
-          "w": 3
-        }
-      },
-      {
-        "p": 3,
-        "m": 7,
-        "r": 3,
-        "l": null,
-        "w": null,
-        "t1": null,
-        "t2": null,
-        "t2_from": {
-          "l": 4
-        },
-        "t1_from": {
-          "l": 3
-        }
       }
     ]
   },
@@ -5247,6 +4947,25 @@
       "depth_chart_order": null,
       "college": "Indiana",
       "search_rank": 151
+    },
+    "13278": {
+      "player_id": "13278",
+      "full_name": "Max Klare",
+      "first_name": "Max",
+      "last_name": "Klare",
+      "position": "TE",
+      "team": "LAR",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 22,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": null,
+      "college": "Ohio State",
+      "search_rank": 212
     },
     "13279": {
       "player_id": "13279",
@@ -8466,13 +8185,7 @@
       "league_id": "1312581067286282240",
       "league_name": "Schwieters",
       "season": "2026",
-      "source_generated_at": "2026-05-29T21:11:22.150681Z",
-      "note": "Compact derived summary for ChatGPT: teams, resolved rosters, and current/future draft pick inventory."
-    },
-    "assumptions": {
-      "future_years_included": 3,
-      "draft_rounds_per_year": 5,
-      "pick_inventory_method": "Starts with each team owning its own picks for included seasons, then applies traded picks from draft_room and complete trade transactions."
+      "source_generated_at": "2026-05-30T11:06:23.673190Z"
     },
     "teams": [
       {
@@ -8480,9 +8193,6 @@
         "team_name": "It’s Herbie Hancock",
         "owner_name": "jwander",
         "roster": {
-          "roster_id": 1,
-          "team_name": "It’s Herbie Hancock",
-          "owner_name": "jwander",
           "summary": {
             "total_players": 18,
             "starter_count": 9,
@@ -8884,9 +8594,6 @@
         "team_name": "A B CeeDee",
         "owner_name": "Logs24",
         "roster": {
-          "roster_id": 2,
-          "team_name": "A B CeeDee",
-          "owner_name": "Logs24",
           "summary": {
             "total_players": 19,
             "starter_count": 9,
@@ -9236,9 +8943,6 @@
         "team_name": "Pol Hol",
         "owner_name": "GarrettHol",
         "roster": {
-          "roster_id": 3,
-          "team_name": "Pol Hol",
-          "owner_name": "GarrettHol",
           "summary": {
             "total_players": 20,
             "starter_count": 9,
@@ -9556,9 +9260,6 @@
         "team_name": "Puka Troopas",
         "owner_name": "TonsOfBuns",
         "roster": {
-          "roster_id": 4,
-          "team_name": "Puka Troopas",
-          "owner_name": "TonsOfBuns",
           "summary": {
             "total_players": 19,
             "starter_count": 9,
@@ -9885,9 +9586,6 @@
         "team_name": "White Ice",
         "owner_name": "jchrz",
         "roster": {
-          "roster_id": 5,
-          "team_name": "White Ice",
-          "owner_name": "jchrz",
           "summary": {
             "total_players": 20,
             "starter_count": 9,
@@ -10208,9 +9906,6 @@
         "team_name": "andrewwelle",
         "owner_name": "andrewwelle",
         "roster": {
-          "roster_id": 6,
-          "team_name": "andrewwelle",
-          "owner_name": "andrewwelle",
           "summary": {
             "total_players": 20,
             "starter_count": 9,
@@ -10531,9 +10226,6 @@
         "team_name": "I ❤️ Commish",
         "owner_name": "lex11",
         "roster": {
-          "roster_id": 7,
-          "team_name": "I ❤️ Commish",
-          "owner_name": "lex11",
           "summary": {
             "total_players": 19,
             "starter_count": 9,
@@ -10874,9 +10566,6 @@
         "team_name": "Back to the Future",
         "owner_name": "johnwander",
         "roster": {
-          "roster_id": 8,
-          "team_name": "Back to the Future",
-          "owner_name": "johnwander",
           "summary": {
             "total_players": 19,
             "starter_count": 9,
@@ -11195,9 +10884,6 @@
         "team_name": "alexwelle",
         "owner_name": "alexwelle",
         "roster": {
-          "roster_id": 9,
-          "team_name": "alexwelle",
-          "owner_name": "alexwelle",
           "summary": {
             "total_players": 18,
             "starter_count": 9,
@@ -11513,9 +11199,6 @@
         "team_name": "Goin in Ra",
         "owner_name": "NC79",
         "roster": {
-          "roster_id": 10,
-          "team_name": "Goin in Ra",
-          "owner_name": "NC79",
           "summary": {
             "total_players": 19,
             "starter_count": 9,
@@ -11855,9 +11538,6 @@
         "team_name": "MOJO",
         "owner_name": "amoritko",
         "roster": {
-          "roster_id": 11,
-          "team_name": "MOJO",
-          "owner_name": "amoritko",
           "summary": {
             "total_players": 21,
             "starter_count": 9,
@@ -12178,9 +11858,6 @@
         "team_name": "gullickson",
         "owner_name": "gullickson",
         "roster": {
-          "roster_id": 12,
-          "team_name": "gullickson",
-          "owner_name": "gullickson",
           "summary": {
             "total_players": 18,
             "starter_count": 9,
@@ -12508,6 +12185,16 @@
             "draft_slot": 1,
             "player_id": "13274",
             "player": "Germie Bernard (WR, PIT)",
+            "picked_by": "gullickson",
+            "picked_by_team": "gullickson",
+            "picked_by_user_id": "471744678006353920"
+          },
+          {
+            "pick_no": 30,
+            "round": 3,
+            "draft_slot": 6,
+            "player_id": "13278",
+            "player": "Max Klare (TE, LAR)",
             "picked_by": "gullickson",
             "picked_by_team": "gullickson",
             "picked_by_user_id": "471744678006353920"
