@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-05-30T11:06:23.673190Z",
+    "generated_at": "2026-05-31T11:52:29.800709Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -229,9 +229,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "31",
+      "current_pick_no": "35",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471457570825957376"
+      "on_the_clock_user_id": "471415197991432192"
     }
   },
   "users": {
@@ -828,7 +828,7 @@
         },
         "average_age_by_position": {
           "QB": 27.5,
-          "RB": 26.71,
+          "RB": 26.86,
           "TE": 26.0,
           "WR": 24.86
         }
@@ -1148,10 +1148,10 @@
         "12474",
         "7567",
         "9488",
-        "12535",
+        "12526",
         "12518",
         "8167",
-        "12526",
+        "12535",
         "10222"
       ],
       "reserve": [
@@ -1635,7 +1635,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780093173100,
+        "last_picked": 1780202708068,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -2523,6 +2523,118 @@
               },
               "is_keeper": null,
               "picked_at": null
+            },
+            {
+              "pick_no": 31,
+              "round": 3,
+              "draft_slot": 7,
+              "player_id": "13270",
+              "roster": {
+                "roster_id": 8,
+                "team_name": "Back to the Future",
+                "owner_name": "johnwander"
+              },
+              "picked_by_user_id": "471457570825957376",
+              "picked_by_name": "johnwander",
+              "picked_by_team_name": "Back to the Future",
+              "metadata": {
+                "first_name": "CJ",
+                "last_name": "Daniels",
+                "position": "WR",
+                "team": "LAR",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "6",
+                "player_id": "13270",
+                "sport": "nfl"
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 32,
+              "round": 3,
+              "draft_slot": 8,
+              "player_id": "12483",
+              "roster": {
+                "roster_id": 6,
+                "team_name": "andrewwelle",
+                "owner_name": "andrewwelle"
+              },
+              "picked_by_user_id": "471451909446692864",
+              "picked_by_name": "andrewwelle",
+              "picked_by_team_name": "andrewwelle",
+              "metadata": {
+                "first_name": "Jack",
+                "last_name": "Bech",
+                "position": "WR",
+                "team": "LV",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "1",
+                "number": "18",
+                "player_id": "12483",
+                "sport": "nfl"
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 33,
+              "round": 3,
+              "draft_slot": 9,
+              "player_id": "13405",
+              "roster": {
+                "roster_id": 9,
+                "team_name": "alexwelle",
+                "owner_name": "alexwelle"
+              },
+              "picked_by_user_id": "471501409838166016",
+              "picked_by_name": "alexwelle",
+              "picked_by_team_name": "alexwelle",
+              "metadata": {
+                "first_name": "Kaytron",
+                "last_name": "Allen",
+                "position": "RB",
+                "team": "WAS",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "31",
+                "player_id": "13405",
+                "sport": "nfl"
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 34,
+              "round": 3,
+              "draft_slot": 10,
+              "player_id": "12467",
+              "roster": {
+                "roster_id": 5,
+                "team_name": "White Ice",
+                "owner_name": "jchrz"
+              },
+              "picked_by_user_id": "471424563457028096",
+              "picked_by_name": "jchrz",
+              "picked_by_team_name": "White Ice",
+              "metadata": {
+                "first_name": "Jordan",
+                "last_name": "James",
+                "position": "RB",
+                "team": "SF",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "1",
+                "number": "29",
+                "player_id": "12467",
+                "sport": "nfl"
+              },
+              "is_keeper": null,
+              "picked_at": null
             }
           ]
         },
@@ -3251,7 +3363,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "SWR",
       "depth_chart_order": 2,
       "college": "Stanford",
       "search_rank": 75
@@ -3289,7 +3401,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": 2,
       "college": "Tennessee",
       "search_rank": 999
@@ -3745,7 +3857,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 1,
       "college": "Texas",
       "search_rank": 122
@@ -3916,7 +4028,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": 2,
       "college": "Florida State",
       "search_rank": 206
@@ -3935,7 +4047,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "SWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 2,
       "college": "Florida",
       "search_rank": 86
@@ -4030,7 +4142,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "SWR",
       "depth_chart_order": 2,
       "college": "Utah",
       "search_rank": 209
@@ -4072,6 +4184,25 @@
       "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 189
+    },
+    "12467": {
+      "player_id": "12467",
+      "full_name": "Jordan James",
+      "first_name": "Jordan",
+      "last_name": "James",
+      "position": "RB",
+      "team": "SF",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 22,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 4,
+      "college": "Oregon",
+      "search_rank": 999
     },
     "12469": {
       "player_id": "12469",
@@ -4187,6 +4318,25 @@
       "college": "Arizona State",
       "search_rank": 41
     },
+    "12483": {
+      "player_id": "12483",
+      "full_name": "Jack Bech",
+      "first_name": "Jack",
+      "last_name": "Bech",
+      "position": "WR",
+      "team": "LV",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 23,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "LWR",
+      "depth_chart_order": 4,
+      "college": "TCU",
+      "search_rank": 208
+    },
     "12484": {
       "player_id": "12484",
       "full_name": "Jayden Higgins",
@@ -4201,7 +4351,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "SWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 2,
       "college": "Iowa State",
       "search_rank": 126
@@ -4277,7 +4427,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "SWR",
       "depth_chart_order": 4,
       "college": "Illinois",
       "search_rank": 172
@@ -4505,7 +4655,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 2,
       "college": "Ole Miss",
       "search_rank": 179
@@ -4891,6 +5041,25 @@
       "college": "Indiana",
       "search_rank": 39
     },
+    "13270": {
+      "player_id": "13270",
+      "full_name": "CJ Daniels",
+      "first_name": "CJ",
+      "last_name": "Daniels",
+      "position": "WR",
+      "team": "LAR",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 24,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "RWR",
+      "depth_chart_order": null,
+      "college": "Miami (FL)",
+      "search_rank": 999
+    },
     "13274": {
       "player_id": "13274",
       "full_name": "Germie Bernard",
@@ -5053,7 +5222,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 0,
-      "age": 20,
+      "age": 21,
       "fantasy_positions": [
         "RB"
       ],
@@ -5323,7 +5492,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": null,
       "college": "Washington",
       "search_rank": 153
@@ -5384,6 +5553,25 @@
       "depth_chart_order": null,
       "college": "UConn",
       "search_rank": 999
+    },
+    "13405": {
+      "player_id": "13405",
+      "full_name": "Kaytron Allen",
+      "first_name": "Kaytron",
+      "last_name": "Allen",
+      "position": "RB",
+      "team": "WAS",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 23,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": null,
+      "college": "Penn State",
+      "search_rank": 157
     },
     "13417": {
       "player_id": "13417",
@@ -6045,7 +6233,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "SWR",
       "depth_chart_order": 3,
       "college": "Texas A&M",
       "search_rank": 210
@@ -6178,7 +6366,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": 1,
       "college": "SMU",
       "search_rank": 72
@@ -6520,7 +6708,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 1,
       "college": "Alabama",
       "search_rank": 160
@@ -6539,7 +6727,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 1,
       "college": "Oklahoma",
       "search_rank": 11
@@ -6805,7 +6993,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "SWR",
       "depth_chart_order": 2,
       "college": "Tennessee",
       "search_rank": 123
@@ -6881,7 +7069,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 2,
       "college": "Alabama",
       "search_rank": 42
@@ -7033,7 +7221,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": 2,
       "college": "Minnesota",
       "search_rank": 203
@@ -7128,7 +7316,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "LWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": 4,
       "college": "Tennessee",
       "search_rank": 999
@@ -7356,7 +7544,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": 2,
       "college": "Georgia",
       "search_rank": 23
@@ -7394,7 +7582,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": 2,
       "college": "Cincinnati",
       "search_rank": 88
@@ -7432,7 +7620,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "SWR",
+      "depth_chart_position": "LWR",
       "depth_chart_order": 1,
       "college": "Ohio State",
       "search_rank": 26
@@ -7561,7 +7749,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 4,
-      "age": 24,
+      "age": 25,
       "fantasy_positions": [
         "RB"
       ],
@@ -8185,7 +8373,7 @@
       "league_id": "1312581067286282240",
       "league_name": "Schwieters",
       "season": "2026",
-      "source_generated_at": "2026-05-30T11:06:23.673190Z"
+      "source_generated_at": "2026-05-31T11:52:29.800709Z"
     },
     "teams": [
       {
@@ -9278,7 +9466,7 @@
             },
             "average_age_by_position": {
               "QB": 27.5,
-              "RB": 26.71,
+              "RB": 26.86,
               "TE": 26.0,
               "WR": 24.86
             }
@@ -9898,6 +10086,16 @@
             "picked_by": "jchrz",
             "picked_by_team": "White Ice",
             "picked_by_user_id": "471424563457028096"
+          },
+          {
+            "pick_no": 34,
+            "round": 3,
+            "draft_slot": 10,
+            "player_id": "12467",
+            "player": "Jordan James (RB, SF)",
+            "picked_by": "jchrz",
+            "picked_by_team": "White Ice",
+            "picked_by_user_id": "471424563457028096"
           }
         ]
       },
@@ -10218,6 +10416,16 @@
             "picked_by": "andrewwelle",
             "picked_by_team": "andrewwelle",
             "picked_by_user_id": "471451909446692864"
+          },
+          {
+            "pick_no": 32,
+            "round": 3,
+            "draft_slot": 8,
+            "player_id": "12483",
+            "player": "Jack Bech (WR, LV)",
+            "picked_by": "andrewwelle",
+            "picked_by_team": "andrewwelle",
+            "picked_by_user_id": "471451909446692864"
           }
         ]
       },
@@ -10283,10 +10491,10 @@
             "Woody Marks (RB, HOU)",
             "Kenneth Gainwell (RB, TB)",
             "Jaxon Smith-Njigba (WR, SEA)",
-            "Isaac TeSlaa (WR, DET)",
+            "Tetairoa McMillan (WR, CAR)",
             "Tyler Warren (TE, IND)",
             "Christian Watson (WR, GB)",
-            "Tetairoa McMillan (WR, CAR)",
+            "Isaac TeSlaa (WR, DET)",
             "Jayden Reed (WR, GB)"
           ],
           "reserve": [
@@ -10876,6 +11084,16 @@
             "picked_by": "johnwander",
             "picked_by_team": "Back to the Future",
             "picked_by_user_id": "471457570825957376"
+          },
+          {
+            "pick_no": 31,
+            "round": 3,
+            "draft_slot": 7,
+            "player_id": "13270",
+            "player": "CJ Daniels (WR, LAR)",
+            "picked_by": "johnwander",
+            "picked_by_team": "Back to the Future",
+            "picked_by_user_id": "471457570825957376"
           }
         ]
       },
@@ -11188,6 +11406,16 @@
             "draft_slot": 9,
             "player_id": "13285",
             "player": "Malachi Fields (WR, NYG)",
+            "picked_by": "alexwelle",
+            "picked_by_team": "alexwelle",
+            "picked_by_user_id": "471501409838166016"
+          },
+          {
+            "pick_no": 33,
+            "round": 3,
+            "draft_slot": 9,
+            "player_id": "13405",
+            "player": "Kaytron Allen (RB, WAS)",
             "picked_by": "alexwelle",
             "picked_by_team": "alexwelle",
             "picked_by_user_id": "471501409838166016"
