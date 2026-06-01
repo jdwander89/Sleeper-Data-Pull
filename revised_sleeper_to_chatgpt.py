@@ -12,9 +12,20 @@ Creates:
 8. sleeper_chatgpt_matchups_standings_summary.json
 9. sleeper_chatgpt_waiver_summary.json
 
+Key draft-board improvement:
+- If Sleeper returns slot_to_roster_id as null, this script derives it from:
+  draft_order user_id → draft slot
+  users/team metadata
+  rosters owner_id → roster_id
+- Adds:
+  derived_slot_to_team
+  derived_user_to_roster
+  derived_pick_sequence
+  upcoming_slots_preview
+
 Optional GitHub push:
 - Set GITHUB_TOKEN as an environment variable.
-- Run: python revised_sleeper_to_chatgpt.py --push-github
+- Run: python revised_sleeper_to_chatgpt.py --include-trending --push-github
 
 Default League ID:
 1312581067286282240
@@ -90,6 +101,14 @@ def parse_weeks(value: str) -> List[int]:
         return list(range(int(start), int(end) + 1))
 
     return [int(x.strip()) for x in value.split(",") if x.strip()]
+
+
+def sort_key_pick(pick: Dict[str, Any]) -> Tuple[str, int, int]:
+    return (
+        str(pick.get("season", "")),
+        safe_int(pick.get("round"), 0) or 0,
+        safe_int(pick.get("original_roster_id"), 0) or 0,
+    )
 
 
 # ==========================================================
@@ -234,6 +253,19 @@ def get_team_name(owner_id: Any, users_map: Dict[str, Dict[str, Any]]) -> str:
     return user.get("team_name") or user.get("display_name") or owner_id
 
 
+def build_user_to_roster_map(rosters: List[Dict[str, Any]]) -> Dict[str, int]:
+    user_to_roster = {}
+
+    for roster in rosters or []:
+        owner_id = roster.get("owner_id")
+        roster_id = roster.get("roster_id")
+        if owner_id is None or roster_id is None:
+            continue
+        user_to_roster[str(owner_id)] = safe_int(roster_id)
+
+    return user_to_roster
+
+
 def team_ref(roster_id: Any, teams_by_roster_id: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
     roster_id_str = str(roster_id)
     team = teams_by_roster_id.get(roster_id_str, {})
@@ -348,6 +380,70 @@ def get_team_key_maps(teams: List[Dict[str, Any]]) -> Tuple[Dict[str, Dict[str, 
 # DRAFT HELPERS
 # ==========================================================
 
+def derive_slot_to_team(
+    draft: Dict[str, Any],
+    rosters: List[Dict[str, Any]],
+    users_map: Dict[str, Dict[str, Any]],
+    teams_by_roster_id: Dict[str, Dict[str, Any]],
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Sleeper sometimes returns slot_to_roster_id as null.
+    This derives slot → roster/team using draft_order:
+      draft_order: user_id -> slot
+      rosters: owner_id -> roster_id
+    """
+    draft_order = draft.get("draft_order") or {}
+    user_to_roster = build_user_to_roster_map(rosters)
+
+    derived = {}
+
+    for user_id, slot in draft_order.items():
+        slot_str = str(slot)
+        roster_id = user_to_roster.get(str(user_id))
+        user = users_map.get(str(user_id), {})
+        team = teams_by_roster_id.get(str(roster_id), {}) if roster_id is not None else {}
+
+        derived[slot_str] = {
+            "slot": safe_int(slot),
+            "user_id": str(user_id),
+            "roster_id": roster_id,
+            "team_name": team.get("team_name") or user.get("team_name") or user.get("display_name"),
+            "owner_name": team.get("owner_name") or user.get("display_name"),
+        }
+
+    return dict(sorted(derived.items(), key=lambda kv: safe_int(kv[0], 0) or 0))
+
+
+def build_pick_sequence(
+    draft: Dict[str, Any],
+    teams_by_roster_id: Dict[str, Dict[str, Any]],
+    derived_slot_to_team: Dict[str, Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    settings = draft.get("settings") or {}
+    total_rounds = safe_int(settings.get("rounds"), 0) or 0
+    total_teams = safe_int(settings.get("teams"), 0) or 0
+
+    if total_rounds <= 0 or total_teams <= 0:
+        return []
+
+    pick_sequence = []
+
+    for round_no in range(1, total_rounds + 1):
+        for draft_slot in range(1, total_teams + 1):
+            pick_no = ((round_no - 1) * total_teams) + draft_slot
+            slot_info = derived_slot_to_team.get(str(draft_slot), {})
+            roster_id = slot_info.get("roster_id")
+
+            pick_sequence.append({
+                "pick_no": pick_no,
+                "round": round_no,
+                "draft_slot": draft_slot,
+                "scheduled_roster": team_ref(roster_id, teams_by_roster_id) if roster_id is not None else None,
+            })
+
+    return pick_sequence
+
+
 def normalize_draft_pick(
     pick: Dict[str, Any],
     teams_by_roster_id: Dict[str, Dict[str, Any]],
@@ -433,7 +529,24 @@ def normalize_draft(
     traded_picks: List[Dict[str, Any]],
     teams_by_roster_id: Dict[str, Dict[str, Any]],
     users_map: Optional[Dict[str, Dict[str, Any]]] = None,
+    rosters: Optional[List[Dict[str, Any]]] = None,
 ) -> Dict[str, Any]:
+    users_map = users_map or {}
+    rosters = rosters or []
+
+    derived_slot_to_team = derive_slot_to_team(
+        draft=draft,
+        rosters=rosters,
+        users_map=users_map,
+        teams_by_roster_id=teams_by_roster_id,
+    )
+
+    derived_pick_sequence = build_pick_sequence(
+        draft=draft,
+        teams_by_roster_id=teams_by_roster_id,
+        derived_slot_to_team=derived_slot_to_team,
+    )
+
     return {
         "draft_id": draft.get("draft_id"),
         "season": draft.get("season"),
@@ -447,6 +560,8 @@ def normalize_draft(
         "metadata": draft.get("metadata"),
         "draft_order": draft.get("draft_order"),
         "slot_to_roster_id": draft.get("slot_to_roster_id"),
+        "derived_slot_to_team": derived_slot_to_team,
+        "derived_pick_sequence": derived_pick_sequence,
         "rounds": group_picks_by_round(
             picks,
             teams_by_roster_id,
@@ -700,14 +815,7 @@ def sort_pick_inventory(inventory: Dict[str, List[Dict[str, Any]]]) -> Dict[str,
     sorted_inventory = {}
 
     for roster_id, picks in inventory.items():
-        sorted_inventory[str(roster_id)] = sorted(
-            picks,
-            key=lambda p: (
-                str(p.get("season", "")),
-                safe_int(p.get("round"), 0) or 0,
-                safe_int(p.get("original_roster_id"), 0) or 0,
-            )
-        )
+        sorted_inventory[str(roster_id)] = sorted(picks, key=sort_key_pick)
 
     return sorted_inventory
 
@@ -790,6 +898,7 @@ def build_league_context_summary(export_data: Dict[str, Any]) -> Dict[str, Any]:
             "type": active_draft.get("type"),
             "settings": active_draft.get("settings"),
             "metadata": active_draft.get("metadata"),
+            "derived_slot_to_team": active_draft.get("derived_slot_to_team"),
         },
     }
 
@@ -853,14 +962,7 @@ def build_team_roster_and_picks_summary(export_data: Dict[str, Any], future_year
             "owner_name": team.get("owner_name"),
             "roster": roster_summary.get(roster_id, {}),
             "current_and_future_picks_owned": pick_inventory.get(roster_id, []),
-            "picks_traded_away": sorted(
-                traded_away.get(roster_id, []),
-                key=lambda p: (
-                    str(p.get("season", "")),
-                    safe_int(p.get("round"), 0) or 0,
-                    safe_int(p.get("original_roster_id"), 0) or 0,
-                )
-            ),
+            "picks_traded_away": sorted(traded_away.get(roster_id, []), key=sort_key_pick),
             "current_draft_picks_made": sorted(
                 current_draft_picks_made.get(roster_id, []),
                 key=lambda p: safe_int(p.get("pick_no"), 0) or 0,
@@ -874,7 +976,6 @@ def build_draft_board_summary(export_data: Dict[str, Any], future_years: int = 3
     league = export_data.get("league_context") or {}
     metadata = league.get("metadata") or {}
     users = export_data.get("users") or {}
-    teams = export_data.get("teams") or {}
     draft_room = export_data.get("draft_room") or {}
 
     drafts = draft_room.get("drafts") or []
@@ -887,11 +988,22 @@ def build_draft_board_summary(export_data: Dict[str, Any], future_years: int = 3
     on_clock_user = users.get(str(on_clock_user_id), {}) if on_clock_user_id else {}
 
     picks_by_team = defaultdict(list)
+    completed_pick_nos = set()
+
     for pick in completed_picks:
         roster_id = str((pick.get("roster") or {}).get("roster_id"))
         picks_by_team[roster_id].append(pick)
+        pick_no = safe_int(pick.get("pick_no"))
+        if pick_no is not None:
+            completed_pick_nos.add(pick_no)
 
     pick_inventory, _, all_traded_picks = build_pick_inventory(export_data, future_years)
+
+    derived_pick_sequence = active_draft.get("derived_pick_sequence") or []
+    upcoming_slots_preview = [
+        item for item in derived_pick_sequence
+        if safe_int(item.get("pick_no"), 0) not in completed_pick_nos
+    ][:24]
 
     return {
         "generated_from": export_data.get("read_me_first", {}),
@@ -904,6 +1016,8 @@ def build_draft_board_summary(export_data: Dict[str, Any], future_years: int = 3
             "metadata": active_draft.get("metadata"),
             "draft_order": active_draft.get("draft_order"),
             "slot_to_roster_id": active_draft.get("slot_to_roster_id"),
+            "derived_slot_to_team": active_draft.get("derived_slot_to_team"),
+            "derived_pick_sequence": derived_pick_sequence,
         },
         "current_status": {
             "league_status": league.get("status"),
@@ -914,6 +1028,7 @@ def build_draft_board_summary(export_data: Dict[str, Any], future_years: int = 3
             "on_the_clock_display_name": on_clock_user.get("display_name"),
             "on_the_clock_team_name": on_clock_user.get("team_name"),
         },
+        "upcoming_slots_preview": upcoming_slots_preview,
         "completed_picks": completed_picks,
         "completed_picks_by_roster_id": dict(picks_by_team),
         "current_and_future_pick_inventory_by_roster_id": pick_inventory,
@@ -1309,6 +1424,7 @@ def build_export(
                 draft_traded_picks_by_draft.get(draft.get("draft_id"), []),
                 teams_by_roster_id,
                 users_map=users_map,
+                rosters=rosters,
             )
             for draft in drafts
         ],
@@ -1525,7 +1641,7 @@ def push_outputs_to_github(
     output_paths: Dict[str, str],
     token: str,
 ) -> None:
-    for label, local_path in output_paths.items():
+    for _, local_path in output_paths.items():
         with open(local_path, "r", encoding="utf-8") as f:
             content_text = f.read()
 
