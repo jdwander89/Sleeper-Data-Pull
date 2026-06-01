@@ -1,0 +1,1239 @@
+{
+  "generated_from": {
+    "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
+    "generated_at": "2026-06-01T19:34:53.479555Z",
+    "league_id": "1312581067286282240",
+    "season": "2026",
+    "weeks_included": [
+      1
+    ],
+    "current_week": 0,
+    "summary_files": [
+      "league_context_summary",
+      "team_roster_and_picks_summary",
+      "draft_board_summary",
+      "trade_market_summary",
+      "transactions_summary",
+      "matchups_standings_summary",
+      "waiver_summary"
+    ],
+    "how_to_read": [
+      "Use the summary files first for normal analysis.",
+      "Use sleeper_chatgpt.json only as the full source-of-truth archive.",
+      "Use team_roster_and_picks_summary for roster and pick inventory questions.",
+      "Use draft_board_summary for live draft questions.",
+      "Use trade_market_summary for trade strategy.",
+      "Use transactions_summary for trade/history questions.",
+      "Use waiver_summary for waiver/free-agent questions.",
+      "Use league_context_summary for scoring/settings questions."
+    ],
+    "excluded_sections": [
+      "birth date",
+      "high school",
+      "hometown",
+      "physical attributes",
+      "athletic testing",
+      "headshots and visuals",
+      "avatars and media",
+      "taxi squad raw objects",
+      "raw Sleeper payload dumps"
+    ]
+  },
+  "transactions_by_week": {
+    "1": [
+      {
+        "transaction_id": "1366107338628403200",
+        "type": "trade",
+        "status": "complete",
+        "created": 1780067879878,
+        "creator": "471403228244733952",
+        "roster_ids": [
+          2,
+          10
+        ],
+        "teams": [
+          {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          },
+          {
+            "roster_id": 10,
+            "team_name": "Goin in Ra",
+            "owner_name": "NC79"
+          }
+        ],
+        "adds": [],
+        "drops": [],
+        "draft_picks": [
+          {
+            "round": 3,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 10,
+            "owner_id": 2,
+            "previous_owner_id": 10
+          },
+          {
+            "round": 5,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 2,
+            "owner_id": 10,
+            "previous_owner_id": 2
+          },
+          {
+            "round": 3,
+            "season": "2028",
+            "league_id": null,
+            "roster_id": 2,
+            "owner_id": 10,
+            "previous_owner_id": 2
+          }
+        ],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          2,
+          10
+        ]
+      },
+      {
+        "transaction_id": "1365775464500576256",
+        "type": "trade",
+        "status": "complete",
+        "created": 1779988754920,
+        "creator": "471403228244733952",
+        "roster_ids": [
+          1,
+          2
+        ],
+        "teams": [
+          {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "8408",
+            "player": "Jordan Mason (RB, MIN)",
+            "to": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "8408",
+            "player": "Jordan Mason (RB, MIN)",
+            "from": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            }
+          }
+        ],
+        "draft_picks": [
+          {
+            "round": 5,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 1,
+            "owner_id": 2,
+            "previous_owner_id": 1
+          },
+          {
+            "round": 3,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 2,
+            "owner_id": 1,
+            "previous_owner_id": 2
+          },
+          {
+            "round": 4,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 2,
+            "owner_id": 1,
+            "previous_owner_id": 2
+          },
+          {
+            "round": 3,
+            "season": "2027",
+            "league_id": null,
+            "roster_id": 2,
+            "owner_id": 1,
+            "previous_owner_id": 2
+          }
+        ],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          1,
+          2
+        ]
+      },
+      {
+        "transaction_id": "1365529922608566272",
+        "type": "trade",
+        "status": "complete",
+        "created": 1779930213170,
+        "creator": "459751268567478272",
+        "roster_ids": [
+          7,
+          12
+        ],
+        "teams": [
+          {
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          },
+          {
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          }
+        ],
+        "adds": [],
+        "drops": [],
+        "draft_picks": [
+          {
+            "round": 3,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 12,
+            "owner_id": 7,
+            "previous_owner_id": 12
+          },
+          {
+            "round": 3,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 7,
+            "owner_id": 12,
+            "previous_owner_id": 7
+          },
+          {
+            "round": 4,
+            "season": "2027",
+            "league_id": null,
+            "roster_id": 7,
+            "owner_id": 12,
+            "previous_owner_id": 7
+          }
+        ],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          7,
+          12
+        ]
+      },
+      {
+        "transaction_id": "1364777189010059264",
+        "type": "trade",
+        "status": "complete",
+        "created": 1779750747496,
+        "creator": "464915162038530048",
+        "roster_ids": [
+          1,
+          11
+        ],
+        "teams": [
+          {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "7526",
+            "player": "Jaylen Waddle (WR, DEN)",
+            "to": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "7526",
+            "player": "Jaylen Waddle (WR, DEN)",
+            "from": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            }
+          }
+        ],
+        "draft_picks": [
+          {
+            "round": 2,
+            "season": "2027",
+            "league_id": null,
+            "roster_id": 1,
+            "owner_id": 11,
+            "previous_owner_id": 1
+          },
+          {
+            "round": 2,
+            "season": "2026",
+            "league_id": null,
+            "roster_id": 11,
+            "owner_id": 1,
+            "previous_owner_id": 11
+          },
+          {
+            "round": 1,
+            "season": "2027",
+            "league_id": null,
+            "roster_id": 11,
+            "owner_id": 1,
+            "previous_owner_id": 11
+          }
+        ],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          1,
+          11
+        ]
+      },
+      {
+        "transaction_id": "1363699257793589248",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1779493748667,
+        "creator": "459751268567478272",
+        "roster_ids": [
+          7
+        ],
+        "teams": [
+          {
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "4098",
+            "player": "Kareem Hunt (RB)",
+            "from": {
+              "roster_id": 7,
+              "team_name": "I ❤️ Commish",
+              "owner_name": "lex11"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          7
+        ]
+      },
+      {
+        "transaction_id": "1363659964362534912",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1779484380383,
+        "creator": "471744678006353920",
+        "roster_ids": [
+          12
+        ],
+        "teams": [
+          {
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "4018",
+            "player": "Joe Mixon (RB)",
+            "from": {
+              "roster_id": 12,
+              "team_name": "gullickson",
+              "owner_name": "gullickson"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          12
+        ]
+      },
+      {
+        "transaction_id": "1363659907554906112",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1779484366839,
+        "creator": "471744678006353920",
+        "roster_ids": [
+          12
+        ],
+        "teams": [
+          {
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "5970",
+            "player": "Greg Dortch (WR, DET)",
+            "from": {
+              "roster_id": 12,
+              "team_name": "gullickson",
+              "owner_name": "gullickson"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          12
+        ]
+      },
+      {
+        "transaction_id": "1346145125503348736",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1775308517388,
+        "creator": "471501409838166016",
+        "roster_ids": [
+          9
+        ],
+        "teams": [
+          {
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "11647",
+            "player": "Kimani Vidal (RB, LAC)",
+            "from": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          9
+        ]
+      },
+      {
+        "transaction_id": "1346143735632625664",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1775308186018,
+        "creator": "471501409838166016",
+        "roster_ids": [
+          9
+        ],
+        "teams": [
+          {
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "7607",
+            "player": "Michael Carter (RB, TEN)",
+            "from": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          9
+        ]
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_id": "1366107338628403200",
+      "type": "trade",
+      "status": "complete",
+      "created": 1780067879878,
+      "creator": "471403228244733952",
+      "roster_ids": [
+        2,
+        10
+      ],
+      "teams": [
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        },
+        {
+          "roster_id": 10,
+          "team_name": "Goin in Ra",
+          "owner_name": "NC79"
+        }
+      ],
+      "adds": [],
+      "drops": [],
+      "draft_picks": [
+        {
+          "round": 3,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 10,
+          "owner_id": 2,
+          "previous_owner_id": 10
+        },
+        {
+          "round": 5,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 2,
+          "owner_id": 10,
+          "previous_owner_id": 2
+        },
+        {
+          "round": 3,
+          "season": "2028",
+          "league_id": null,
+          "roster_id": 2,
+          "owner_id": 10,
+          "previous_owner_id": 2
+        }
+      ],
+      "waiver_budget": [],
+      "settings": null,
+      "metadata": null,
+      "consenter_ids": [
+        2,
+        10
+      ]
+    },
+    {
+      "transaction_id": "1365775464500576256",
+      "type": "trade",
+      "status": "complete",
+      "created": 1779988754920,
+      "creator": "471403228244733952",
+      "roster_ids": [
+        1,
+        2
+      ],
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        }
+      ],
+      "adds": [
+        {
+          "player_id": "8408",
+          "player": "Jordan Mason (RB, MIN)",
+          "to": {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          }
+        }
+      ],
+      "drops": [
+        {
+          "player_id": "8408",
+          "player": "Jordan Mason (RB, MIN)",
+          "from": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          }
+        }
+      ],
+      "draft_picks": [
+        {
+          "round": 5,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 1,
+          "owner_id": 2,
+          "previous_owner_id": 1
+        },
+        {
+          "round": 3,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 2,
+          "owner_id": 1,
+          "previous_owner_id": 2
+        },
+        {
+          "round": 4,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 2,
+          "owner_id": 1,
+          "previous_owner_id": 2
+        },
+        {
+          "round": 3,
+          "season": "2027",
+          "league_id": null,
+          "roster_id": 2,
+          "owner_id": 1,
+          "previous_owner_id": 2
+        }
+      ],
+      "waiver_budget": [],
+      "settings": null,
+      "metadata": null,
+      "consenter_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "transaction_id": "1365529922608566272",
+      "type": "trade",
+      "status": "complete",
+      "created": 1779930213170,
+      "creator": "459751268567478272",
+      "roster_ids": [
+        7,
+        12
+      ],
+      "teams": [
+        {
+          "roster_id": 7,
+          "team_name": "I ❤️ Commish",
+          "owner_name": "lex11"
+        },
+        {
+          "roster_id": 12,
+          "team_name": "gullickson",
+          "owner_name": "gullickson"
+        }
+      ],
+      "adds": [],
+      "drops": [],
+      "draft_picks": [
+        {
+          "round": 3,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 12,
+          "owner_id": 7,
+          "previous_owner_id": 12
+        },
+        {
+          "round": 3,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 7,
+          "owner_id": 12,
+          "previous_owner_id": 7
+        },
+        {
+          "round": 4,
+          "season": "2027",
+          "league_id": null,
+          "roster_id": 7,
+          "owner_id": 12,
+          "previous_owner_id": 7
+        }
+      ],
+      "waiver_budget": [],
+      "settings": null,
+      "metadata": null,
+      "consenter_ids": [
+        7,
+        12
+      ]
+    },
+    {
+      "transaction_id": "1364777189010059264",
+      "type": "trade",
+      "status": "complete",
+      "created": 1779750747496,
+      "creator": "464915162038530048",
+      "roster_ids": [
+        1,
+        11
+      ],
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 11,
+          "team_name": "MOJO",
+          "owner_name": "amoritko"
+        }
+      ],
+      "adds": [
+        {
+          "player_id": "7526",
+          "player": "Jaylen Waddle (WR, DEN)",
+          "to": {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        }
+      ],
+      "drops": [
+        {
+          "player_id": "7526",
+          "player": "Jaylen Waddle (WR, DEN)",
+          "from": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          }
+        }
+      ],
+      "draft_picks": [
+        {
+          "round": 2,
+          "season": "2027",
+          "league_id": null,
+          "roster_id": 1,
+          "owner_id": 11,
+          "previous_owner_id": 1
+        },
+        {
+          "round": 2,
+          "season": "2026",
+          "league_id": null,
+          "roster_id": 11,
+          "owner_id": 1,
+          "previous_owner_id": 11
+        },
+        {
+          "round": 1,
+          "season": "2027",
+          "league_id": null,
+          "roster_id": 11,
+          "owner_id": 1,
+          "previous_owner_id": 11
+        }
+      ],
+      "waiver_budget": [],
+      "settings": null,
+      "metadata": null,
+      "consenter_ids": [
+        1,
+        11
+      ]
+    }
+  ],
+  "draft_pick_movements": [
+    {
+      "week": "1",
+      "transaction_id": "1366107338628403200",
+      "teams": [
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        },
+        {
+          "roster_id": 10,
+          "team_name": "Goin in Ra",
+          "owner_name": "NC79"
+        }
+      ],
+      "pick": {
+        "round": 3,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 10,
+        "owner_id": 2,
+        "previous_owner_id": 10
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1366107338628403200",
+      "teams": [
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        },
+        {
+          "roster_id": 10,
+          "team_name": "Goin in Ra",
+          "owner_name": "NC79"
+        }
+      ],
+      "pick": {
+        "round": 5,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 2,
+        "owner_id": 10,
+        "previous_owner_id": 2
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1366107338628403200",
+      "teams": [
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        },
+        {
+          "roster_id": 10,
+          "team_name": "Goin in Ra",
+          "owner_name": "NC79"
+        }
+      ],
+      "pick": {
+        "round": 3,
+        "season": "2028",
+        "league_id": null,
+        "roster_id": 2,
+        "owner_id": 10,
+        "previous_owner_id": 2
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365775464500576256",
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        }
+      ],
+      "pick": {
+        "round": 5,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 1,
+        "owner_id": 2,
+        "previous_owner_id": 1
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365775464500576256",
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        }
+      ],
+      "pick": {
+        "round": 3,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 2,
+        "owner_id": 1,
+        "previous_owner_id": 2
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365775464500576256",
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        }
+      ],
+      "pick": {
+        "round": 4,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 2,
+        "owner_id": 1,
+        "previous_owner_id": 2
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365775464500576256",
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        }
+      ],
+      "pick": {
+        "round": 3,
+        "season": "2027",
+        "league_id": null,
+        "roster_id": 2,
+        "owner_id": 1,
+        "previous_owner_id": 2
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365529922608566272",
+      "teams": [
+        {
+          "roster_id": 7,
+          "team_name": "I ❤️ Commish",
+          "owner_name": "lex11"
+        },
+        {
+          "roster_id": 12,
+          "team_name": "gullickson",
+          "owner_name": "gullickson"
+        }
+      ],
+      "pick": {
+        "round": 3,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 12,
+        "owner_id": 7,
+        "previous_owner_id": 12
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365529922608566272",
+      "teams": [
+        {
+          "roster_id": 7,
+          "team_name": "I ❤️ Commish",
+          "owner_name": "lex11"
+        },
+        {
+          "roster_id": 12,
+          "team_name": "gullickson",
+          "owner_name": "gullickson"
+        }
+      ],
+      "pick": {
+        "round": 3,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 7,
+        "owner_id": 12,
+        "previous_owner_id": 7
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365529922608566272",
+      "teams": [
+        {
+          "roster_id": 7,
+          "team_name": "I ❤️ Commish",
+          "owner_name": "lex11"
+        },
+        {
+          "roster_id": 12,
+          "team_name": "gullickson",
+          "owner_name": "gullickson"
+        }
+      ],
+      "pick": {
+        "round": 4,
+        "season": "2027",
+        "league_id": null,
+        "roster_id": 7,
+        "owner_id": 12,
+        "previous_owner_id": 7
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1364777189010059264",
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 11,
+          "team_name": "MOJO",
+          "owner_name": "amoritko"
+        }
+      ],
+      "pick": {
+        "round": 2,
+        "season": "2027",
+        "league_id": null,
+        "roster_id": 1,
+        "owner_id": 11,
+        "previous_owner_id": 1
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1364777189010059264",
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 11,
+          "team_name": "MOJO",
+          "owner_name": "amoritko"
+        }
+      ],
+      "pick": {
+        "round": 2,
+        "season": "2026",
+        "league_id": null,
+        "roster_id": 11,
+        "owner_id": 1,
+        "previous_owner_id": 11
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1364777189010059264",
+      "teams": [
+        {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        },
+        {
+          "roster_id": 11,
+          "team_name": "MOJO",
+          "owner_name": "amoritko"
+        }
+      ],
+      "pick": {
+        "round": 1,
+        "season": "2027",
+        "league_id": null,
+        "roster_id": 11,
+        "owner_id": 1,
+        "previous_owner_id": 11
+      }
+    }
+  ],
+  "player_movements": [
+    {
+      "week": "1",
+      "transaction_id": "1365775464500576256",
+      "type": "trade",
+      "move_type": "adds",
+      "move": {
+        "player_id": "8408",
+        "player": "Jordan Mason (RB, MIN)",
+        "to": {
+          "roster_id": 2,
+          "team_name": "A B CeeDee",
+          "owner_name": "Logs24"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1365775464500576256",
+      "type": "trade",
+      "move_type": "drops",
+      "move": {
+        "player_id": "8408",
+        "player": "Jordan Mason (RB, MIN)",
+        "from": {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1364777189010059264",
+      "type": "trade",
+      "move_type": "adds",
+      "move": {
+        "player_id": "7526",
+        "player": "Jaylen Waddle (WR, DEN)",
+        "to": {
+          "roster_id": 11,
+          "team_name": "MOJO",
+          "owner_name": "amoritko"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1364777189010059264",
+      "type": "trade",
+      "move_type": "drops",
+      "move": {
+        "player_id": "7526",
+        "player": "Jaylen Waddle (WR, DEN)",
+        "from": {
+          "roster_id": 1,
+          "team_name": "It’s Herbie Hancock",
+          "owner_name": "jwander"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1363699257793589248",
+      "type": "free_agent",
+      "move_type": "drops",
+      "move": {
+        "player_id": "4098",
+        "player": "Kareem Hunt (RB)",
+        "from": {
+          "roster_id": 7,
+          "team_name": "I ❤️ Commish",
+          "owner_name": "lex11"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1363659964362534912",
+      "type": "free_agent",
+      "move_type": "drops",
+      "move": {
+        "player_id": "4018",
+        "player": "Joe Mixon (RB)",
+        "from": {
+          "roster_id": 12,
+          "team_name": "gullickson",
+          "owner_name": "gullickson"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1363659907554906112",
+      "type": "free_agent",
+      "move_type": "drops",
+      "move": {
+        "player_id": "5970",
+        "player": "Greg Dortch (WR, DET)",
+        "from": {
+          "roster_id": 12,
+          "team_name": "gullickson",
+          "owner_name": "gullickson"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1346145125503348736",
+      "type": "free_agent",
+      "move_type": "drops",
+      "move": {
+        "player_id": "11647",
+        "player": "Kimani Vidal (RB, LAC)",
+        "from": {
+          "roster_id": 9,
+          "team_name": "alexwelle",
+          "owner_name": "alexwelle"
+        }
+      }
+    },
+    {
+      "week": "1",
+      "transaction_id": "1346143735632625664",
+      "type": "free_agent",
+      "move_type": "drops",
+      "move": {
+        "player_id": "7607",
+        "player": "Michael Carter (RB, TEN)",
+        "from": {
+          "roster_id": 9,
+          "team_name": "alexwelle",
+          "owner_name": "alexwelle"
+        }
+      }
+    }
+  ]
+}
