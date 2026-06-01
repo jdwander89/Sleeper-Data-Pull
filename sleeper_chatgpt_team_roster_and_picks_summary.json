@@ -1,0 +1,4369 @@
+{
+  "generated_from": {
+    "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
+    "generated_at": "2026-06-01T19:34:53.479555Z",
+    "league_id": "1312581067286282240",
+    "season": "2026",
+    "weeks_included": [
+      1
+    ],
+    "current_week": 0,
+    "summary_files": [
+      "league_context_summary",
+      "team_roster_and_picks_summary",
+      "draft_board_summary",
+      "trade_market_summary",
+      "transactions_summary",
+      "matchups_standings_summary",
+      "waiver_summary"
+    ],
+    "how_to_read": [
+      "Use the summary files first for normal analysis.",
+      "Use sleeper_chatgpt.json only as the full source-of-truth archive.",
+      "Use team_roster_and_picks_summary for roster and pick inventory questions.",
+      "Use draft_board_summary for live draft questions.",
+      "Use trade_market_summary for trade strategy.",
+      "Use transactions_summary for trade/history questions.",
+      "Use waiver_summary for waiver/free-agent questions.",
+      "Use league_context_summary for scoring/settings questions."
+    ],
+    "excluded_sections": [
+      "birth date",
+      "high school",
+      "hometown",
+      "physical attributes",
+      "athletic testing",
+      "headshots and visuals",
+      "avatars and media",
+      "taxi squad raw objects",
+      "raw Sleeper payload dumps"
+    ]
+  },
+  "teams": [
+    {
+      "roster_id": 1,
+      "team_name": "It’s Herbie Hancock",
+      "owner_name": "jwander",
+      "roster": {
+        "roster_id": 1,
+        "team_name": "It’s Herbie Hancock",
+        "owner_name": "jwander",
+        "summary": {
+          "total_players": 18,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 3,
+            "RB": 5,
+            "TE": 2,
+            "WR": 8
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 2,
+            "TE": 1,
+            "WR": 5
+          },
+          "average_age_by_position": {
+            "QB": 25.0,
+            "RB": 24.0,
+            "TE": 24.0,
+            "WR": 23.38
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Cam Ward (QB, TEN)",
+            "Jayden Daniels (QB, WAS)",
+            "Trevor Lawrence (QB, JAX)"
+          ],
+          "RB": [
+            "Braelon Allen (RB, NYJ)",
+            "Jacory Croskey-Merritt (RB, WAS)",
+            "Jaylen Wright (RB, MIA)",
+            "Rachaad White (RB, WAS)",
+            "TreVeyon Henderson (RB, NE)"
+          ],
+          "TE": [
+            "Dalton Kincaid (TE, BUF)",
+            "Mason Taylor (TE, NYJ)"
+          ],
+          "WR": [
+            "Chimere Dike (WR, TEN)",
+            "Drake London (WR, ATL)",
+            "Isaiah Bond (WR, CLE)",
+            "Jordan Addison (WR, MIN)",
+            "Kayshon Boutte (WR, NE)",
+            "Matthew Golden (WR, GB)",
+            "Tez Johnson (WR, TB)",
+            "Xavier Worthy (WR, KC)"
+          ]
+        },
+        "starters": [
+          "Jayden Daniels (QB, WAS)",
+          "TreVeyon Henderson (RB, NE)",
+          "Jacory Croskey-Merritt (RB, WAS)",
+          "Drake London (WR, ATL)",
+          "Jordan Addison (WR, MIN)",
+          "Dalton Kincaid (TE, BUF)",
+          "Matthew Golden (WR, GB)",
+          "Xavier Worthy (WR, KC)",
+          "Chimere Dike (WR, TEN)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 from MOJO",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 from MOJO",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        }
+      ],
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 from It’s Herbie Hancock",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 from It’s Herbie Hancock",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        }
+      ],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 4,
+          "round": 1,
+          "draft_slot": 4,
+          "player_id": "13281",
+          "player": "Jordyn Tyson (WR, NO)",
+          "roster": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          "picked_by": "jwander",
+          "picked_by_team": "It’s Herbie Hancock",
+          "picked_by_user_id": "464915162038530048"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 16,
+          "round": 2,
+          "draft_slot": 4,
+          "player_id": "13349",
+          "player": "Eli Stowers (TE, PHI)",
+          "roster": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          "picked_by": "jwander",
+          "picked_by_team": "It’s Herbie Hancock",
+          "picked_by_user_id": "464915162038530048"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 24,
+          "round": 2,
+          "draft_slot": 12,
+          "player_id": "13402",
+          "player": "Skyler Bell (WR, BUF)",
+          "roster": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          "picked_by": "jwander",
+          "picked_by_team": "It’s Herbie Hancock",
+          "picked_by_user_id": "464915162038530048"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 28,
+          "round": 3,
+          "draft_slot": 4,
+          "player_id": "13305",
+          "player": "Mike Washington (RB, LV)",
+          "roster": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          "picked_by": "jwander",
+          "picked_by_team": "It’s Herbie Hancock",
+          "picked_by_user_id": "464915162038530048"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 29,
+          "round": 3,
+          "draft_slot": 5,
+          "player_id": "13302",
+          "player": "Adam Randall (RB, BAL)",
+          "roster": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          "picked_by": "jwander",
+          "picked_by_team": "It’s Herbie Hancock",
+          "picked_by_user_id": "464915162038530048"
+        }
+      ]
+    },
+    {
+      "roster_id": 2,
+      "team_name": "A B CeeDee",
+      "owner_name": "Logs24",
+      "roster": {
+        "roster_id": 2,
+        "team_name": "A B CeeDee",
+        "owner_name": "Logs24",
+        "summary": {
+          "total_players": 19,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 2,
+            "RB": 7,
+            "TE": 2,
+            "WR": 8
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 3,
+            "TE": 2,
+            "WR": 3
+          },
+          "average_age_by_position": {
+            "QB": 25.5,
+            "RB": 25.0,
+            "TE": 29.0,
+            "WR": 25.5
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "C.J. Stroud (QB, HOU)",
+            "Jalen Hurts (QB, PHI)"
+          ],
+          "RB": [
+            "Brashard Smith (RB, KC)",
+            "David Montgomery (RB, HOU)",
+            "Dylan Sampson (RB, CLE)",
+            "Javonte Williams (RB, DAL)",
+            "Jordan Mason (RB, MIN)",
+            "Josh Jacobs (RB, GB)",
+            "Ollie Gordon (RB, MIA)"
+          ],
+          "TE": [
+            "Colston Loveland (TE, CHI)",
+            "Travis Kelce (TE, KC)"
+          ],
+          "WR": [
+            "A.J. Brown (WR, PHI)",
+            "CeeDee Lamb (WR, DAL)",
+            "Jerry Jeudy (WR, CLE)",
+            "Parker Washington (WR, JAX)",
+            "Pat Bryant (WR, DEN)",
+            "Quentin Johnston (WR, LAC)",
+            "Rashid Shaheed (WR, SEA)",
+            "Tre' Harris (WR, LAC)"
+          ]
+        },
+        "starters": [
+          "Jalen Hurts (QB, PHI)",
+          "Josh Jacobs (RB, GB)",
+          "Javonte Williams (RB, DAL)",
+          "A.J. Brown (WR, PHI)",
+          "CeeDee Lamb (WR, DAL)",
+          "Travis Kelce (TE, KC)",
+          "Colston Loveland (TE, CHI)",
+          "Parker Washington (WR, JAX)",
+          "David Montgomery (RB, HOU)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from Goin in Ra",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 from It’s Herbie Hancock",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        }
+      ],
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        }
+      ],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 5,
+          "round": 1,
+          "draft_slot": 5,
+          "player_id": "13294",
+          "player": "Makai Lemon (WR, PHI)",
+          "roster": {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          },
+          "picked_by": "Logs24",
+          "picked_by_team": "A B CeeDee",
+          "picked_by_user_id": "471403228244733952"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 17,
+          "round": 2,
+          "draft_slot": 5,
+          "player_id": "13417",
+          "player": "De'Zhaun Stribling (WR, SF)",
+          "roster": {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          },
+          "picked_by": "Logs24",
+          "picked_by_team": "A B CeeDee",
+          "picked_by_user_id": "471403228244733952"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 27,
+          "round": 3,
+          "draft_slot": 3,
+          "player_id": "8210",
+          "player": "Chig Okonkwo (TE, WAS)",
+          "roster": {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          },
+          "picked_by": "Logs24",
+          "picked_by_team": "A B CeeDee",
+          "picked_by_user_id": "471403228244733952"
+        }
+      ]
+    },
+    {
+      "roster_id": 3,
+      "team_name": "Pol Hol",
+      "owner_name": "GarrettHol",
+      "roster": {
+        "roster_id": 3,
+        "team_name": "Pol Hol",
+        "owner_name": "GarrettHol",
+        "summary": {
+          "total_players": 20,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 4,
+            "RB": 6,
+            "TE": 3,
+            "WR": 7
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 4,
+            "TE": 1,
+            "WR": 3
+          },
+          "average_age_by_position": {
+            "QB": 31.5,
+            "RB": 25.17,
+            "TE": 28.33,
+            "WR": 28.43
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Aaron Rodgers (QB, PIT)",
+            "Jordan Love (QB, GB)",
+            "Malik Willis (QB, MIA)",
+            "Patrick Mahomes (QB, KC)"
+          ],
+          "RB": [
+            "Bijan Robinson (RB, ATL)",
+            "Bucky Irving (RB, TB)",
+            "Jonathan Taylor (RB, IND)",
+            "Najee Harris (RB)",
+            "Sean Tucker (RB, TB)",
+            "Tyrone Tracy (RB, NYG)"
+          ],
+          "TE": [
+            "Darren Waller (TE)",
+            "Jake Ferguson (TE, DAL)",
+            "Sam LaPorta (TE, DET)"
+          ],
+          "WR": [
+            "Darius Slayton (WR, NYG)",
+            "DeVonta Smith (WR, PHI)",
+            "John Metchie (WR, CAR)",
+            "Michael Pittman (WR, PIT)",
+            "Mike Evans (WR, SF)",
+            "Romeo Doubs (WR, NE)",
+            "Stefon Diggs (WR)"
+          ]
+        },
+        "starters": [
+          "Malik Willis (QB, MIA)",
+          "Bijan Robinson (RB, ATL)",
+          "Jonathan Taylor (RB, IND)",
+          "Mike Evans (WR, SF)",
+          "DeVonta Smith (WR, PHI)",
+          "Jake Ferguson (TE, DAL)",
+          "Tyrone Tracy (RB, NYG)",
+          "Stefon Diggs (WR)",
+          "Bucky Irving (RB, TB)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 3,
+          "original_team": "Pol Hol",
+          "current_owner_roster_id": 3,
+          "current_owner_team": "Pol Hol",
+          "previous_owner_roster_id": 3,
+          "previous_owner_team": "Pol Hol"
+        }
+      ],
+      "picks_traded_away": [],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 11,
+          "round": 1,
+          "draft_slot": 11,
+          "player_id": "13269",
+          "player": "Fernando Mendoza (QB, LV)",
+          "roster": {
+            "roster_id": 3,
+            "team_name": "Pol Hol",
+            "owner_name": "GarrettHol"
+          },
+          "picked_by": "GarrettHol",
+          "picked_by_team": "Pol Hol",
+          "picked_by_user_id": "471415197991432192"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 23,
+          "round": 2,
+          "draft_slot": 11,
+          "player_id": "13268",
+          "player": "Elijah Sarratt (WR, BAL)",
+          "roster": {
+            "roster_id": 3,
+            "team_name": "Pol Hol",
+            "owner_name": "GarrettHol"
+          },
+          "picked_by": "GarrettHol",
+          "picked_by_team": "Pol Hol",
+          "picked_by_user_id": "471415197991432192"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 35,
+          "round": 3,
+          "draft_slot": 11,
+          "player_id": "9502",
+          "player": "Tank Dell (WR, HOU)",
+          "roster": {
+            "roster_id": 3,
+            "team_name": "Pol Hol",
+            "owner_name": "GarrettHol"
+          },
+          "picked_by": "GarrettHol",
+          "picked_by_team": "Pol Hol",
+          "picked_by_user_id": "471415197991432192"
+        }
+      ]
+    },
+    {
+      "roster_id": 4,
+      "team_name": "Puka Troopas",
+      "owner_name": "TonsOfBuns",
+      "roster": {
+        "roster_id": 4,
+        "team_name": "Puka Troopas",
+        "owner_name": "TonsOfBuns",
+        "summary": {
+          "total_players": 19,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 2,
+            "RB": 7,
+            "TE": 3,
+            "WR": 7
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 2,
+            "TE": 1,
+            "WR": 5
+          },
+          "average_age_by_position": {
+            "QB": 27.5,
+            "RB": 26.86,
+            "TE": 26.0,
+            "WR": 24.86
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Brock Purdy (QB, SF)",
+            "Daniel Jones (QB, IND)"
+          ],
+          "RB": [
+            "Alvin Kamara (RB, NO)",
+            "Breece Hall (RB, NYJ)",
+            "Chuba Hubbard (RB, CAR)",
+            "Jaydon Blue (RB, DAL)",
+            "Nick Chubb (RB)",
+            "Tony Pollard (RB, TEN)",
+            "Tyler Allgeier (RB, ARI)"
+          ],
+          "TE": [
+            "AJ Barner (TE, SEA)",
+            "Brenton Strange (TE, JAX)",
+            "David Njoku (TE, LAC)"
+          ],
+          "WR": [
+            "Brian Thomas (WR, JAX)",
+            "Chris Godwin (WR, TB)",
+            "Luther Burden (WR, CHI)",
+            "Malik Washington (WR, MIA)",
+            "Puka Nacua (WR, LAR)",
+            "Rashod Bateman (WR, BAL)",
+            "Travis Hunter (WR, JAX)"
+          ]
+        },
+        "starters": [
+          "Brock Purdy (QB, SF)",
+          "Breece Hall (RB, NYJ)",
+          "Chuba Hubbard (RB, CAR)",
+          "Puka Nacua (WR, LAR)",
+          "Chris Godwin (WR, TB)",
+          "Brenton Strange (TE, JAX)",
+          "Brian Thomas (WR, JAX)",
+          "Travis Hunter (WR, JAX)",
+          "Luther Burden (WR, CHI)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 4,
+          "original_team": "Puka Troopas",
+          "current_owner_roster_id": 4,
+          "current_owner_team": "Puka Troopas",
+          "previous_owner_roster_id": 4,
+          "previous_owner_team": "Puka Troopas"
+        }
+      ],
+      "picks_traded_away": [],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 2,
+          "round": 1,
+          "draft_slot": 2,
+          "player_id": "13279",
+          "player": "Carnell Tate (WR, TEN)",
+          "roster": {
+            "roster_id": 4,
+            "team_name": "Puka Troopas",
+            "owner_name": "TonsOfBuns"
+          },
+          "picked_by": "TonsOfBuns",
+          "picked_by_team": "Puka Troopas",
+          "picked_by_user_id": "471415316501491712"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 14,
+          "round": 2,
+          "draft_slot": 2,
+          "player_id": "13345",
+          "player": "Jonah Coleman (RB, DEN)",
+          "roster": {
+            "roster_id": 4,
+            "team_name": "Puka Troopas",
+            "owner_name": "TonsOfBuns"
+          },
+          "picked_by": "TonsOfBuns",
+          "picked_by_team": "Puka Troopas",
+          "picked_by_user_id": "471415316501491712"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 26,
+          "round": 3,
+          "draft_slot": 2,
+          "player_id": "13293",
+          "player": "Ja'Kobi Lane (WR, BAL)",
+          "roster": {
+            "roster_id": 4,
+            "team_name": "Puka Troopas",
+            "owner_name": "TonsOfBuns"
+          },
+          "picked_by": "TonsOfBuns",
+          "picked_by_team": "Puka Troopas",
+          "picked_by_user_id": "471415316501491712"
+        }
+      ]
+    },
+    {
+      "roster_id": 5,
+      "team_name": "White Ice",
+      "owner_name": "jchrz",
+      "roster": {
+        "roster_id": 5,
+        "team_name": "White Ice",
+        "owner_name": "jchrz",
+        "summary": {
+          "total_players": 20,
+          "starter_count": 9,
+          "reserve_count": 2,
+          "position_counts": {
+            "QB": 2,
+            "RB": 5,
+            "TE": 2,
+            "WR": 11
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 2,
+            "TE": 1,
+            "WR": 5
+          },
+          "average_age_by_position": {
+            "QB": 28.0,
+            "RB": 24.2,
+            "TE": 29.0,
+            "WR": 24.64
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Caleb Williams (QB, CHI)",
+            "Dak Prescott (QB, DAL)"
+          ],
+          "RB": [
+            "Blake Corum (RB, LAR)",
+            "Chase Brown (RB, CIN)",
+            "Jahmyr Gibbs (RB, DET)",
+            "Tank Bigsby (RB, PHI)",
+            "Trey Benson (RB, ARI)"
+          ],
+          "TE": [
+            "Dalton Schultz (TE, HOU)",
+            "Juwan Johnson (TE, NO)"
+          ],
+          "WR": [
+            "Adonai Mitchell (WR, NYJ)",
+            "Dontayvion Wicks (WR, PHI)",
+            "Elic Ayomanor (WR, TEN)",
+            "George Pickens (WR, DAL)",
+            "Jameson Williams (WR, DET)",
+            "Jauan Jennings (WR, MIN)",
+            "Khalil Shakir (WR, BUF)",
+            "Nico Collins (WR, HOU)",
+            "Rome Odunze (WR, CHI)",
+            "Tory Horton (WR, SEA)",
+            "Tre Tucker (WR, LV)"
+          ]
+        },
+        "starters": [
+          "Dak Prescott (QB, DAL)",
+          "Jahmyr Gibbs (RB, DET)",
+          "Chase Brown (RB, CIN)",
+          "George Pickens (WR, DAL)",
+          "Nico Collins (WR, HOU)",
+          "Juwan Johnson (TE, NO)",
+          "Khalil Shakir (WR, BUF)",
+          "Jameson Williams (WR, DET)",
+          "Jauan Jennings (WR, MIN)"
+        ],
+        "reserve": [
+          "Trey Benson (RB, ARI)",
+          "Tory Horton (WR, SEA)"
+        ]
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 5,
+          "original_team": "White Ice",
+          "current_owner_roster_id": 5,
+          "current_owner_team": "White Ice",
+          "previous_owner_roster_id": 5,
+          "previous_owner_team": "White Ice"
+        }
+      ],
+      "picks_traded_away": [],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 10,
+          "round": 1,
+          "draft_slot": 10,
+          "player_id": "13288",
+          "player": "Nicholas Singleton (RB, TEN)",
+          "roster": {
+            "roster_id": 5,
+            "team_name": "White Ice",
+            "owner_name": "jchrz"
+          },
+          "picked_by": "jchrz",
+          "picked_by_team": "White Ice",
+          "picked_by_user_id": "471424563457028096"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 22,
+          "round": 2,
+          "draft_slot": 10,
+          "player_id": "13317",
+          "player": "Ted Hurst (WR, TB)",
+          "roster": {
+            "roster_id": 5,
+            "team_name": "White Ice",
+            "owner_name": "jchrz"
+          },
+          "picked_by": "jchrz",
+          "picked_by_team": "White Ice",
+          "picked_by_user_id": "471424563457028096"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 34,
+          "round": 3,
+          "draft_slot": 10,
+          "player_id": "12467",
+          "player": "Jordan James (RB, SF)",
+          "roster": {
+            "roster_id": 5,
+            "team_name": "White Ice",
+            "owner_name": "jchrz"
+          },
+          "picked_by": "jchrz",
+          "picked_by_team": "White Ice",
+          "picked_by_user_id": "471424563457028096"
+        }
+      ]
+    },
+    {
+      "roster_id": 6,
+      "team_name": "andrewwelle",
+      "owner_name": "andrewwelle",
+      "roster": {
+        "roster_id": 6,
+        "team_name": "andrewwelle",
+        "owner_name": "andrewwelle",
+        "summary": {
+          "total_players": 20,
+          "starter_count": 9,
+          "reserve_count": 2,
+          "position_counts": {
+            "QB": 1,
+            "RB": 8,
+            "TE": 2,
+            "WR": 9
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 3,
+            "TE": 1,
+            "WR": 4
+          },
+          "average_age_by_position": {
+            "QB": 23.0,
+            "RB": 25.75,
+            "TE": 26.5,
+            "WR": 27.56
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Jaxson Dart (QB, NYG)"
+          ],
+          "RB": [
+            "Aaron Jones (RB, MIN)",
+            "Ashton Jeanty (RB, LV)",
+            "Christian McCaffrey (RB, SF)",
+            "Devin Neal (RB, NO)",
+            "Devin Singletary (RB, NYG)",
+            "Isaiah Davis (RB, NYJ)",
+            "J.K. Dobbins (RB, DEN)",
+            "Kyle Monangai (RB, CHI)"
+          ],
+          "TE": [
+            "George Kittle (TE, SF)",
+            "Harold Fannin (TE, CLE)"
+          ],
+          "WR": [
+            "Brandon Aiyuk (WR, SF)",
+            "Deebo Samuel (WR)",
+            "Devaughn Vele (WR, NO)",
+            "Garrett Wilson (WR, NYJ)",
+            "Keenan Allen (WR)",
+            "Marvin Harrison (WR, ARI)",
+            "Ricky Pearsall (WR, SF)",
+            "Troy Franklin (WR, DEN)",
+            "Tyler Lockett (WR)"
+          ]
+        },
+        "starters": [
+          "Jaxson Dart (QB, NYG)",
+          "Ashton Jeanty (RB, LV)",
+          "Christian McCaffrey (RB, SF)",
+          "Keenan Allen (WR)",
+          "Deebo Samuel (WR)",
+          "Harold Fannin (TE, CLE)",
+          "Kyle Monangai (RB, CHI)",
+          "Marvin Harrison (WR, ARI)",
+          "Ricky Pearsall (WR, SF)"
+        ],
+        "reserve": [
+          "George Kittle (TE, SF)",
+          "Brandon Aiyuk (WR, SF)"
+        ]
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 6,
+          "original_team": "andrewwelle",
+          "current_owner_roster_id": 6,
+          "current_owner_team": "andrewwelle",
+          "previous_owner_roster_id": 6,
+          "previous_owner_team": "andrewwelle"
+        }
+      ],
+      "picks_traded_away": [],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 8,
+          "round": 1,
+          "draft_slot": 8,
+          "player_id": "13276",
+          "player": "Omar Cooper (WR, NYJ)",
+          "roster": {
+            "roster_id": 6,
+            "team_name": "andrewwelle",
+            "owner_name": "andrewwelle"
+          },
+          "picked_by": "andrewwelle",
+          "picked_by_team": "andrewwelle",
+          "picked_by_user_id": "471451909446692864"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 20,
+          "round": 2,
+          "draft_slot": 8,
+          "player_id": "13353",
+          "player": "Chris Brazzell (WR, CAR)",
+          "roster": {
+            "roster_id": 6,
+            "team_name": "andrewwelle",
+            "owner_name": "andrewwelle"
+          },
+          "picked_by": "andrewwelle",
+          "picked_by_team": "andrewwelle",
+          "picked_by_user_id": "471451909446692864"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 32,
+          "round": 3,
+          "draft_slot": 8,
+          "player_id": "12483",
+          "player": "Jack Bech (WR, LV)",
+          "roster": {
+            "roster_id": 6,
+            "team_name": "andrewwelle",
+            "owner_name": "andrewwelle"
+          },
+          "picked_by": "andrewwelle",
+          "picked_by_team": "andrewwelle",
+          "picked_by_user_id": "471451909446692864"
+        }
+      ]
+    },
+    {
+      "roster_id": 7,
+      "team_name": "I ❤️ Commish",
+      "owner_name": "lex11",
+      "roster": {
+        "roster_id": 7,
+        "team_name": "I ❤️ Commish",
+        "owner_name": "lex11",
+        "summary": {
+          "total_players": 19,
+          "starter_count": 9,
+          "reserve_count": 1,
+          "position_counts": {
+            "QB": 4,
+            "RB": 6,
+            "TE": 1,
+            "WR": 8
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 2,
+            "TE": 1,
+            "WR": 5
+          },
+          "average_age_by_position": {
+            "QB": 26.75,
+            "RB": 24.5,
+            "TE": 24.0,
+            "WR": 24.0
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Baker Mayfield (QB, TB)",
+            "Michael Penix (QB, ATL)",
+            "Shedeur Sanders (QB, CLE)",
+            "Tyler Shough (QB, NO)"
+          ],
+          "RB": [
+            "DJ Giddens (RB, IND)",
+            "Isiah Pacheco (RB, DET)",
+            "Kaleb Johnson (RB, PIT)",
+            "Kenneth Gainwell (RB, TB)",
+            "Tahj Brooks (RB, CIN)",
+            "Woody Marks (RB, HOU)"
+          ],
+          "TE": [
+            "Tyler Warren (TE, IND)"
+          ],
+          "WR": [
+            "Christian Watson (WR, GB)",
+            "Isaac TeSlaa (WR, DET)",
+            "Jaxon Smith-Njigba (WR, SEA)",
+            "Jayden Reed (WR, GB)",
+            "Keon Coleman (WR, BUF)",
+            "Kyle Williams (WR, NE)",
+            "Malik Nabers (WR, NYG)",
+            "Tetairoa McMillan (WR, CAR)"
+          ]
+        },
+        "starters": [
+          "Baker Mayfield (QB, TB)",
+          "Woody Marks (RB, HOU)",
+          "Kenneth Gainwell (RB, TB)",
+          "Jaxon Smith-Njigba (WR, SEA)",
+          "Tetairoa McMillan (WR, CAR)",
+          "Tyler Warren (TE, IND)",
+          "Christian Watson (WR, GB)",
+          "Isaac TeSlaa (WR, DET)",
+          "Jayden Reed (WR, GB)"
+        ],
+        "reserve": [
+          "Malik Nabers (WR, NYG)"
+        ]
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from gullickson",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        }
+      ],
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from I ❤️ Commish",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 from I ❤️ Commish",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        }
+      ],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 6,
+          "round": 1,
+          "draft_slot": 6,
+          "player_id": "13298",
+          "player": "KC Concepcion (WR, CLE)",
+          "roster": {
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          },
+          "picked_by": "lex11",
+          "picked_by_team": "I ❤️ Commish",
+          "picked_by_user_id": "459751268567478272"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 18,
+          "round": 2,
+          "draft_slot": 6,
+          "player_id": "13311",
+          "player": "Chris Bell (WR, MIA)",
+          "roster": {
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          },
+          "picked_by": "lex11",
+          "picked_by_team": "I ❤️ Commish",
+          "picked_by_user_id": "459751268567478272"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 25,
+          "round": 3,
+          "draft_slot": 1,
+          "player_id": "13275",
+          "player": "Ty Simpson (QB, LAR)",
+          "roster": {
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          },
+          "picked_by": "lex11",
+          "picked_by_team": "I ❤️ Commish",
+          "picked_by_user_id": "459751268567478272"
+        }
+      ]
+    },
+    {
+      "roster_id": 8,
+      "team_name": "Back to the Future",
+      "owner_name": "johnwander",
+      "roster": {
+        "roster_id": 8,
+        "team_name": "Back to the Future",
+        "owner_name": "johnwander",
+        "summary": {
+          "total_players": 19,
+          "starter_count": 9,
+          "reserve_count": 1,
+          "position_counts": {
+            "QB": 2,
+            "RB": 7,
+            "TE": 2,
+            "WR": 8
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 3,
+            "TE": 1,
+            "WR": 4
+          },
+          "average_age_by_position": {
+            "QB": 25.5,
+            "RB": 25.43,
+            "TE": 26.0,
+            "WR": 24.62
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Drake Maye (QB, NE)",
+            "Justin Herbert (QB, LAC)"
+          ],
+          "RB": [
+            "Emanuel Wilson (RB, SEA)",
+            "Jarquez Hunter (RB, LAR)",
+            "Kenneth Walker (RB, KC)",
+            "Kyren Williams (RB, LAR)",
+            "MarShawn Lloyd (RB, GB)",
+            "Rhamondre Stevenson (RB, NE)",
+            "Zach Charbonnet (RB, SEA)"
+          ],
+          "TE": [
+            "Isaiah Likely (TE, NYG)",
+            "Trey McBride (TE, ARI)"
+          ],
+          "WR": [
+            "Alec Pierce (WR, IND)",
+            "Calvin Austin (WR, NYG)",
+            "Emeka Egbuka (WR, TB)",
+            "Jalen Coker (WR, CAR)",
+            "Jayden Higgins (WR, HOU)",
+            "Josh Downs (WR, IND)",
+            "Justin Jefferson (WR, MIN)",
+            "Roman Wilson (WR, PIT)"
+          ]
+        },
+        "starters": [
+          "Drake Maye (QB, NE)",
+          "Kenneth Walker (RB, KC)",
+          "Kyren Williams (RB, LAR)",
+          "Justin Jefferson (WR, MIN)",
+          "Emeka Egbuka (WR, TB)",
+          "Trey McBride (TE, ARI)",
+          "Alec Pierce (WR, IND)",
+          "MarShawn Lloyd (RB, GB)",
+          "Jayden Higgins (WR, HOU)"
+        ],
+        "reserve": [
+          "Zach Charbonnet (RB, SEA)"
+        ]
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 8,
+          "original_team": "Back to the Future",
+          "current_owner_roster_id": 8,
+          "current_owner_team": "Back to the Future",
+          "previous_owner_roster_id": 8,
+          "previous_owner_team": "Back to the Future"
+        }
+      ],
+      "picks_traded_away": [],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 7,
+          "round": 1,
+          "draft_slot": 7,
+          "player_id": "13346",
+          "player": "Denzel Boston (WR, CLE)",
+          "roster": {
+            "roster_id": 8,
+            "team_name": "Back to the Future",
+            "owner_name": "johnwander"
+          },
+          "picked_by": "johnwander",
+          "picked_by_team": "Back to the Future",
+          "picked_by_user_id": "471457570825957376"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 19,
+          "round": 2,
+          "draft_slot": 7,
+          "player_id": "13301",
+          "player": "Antonio Williams (WR, WAS)",
+          "roster": {
+            "roster_id": 8,
+            "team_name": "Back to the Future",
+            "owner_name": "johnwander"
+          },
+          "picked_by": "johnwander",
+          "picked_by_team": "Back to the Future",
+          "picked_by_user_id": "471457570825957376"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 31,
+          "round": 3,
+          "draft_slot": 7,
+          "player_id": "13270",
+          "player": "CJ Daniels (WR, LAR)",
+          "roster": {
+            "roster_id": 8,
+            "team_name": "Back to the Future",
+            "owner_name": "johnwander"
+          },
+          "picked_by": "johnwander",
+          "picked_by_team": "Back to the Future",
+          "picked_by_user_id": "471457570825957376"
+        }
+      ]
+    },
+    {
+      "roster_id": 9,
+      "team_name": "alexwelle",
+      "owner_name": "alexwelle",
+      "roster": {
+        "roster_id": 9,
+        "team_name": "alexwelle",
+        "owner_name": "alexwelle",
+        "summary": {
+          "total_players": 18,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 3,
+            "RB": 6,
+            "TE": 3,
+            "WR": 6
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 3,
+            "TE": 2,
+            "WR": 3
+          },
+          "average_age_by_position": {
+            "QB": 28.0,
+            "RB": 24.5,
+            "TE": 24.0,
+            "WR": 27.0
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "J.J. McCarthy (QB, MIN)",
+            "Jacoby Brissett (QB, ARI)",
+            "Kyler Murray (QB, MIN)"
+          ],
+          "RB": [
+            "Brian Robinson (RB, ATL)",
+            "Chris Rodriguez (RB, JAX)",
+            "De'Von Achane (RB, MIA)",
+            "Jonathon Brooks (RB, CAR)",
+            "Omarion Hampton (RB, LAC)",
+            "RJ Harvey (RB, DEN)"
+          ],
+          "TE": [
+            "Kyle Pitts (TE, ATL)",
+            "Oronde Gadsden (TE, LAC)",
+            "Theo Johnson (TE, NYG)"
+          ],
+          "WR": [
+            "Cedric Tillman (WR, CLE)",
+            "Chris Olave (WR, NO)",
+            "Darnell Mooney (WR, NYG)",
+            "Ja'Marr Chase (WR, CIN)",
+            "Rashee Rice (WR, KC)",
+            "Tyreek Hill (WR)"
+          ]
+        },
+        "starters": [
+          "Kyler Murray (QB, MIN)",
+          "Omarion Hampton (RB, LAC)",
+          "De'Von Achane (RB, MIA)",
+          "Ja'Marr Chase (WR, CIN)",
+          "Rashee Rice (WR, KC)",
+          "Kyle Pitts (TE, ATL)",
+          "Chris Olave (WR, NO)",
+          "RJ Harvey (RB, DEN)",
+          "Oronde Gadsden (TE, LAC)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 9,
+          "original_team": "alexwelle",
+          "current_owner_roster_id": 9,
+          "current_owner_team": "alexwelle",
+          "previous_owner_roster_id": 9,
+          "previous_owner_team": "alexwelle"
+        }
+      ],
+      "picks_traded_away": [],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 9,
+          "round": 1,
+          "draft_slot": 9,
+          "player_id": "13330",
+          "player": "Kenyon Sadiq (TE, NYJ)",
+          "roster": {
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          },
+          "picked_by": "alexwelle",
+          "picked_by_team": "alexwelle",
+          "picked_by_user_id": "471501409838166016"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 21,
+          "round": 2,
+          "draft_slot": 9,
+          "player_id": "13285",
+          "player": "Malachi Fields (WR, NYG)",
+          "roster": {
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          },
+          "picked_by": "alexwelle",
+          "picked_by_team": "alexwelle",
+          "picked_by_user_id": "471501409838166016"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 33,
+          "round": 3,
+          "draft_slot": 9,
+          "player_id": "13405",
+          "player": "Kaytron Allen (RB, WAS)",
+          "roster": {
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          },
+          "picked_by": "alexwelle",
+          "picked_by_team": "alexwelle",
+          "picked_by_user_id": "471501409838166016"
+        }
+      ]
+    },
+    {
+      "roster_id": 10,
+      "team_name": "Goin in Ra",
+      "owner_name": "NC79",
+      "roster": {
+        "roster_id": 10,
+        "team_name": "Goin in Ra",
+        "owner_name": "NC79",
+        "summary": {
+          "total_players": 19,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 2,
+            "RB": 6,
+            "TE": 3,
+            "WR": 8
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 2,
+            "TE": 1,
+            "WR": 5
+          },
+          "average_age_by_position": {
+            "QB": 28.5,
+            "RB": 26.17,
+            "TE": 26.0,
+            "WR": 27.5
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Lamar Jackson (QB, BAL)",
+            "Sam Darnold (QB, SEA)"
+          ],
+          "RB": [
+            "Bhayshul Tuten (RB, JAX)",
+            "D'Andre Swift (RB, CHI)",
+            "Derrick Henry (RB, BAL)",
+            "Jerome Ford (RB, WAS)",
+            "Keaton Mitchell (RB, LAC)",
+            "Zonovan Knight (RB, ARI)"
+          ],
+          "TE": [
+            "Luke Musgrave (TE, GB)",
+            "T.J. Hockenson (TE, MIN)",
+            "Tucker Kraft (TE, GB)"
+          ],
+          "WR": [
+            "Amon-Ra St. Brown (WR, DET)",
+            "Christian Kirk (WR, SF)",
+            "DK Metcalf (WR, PIT)",
+            "Jakobi Meyers (WR, JAX)",
+            "Marquise Brown (WR, PHI)",
+            "Terry McLaurin (WR, WAS)",
+            "Wan'Dale Robinson (WR, TEN)",
+            "Xavier Legette (WR, CAR)"
+          ]
+        },
+        "starters": [
+          "Sam Darnold (QB, SEA)",
+          "Derrick Henry (RB, BAL)",
+          "D'Andre Swift (RB, CHI)",
+          "Terry McLaurin (WR, WAS)",
+          "Xavier Legette (WR, CAR)",
+          "Luke Musgrave (TE, GB)",
+          "Wan'Dale Robinson (WR, TEN)",
+          "Jakobi Meyers (WR, JAX)",
+          "Amon-Ra St. Brown (WR, DET)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        }
+      ],
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from Goin in Ra",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        }
+      ],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 3,
+          "round": 1,
+          "draft_slot": 3,
+          "player_id": "13286",
+          "player": "Jadarian Price (RB, SEA)",
+          "roster": {
+            "roster_id": 10,
+            "team_name": "Goin in Ra",
+            "owner_name": "NC79"
+          },
+          "picked_by": "NC79",
+          "picked_by_team": "Goin in Ra",
+          "picked_by_user_id": "471717089472671744"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 15,
+          "round": 2,
+          "draft_slot": 3,
+          "player_id": "13337",
+          "player": "Emmett Johnson (RB, KC)",
+          "roster": {
+            "roster_id": 10,
+            "team_name": "Goin in Ra",
+            "owner_name": "NC79"
+          },
+          "picked_by": "NC79",
+          "picked_by_team": "Goin in Ra",
+          "picked_by_user_id": "471717089472671744"
+        }
+      ]
+    },
+    {
+      "roster_id": 11,
+      "team_name": "MOJO",
+      "owner_name": "amoritko",
+      "roster": {
+        "roster_id": 11,
+        "team_name": "MOJO",
+        "owner_name": "amoritko",
+        "summary": {
+          "total_players": 21,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 2,
+            "RB": 8,
+            "TE": 4,
+            "WR": 7
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 4,
+            "TE": 1,
+            "WR": 3
+          },
+          "average_age_by_position": {
+            "QB": 28.0,
+            "RB": 26.38,
+            "TE": 29.0,
+            "WR": 29.57
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Bo Nix (QB, DEN)",
+            "Josh Allen (QB, BUF)"
+          ],
+          "RB": [
+            "Cam Skattebo (RB, NYG)",
+            "James Cook (RB, BUF)",
+            "Jaylen Warren (RB, PIT)",
+            "Raheim Sanders (RB, CLE)",
+            "Ray Davis (RB, BUF)",
+            "Rico Dowdle (RB, PIT)",
+            "Samaje Perine (RB, CIN)",
+            "Ty Johnson (RB, BUF)"
+          ],
+          "TE": [
+            "Brock Bowers (TE, LV)",
+            "Colby Parkinson (TE, LAR)",
+            "Hunter Henry (TE, NE)",
+            "Taysom Hill (TE)"
+          ],
+          "WR": [
+            "Andrei Iosivas (WR, CIN)",
+            "Cooper Kupp (WR, SEA)",
+            "Courtland Sutton (WR, DEN)",
+            "Davante Adams (WR, LAR)",
+            "Jaylen Waddle (WR, DEN)",
+            "Mack Hollins (WR, NE)",
+            "Tee Higgins (WR, CIN)"
+          ]
+        },
+        "starters": [
+          "Josh Allen (QB, BUF)",
+          "James Cook (RB, BUF)",
+          "Jaylen Warren (RB, PIT)",
+          "Jaylen Waddle (WR, DEN)",
+          "Tee Higgins (WR, CIN)",
+          "Brock Bowers (TE, LV)",
+          "Rico Dowdle (RB, PIT)",
+          "Davante Adams (WR, LAR)",
+          "Cam Skattebo (RB, NYG)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 from It’s Herbie Hancock",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        }
+      ],
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 from MOJO",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 from MOJO",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        }
+      ],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 12,
+          "round": 1,
+          "draft_slot": 12,
+          "player_id": "13320",
+          "player": "Zachariah Branch (WR, ATL)",
+          "roster": {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          },
+          "picked_by": "amoritko",
+          "picked_by_team": "MOJO",
+          "picked_by_user_id": "471724614532198400"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 36,
+          "round": 3,
+          "draft_slot": 12,
+          "player_id": "12502",
+          "player": "Gunnar Helm (TE, TEN)",
+          "roster": {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          },
+          "picked_by": "amoritko",
+          "picked_by_team": "MOJO",
+          "picked_by_user_id": "471724614532198400"
+        }
+      ]
+    },
+    {
+      "roster_id": 12,
+      "team_name": "gullickson",
+      "owner_name": "gullickson",
+      "roster": {
+        "roster_id": 12,
+        "team_name": "gullickson",
+        "owner_name": "gullickson",
+        "summary": {
+          "total_players": 18,
+          "starter_count": 9,
+          "reserve_count": 0,
+          "position_counts": {
+            "QB": 3,
+            "RB": 5,
+            "TE": 2,
+            "WR": 8
+          },
+          "starter_position_counts": {
+            "QB": 1,
+            "RB": 3,
+            "TE": 1,
+            "WR": 4
+          },
+          "average_age_by_position": {
+            "QB": 32.67,
+            "RB": 26.4,
+            "TE": 30.5,
+            "WR": 26.75
+          }
+        },
+        "roster_by_position": {
+          "QB": [
+            "Jared Goff (QB, DET)",
+            "Joe Burrow (QB, CIN)",
+            "Matthew Stafford (QB, LAR)"
+          ],
+          "RB": [
+            "Jeremy McNichols (RB, WAS)",
+            "Quinshon Judkins (RB, CLE)",
+            "Saquon Barkley (RB, PHI)",
+            "Travis Etienne (RB, NO)",
+            "Tyjae Spears (RB, TEN)"
+          ],
+          "TE": [
+            "Dallas Goedert (TE, PHI)",
+            "Mark Andrews (TE, BAL)"
+          ],
+          "WR": [
+            "DJ Moore (WR, BUF)",
+            "Jalen McMillan (WR, TB)",
+            "Jalen Nailor (WR, LV)",
+            "Joshua Palmer (WR, BUF)",
+            "Ladd McConkey (WR, LAC)",
+            "Michael Wilson (WR, ARI)",
+            "Sterling Shepard (WR)",
+            "Zay Flowers (WR, BAL)"
+          ]
+        },
+        "starters": [
+          "Joe Burrow (QB, CIN)",
+          "Travis Etienne (RB, NO)",
+          "Saquon Barkley (RB, PHI)",
+          "Zay Flowers (WR, BAL)",
+          "Michael Wilson (WR, ARI)",
+          "Dallas Goedert (TE, PHI)",
+          "Ladd McConkey (WR, LAC)",
+          "Tyjae Spears (RB, TEN)",
+          "DJ Moore (WR, BUF)"
+        ],
+        "reserve": []
+      },
+      "current_and_future_picks_owned": [
+        {
+          "season": "2026",
+          "round": 1,
+          "label": "2026 Round 1 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from I ❤️ Commish",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 from I ❤️ Commish",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2027",
+          "round": 5,
+          "label": "2027 Round 5 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2028",
+          "round": 1,
+          "label": "2028 Round 1 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2028",
+          "round": 2,
+          "label": "2028 Round 2 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2028",
+          "round": 4,
+          "label": "2028 Round 4 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2028",
+          "round": 5,
+          "label": "2028 Round 5 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2029",
+          "round": 1,
+          "label": "2029 Round 1 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2029",
+          "round": 2,
+          "label": "2029 Round 2 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2029",
+          "round": 3,
+          "label": "2029 Round 3 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2029",
+          "round": 4,
+          "label": "2029 Round 4 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        },
+        {
+          "season": "2029",
+          "round": 5,
+          "label": "2029 Round 5 own",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        }
+      ],
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from gullickson",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        }
+      ],
+      "current_draft_picks_made": [
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 1,
+          "round": 1,
+          "draft_slot": 1,
+          "player_id": "13287",
+          "player": "Jeremiyah Love (RB, ARI)",
+          "roster": {
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          },
+          "picked_by": "gullickson",
+          "picked_by_team": "gullickson",
+          "picked_by_user_id": "471744678006353920"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 13,
+          "round": 2,
+          "draft_slot": 1,
+          "player_id": "13274",
+          "player": "Germie Bernard (WR, PIT)",
+          "roster": {
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          },
+          "picked_by": "gullickson",
+          "picked_by_team": "gullickson",
+          "picked_by_user_id": "471744678006353920"
+        },
+        {
+          "draft_id": "1312581067298836480",
+          "pick_no": 30,
+          "round": 3,
+          "draft_slot": 6,
+          "player_id": "13278",
+          "player": "Max Klare (TE, LAR)",
+          "roster": {
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          },
+          "picked_by": "gullickson",
+          "picked_by_team": "gullickson",
+          "picked_by_user_id": "471744678006353920"
+        }
+      ]
+    }
+  ]
+}
