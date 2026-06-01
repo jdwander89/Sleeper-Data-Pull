@@ -1,7 +1,7 @@
 """
 Sleeper → ChatGPT Full Data Exporter
 
-Creates:
+Creates, by default:
 1. sleeper_chatgpt.json
 2. sleeper_chatgpt_manifest.json
 3. sleeper_chatgpt_league_context_summary.json
@@ -12,10 +12,17 @@ Creates:
 8. sleeper_chatgpt_matchups_standings_summary.json
 9. sleeper_chatgpt_waiver_summary.json
 
-Key draft-board improvement:
-- If Sleeper returns slot_to_roster_id as null, this script derives it from:
+Key improvements:
+- The main JSON read_me_first section now references the actual output filenames.
+- A manifest file is written and identified as the recommended starting point.
+- Future pick inventory includes:
+  league /league/{league_id}/traded_picks
+  draft-room /draft/{draft_id}/traded_picks
+  completed trade transaction draft_picks
+- Draft pick sequence supports snake drafts when draft metadata/settings indicate snake behavior.
+- Trending lookback hours and result limit are configurable.
+- If Sleeper returns slot_to_roster_id as null, the script derives slot → team using:
   draft_order user_id → draft slot
-  users/team metadata
   rosters owner_id → roster_id
 - Adds:
   derived_slot_to_team
@@ -47,6 +54,7 @@ import requests
 DEFAULT_LEAGUE_ID = "1312581067286282240"
 BASE_URL = "https://api.sleeper.app/v1"
 
+DEFAULT_OUTPUT = "sleeper_chatgpt.json"
 DEFAULT_GITHUB_REPO = "jdwander89/Sleeper-Data-Pull"
 DEFAULT_GITHUB_BRANCH = "main"
 
@@ -109,6 +117,25 @@ def sort_key_pick(pick: Dict[str, Any]) -> Tuple[str, int, int]:
         safe_int(pick.get("round"), 0) or 0,
         safe_int(pick.get("original_roster_id"), 0) or 0,
     )
+
+
+def build_output_paths(main_output: str) -> Dict[str, str]:
+    base, ext = os.path.splitext(main_output)
+    if not ext:
+        ext = ".json"
+        main_output = f"{main_output}{ext}"
+
+    return {
+        "main": main_output,
+        "manifest": f"{base}_manifest{ext}",
+        "league_context_summary": f"{base}_league_context_summary{ext}",
+        "team_roster_and_picks_summary": f"{base}_team_roster_and_picks_summary{ext}",
+        "draft_board_summary": f"{base}_draft_board_summary{ext}",
+        "trade_market_summary": f"{base}_trade_market_summary{ext}",
+        "transactions_summary": f"{base}_transactions_summary{ext}",
+        "matchups_standings_summary": f"{base}_matchups_standings_summary{ext}",
+        "waiver_summary": f"{base}_waiver_summary{ext}",
+    }
 
 
 # ==========================================================
@@ -221,7 +248,11 @@ def build_users_map(users: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
     output = {}
 
     for u in users or []:
-        user_id = str(u.get("user_id"))
+        user_id_raw = u.get("user_id")
+        if user_id_raw is None:
+            continue
+
+        user_id = str(user_id_raw)
         metadata = u.get("metadata") or {}
         display_name = u.get("display_name") or u.get("username") or user_id
         team_name = metadata.get("team_name") or display_name
@@ -386,12 +417,6 @@ def derive_slot_to_team(
     users_map: Dict[str, Dict[str, Any]],
     teams_by_roster_id: Dict[str, Dict[str, Any]],
 ) -> Dict[str, Dict[str, Any]]:
-    """
-    Sleeper sometimes returns slot_to_roster_id as null.
-    This derives slot → roster/team using draft_order:
-      draft_order: user_id -> slot
-      rosters: owner_id -> roster_id
-    """
     draft_order = draft.get("draft_order") or {}
     user_to_roster = build_user_to_roster_map(rosters)
 
@@ -414,6 +439,30 @@ def derive_slot_to_team(
     return dict(sorted(derived.items(), key=lambda kv: safe_int(kv[0], 0) or 0))
 
 
+def draft_is_snake(draft: Dict[str, Any]) -> bool:
+    settings = draft.get("settings") or {}
+    metadata = draft.get("metadata") or {}
+
+    # Sleeper values vary by draft type/era, so check several common indicators.
+    candidates = [
+        settings.get("draft_type"),
+        settings.get("type"),
+        settings.get("is_snake"),
+        metadata.get("draft_type"),
+        metadata.get("type"),
+        draft.get("type"),
+    ]
+
+    for value in candidates:
+        if value is None:
+            continue
+        text = str(value).lower()
+        if text in {"snake", "1", "true"}:
+            return True
+
+    return False
+
+
 def build_pick_sequence(
     draft: Dict[str, Any],
     teams_by_roster_id: Dict[str, Dict[str, Any]],
@@ -426,11 +475,16 @@ def build_pick_sequence(
     if total_rounds <= 0 or total_teams <= 0:
         return []
 
+    is_snake = draft_is_snake(draft)
     pick_sequence = []
 
     for round_no in range(1, total_rounds + 1):
-        for draft_slot in range(1, total_teams + 1):
-            pick_no = ((round_no - 1) * total_teams) + draft_slot
+        slots = list(range(1, total_teams + 1))
+        if is_snake and round_no % 2 == 0:
+            slots = list(reversed(slots))
+
+        for index_within_round, draft_slot in enumerate(slots, start=1):
+            pick_no = ((round_no - 1) * total_teams) + index_within_round
             slot_info = derived_slot_to_team.get(str(draft_slot), {})
             roster_id = slot_info.get("roster_id")
 
@@ -439,6 +493,7 @@ def build_pick_sequence(
                 "round": round_no,
                 "draft_slot": draft_slot,
                 "scheduled_roster": team_ref(roster_id, teams_by_roster_id) if roster_id is not None else None,
+                "sequence_type": "snake" if is_snake else "linear",
             })
 
     return pick_sequence
@@ -541,6 +596,8 @@ def normalize_draft(
         teams_by_roster_id=teams_by_roster_id,
     )
 
+    derived_user_to_roster = build_user_to_roster_map(rosters)
+
     derived_pick_sequence = build_pick_sequence(
         draft=draft,
         teams_by_roster_id=teams_by_roster_id,
@@ -561,6 +618,7 @@ def normalize_draft(
         "draft_order": draft.get("draft_order"),
         "slot_to_roster_id": draft.get("slot_to_roster_id"),
         "derived_slot_to_team": derived_slot_to_team,
+        "derived_user_to_roster": derived_user_to_roster,
         "derived_pick_sequence": derived_pick_sequence,
         "rounds": group_picks_by_round(
             picks,
@@ -758,6 +816,17 @@ def collect_transaction_traded_picks(transactions: Any) -> List[Dict[str, Any]]:
     return traded
 
 
+def collect_all_traded_picks(export_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    draft_room = export_data.get("draft_room") or {}
+    transactions = export_data.get("transactions") or {}
+
+    league_traded_picks = draft_room.get("league_traded_future_picks") or []
+    draft_room_trades = flatten_draft_room_traded_picks(draft_room)
+    transaction_pick_trades = collect_transaction_traded_picks(transactions)
+
+    return dedupe_traded_picks(league_traded_picks + draft_room_trades + transaction_pick_trades)
+
+
 def dedupe_traded_picks(picks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     output = []
@@ -826,8 +895,6 @@ def build_pick_inventory(export_data: Dict[str, Any], future_years: int = 3) -> 
     List[Dict[str, Any]],
 ]:
     teams = export_data.get("teams") or []
-    draft_room = export_data.get("draft_room") or {}
-    transactions = export_data.get("transactions") or {}
     league_context = export_data.get("league_context") or {}
 
     season = str(league_context.get("season") or export_data.get("read_me_first", {}).get("season") or "")
@@ -838,9 +905,7 @@ def build_pick_inventory(export_data: Dict[str, Any], future_years: int = 3) -> 
 
     by_roster_id, _ = get_team_key_maps(teams)
 
-    draft_room_trades = flatten_draft_room_traded_picks(draft_room)
-    transaction_pick_trades = collect_transaction_traded_picks(transactions)
-    all_traded_picks = dedupe_traded_picks(draft_room_trades + transaction_pick_trades)
+    all_traded_picks = collect_all_traded_picks(export_data)
 
     pick_inventory = build_default_pick_inventory(teams, seasons, rounds)
     pick_inventory = apply_traded_picks_to_inventory(pick_inventory, all_traded_picks, by_roster_id)
@@ -899,6 +964,7 @@ def build_league_context_summary(export_data: Dict[str, Any]) -> Dict[str, Any]:
             "settings": active_draft.get("settings"),
             "metadata": active_draft.get("metadata"),
             "derived_slot_to_team": active_draft.get("derived_slot_to_team"),
+            "derived_user_to_roster": active_draft.get("derived_user_to_roster"),
         },
     }
 
@@ -1017,6 +1083,7 @@ def build_draft_board_summary(export_data: Dict[str, Any], future_years: int = 3
             "draft_order": active_draft.get("draft_order"),
             "slot_to_roster_id": active_draft.get("slot_to_roster_id"),
             "derived_slot_to_team": active_draft.get("derived_slot_to_team"),
+            "derived_user_to_roster": active_draft.get("derived_user_to_roster"),
             "derived_pick_sequence": derived_pick_sequence,
         },
         "current_status": {
@@ -1330,13 +1397,66 @@ def collect_needed_player_ids(
     return sorted(needed)
 
 
+def build_read_me_first(
+    league_id: str,
+    league: Dict[str, Any],
+    nfl_state: Any,
+    weeks: List[int],
+    output_paths: Dict[str, str],
+    generated_at: str,
+) -> Dict[str, Any]:
+    return {
+        "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
+        "generated_at": generated_at,
+        "league_id": league_id,
+        "season": str(league.get("season")),
+        "weeks_included": weeks,
+        "current_week": nfl_state.get("week") if isinstance(nfl_state, dict) else None,
+        "recommended_start_file": output_paths["manifest"],
+        "output_files": deepcopy(output_paths),
+        "summary_files": {
+            "league_context_summary": output_paths["league_context_summary"],
+            "team_roster_and_picks_summary": output_paths["team_roster_and_picks_summary"],
+            "draft_board_summary": output_paths["draft_board_summary"],
+            "trade_market_summary": output_paths["trade_market_summary"],
+            "transactions_summary": output_paths["transactions_summary"],
+            "matchups_standings_summary": output_paths["matchups_standings_summary"],
+            "waiver_summary": output_paths["waiver_summary"],
+        },
+        "how_to_read": [
+            f"Start with {output_paths['manifest']} to choose the right file.",
+            f"Use {output_paths['team_roster_and_picks_summary']} for roster and pick inventory questions.",
+            f"Use {output_paths['draft_board_summary']} for live draft questions.",
+            f"Use {output_paths['trade_market_summary']} for trade strategy.",
+            f"Use {output_paths['transactions_summary']} for trade/history questions.",
+            f"Use {output_paths['waiver_summary']} for waiver/free-agent questions.",
+            f"Use {output_paths['league_context_summary']} for scoring/settings questions.",
+            f"Use {output_paths['main']} only as the full source-of-truth archive.",
+        ],
+        "excluded_sections": [
+            "birth date",
+            "high school",
+            "hometown",
+            "physical attributes",
+            "athletic testing",
+            "headshots and visuals",
+            "avatars and media",
+            "taxi squad raw objects",
+            "raw Sleeper payload dumps",
+        ],
+    }
+
+
 def build_export(
     league_id: str,
     *,
     weeks: List[int],
     include_all_players: bool,
     include_trending: bool,
+    trending_hours: int,
+    trending_limit: int,
     future_years: int,
+    output_paths: Dict[str, str],
 ) -> Tuple[Dict[str, Any], Dict[str, Dict[str, Any]], Dict[str, Any]]:
     nfl_state = sleeper_get("/state/nfl")
     league = sleeper_get(f"/league/{league_id}")
@@ -1373,8 +1493,8 @@ def build_export(
     trending = {}
     if include_trending:
         trending = {
-            "adds": sleeper_get("/players/nfl/trending/add?lookback_hours=24&limit=50") or [],
-            "drops": sleeper_get("/players/nfl/trending/drop?lookback_hours=24&limit=50") or [],
+            "adds": sleeper_get(f"/players/nfl/trending/add?lookback_hours={trending_hours}&limit={trending_limit}") or [],
+            "drops": sleeper_get(f"/players/nfl/trending/drop?lookback_hours={trending_hours}&limit={trending_limit}") or [],
         }
 
     all_players = sleeper_get("/players/nfl") or {}
@@ -1434,44 +1554,14 @@ def build_export(
     generated_at = utc_now_iso()
 
     export_data = {
-        "read_me_first": {
-            "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-            "generated_at": generated_at,
-            "league_id": league_id,
-            "season": str(league.get("season")),
-            "weeks_included": weeks,
-            "current_week": nfl_state.get("week") if isinstance(nfl_state, dict) else None,
-            "summary_files": [
-                "league_context_summary",
-                "team_roster_and_picks_summary",
-                "draft_board_summary",
-                "trade_market_summary",
-                "transactions_summary",
-                "matchups_standings_summary",
-                "waiver_summary",
-            ],
-            "how_to_read": [
-                "Use the summary files first for normal analysis.",
-                "Use sleeper_chatgpt.json only as the full source-of-truth archive.",
-                "Use team_roster_and_picks_summary for roster and pick inventory questions.",
-                "Use draft_board_summary for live draft questions.",
-                "Use trade_market_summary for trade strategy.",
-                "Use transactions_summary for trade/history questions.",
-                "Use waiver_summary for waiver/free-agent questions.",
-                "Use league_context_summary for scoring/settings questions.",
-            ],
-            "excluded_sections": [
-                "birth date",
-                "high school",
-                "hometown",
-                "physical attributes",
-                "athletic testing",
-                "headshots and visuals",
-                "avatars and media",
-                "taxi squad raw objects",
-                "raw Sleeper payload dumps",
-            ],
-        },
+        "read_me_first": build_read_me_first(
+            league_id=league_id,
+            league=league,
+            nfl_state=nfl_state,
+            weeks=weeks,
+            output_paths=output_paths,
+            generated_at=generated_at,
+        ),
         "league_context": {
             "league_id": league.get("league_id"),
             "name": league.get("name"),
@@ -1525,24 +1615,6 @@ def build_export(
 # FILE WRITING / GITHUB PUSH
 # ==========================================================
 
-def build_output_paths(main_output: str) -> Dict[str, str]:
-    base, ext = os.path.splitext(main_output)
-    if not ext:
-        ext = ".json"
-
-    return {
-        "main": main_output,
-        "manifest": f"{base}_manifest{ext}",
-        "league_context_summary": f"{base}_league_context_summary{ext}",
-        "team_roster_and_picks_summary": f"{base}_team_roster_and_picks_summary{ext}",
-        "draft_board_summary": f"{base}_draft_board_summary{ext}",
-        "trade_market_summary": f"{base}_trade_market_summary{ext}",
-        "transactions_summary": f"{base}_transactions_summary{ext}",
-        "matchups_standings_summary": f"{base}_matchups_standings_summary{ext}",
-        "waiver_summary": f"{base}_waiver_summary{ext}",
-    }
-
-
 def write_all_outputs(
     output_paths: Dict[str, str],
     export_data: Dict[str, Any],
@@ -1554,18 +1626,10 @@ def write_all_outputs(
         "generated_at": export_data.get("read_me_first", {}).get("generated_at"),
         "league_id": export_data.get("read_me_first", {}).get("league_id"),
         "season": export_data.get("read_me_first", {}).get("season"),
-        "files": {
-            "main": output_paths["main"],
-            "league_context_summary": output_paths["league_context_summary"],
-            "team_roster_and_picks_summary": output_paths["team_roster_and_picks_summary"],
-            "draft_board_summary": output_paths["draft_board_summary"],
-            "trade_market_summary": output_paths["trade_market_summary"],
-            "transactions_summary": output_paths["transactions_summary"],
-            "matchups_standings_summary": output_paths["matchups_standings_summary"],
-            "waiver_summary": output_paths["waiver_summary"],
-        },
+        "files": deepcopy(output_paths),
         "recommended_usage": {
             "start_here": output_paths["manifest"],
+            "full_archive": output_paths["main"],
             "settings": output_paths["league_context_summary"],
             "team_rosters_and_picks": output_paths["team_roster_and_picks_summary"],
             "draft_monitoring": output_paths["draft_board_summary"],
@@ -1665,10 +1729,12 @@ def main() -> None:
     )
 
     parser.add_argument("--league-id", default=DEFAULT_LEAGUE_ID)
-    parser.add_argument("--output", default="sleeper_chatgpt.json")
+    parser.add_argument("--output", default=DEFAULT_OUTPUT)
     parser.add_argument("--weeks", default="1")
     parser.add_argument("--include-all-players", action="store_true")
     parser.add_argument("--include-trending", action="store_true")
+    parser.add_argument("--trending-hours", type=int, default=24)
+    parser.add_argument("--trending-limit", type=int, default=50)
     parser.add_argument("--future-years", type=int, default=3)
 
     parser.add_argument("--push-github", action="store_true")
@@ -1678,17 +1744,27 @@ def main() -> None:
 
     args = parser.parse_args()
 
+    if args.trending_hours <= 0:
+        raise ValueError("--trending-hours must be greater than 0")
+    if args.trending_limit <= 0:
+        raise ValueError("--trending-limit must be greater than 0")
+    if args.future_years < 0:
+        raise ValueError("--future-years cannot be negative")
+
     weeks = parse_weeks(args.weeks)
+    output_paths = build_output_paths(args.output)
 
     export_data, summaries, _ = build_export(
         args.league_id,
         weeks=weeks,
         include_all_players=args.include_all_players,
         include_trending=args.include_trending,
+        trending_hours=args.trending_hours,
+        trending_limit=args.trending_limit,
         future_years=args.future_years,
+        output_paths=output_paths,
     )
 
-    output_paths = build_output_paths(args.output)
     manifest = write_all_outputs(output_paths, export_data, summaries)
 
     print("Wrote Sleeper export files:")
