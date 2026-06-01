@@ -1,0 +1,916 @@
+{
+  "generated_from": {
+    "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
+    "generated_at": "2026-06-01T19:34:53.479555Z",
+    "league_id": "1312581067286282240",
+    "season": "2026",
+    "weeks_included": [
+      1
+    ],
+    "current_week": 0,
+    "summary_files": [
+      "league_context_summary",
+      "team_roster_and_picks_summary",
+      "draft_board_summary",
+      "trade_market_summary",
+      "transactions_summary",
+      "matchups_standings_summary",
+      "waiver_summary"
+    ],
+    "how_to_read": [
+      "Use the summary files first for normal analysis.",
+      "Use sleeper_chatgpt.json only as the full source-of-truth archive.",
+      "Use team_roster_and_picks_summary for roster and pick inventory questions.",
+      "Use draft_board_summary for live draft questions.",
+      "Use trade_market_summary for trade strategy.",
+      "Use transactions_summary for trade/history questions.",
+      "Use waiver_summary for waiver/free-agent questions.",
+      "Use league_context_summary for scoring/settings questions."
+    ],
+    "excluded_sections": [
+      "birth date",
+      "high school",
+      "hometown",
+      "physical attributes",
+      "athletic testing",
+      "headshots and visuals",
+      "avatars and media",
+      "taxi squad raw objects",
+      "raw Sleeper payload dumps"
+    ]
+  },
+  "team_trade_profiles": [
+    {
+      "roster_id": 1,
+      "team_name": "It’s Herbie Hancock",
+      "owner_name": "jwander",
+      "position_counts": {
+        "QB": 3,
+        "RB": 5,
+        "TE": 2,
+        "WR": 8
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 2,
+        "TE": 1,
+        "WR": 5
+      },
+      "average_age_by_position": {
+        "QB": 25.0,
+        "RB": 24.0,
+        "TE": 24.0,
+        "WR": 23.38
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [],
+      "owned_pick_count": 23,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "2027": {
+          "1": 2,
+          "3": 2,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 from It’s Herbie Hancock",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        },
+        {
+          "season": "2027",
+          "round": 2,
+          "label": "2027 Round 2 from It’s Herbie Hancock",
+          "original_roster_id": 1,
+          "original_team": "It’s Herbie Hancock",
+          "current_owner_roster_id": 11,
+          "current_owner_team": "MOJO",
+          "previous_owner_roster_id": 1,
+          "previous_owner_team": "It’s Herbie Hancock"
+        }
+      ],
+      "waiver_position": 9,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 2,
+      "team_name": "A B CeeDee",
+      "owner_name": "Logs24",
+      "position_counts": {
+        "QB": 2,
+        "RB": 7,
+        "TE": 2,
+        "WR": 8
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 3,
+        "TE": 2,
+        "WR": 3
+      },
+      "average_age_by_position": {
+        "QB": 25.5,
+        "RB": 25.0,
+        "TE": 29.0,
+        "WR": 25.5
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [
+        "RB"
+      ],
+      "owned_pick_count": 17,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 4,
+          "label": "2026 Round 4 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2026",
+          "round": 5,
+          "label": "2026 Round 5 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2028",
+          "round": 3,
+          "label": "2028 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 10,
+          "current_owner_team": "Goin in Ra",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        },
+        {
+          "season": "2027",
+          "round": 3,
+          "label": "2027 Round 3 from A B CeeDee",
+          "original_roster_id": 2,
+          "original_team": "A B CeeDee",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 2,
+          "previous_owner_team": "A B CeeDee"
+        }
+      ],
+      "waiver_position": 3,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 3,
+      "team_name": "Pol Hol",
+      "owner_name": "GarrettHol",
+      "position_counts": {
+        "QB": 4,
+        "RB": 6,
+        "TE": 3,
+        "WR": 7
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 4,
+        "TE": 1,
+        "WR": 3
+      },
+      "average_age_by_position": {
+        "QB": 31.5,
+        "RB": 25.17,
+        "TE": 28.33,
+        "WR": 28.43
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [
+        "QB"
+      ],
+      "owned_pick_count": 20,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [],
+      "waiver_position": 5,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 4,
+      "team_name": "Puka Troopas",
+      "owner_name": "TonsOfBuns",
+      "position_counts": {
+        "QB": 2,
+        "RB": 7,
+        "TE": 3,
+        "WR": 7
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 2,
+        "TE": 1,
+        "WR": 5
+      },
+      "average_age_by_position": {
+        "QB": 27.5,
+        "RB": 26.86,
+        "TE": 26.0,
+        "WR": 24.86
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [
+        "RB"
+      ],
+      "owned_pick_count": 20,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [],
+      "waiver_position": 8,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 5,
+      "team_name": "White Ice",
+      "owner_name": "jchrz",
+      "position_counts": {
+        "QB": 2,
+        "RB": 5,
+        "TE": 2,
+        "WR": 11
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 2,
+        "TE": 1,
+        "WR": 5
+      },
+      "average_age_by_position": {
+        "QB": 28.0,
+        "RB": 24.2,
+        "TE": 29.0,
+        "WR": 24.64
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [
+        "WR"
+      ],
+      "owned_pick_count": 20,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [],
+      "waiver_position": 4,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 6,
+      "team_name": "andrewwelle",
+      "owner_name": "andrewwelle",
+      "position_counts": {
+        "QB": 1,
+        "RB": 8,
+        "TE": 2,
+        "WR": 9
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 3,
+        "TE": 1,
+        "WR": 4
+      },
+      "average_age_by_position": {
+        "QB": 23.0,
+        "RB": 25.75,
+        "TE": 26.5,
+        "WR": 27.56
+      },
+      "likely_needs_by_count": [
+        "QB"
+      ],
+      "possible_surplus_by_count": [
+        "RB",
+        "WR"
+      ],
+      "owned_pick_count": 20,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [],
+      "waiver_position": 11,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 7,
+      "team_name": "I ❤️ Commish",
+      "owner_name": "lex11",
+      "position_counts": {
+        "QB": 4,
+        "RB": 6,
+        "TE": 1,
+        "WR": 8
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 2,
+        "TE": 1,
+        "WR": 5
+      },
+      "average_age_by_position": {
+        "QB": 26.75,
+        "RB": 24.5,
+        "TE": 24.0,
+        "WR": 24.0
+      },
+      "likely_needs_by_count": [
+        "TE"
+      ],
+      "possible_surplus_by_count": [
+        "QB"
+      ],
+      "owned_pick_count": 19,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from I ❤️ Commish",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        },
+        {
+          "season": "2027",
+          "round": 4,
+          "label": "2027 Round 4 from I ❤️ Commish",
+          "original_roster_id": 7,
+          "original_team": "I ❤️ Commish",
+          "current_owner_roster_id": 12,
+          "current_owner_team": "gullickson",
+          "previous_owner_roster_id": 7,
+          "previous_owner_team": "I ❤️ Commish"
+        }
+      ],
+      "waiver_position": 10,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 8,
+      "team_name": "Back to the Future",
+      "owner_name": "johnwander",
+      "position_counts": {
+        "QB": 2,
+        "RB": 7,
+        "TE": 2,
+        "WR": 8
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 3,
+        "TE": 1,
+        "WR": 4
+      },
+      "average_age_by_position": {
+        "QB": 25.5,
+        "RB": 25.43,
+        "TE": 26.0,
+        "WR": 24.62
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [
+        "RB"
+      ],
+      "owned_pick_count": 20,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [],
+      "waiver_position": 1,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 9,
+      "team_name": "alexwelle",
+      "owner_name": "alexwelle",
+      "position_counts": {
+        "QB": 3,
+        "RB": 6,
+        "TE": 3,
+        "WR": 6
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 3,
+        "TE": 2,
+        "WR": 3
+      },
+      "average_age_by_position": {
+        "QB": 28.0,
+        "RB": 24.5,
+        "TE": 24.0,
+        "WR": 27.0
+      },
+      "likely_needs_by_count": [
+        "WR"
+      ],
+      "possible_surplus_by_count": [],
+      "owned_pick_count": 20,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [],
+      "waiver_position": 7,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 10,
+      "team_name": "Goin in Ra",
+      "owner_name": "NC79",
+      "position_counts": {
+        "QB": 2,
+        "RB": 6,
+        "TE": 3,
+        "WR": 8
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 2,
+        "TE": 1,
+        "WR": 5
+      },
+      "average_age_by_position": {
+        "QB": 28.5,
+        "RB": 26.17,
+        "TE": 26.0,
+        "WR": 27.5
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [],
+      "owned_pick_count": 21,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "5": 2
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from Goin in Ra",
+          "original_roster_id": 10,
+          "original_team": "Goin in Ra",
+          "current_owner_roster_id": 2,
+          "current_owner_team": "A B CeeDee",
+          "previous_owner_roster_id": 10,
+          "previous_owner_team": "Goin in Ra"
+        }
+      ],
+      "waiver_position": 2,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 11,
+      "team_name": "MOJO",
+      "owner_name": "amoritko",
+      "position_counts": {
+        "QB": 2,
+        "RB": 8,
+        "TE": 4,
+        "WR": 7
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 4,
+        "TE": 1,
+        "WR": 3
+      },
+      "average_age_by_position": {
+        "QB": 28.0,
+        "RB": 26.38,
+        "TE": 29.0,
+        "WR": 29.57
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [
+        "RB",
+        "TE"
+      ],
+      "owned_pick_count": 19,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "2": 2,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 2,
+          "label": "2026 Round 2 from MOJO",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        },
+        {
+          "season": "2027",
+          "round": 1,
+          "label": "2027 Round 1 from MOJO",
+          "original_roster_id": 11,
+          "original_team": "MOJO",
+          "current_owner_roster_id": 1,
+          "current_owner_team": "It’s Herbie Hancock",
+          "previous_owner_roster_id": 11,
+          "previous_owner_team": "MOJO"
+        }
+      ],
+      "waiver_position": 12,
+      "waiver_budget_used": 0
+    },
+    {
+      "roster_id": 12,
+      "team_name": "gullickson",
+      "owner_name": "gullickson",
+      "position_counts": {
+        "QB": 3,
+        "RB": 5,
+        "TE": 2,
+        "WR": 8
+      },
+      "starter_position_counts": {
+        "QB": 1,
+        "RB": 3,
+        "TE": 1,
+        "WR": 4
+      },
+      "average_age_by_position": {
+        "QB": 32.67,
+        "RB": 26.4,
+        "TE": 30.5,
+        "WR": 26.75
+      },
+      "likely_needs_by_count": [],
+      "possible_surplus_by_count": [],
+      "owned_pick_count": 21,
+      "owned_picks_by_season_round": {
+        "2026": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2027": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 1
+        },
+        "2028": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "2029": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      "picks_traded_away": [
+        {
+          "season": "2026",
+          "round": 3,
+          "label": "2026 Round 3 from gullickson",
+          "original_roster_id": 12,
+          "original_team": "gullickson",
+          "current_owner_roster_id": 7,
+          "current_owner_team": "I ❤️ Commish",
+          "previous_owner_roster_id": 12,
+          "previous_owner_team": "gullickson"
+        }
+      ],
+      "waiver_position": 6,
+      "waiver_budget_used": 0
+    }
+  ]
+}
