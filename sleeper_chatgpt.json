@@ -1,31 +1,44 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-01T20:22:30.785257Z",
+    "generated_at": "2026-06-01T21:05:10.582751Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
       1
     ],
     "current_week": 0,
-    "summary_files": [
-      "league_context_summary",
-      "team_roster_and_picks_summary",
-      "draft_board_summary",
-      "trade_market_summary",
-      "transactions_summary",
-      "matchups_standings_summary",
-      "waiver_summary"
-    ],
+    "recommended_start_file": "sleeper_chatgpt_manifest.json",
+    "output_files": {
+      "main": "sleeper_chatgpt.json",
+      "manifest": "sleeper_chatgpt_manifest.json",
+      "league_context_summary": "sleeper_chatgpt_league_context_summary.json",
+      "team_roster_and_picks_summary": "sleeper_chatgpt_team_roster_and_picks_summary.json",
+      "draft_board_summary": "sleeper_chatgpt_draft_board_summary.json",
+      "trade_market_summary": "sleeper_chatgpt_trade_market_summary.json",
+      "transactions_summary": "sleeper_chatgpt_transactions_summary.json",
+      "matchups_standings_summary": "sleeper_chatgpt_matchups_standings_summary.json",
+      "waiver_summary": "sleeper_chatgpt_waiver_summary.json"
+    },
+    "summary_files": {
+      "league_context_summary": "sleeper_chatgpt_league_context_summary.json",
+      "team_roster_and_picks_summary": "sleeper_chatgpt_team_roster_and_picks_summary.json",
+      "draft_board_summary": "sleeper_chatgpt_draft_board_summary.json",
+      "trade_market_summary": "sleeper_chatgpt_trade_market_summary.json",
+      "transactions_summary": "sleeper_chatgpt_transactions_summary.json",
+      "matchups_standings_summary": "sleeper_chatgpt_matchups_standings_summary.json",
+      "waiver_summary": "sleeper_chatgpt_waiver_summary.json"
+    },
     "how_to_read": [
-      "Use the summary files first for normal analysis.",
-      "Use sleeper_chatgpt.json only as the full source-of-truth archive.",
-      "Use team_roster_and_picks_summary for roster and pick inventory questions.",
-      "Use draft_board_summary for live draft questions.",
-      "Use trade_market_summary for trade strategy.",
-      "Use transactions_summary for trade/history questions.",
-      "Use waiver_summary for waiver/free-agent questions.",
-      "Use league_context_summary for scoring/settings questions."
+      "Start with sleeper_chatgpt_manifest.json to choose the right file.",
+      "Use sleeper_chatgpt_team_roster_and_picks_summary.json for roster and pick inventory questions.",
+      "Use sleeper_chatgpt_draft_board_summary.json for live draft questions.",
+      "Use sleeper_chatgpt_trade_market_summary.json for trade strategy.",
+      "Use sleeper_chatgpt_transactions_summary.json for trade/history questions.",
+      "Use sleeper_chatgpt_matchups_standings_summary.json for standings and matchup questions.",
+      "Use sleeper_chatgpt_waiver_summary.json for waiver/free-agent questions.",
+      "Use sleeper_chatgpt_league_context_summary.json for scoring/settings questions.",
+      "Use sleeper_chatgpt.json only as the full source-of-truth archive."
     ],
     "excluded_sections": [
       "birth date",
@@ -271,9 +284,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "37",
+      "current_pick_no": "50",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471744678006353920"
+      "on_the_clock_user_id": "471415316501491712"
     }
   },
   "users": {
@@ -1713,7 +1726,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780260473001,
+        "last_picked": 1780346888322,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -1756,6 +1769,768 @@
           "471744678006353920": 1
         },
         "slot_to_roster_id": null,
+        "derived_slot_to_team": {
+          "1": {
+            "slot": 1,
+            "user_id": "471744678006353920",
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          },
+          "2": {
+            "slot": 2,
+            "user_id": "471415316501491712",
+            "roster_id": 4,
+            "team_name": "Puka Troopas",
+            "owner_name": "TonsOfBuns"
+          },
+          "3": {
+            "slot": 3,
+            "user_id": "471717089472671744",
+            "roster_id": 10,
+            "team_name": "Goin in Ra",
+            "owner_name": "NC79"
+          },
+          "4": {
+            "slot": 4,
+            "user_id": "464915162038530048",
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          "5": {
+            "slot": 5,
+            "user_id": "471403228244733952",
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          },
+          "6": {
+            "slot": 6,
+            "user_id": "459751268567478272",
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          },
+          "7": {
+            "slot": 7,
+            "user_id": "471457570825957376",
+            "roster_id": 8,
+            "team_name": "Back to the Future",
+            "owner_name": "johnwander"
+          },
+          "8": {
+            "slot": 8,
+            "user_id": "471451909446692864",
+            "roster_id": 6,
+            "team_name": "andrewwelle",
+            "owner_name": "andrewwelle"
+          },
+          "9": {
+            "slot": 9,
+            "user_id": "471501409838166016",
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          },
+          "10": {
+            "slot": 10,
+            "user_id": "471424563457028096",
+            "roster_id": 5,
+            "team_name": "White Ice",
+            "owner_name": "jchrz"
+          },
+          "11": {
+            "slot": 11,
+            "user_id": "471415197991432192",
+            "roster_id": 3,
+            "team_name": "Pol Hol",
+            "owner_name": "GarrettHol"
+          },
+          "12": {
+            "slot": 12,
+            "user_id": "471724614532198400",
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        },
+        "derived_user_to_roster": {
+          "464915162038530048": 1,
+          "471403228244733952": 2,
+          "471415197991432192": 3,
+          "471415316501491712": 4,
+          "471424563457028096": 5,
+          "471451909446692864": 6,
+          "459751268567478272": 7,
+          "471457570825957376": 8,
+          "471501409838166016": 9,
+          "471717089472671744": 10,
+          "471724614532198400": 11,
+          "471744678006353920": 12
+        },
+        "derived_pick_sequence": [
+          {
+            "pick_no": 1,
+            "round": 1,
+            "draft_slot": 1,
+            "scheduled_roster": {
+              "roster_id": 12,
+              "team_name": "gullickson",
+              "owner_name": "gullickson"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 2,
+            "round": 1,
+            "draft_slot": 2,
+            "scheduled_roster": {
+              "roster_id": 4,
+              "team_name": "Puka Troopas",
+              "owner_name": "TonsOfBuns"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 3,
+            "round": 1,
+            "draft_slot": 3,
+            "scheduled_roster": {
+              "roster_id": 10,
+              "team_name": "Goin in Ra",
+              "owner_name": "NC79"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 4,
+            "round": 1,
+            "draft_slot": 4,
+            "scheduled_roster": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 5,
+            "round": 1,
+            "draft_slot": 5,
+            "scheduled_roster": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 6,
+            "round": 1,
+            "draft_slot": 6,
+            "scheduled_roster": {
+              "roster_id": 7,
+              "team_name": "I ❤️ Commish",
+              "owner_name": "lex11"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 7,
+            "round": 1,
+            "draft_slot": 7,
+            "scheduled_roster": {
+              "roster_id": 8,
+              "team_name": "Back to the Future",
+              "owner_name": "johnwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 8,
+            "round": 1,
+            "draft_slot": 8,
+            "scheduled_roster": {
+              "roster_id": 6,
+              "team_name": "andrewwelle",
+              "owner_name": "andrewwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 9,
+            "round": 1,
+            "draft_slot": 9,
+            "scheduled_roster": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 10,
+            "round": 1,
+            "draft_slot": 10,
+            "scheduled_roster": {
+              "roster_id": 5,
+              "team_name": "White Ice",
+              "owner_name": "jchrz"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 11,
+            "round": 1,
+            "draft_slot": 11,
+            "scheduled_roster": {
+              "roster_id": 3,
+              "team_name": "Pol Hol",
+              "owner_name": "GarrettHol"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 12,
+            "round": 1,
+            "draft_slot": 12,
+            "scheduled_roster": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 13,
+            "round": 2,
+            "draft_slot": 1,
+            "scheduled_roster": {
+              "roster_id": 12,
+              "team_name": "gullickson",
+              "owner_name": "gullickson"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 14,
+            "round": 2,
+            "draft_slot": 2,
+            "scheduled_roster": {
+              "roster_id": 4,
+              "team_name": "Puka Troopas",
+              "owner_name": "TonsOfBuns"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 15,
+            "round": 2,
+            "draft_slot": 3,
+            "scheduled_roster": {
+              "roster_id": 10,
+              "team_name": "Goin in Ra",
+              "owner_name": "NC79"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 16,
+            "round": 2,
+            "draft_slot": 4,
+            "scheduled_roster": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 17,
+            "round": 2,
+            "draft_slot": 5,
+            "scheduled_roster": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 18,
+            "round": 2,
+            "draft_slot": 6,
+            "scheduled_roster": {
+              "roster_id": 7,
+              "team_name": "I ❤️ Commish",
+              "owner_name": "lex11"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 19,
+            "round": 2,
+            "draft_slot": 7,
+            "scheduled_roster": {
+              "roster_id": 8,
+              "team_name": "Back to the Future",
+              "owner_name": "johnwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 20,
+            "round": 2,
+            "draft_slot": 8,
+            "scheduled_roster": {
+              "roster_id": 6,
+              "team_name": "andrewwelle",
+              "owner_name": "andrewwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 21,
+            "round": 2,
+            "draft_slot": 9,
+            "scheduled_roster": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 22,
+            "round": 2,
+            "draft_slot": 10,
+            "scheduled_roster": {
+              "roster_id": 5,
+              "team_name": "White Ice",
+              "owner_name": "jchrz"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 23,
+            "round": 2,
+            "draft_slot": 11,
+            "scheduled_roster": {
+              "roster_id": 3,
+              "team_name": "Pol Hol",
+              "owner_name": "GarrettHol"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 24,
+            "round": 2,
+            "draft_slot": 12,
+            "scheduled_roster": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 25,
+            "round": 3,
+            "draft_slot": 1,
+            "scheduled_roster": {
+              "roster_id": 12,
+              "team_name": "gullickson",
+              "owner_name": "gullickson"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 26,
+            "round": 3,
+            "draft_slot": 2,
+            "scheduled_roster": {
+              "roster_id": 4,
+              "team_name": "Puka Troopas",
+              "owner_name": "TonsOfBuns"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 27,
+            "round": 3,
+            "draft_slot": 3,
+            "scheduled_roster": {
+              "roster_id": 10,
+              "team_name": "Goin in Ra",
+              "owner_name": "NC79"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 28,
+            "round": 3,
+            "draft_slot": 4,
+            "scheduled_roster": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 29,
+            "round": 3,
+            "draft_slot": 5,
+            "scheduled_roster": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 30,
+            "round": 3,
+            "draft_slot": 6,
+            "scheduled_roster": {
+              "roster_id": 7,
+              "team_name": "I ❤️ Commish",
+              "owner_name": "lex11"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 31,
+            "round": 3,
+            "draft_slot": 7,
+            "scheduled_roster": {
+              "roster_id": 8,
+              "team_name": "Back to the Future",
+              "owner_name": "johnwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 32,
+            "round": 3,
+            "draft_slot": 8,
+            "scheduled_roster": {
+              "roster_id": 6,
+              "team_name": "andrewwelle",
+              "owner_name": "andrewwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 33,
+            "round": 3,
+            "draft_slot": 9,
+            "scheduled_roster": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 34,
+            "round": 3,
+            "draft_slot": 10,
+            "scheduled_roster": {
+              "roster_id": 5,
+              "team_name": "White Ice",
+              "owner_name": "jchrz"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 35,
+            "round": 3,
+            "draft_slot": 11,
+            "scheduled_roster": {
+              "roster_id": 3,
+              "team_name": "Pol Hol",
+              "owner_name": "GarrettHol"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 36,
+            "round": 3,
+            "draft_slot": 12,
+            "scheduled_roster": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 37,
+            "round": 4,
+            "draft_slot": 1,
+            "scheduled_roster": {
+              "roster_id": 12,
+              "team_name": "gullickson",
+              "owner_name": "gullickson"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 38,
+            "round": 4,
+            "draft_slot": 2,
+            "scheduled_roster": {
+              "roster_id": 4,
+              "team_name": "Puka Troopas",
+              "owner_name": "TonsOfBuns"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 39,
+            "round": 4,
+            "draft_slot": 3,
+            "scheduled_roster": {
+              "roster_id": 10,
+              "team_name": "Goin in Ra",
+              "owner_name": "NC79"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 40,
+            "round": 4,
+            "draft_slot": 4,
+            "scheduled_roster": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 41,
+            "round": 4,
+            "draft_slot": 5,
+            "scheduled_roster": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 42,
+            "round": 4,
+            "draft_slot": 6,
+            "scheduled_roster": {
+              "roster_id": 7,
+              "team_name": "I ❤️ Commish",
+              "owner_name": "lex11"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 43,
+            "round": 4,
+            "draft_slot": 7,
+            "scheduled_roster": {
+              "roster_id": 8,
+              "team_name": "Back to the Future",
+              "owner_name": "johnwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 44,
+            "round": 4,
+            "draft_slot": 8,
+            "scheduled_roster": {
+              "roster_id": 6,
+              "team_name": "andrewwelle",
+              "owner_name": "andrewwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 45,
+            "round": 4,
+            "draft_slot": 9,
+            "scheduled_roster": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 46,
+            "round": 4,
+            "draft_slot": 10,
+            "scheduled_roster": {
+              "roster_id": 5,
+              "team_name": "White Ice",
+              "owner_name": "jchrz"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 47,
+            "round": 4,
+            "draft_slot": 11,
+            "scheduled_roster": {
+              "roster_id": 3,
+              "team_name": "Pol Hol",
+              "owner_name": "GarrettHol"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 48,
+            "round": 4,
+            "draft_slot": 12,
+            "scheduled_roster": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 49,
+            "round": 5,
+            "draft_slot": 1,
+            "scheduled_roster": {
+              "roster_id": 12,
+              "team_name": "gullickson",
+              "owner_name": "gullickson"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 50,
+            "round": 5,
+            "draft_slot": 2,
+            "scheduled_roster": {
+              "roster_id": 4,
+              "team_name": "Puka Troopas",
+              "owner_name": "TonsOfBuns"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 51,
+            "round": 5,
+            "draft_slot": 3,
+            "scheduled_roster": {
+              "roster_id": 10,
+              "team_name": "Goin in Ra",
+              "owner_name": "NC79"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 52,
+            "round": 5,
+            "draft_slot": 4,
+            "scheduled_roster": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 53,
+            "round": 5,
+            "draft_slot": 5,
+            "scheduled_roster": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 54,
+            "round": 5,
+            "draft_slot": 6,
+            "scheduled_roster": {
+              "roster_id": 7,
+              "team_name": "I ❤️ Commish",
+              "owner_name": "lex11"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 55,
+            "round": 5,
+            "draft_slot": 7,
+            "scheduled_roster": {
+              "roster_id": 8,
+              "team_name": "Back to the Future",
+              "owner_name": "johnwander"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 56,
+            "round": 5,
+            "draft_slot": 8,
+            "scheduled_roster": {
+              "roster_id": 6,
+              "team_name": "andrewwelle",
+              "owner_name": "andrewwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 57,
+            "round": 5,
+            "draft_slot": 9,
+            "scheduled_roster": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 58,
+            "round": 5,
+            "draft_slot": 10,
+            "scheduled_roster": {
+              "roster_id": 5,
+              "team_name": "White Ice",
+              "owner_name": "jchrz"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 59,
+            "round": 5,
+            "draft_slot": 11,
+            "scheduled_roster": {
+              "roster_id": 3,
+              "team_name": "Pol Hol",
+              "owner_name": "GarrettHol"
+            },
+            "sequence_type": "linear"
+          },
+          {
+            "pick_no": 60,
+            "round": 5,
+            "draft_slot": 12,
+            "scheduled_roster": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            },
+            "sequence_type": "linear"
+          }
+        ],
         "rounds": {
           "1": [
             {
@@ -2878,6 +3653,39 @@
               "is_keeper": null,
               "picked_at": null
             }
+          ],
+          "4": [
+            {
+              "pick_no": 37,
+              "round": 4,
+              "draft_slot": 1,
+              "player_id": "12487",
+              "roster": {
+                "roster_id": 12,
+                "team_name": "gullickson",
+                "owner_name": "gullickson"
+              },
+              "picked_by_user_id": "471744678006353920",
+              "picked_by_name": "gullickson",
+              "picked_by_team_name": "gullickson",
+              "metadata": {
+                "first_name": "Terrance",
+                "last_name": "Ferguson",
+                "position": "TE",
+                "team": "LAR",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "1",
+                "number": "18",
+                "player_id": "12487",
+                "sport": "nfl",
+                "news_updated": "1778783734141",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            }
           ]
         },
         "traded_picks": [
@@ -3621,8 +4429,8 @@
         }
       },
       {
-        "m": 5,
         "p": 5,
+        "m": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -3636,8 +4444,8 @@
         }
       },
       {
-        "m": 6,
         "p": 1,
+        "m": 6,
         "r": 3,
         "l": null,
         "w": null,
@@ -3651,8 +4459,8 @@
         }
       },
       {
-        "m": 7,
         "p": 3,
+        "m": 7,
         "r": 3,
         "l": null,
         "w": null,
@@ -3782,25 +4590,6 @@
       "college": "Stanford",
       "search_rank": 75
     },
-    "10235": {
-      "player_id": "10235",
-      "full_name": "Roschon Johnson",
-      "first_name": "Roschon",
-      "last_name": "Johnson",
-      "position": "RB",
-      "team": "CHI",
-      "status": "Active",
-      "injury_status": "Questionable",
-      "years_exp": 3,
-      "age": 25,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 2,
-      "college": "Texas",
-      "search_rank": 999
-    },
     "10236": {
       "player_id": "10236",
       "full_name": "Dalton Kincaid",
@@ -3914,25 +4703,6 @@
       "depth_chart_order": 1,
       "college": "USC",
       "search_rank": 15
-    },
-    "11562": {
-      "player_id": "11562",
-      "full_name": "Spencer Rattler",
-      "first_name": "Spencer",
-      "last_name": "Rattler",
-      "position": "QB",
-      "team": "NO",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 2,
-      "age": 25,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": 1,
-      "college": "South Carolina",
-      "search_rank": 999
     },
     "11563": {
       "player_id": "11563",
@@ -4276,25 +5046,6 @@
       "college": "Washington",
       "search_rank": 165
     },
-    "11619": {
-      "player_id": "11619",
-      "full_name": "Ja'Lynn Polk",
-      "first_name": "Ja'Lynn",
-      "last_name": "Polk",
-      "position": "WR",
-      "team": "NO",
-      "status": "Active",
-      "injury_status": "Questionable",
-      "years_exp": 2,
-      "age": 24,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "RWR",
-      "depth_chart_order": 5,
-      "college": "Washington",
-      "search_rank": 999
-    },
     "11620": {
       "player_id": "11620",
       "full_name": "Rome Odunze",
@@ -4313,25 +5064,6 @@
       "depth_chart_order": 1,
       "college": "Washington",
       "search_rank": 68
-    },
-    "11623": {
-      "player_id": "11623",
-      "full_name": "Jordan Whittington",
-      "first_name": "Jordan",
-      "last_name": "Whittington",
-      "position": "WR",
-      "team": "LAR",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 2,
-      "age": 25,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
-      "college": "Texas",
-      "search_rank": 999
     },
     "11624": {
       "player_id": "11624",
@@ -4599,25 +5331,6 @@
       "college": "Troy",
       "search_rank": 141
     },
-    "11650": {
-      "player_id": "11650",
-      "full_name": "Luke McCaffrey",
-      "first_name": "Luke",
-      "last_name": "McCaffrey",
-      "position": "WR",
-      "team": "WAS",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 2,
-      "age": 25,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 5,
-      "college": "Rice",
-      "search_rank": 999
-    },
     "11655": {
       "player_id": "11655",
       "full_name": "Tyrone Tracy",
@@ -4637,25 +5350,6 @@
       "college": "Purdue",
       "search_rank": 110
     },
-    "11783": {
-      "player_id": "11783",
-      "full_name": "Ryan Flournoy",
-      "first_name": "Ryan",
-      "last_name": "Flournoy",
-      "position": "WR",
-      "team": "DAL",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 2,
-      "age": 26,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 5,
-      "college": "Southeast Missouri State",
-      "search_rank": 199
-    },
     "11834": {
       "player_id": "11834",
       "full_name": "Devaughn Vele",
@@ -4674,25 +5368,6 @@
       "depth_chart_order": 2,
       "college": "Utah",
       "search_rank": 209
-    },
-    "1234": {
-      "player_id": "1234",
-      "full_name": "Russell Wilson",
-      "first_name": "Russell",
-      "last_name": "Wilson",
-      "position": "QB",
-      "team": null,
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 14,
-      "age": 37,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": "Wisconsin",
-      "search_rank": 272
     },
     "12455": {
       "player_id": "12455",
@@ -4731,25 +5406,6 @@
       "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 189
-    },
-    "12462": {
-      "player_id": "12462",
-      "full_name": "Damien Martinez",
-      "first_name": "Damien",
-      "last_name": "Martinez",
-      "position": "RB",
-      "team": "GB",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 22,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 4,
-      "college": "Miami (FL)",
-      "search_rank": 999
     },
     "12467": {
       "player_id": "12467",
@@ -4941,24 +5597,24 @@
       "college": "Oregon",
       "search_rank": 999
     },
-    "12486": {
-      "player_id": "12486",
-      "full_name": "Dillon Gabriel",
-      "first_name": "Dillon",
-      "last_name": "Gabriel",
-      "position": "QB",
-      "team": "CLE",
+    "12487": {
+      "player_id": "12487",
+      "full_name": "Terrance Ferguson",
+      "first_name": "Terrance",
+      "last_name": "Ferguson",
+      "position": "TE",
+      "team": "LAR",
       "status": "Active",
       "injury_status": null,
       "years_exp": 1,
-      "age": 25,
+      "age": 23,
       "fantasy_positions": [
-        "QB"
+        "TE"
       ],
-      "depth_chart_position": "QB",
+      "depth_chart_position": "TE",
       "depth_chart_order": 2,
       "college": "Oregon",
-      "search_rank": 999
+      "search_rank": 141
     },
     "12489": {
       "player_id": "12489",
@@ -5111,25 +5767,6 @@
       "depth_chart_order": 3,
       "college": "Stanford",
       "search_rank": 185
-    },
-    "12500": {
-      "player_id": "12500",
-      "full_name": "Quinn Ewers",
-      "first_name": "Quinn",
-      "last_name": "Ewers",
-      "position": "QB",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 23,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": 2,
-      "college": "Texas",
-      "search_rank": 396
     },
     "12501": {
       "player_id": "12501",
@@ -5397,25 +6034,6 @@
       "college": "Miami (FL)",
       "search_rank": 75
     },
-    "12523": {
-      "player_id": "12523",
-      "full_name": "Jimmy Horn",
-      "first_name": "Jimmy",
-      "last_name": "Horn",
-      "position": "WR",
-      "team": "CAR",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 23,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 5,
-      "college": "Colorado",
-      "search_rank": 999
-    },
     "12524": {
       "player_id": "12524",
       "full_name": "Shedeur Sanders",
@@ -5645,63 +6263,6 @@
       "college": "Washington State",
       "search_rank": 195
     },
-    "12641": {
-      "player_id": "12641",
-      "full_name": "Jaylin Lane",
-      "first_name": "Jaylin",
-      "last_name": "Lane",
-      "position": "WR",
-      "team": "WAS",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 24,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
-      "college": "Virginia Tech",
-      "search_rank": 999
-    },
-    "12670": {
-      "player_id": "12670",
-      "full_name": "KeAndre Lambert-Smith",
-      "first_name": "KeAndre",
-      "last_name": "Lambert-Smith",
-      "position": "WR",
-      "team": "LAC",
-      "status": "Active",
-      "injury_status": "Questionable",
-      "years_exp": 1,
-      "age": 24,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 4,
-      "college": "Auburn",
-      "search_rank": 999
-    },
-    "12718": {
-      "player_id": "12718",
-      "full_name": "Konata Mumpfield",
-      "first_name": "Konata",
-      "last_name": "Mumpfield",
-      "position": "WR",
-      "team": "LAR",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 23,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 4,
-      "college": "Pittsburgh",
-      "search_rank": 999
-    },
     "13268": {
       "player_id": "13268",
       "full_name": "Elijah Sarratt",
@@ -5873,25 +6434,6 @@
       "college": "Arizona State",
       "search_rank": 70
     },
-    "13282": {
-      "player_id": "13282",
-      "full_name": "Jack Endries",
-      "first_name": "Jack",
-      "last_name": "Endries",
-      "position": "TE",
-      "team": "CIN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Texas",
-      "search_rank": 999
-    },
     "13285": {
       "player_id": "13285",
       "full_name": "Malachi Fields",
@@ -5968,25 +6510,6 @@
       "college": "Penn State",
       "search_rank": 167
     },
-    "13289": {
-      "player_id": "13289",
-      "full_name": "Drew Allar",
-      "first_name": "Drew",
-      "last_name": "Allar",
-      "position": "QB",
-      "team": "PIT",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": null,
-      "college": "Penn State",
-      "search_rank": 999
-    },
     "13293": {
       "player_id": "13293",
       "full_name": "Ja'Kobi Lane",
@@ -6025,25 +6548,6 @@
       "college": "USC",
       "search_rank": 77
     },
-    "13296": {
-      "player_id": "13296",
-      "full_name": "Caleb Douglas",
-      "first_name": "Caleb",
-      "last_name": "Douglas",
-      "position": "WR",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "RWR",
-      "depth_chart_order": null,
-      "college": "Texas Tech",
-      "search_rank": 999
-    },
     "13298": {
       "player_id": "13298",
       "full_name": "KC Concepcion",
@@ -6062,25 +6566,6 @@
       "depth_chart_order": null,
       "college": "Texas A&M",
       "search_rank": 129
-    },
-    "13300": {
-      "player_id": "13300",
-      "full_name": "Le'Veon Moss",
-      "first_name": "Le'Veon",
-      "last_name": "Moss",
-      "position": "RB",
-      "team": null,
-      "status": "Active",
-      "injury_status": "NA",
-      "years_exp": 0,
-      "age": null,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": null,
-      "search_rank": 999
     },
     "13301": {
       "player_id": "13301",
@@ -6120,25 +6605,6 @@
       "college": "Clemson",
       "search_rank": 999
     },
-    "13303": {
-      "player_id": "13303",
-      "full_name": "Cade Klubnik",
-      "first_name": "Cade",
-      "last_name": "Klubnik",
-      "position": "QB",
-      "team": "NYJ",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": null,
-      "college": "Clemson",
-      "search_rank": 398
-    },
     "13305": {
       "player_id": "13305",
       "full_name": "Mike Washington",
@@ -6157,44 +6623,6 @@
       "depth_chart_order": null,
       "college": "Arkansas",
       "search_rank": 139
-    },
-    "13306": {
-      "player_id": "13306",
-      "full_name": "Taylen Green",
-      "first_name": "Taylen",
-      "last_name": "Green",
-      "position": "QB",
-      "team": "CLE",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": null,
-      "college": "Arkansas",
-      "search_rank": 999
-    },
-    "13307": {
-      "player_id": "13307",
-      "full_name": "Marlin Klein",
-      "first_name": "Marlin",
-      "last_name": "Klein",
-      "position": "TE",
-      "team": "HOU",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Michigan",
-      "search_rank": 999
     },
     "13311": {
       "player_id": "13311",
@@ -6234,25 +6662,6 @@
       "college": "Georgia State",
       "search_rank": 196
     },
-    "13319": {
-      "player_id": "13319",
-      "full_name": "Oscar Delp",
-      "first_name": "Oscar",
-      "last_name": "Delp",
-      "position": "TE",
-      "team": "NO",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Georgia",
-      "search_rank": 999
-    },
     "13320": {
       "player_id": "13320",
       "full_name": "Zachariah Branch",
@@ -6272,63 +6681,6 @@
       "college": "Georgia",
       "search_rank": 185
     },
-    "13322": {
-      "player_id": "13322",
-      "full_name": "Sam Roush",
-      "first_name": "Sam",
-      "last_name": "Roush",
-      "position": "TE",
-      "team": "CHI",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Stanford",
-      "search_rank": 999
-    },
-    "13324": {
-      "player_id": "13324",
-      "full_name": "Matt Hibner",
-      "first_name": "Matt",
-      "last_name": "Hibner",
-      "position": "TE",
-      "team": "BAL",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 24,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "SMU",
-      "search_rank": 999
-    },
-    "13329": {
-      "player_id": "13329",
-      "full_name": "Malik Benson",
-      "first_name": "Malik",
-      "last_name": "Benson",
-      "position": "WR",
-      "team": "LV",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "RWR",
-      "depth_chart_order": null,
-      "college": "Oregon",
-      "search_rank": 999
-    },
     "13330": {
       "player_id": "13330",
       "full_name": "Kenyon Sadiq",
@@ -6347,25 +6699,6 @@
       "depth_chart_order": null,
       "college": "Oregon",
       "search_rank": 109
-    },
-    "13335": {
-      "player_id": "13335",
-      "full_name": "Cole Payton",
-      "first_name": "Cole",
-      "last_name": "Payton",
-      "position": "QB",
-      "team": "PHI",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": null,
-      "college": "North Dakota State",
-      "search_rank": 999
     },
     "13337": {
       "player_id": "13337",
@@ -6424,25 +6757,6 @@
       "college": "Washington",
       "search_rank": 153
     },
-    "13348": {
-      "player_id": "13348",
-      "full_name": "J'Mari Taylor",
-      "first_name": "J'Mari",
-      "last_name": "Taylor",
-      "position": "RB",
-      "team": "JAX",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 24,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": null,
-      "college": "Virginia",
-      "search_rank": 999
-    },
     "13349": {
       "player_id": "13349",
       "full_name": "Eli Stowers",
@@ -6481,82 +6795,6 @@
       "college": "Tennessee",
       "search_rank": 202
     },
-    "1339": {
-      "player_id": "1339",
-      "full_name": "Zach Ertz",
-      "first_name": "Zach",
-      "last_name": "Ertz",
-      "position": "TE",
-      "team": null,
-      "status": "Active",
-      "injury_status": "Questionable",
-      "years_exp": 13,
-      "age": 35,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": "Stanford",
-      "search_rank": 275
-    },
-    "13392": {
-      "player_id": "13392",
-      "full_name": "Jeff Caldwell",
-      "first_name": "Jeff",
-      "last_name": "Caldwell",
-      "position": "WR",
-      "team": "KC",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": null,
-      "college": "Cincinnati",
-      "search_rank": 999
-    },
-    "13400": {
-      "player_id": "13400",
-      "full_name": "Justin Joly",
-      "first_name": "Justin",
-      "last_name": "Joly",
-      "position": "TE",
-      "team": "DEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 21,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "North Carolina State",
-      "search_rank": 999
-    },
-    "13401": {
-      "player_id": "13401",
-      "full_name": "Michael Trigg",
-      "first_name": "Michael",
-      "last_name": "Trigg",
-      "position": "TE",
-      "team": "DAL",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Baylor",
-      "search_rank": 212
-    },
     "13402": {
       "player_id": "13402",
       "full_name": "Skyler Bell",
@@ -6574,25 +6812,6 @@
       "depth_chart_position": "SWR",
       "depth_chart_order": null,
       "college": "UConn",
-      "search_rank": 999
-    },
-    "13403": {
-      "player_id": "13403",
-      "full_name": "Jam Miller",
-      "first_name": "Jam",
-      "last_name": "Miller",
-      "position": "RB",
-      "team": "NE",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": null,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": null,
-      "college": "Alabama",
       "search_rank": 999
     },
     "13405": {
@@ -6614,63 +6833,6 @@
       "college": "Penn State",
       "search_rank": 157
     },
-    "13411": {
-      "player_id": "13411",
-      "full_name": "Zavion Thomas",
-      "first_name": "Zavion",
-      "last_name": "Thomas",
-      "position": "WR",
-      "team": "CHI",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": null,
-      "college": "LSU",
-      "search_rank": 9999999
-    },
-    "13413": {
-      "player_id": "13413",
-      "full_name": "Cyrus Allen",
-      "first_name": "Cyrus",
-      "last_name": "Allen",
-      "position": "WR",
-      "team": "KC",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": null,
-      "college": "Cincinnati",
-      "search_rank": 9999999
-    },
-    "13414": {
-      "player_id": "13414",
-      "full_name": "Kaelon Black",
-      "first_name": "Kaelon",
-      "last_name": "Black",
-      "position": "RB",
-      "team": "SF",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 24,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": null,
-      "college": "Indiana",
-      "search_rank": 999
-    },
     "13417": {
       "player_id": "13417",
       "full_name": "De'Zhaun Stribling",
@@ -6689,139 +6851,6 @@
       "depth_chart_order": null,
       "college": "Ole Miss",
       "search_rank": 214
-    },
-    "13419": {
-      "player_id": "13419",
-      "full_name": "Jaydn Ott",
-      "first_name": "Jaydn",
-      "last_name": "Ott",
-      "position": "RB",
-      "team": "KC",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": null,
-      "college": "Oklahoma",
-      "search_rank": 9999999
-    },
-    "13420": {
-      "player_id": "13420",
-      "full_name": "Bryce Lance",
-      "first_name": "Bryce",
-      "last_name": "Lance",
-      "position": "WR",
-      "team": "NO",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": null,
-      "college": "North Dakota State",
-      "search_rank": 999
-    },
-    "13421": {
-      "player_id": "13421",
-      "full_name": "Eli Raridon",
-      "first_name": "Eli",
-      "last_name": "Raridon",
-      "position": "TE",
-      "team": "NE",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 22,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Notre Dame",
-      "search_rank": 999
-    },
-    "13424": {
-      "player_id": "13424",
-      "full_name": "Seth McGowan",
-      "first_name": "Seth",
-      "last_name": "McGowan",
-      "position": "RB",
-      "team": "IND",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 24,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": null,
-      "college": "Kentucky",
-      "search_rank": 999
-    },
-    "13434": {
-      "player_id": "13434",
-      "full_name": "Will Kacmarek",
-      "first_name": "Will",
-      "last_name": "Kacmarek",
-      "position": "TE",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Ohio State",
-      "search_rank": 9999999
-    },
-    "13435": {
-      "player_id": "13435",
-      "full_name": "Joe Royer",
-      "first_name": "Joe",
-      "last_name": "Royer",
-      "position": "TE",
-      "team": "CLE",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 24,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": null,
-      "college": "Cincinnati",
-      "search_rank": 9999999
-    },
-    "13477": {
-      "player_id": "13477",
-      "full_name": "Colbie Young",
-      "first_name": "Colbie",
-      "last_name": "Young",
-      "position": "WR",
-      "team": "CIN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 0,
-      "age": 23,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": null,
-      "college": "Georgia",
-      "search_rank": 9999999
     },
     "1466": {
       "player_id": "1466",
@@ -6860,44 +6889,6 @@
       "depth_chart_order": null,
       "college": "California",
       "search_rank": 116
-    },
-    "19": {
-      "player_id": "19",
-      "full_name": "Joe Flacco",
-      "first_name": "Joe",
-      "last_name": "Flacco",
-      "position": "QB",
-      "team": "CIN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 18,
-      "age": 41,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": 2,
-      "college": "Delaware",
-      "search_rank": 999
-    },
-    "2078": {
-      "player_id": "2078",
-      "full_name": "Odell Beckham",
-      "first_name": "Odell",
-      "last_name": "Beckham",
-      "position": "WR",
-      "team": "NYG",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 12,
-      "age": 33,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 5,
-      "college": "LSU",
-      "search_rank": 999
     },
     "2133": {
       "player_id": "2133",
@@ -7127,25 +7118,6 @@
       "college": "West Alabama",
       "search_rank": 145
     },
-    "4017": {
-      "player_id": "4017",
-      "full_name": "Deshaun Watson",
-      "first_name": "Deshaun",
-      "last_name": "Watson",
-      "position": "QB",
-      "team": "CLE",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 9,
-      "age": 30,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": 3,
-      "college": "Clemson",
-      "search_rank": 397
-    },
     "4018": {
       "player_id": "4018",
       "full_name": "Joe Mixon",
@@ -7279,25 +7251,6 @@
       "college": "Texas Tech",
       "search_rank": 26
     },
-    "4066": {
-      "player_id": "4066",
-      "full_name": "Evan Engram",
-      "first_name": "Evan",
-      "last_name": "Engram",
-      "position": "TE",
-      "team": "DEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 9,
-      "age": 31,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": 1,
-      "college": "Ole Miss",
-      "search_rank": 999
-    },
     "4098": {
       "player_id": "4098",
       "full_name": "Kareem Hunt",
@@ -7316,25 +7269,6 @@
       "depth_chart_order": null,
       "college": "Toledo",
       "search_rank": 242
-    },
-    "4144": {
-      "player_id": "4144",
-      "full_name": "Jonnu Smith",
-      "first_name": "Jonnu",
-      "last_name": "Smith",
-      "position": "TE",
-      "team": null,
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 9,
-      "age": 30,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": "Florida International",
-      "search_rank": 206
     },
     "4147": {
       "player_id": "4147",
@@ -7798,7 +7732,7 @@
       "first_name": "A.J.",
       "last_name": "Brown",
       "position": "WR",
-      "team": "PHI",
+      "team": "NE",
       "status": "Active",
       "injury_status": null,
       "years_exp": 7,
@@ -7944,25 +7878,6 @@
       "college": "Wake Forest",
       "search_rank": 999
     },
-    "5995": {
-      "player_id": "5995",
-      "full_name": "Justice Hill",
-      "first_name": "Justice",
-      "last_name": "Hill",
-      "position": "RB",
-      "team": "BAL",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 7,
-      "age": 28,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 2,
-      "college": "Oklahoma State",
-      "search_rank": 999
-    },
     "6039": {
       "player_id": "6039",
       "full_name": "Ty Johnson",
@@ -8019,25 +7934,6 @@
       "depth_chart_order": 4,
       "college": "Auburn",
       "search_rank": 999
-    },
-    "6151": {
-      "player_id": "6151",
-      "full_name": "Miles Sanders",
-      "first_name": "Miles",
-      "last_name": "Sanders",
-      "position": "RB",
-      "team": null,
-      "status": "Active",
-      "injury_status": "Questionable",
-      "years_exp": 7,
-      "age": 28,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": "Penn State",
-      "search_rank": 290
     },
     "6770": {
       "player_id": "6770",
@@ -8723,25 +8619,6 @@
       "college": "USC",
       "search_rank": 14
     },
-    "8117": {
-      "player_id": "8117",
-      "full_name": "Jalen Tolbert",
-      "first_name": "Jalen",
-      "last_name": "Tolbert",
-      "position": "WR",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 27,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 1,
-      "college": "South Alabama",
-      "search_rank": 999
-    },
     "8121": {
       "player_id": "8121",
       "full_name": "Romeo Doubs",
@@ -8818,25 +8695,6 @@
       "college": "Kentucky",
       "search_rank": 105
     },
-    "8129": {
-      "player_id": "8129",
-      "full_name": "Dameon Pierce",
-      "first_name": "Dameon",
-      "last_name": "Pierce",
-      "position": "RB",
-      "team": "PHI",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 26,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 4,
-      "college": "Florida",
-      "search_rank": 999
-    },
     "8130": {
       "player_id": "8130",
       "full_name": "Trey McBride",
@@ -8912,25 +8770,6 @@
       "depth_chart_order": 3,
       "college": "Boise State",
       "search_rank": 120
-    },
-    "8135": {
-      "player_id": "8135",
-      "full_name": "Treylon Burks",
-      "first_name": "Treylon",
-      "last_name": "Burks",
-      "position": "WR",
-      "team": "WAS",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 26,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "RWR",
-      "depth_chart_order": 7,
-      "college": "Arkansas",
-      "search_rank": 999
     },
     "8136": {
       "player_id": "8136",
@@ -9217,25 +9056,6 @@
       "college": "North Dakota State",
       "search_rank": 64
     },
-    "8172": {
-      "player_id": "8172",
-      "full_name": "Greg Dulcich",
-      "first_name": "Greg",
-      "last_name": "Dulcich",
-      "position": "TE",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 26,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": 2,
-      "college": "UCLA",
-      "search_rank": 9999999
-    },
     "8180": {
       "player_id": "8180",
       "full_name": "Jalen Nailor",
@@ -9273,25 +9093,6 @@
       "depth_chart_order": 1,
       "college": "Iowa State",
       "search_rank": 37
-    },
-    "8188": {
-      "player_id": "8188",
-      "full_name": "Tyquan Thornton",
-      "first_name": "Tyquan",
-      "last_name": "Thornton",
-      "position": "WR",
-      "team": "KC",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 25,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 4,
-      "college": "Baylor",
-      "search_rank": 999
     },
     "8205": {
       "player_id": "8205",
@@ -9387,25 +9188,6 @@
       "depth_chart_order": 2,
       "college": "Weber State",
       "search_rank": 162
-    },
-    "8800": {
-      "player_id": "8800",
-      "full_name": "Malik Davis",
-      "first_name": "Malik",
-      "last_name": "Davis",
-      "position": "RB",
-      "team": "DAL",
-      "status": "Active",
-      "injury_status": "Questionable",
-      "years_exp": 4,
-      "age": 27,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 5,
-      "college": "Florida",
-      "search_rank": 999
     },
     "9221": {
       "player_id": "9221",
@@ -9615,25 +9397,6 @@
       "depth_chart_order": 1,
       "college": "BYU",
       "search_rank": 5
-    },
-    "9494": {
-      "player_id": "9494",
-      "full_name": "Marvin Mims",
-      "first_name": "Marvin",
-      "last_name": "Mims",
-      "position": "WR",
-      "team": "DEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 3,
-      "age": 24,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
-      "college": "Oklahoma",
-      "search_rank": 192
     },
     "9500": {
       "player_id": "9500",
@@ -9881,469 +9644,7 @@
       "depth_chart_order": 1,
       "college": "Boston College",
       "search_rank": 49
-    },
-    "9999": {
-      "player_id": "9999",
-      "full_name": "Will Levis",
-      "first_name": "Will",
-      "last_name": "Levis",
-      "position": "QB",
-      "team": "TEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 3,
-      "age": 26,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": 4,
-      "college": "Kentucky",
-      "search_rank": 999
-    },
-    "CLE": {
-      "player_id": "CLE",
-      "full_name": "Cleveland Browns",
-      "first_name": "Cleveland",
-      "last_name": "Browns",
-      "position": "DEF",
-      "team": "CLE",
-      "status": null,
-      "injury_status": null,
-      "years_exp": null,
-      "age": null,
-      "fantasy_positions": [
-        "DEF"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": null,
-      "search_rank": null
-    },
-    "LAR": {
-      "player_id": "LAR",
-      "full_name": "Los Angeles Rams",
-      "first_name": "Los Angeles",
-      "last_name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "status": null,
-      "injury_status": null,
-      "years_exp": null,
-      "age": null,
-      "fantasy_positions": [
-        "DEF"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": null,
-      "search_rank": null
     }
   },
-  "trending": {
-    "adds": [
-      {
-        "count": 110838,
-        "player_id": "2078"
-      },
-      {
-        "count": 13329,
-        "player_id": "13411"
-      },
-      {
-        "count": 9107,
-        "player_id": "13324"
-      },
-      {
-        "count": 7072,
-        "player_id": "13296"
-      },
-      {
-        "count": 6008,
-        "player_id": "13424"
-      },
-      {
-        "count": 5994,
-        "player_id": "8180"
-      },
-      {
-        "count": 5358,
-        "player_id": "13413"
-      },
-      {
-        "count": 4568,
-        "player_id": "13306"
-      },
-      {
-        "count": 4509,
-        "player_id": "11581"
-      },
-      {
-        "count": 4487,
-        "player_id": "8161"
-      },
-      {
-        "count": 3843,
-        "player_id": "13348"
-      },
-      {
-        "count": 3735,
-        "player_id": "13392"
-      },
-      {
-        "count": 3326,
-        "player_id": "8172"
-      },
-      {
-        "count": 3164,
-        "player_id": "13414"
-      },
-      {
-        "count": 3080,
-        "player_id": "13421"
-      },
-      {
-        "count": 2952,
-        "player_id": "4017"
-      },
-      {
-        "count": 2907,
-        "player_id": "13403"
-      },
-      {
-        "count": 2870,
-        "player_id": "13400"
-      },
-      {
-        "count": 2512,
-        "player_id": "11783"
-      },
-      {
-        "count": 2484,
-        "player_id": "13303"
-      },
-      {
-        "count": 2359,
-        "player_id": "13302"
-      },
-      {
-        "count": 2358,
-        "player_id": "9511"
-      },
-      {
-        "count": 2331,
-        "player_id": "13401"
-      },
-      {
-        "count": 2190,
-        "player_id": "13419"
-      },
-      {
-        "count": 2155,
-        "player_id": "13420"
-      },
-      {
-        "count": 2036,
-        "player_id": "13434"
-      },
-      {
-        "count": 1926,
-        "player_id": "8800"
-      },
-      {
-        "count": 1890,
-        "player_id": "13477"
-      },
-      {
-        "count": 1818,
-        "player_id": "13289"
-      },
-      {
-        "count": 1746,
-        "player_id": "13435"
-      },
-      {
-        "count": 1698,
-        "player_id": "13335"
-      },
-      {
-        "count": 1638,
-        "player_id": "13322"
-      },
-      {
-        "count": 1626,
-        "player_id": "13319"
-      },
-      {
-        "count": 1584,
-        "player_id": "8117"
-      },
-      {
-        "count": 1584,
-        "player_id": "11610"
-      },
-      {
-        "count": 1561,
-        "player_id": "8188"
-      },
-      {
-        "count": 1495,
-        "player_id": "12462"
-      },
-      {
-        "count": 1470,
-        "player_id": "13282"
-      },
-      {
-        "count": 1440,
-        "player_id": "10219"
-      },
-      {
-        "count": 1368,
-        "player_id": "10226"
-      },
-      {
-        "count": 1365,
-        "player_id": "12502"
-      },
-      {
-        "count": 1350,
-        "player_id": "5995"
-      },
-      {
-        "count": 1341,
-        "player_id": "9506"
-      },
-      {
-        "count": 1287,
-        "player_id": "11571"
-      },
-      {
-        "count": 1216,
-        "player_id": "13270"
-      },
-      {
-        "count": 1158,
-        "player_id": "13329"
-      },
-      {
-        "count": 1130,
-        "player_id": "13307"
-      },
-      {
-        "count": 1124,
-        "player_id": "LAR"
-      },
-      {
-        "count": 1065,
-        "player_id": "7528"
-      },
-      {
-        "count": 1050,
-        "player_id": "6149"
-      }
-    ],
-    "drops": [
-      {
-        "count": 9396,
-        "player_id": "2505"
-      },
-      {
-        "count": 8100,
-        "player_id": "1234"
-      },
-      {
-        "count": 6552,
-        "player_id": "1339"
-      },
-      {
-        "count": 5481,
-        "player_id": "12455"
-      },
-      {
-        "count": 5112,
-        "player_id": "6130"
-      },
-      {
-        "count": 5094,
-        "player_id": "8125"
-      },
-      {
-        "count": 4886,
-        "player_id": "4144"
-      },
-      {
-        "count": 4545,
-        "player_id": "12670"
-      },
-      {
-        "count": 4275,
-        "player_id": "11630"
-      },
-      {
-        "count": 4148,
-        "player_id": "4098"
-      },
-      {
-        "count": 4005,
-        "player_id": "12500"
-      },
-      {
-        "count": 3681,
-        "player_id": "11623"
-      },
-      {
-        "count": 3675,
-        "player_id": "CLE"
-      },
-      {
-        "count": 3591,
-        "player_id": "9494"
-      },
-      {
-        "count": 3577,
-        "player_id": "11834"
-      },
-      {
-        "count": 3560,
-        "player_id": "12503"
-      },
-      {
-        "count": 3500,
-        "player_id": "8147"
-      },
-      {
-        "count": 3472,
-        "player_id": "11650"
-      },
-      {
-        "count": 3464,
-        "player_id": "12641"
-      },
-      {
-        "count": 3304,
-        "player_id": "4381"
-      },
-      {
-        "count": 3304,
-        "player_id": "1479"
-      },
-      {
-        "count": 3285,
-        "player_id": "12540"
-      },
-      {
-        "count": 3248,
-        "player_id": "11625"
-      },
-      {
-        "count": 3240,
-        "player_id": "6865"
-      },
-      {
-        "count": 3234,
-        "player_id": "12523"
-      },
-      {
-        "count": 3114,
-        "player_id": "19"
-      },
-      {
-        "count": 3033,
-        "player_id": "11619"
-      },
-      {
-        "count": 2961,
-        "player_id": "7090"
-      },
-      {
-        "count": 2954,
-        "player_id": "12486"
-      },
-      {
-        "count": 2912,
-        "player_id": "8135"
-      },
-      {
-        "count": 2889,
-        "player_id": "6151"
-      },
-      {
-        "count": 2880,
-        "player_id": "7607"
-      },
-      {
-        "count": 2864,
-        "player_id": "12472"
-      },
-      {
-        "count": 2832,
-        "player_id": "4066"
-      },
-      {
-        "count": 2817,
-        "player_id": "11435"
-      },
-      {
-        "count": 2781,
-        "player_id": "12718"
-      },
-      {
-        "count": 2766,
-        "player_id": "6149"
-      },
-      {
-        "count": 2727,
-        "player_id": "5995"
-      },
-      {
-        "count": 2680,
-        "player_id": "7528"
-      },
-      {
-        "count": 2560,
-        "player_id": "10235"
-      },
-      {
-        "count": 2448,
-        "player_id": "8800"
-      },
-      {
-        "count": 2439,
-        "player_id": "11571"
-      },
-      {
-        "count": 2436,
-        "player_id": "11589"
-      },
-      {
-        "count": 2412,
-        "player_id": "11581"
-      },
-      {
-        "count": 2408,
-        "player_id": "8117"
-      },
-      {
-        "count": 2336,
-        "player_id": "11562"
-      },
-      {
-        "count": 2336,
-        "player_id": "9999"
-      },
-      {
-        "count": 2286,
-        "player_id": "13300"
-      },
-      {
-        "count": 2259,
-        "player_id": "10226"
-      },
-      {
-        "count": 2256,
-        "player_id": "8129"
-      }
-    ]
-  }
+  "trending": {}
 }
