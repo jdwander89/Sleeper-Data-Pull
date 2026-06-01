@@ -1,7 +1,7 @@
 {
   "generated_from": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-01T19:34:53.479555Z",
+    "generated_at": "2026-06-01T19:44:09.361274Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -141,8 +141,8 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
+      "depth_chart_position": "LWR",
+      "depth_chart_order": 5,
       "college": "LSU",
       "search_rank": 999,
       "count": 105945
@@ -361,7 +361,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
+      "depth_chart_position": "SWR",
       "depth_chart_order": null,
       "college": "Cincinnati",
       "search_rank": 999,
@@ -1147,7 +1147,7 @@
       "depth_chart_order": null,
       "college": "Georgia Tech",
       "search_rank": 249,
-      "count": 9405
+      "count": 9108
     },
     {
       "player_id": "1234",
@@ -1167,7 +1167,7 @@
       "depth_chart_order": null,
       "college": "Wisconsin",
       "search_rank": 272,
-      "count": 7565
+      "count": 7635
     },
     {
       "player_id": "1339",
@@ -1187,7 +1187,7 @@
       "depth_chart_order": null,
       "college": "Stanford",
       "search_rank": 275,
-      "count": 6588
+      "count": 6345
     },
     {
       "player_id": "12455",
@@ -1207,7 +1207,7 @@
       "depth_chart_order": 3,
       "college": "SMU",
       "search_rank": 182,
-      "count": 5516
+      "count": 5299
     },
     {
       "player_id": "6130",
@@ -1227,7 +1227,7 @@
       "depth_chart_order": 3,
       "college": "Florida Atlantic",
       "search_rank": 999,
-      "count": 5112
+      "count": 4959
     },
     {
       "player_id": "8125",
@@ -1247,7 +1247,7 @@
       "depth_chart_order": 3,
       "college": "Memphis",
       "search_rank": 999,
-      "count": 5040
+      "count": 4878
     },
     {
       "player_id": "4144",
@@ -1267,7 +1267,7 @@
       "depth_chart_order": null,
       "college": "Florida International",
       "search_rank": 206,
-      "count": 4914
+      "count": 4732
     },
     {
       "player_id": "12670",
@@ -1287,7 +1287,7 @@
       "depth_chart_order": 4,
       "college": "Auburn",
       "search_rank": 999,
-      "count": 4581
+      "count": 4446
     },
     {
       "player_id": "11630",
@@ -1307,7 +1307,7 @@
       "depth_chart_order": 3,
       "college": "Michigan",
       "search_rank": 999,
-      "count": 4347
+      "count": 4185
     },
     {
       "player_id": "4098",
@@ -1327,7 +1327,7 @@
       "depth_chart_order": null,
       "college": "Toledo",
       "search_rank": 242,
-      "count": 4164
+      "count": 4032
     },
     {
       "player_id": "12500",
@@ -1347,7 +1347,7 @@
       "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 396,
-      "count": 4095
+      "count": 3960
     },
     {
       "player_id": "11623",
@@ -1367,27 +1367,7 @@
       "depth_chart_order": 3,
       "college": "Texas",
       "search_rank": 999,
-      "count": 3672
-    },
-    {
-      "player_id": "9494",
-      "full_name": "Marvin Mims",
-      "first_name": "Marvin",
-      "last_name": "Mims",
-      "position": "WR",
-      "team": "DEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 3,
-      "age": 24,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
-      "college": "Oklahoma",
-      "search_rank": 192,
-      "count": 3609
+      "count": 3573
     },
     {
       "player_id": "11834",
@@ -1407,87 +1387,27 @@
       "depth_chart_order": 2,
       "college": "Utah",
       "search_rank": 209,
-      "count": 3598
+      "count": 3465
     },
     {
-      "player_id": "12503",
-      "full_name": "Isaiah Bond",
-      "first_name": "Isaiah",
-      "last_name": "Bond",
+      "player_id": "9494",
+      "full_name": "Marvin Mims",
+      "first_name": "Marvin",
+      "last_name": "Mims",
       "position": "WR",
-      "team": "CLE",
+      "team": "DEN",
       "status": "Active",
       "injury_status": null,
-      "years_exp": 1,
-      "age": 22,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
-      "college": "Texas",
-      "search_rank": 999,
-      "count": 3580
-    },
-    {
-      "player_id": "8147",
-      "full_name": "John Metchie",
-      "first_name": "John",
-      "last_name": "Metchie",
-      "position": "WR",
-      "team": "CAR",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 25,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 6,
-      "college": "Alabama",
-      "search_rank": 999,
-      "count": 3507
-    },
-    {
-      "player_id": "11650",
-      "full_name": "Luke McCaffrey",
-      "first_name": "Luke",
-      "last_name": "McCaffrey",
-      "position": "WR",
-      "team": "WAS",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 2,
-      "age": 25,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 5,
-      "college": "Rice",
-      "search_rank": 999,
-      "count": 3500
-    },
-    {
-      "player_id": "12641",
-      "full_name": "Jaylin Lane",
-      "first_name": "Jaylin",
-      "last_name": "Lane",
-      "position": "WR",
-      "team": "WAS",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
+      "years_exp": 3,
       "age": 24,
       "fantasy_positions": [
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
-      "college": "Virginia Tech",
-      "search_rank": 999,
-      "count": 3472
+      "depth_chart_order": 3,
+      "college": "Oklahoma",
+      "search_rank": 192,
+      "count": 3465
     },
     {
       "player_id": "CLE",
@@ -1507,47 +1427,87 @@
       "depth_chart_order": null,
       "college": null,
       "search_rank": null,
-      "count": 3395
+      "count": 3444
     },
     {
-      "player_id": "1479",
-      "full_name": "Keenan Allen",
-      "first_name": "Keenan",
-      "last_name": "Allen",
+      "player_id": "12503",
+      "full_name": "Isaiah Bond",
+      "first_name": "Isaiah",
+      "last_name": "Bond",
       "position": "WR",
-      "team": null,
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 13,
-      "age": 33,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": "California",
-      "search_rank": 116,
-      "count": 3308
-    },
-    {
-      "player_id": "12523",
-      "full_name": "Jimmy Horn",
-      "first_name": "Jimmy",
-      "last_name": "Horn",
-      "position": "WR",
-      "team": "CAR",
+      "team": "CLE",
       "status": "Active",
       "injury_status": null,
       "years_exp": 1,
-      "age": 23,
+      "age": 22,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 4,
+      "college": "Texas",
+      "search_rank": 999,
+      "count": 3440
+    },
+    {
+      "player_id": "11650",
+      "full_name": "Luke McCaffrey",
+      "first_name": "Luke",
+      "last_name": "McCaffrey",
+      "position": "WR",
+      "team": "WAS",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 2,
+      "age": 25,
       "fantasy_positions": [
         "WR"
       ],
       "depth_chart_position": "SWR",
       "depth_chart_order": 5,
-      "college": "Colorado",
+      "college": "Rice",
       "search_rank": 999,
-      "count": 3283
+      "count": 3381
+    },
+    {
+      "player_id": "8147",
+      "full_name": "John Metchie",
+      "first_name": "John",
+      "last_name": "Metchie",
+      "position": "WR",
+      "team": "CAR",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 4,
+      "age": 25,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "LWR",
+      "depth_chart_order": 6,
+      "college": "Alabama",
+      "search_rank": 999,
+      "count": 3360
+    },
+    {
+      "player_id": "12641",
+      "full_name": "Jaylin Lane",
+      "first_name": "Jaylin",
+      "last_name": "Lane",
+      "position": "WR",
+      "team": "WAS",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 24,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 4,
+      "college": "Virginia Tech",
+      "search_rank": 999,
+      "count": 3304
     },
     {
       "player_id": "4381",
@@ -1567,27 +1527,27 @@
       "depth_chart_order": null,
       "college": "BYU",
       "search_rank": 321,
-      "count": 3276
+      "count": 3171
     },
     {
-      "player_id": "12540",
-      "full_name": "Chimere Dike",
-      "first_name": "Chimere",
-      "last_name": "Dike",
+      "player_id": "1479",
+      "full_name": "Keenan Allen",
+      "first_name": "Keenan",
+      "last_name": "Allen",
       "position": "WR",
-      "team": "TEN",
+      "team": null,
       "status": "Active",
       "injury_status": null,
-      "years_exp": 1,
-      "age": 24,
+      "years_exp": 13,
+      "age": 33,
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
-      "college": "Florida",
-      "search_rank": 175,
-      "count": 3276
+      "depth_chart_position": null,
+      "depth_chart_order": null,
+      "college": "California",
+      "search_rank": 116,
+      "count": 3168
     },
     {
       "player_id": "6865",
@@ -1607,7 +1567,47 @@
       "depth_chart_order": 3,
       "college": "Stanford",
       "search_rank": 136,
-      "count": 3234
+      "count": 3162
+    },
+    {
+      "player_id": "12540",
+      "full_name": "Chimere Dike",
+      "first_name": "Chimere",
+      "last_name": "Dike",
+      "position": "WR",
+      "team": "TEN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 24,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 4,
+      "college": "Florida",
+      "search_rank": 175,
+      "count": 3159
+    },
+    {
+      "player_id": "12523",
+      "full_name": "Jimmy Horn",
+      "first_name": "Jimmy",
+      "last_name": "Horn",
+      "position": "WR",
+      "team": "CAR",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 23,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 5,
+      "college": "Colorado",
+      "search_rank": 999,
+      "count": 3157
     },
     {
       "player_id": "11625",
@@ -1627,7 +1627,7 @@
       "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 162,
-      "count": 3192
+      "count": 3136
     },
     {
       "player_id": "19",
@@ -1647,7 +1647,7 @@
       "depth_chart_order": 2,
       "college": "Delaware",
       "search_rank": 999,
-      "count": 3141
+      "count": 3060
     },
     {
       "player_id": "11619",
@@ -1667,127 +1667,7 @@
       "depth_chart_order": 5,
       "college": "Washington",
       "search_rank": 999,
-      "count": 3024
-    },
-    {
-      "player_id": "7607",
-      "full_name": "Michael Carter",
-      "first_name": "Michael",
-      "last_name": "Carter",
-      "position": "RB",
-      "team": "TEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 5,
-      "age": 27,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 5,
-      "college": "North Carolina",
-      "search_rank": 999,
-      "count": 2960
-    },
-    {
-      "player_id": "12486",
-      "full_name": "Dillon Gabriel",
-      "first_name": "Dillon",
-      "last_name": "Gabriel",
-      "position": "QB",
-      "team": "CLE",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 25,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": 2,
-      "college": "Oregon",
-      "search_rank": 999,
-      "count": 2947
-    },
-    {
-      "player_id": "8135",
-      "full_name": "Treylon Burks",
-      "first_name": "Treylon",
-      "last_name": "Burks",
-      "position": "WR",
-      "team": "WAS",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 26,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "RWR",
-      "depth_chart_order": 7,
-      "college": "Arkansas",
-      "search_rank": 999,
-      "count": 2947
-    },
-    {
-      "player_id": "6151",
-      "full_name": "Miles Sanders",
-      "first_name": "Miles",
-      "last_name": "Sanders",
-      "position": "RB",
-      "team": null,
-      "status": "Active",
-      "injury_status": "Questionable",
-      "years_exp": 7,
-      "age": 28,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": null,
-      "depth_chart_order": null,
-      "college": "Penn State",
-      "search_rank": 290,
-      "count": 2925
-    },
-    {
-      "player_id": "11435",
-      "full_name": "Emanuel Wilson",
-      "first_name": "Emanuel",
-      "last_name": "Wilson",
-      "position": "RB",
-      "team": "SEA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 3,
-      "age": 27,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 3,
-      "college": "Fort Valley State",
-      "search_rank": 161,
-      "count": 2925
-    },
-    {
-      "player_id": "12472",
-      "full_name": "Raheim Sanders",
-      "first_name": "Raheim",
-      "last_name": "Sanders",
-      "position": "RB",
-      "team": "CLE",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 23,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 3,
-      "college": "South Carolina",
-      "search_rank": 999,
-      "count": 2896
+      "count": 2970
     },
     {
       "player_id": "7090",
@@ -1807,7 +1687,107 @@
       "depth_chart_order": 2,
       "college": "Tulane",
       "search_rank": 194,
-      "count": 2880
+      "count": 2871
+    },
+    {
+      "player_id": "12486",
+      "full_name": "Dillon Gabriel",
+      "first_name": "Dillon",
+      "last_name": "Gabriel",
+      "position": "QB",
+      "team": "CLE",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 25,
+      "fantasy_positions": [
+        "QB"
+      ],
+      "depth_chart_position": "QB",
+      "depth_chart_order": 2,
+      "college": "Oregon",
+      "search_rank": 999,
+      "count": 2870
+    },
+    {
+      "player_id": "8135",
+      "full_name": "Treylon Burks",
+      "first_name": "Treylon",
+      "last_name": "Burks",
+      "position": "WR",
+      "team": "WAS",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 4,
+      "age": 26,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "RWR",
+      "depth_chart_order": 7,
+      "college": "Arkansas",
+      "search_rank": 999,
+      "count": 2828
+    },
+    {
+      "player_id": "6151",
+      "full_name": "Miles Sanders",
+      "first_name": "Miles",
+      "last_name": "Sanders",
+      "position": "RB",
+      "team": null,
+      "status": "Active",
+      "injury_status": "Questionable",
+      "years_exp": 7,
+      "age": 28,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": null,
+      "depth_chart_order": null,
+      "college": "Penn State",
+      "search_rank": 290,
+      "count": 2826
+    },
+    {
+      "player_id": "7607",
+      "full_name": "Michael Carter",
+      "first_name": "Michael",
+      "last_name": "Carter",
+      "position": "RB",
+      "team": "TEN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 5,
+      "age": 27,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 5,
+      "college": "North Carolina",
+      "search_rank": 999,
+      "count": 2784
+    },
+    {
+      "player_id": "11435",
+      "full_name": "Emanuel Wilson",
+      "first_name": "Emanuel",
+      "last_name": "Wilson",
+      "position": "RB",
+      "team": "SEA",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 3,
+      "age": 27,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 3,
+      "college": "Fort Valley State",
+      "search_rank": 161,
+      "count": 2781
     },
     {
       "player_id": "4066",
@@ -1827,7 +1807,27 @@
       "depth_chart_order": 1,
       "college": "Ole Miss",
       "search_rank": 999,
-      "count": 2832
+      "count": 2760
+    },
+    {
+      "player_id": "12472",
+      "full_name": "Raheim Sanders",
+      "first_name": "Raheim",
+      "last_name": "Sanders",
+      "position": "RB",
+      "team": "CLE",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 23,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 3,
+      "college": "South Carolina",
+      "search_rank": 999,
+      "count": 2736
     },
     {
       "player_id": "12718",
@@ -1847,27 +1847,7 @@
       "depth_chart_order": 4,
       "college": "Pittsburgh",
       "search_rank": 999,
-      "count": 2763
-    },
-    {
-      "player_id": "5995",
-      "full_name": "Justice Hill",
-      "first_name": "Justice",
-      "last_name": "Hill",
-      "position": "RB",
-      "team": "BAL",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 7,
-      "age": 28,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 2,
-      "college": "Oklahoma State",
-      "search_rank": 999,
-      "count": 2763
+      "count": 2691
     },
     {
       "player_id": "6149",
@@ -1887,7 +1867,27 @@
       "depth_chart_order": 4,
       "college": "Auburn",
       "search_rank": 999,
-      "count": 2730
+      "count": 2682
+    },
+    {
+      "player_id": "5995",
+      "full_name": "Justice Hill",
+      "first_name": "Justice",
+      "last_name": "Hill",
+      "position": "RB",
+      "team": "BAL",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 7,
+      "age": 28,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 2,
+      "college": "Oklahoma State",
+      "search_rank": 999,
+      "count": 2655
     },
     {
       "player_id": "7528",
@@ -1907,7 +1907,7 @@
       "depth_chart_order": null,
       "college": "Alabama",
       "search_rank": 219,
-      "count": 2620
+      "count": 2555
     },
     {
       "player_id": "10235",
@@ -1927,7 +1927,7 @@
       "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 999,
-      "count": 2600
+      "count": 2472
     },
     {
       "player_id": "11589",
@@ -1947,7 +1947,7 @@
       "depth_chart_order": 2,
       "college": "Florida State",
       "search_rank": 114,
-      "count": 2460
+      "count": 2382
     },
     {
       "player_id": "8800",
@@ -1967,47 +1967,7 @@
       "depth_chart_order": 5,
       "college": "Florida",
       "search_rank": 999,
-      "count": 2439
-    },
-    {
-      "player_id": "11571",
-      "full_name": "Isaiah Davis",
-      "first_name": "Isaiah",
-      "last_name": "Davis",
-      "position": "RB",
-      "team": "NYJ",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 2,
-      "age": 24,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 3,
-      "college": "South Dakota State",
-      "search_rank": 999,
-      "count": 2421
-    },
-    {
-      "player_id": "8117",
-      "full_name": "Jalen Tolbert",
-      "first_name": "Jalen",
-      "last_name": "Tolbert",
-      "position": "WR",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 27,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 1,
-      "college": "South Alabama",
-      "search_rank": 999,
-      "count": 2416
+      "count": 2367
     },
     {
       "player_id": "11581",
@@ -2027,7 +1987,47 @@
       "depth_chart_order": 2,
       "college": "USC",
       "search_rank": 999,
-      "count": 2403
+      "count": 2358
+    },
+    {
+      "player_id": "8117",
+      "full_name": "Jalen Tolbert",
+      "first_name": "Jalen",
+      "last_name": "Tolbert",
+      "position": "WR",
+      "team": "MIA",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 4,
+      "age": 27,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "LWR",
+      "depth_chart_order": 1,
+      "college": "South Alabama",
+      "search_rank": 999,
+      "count": 2352
+    },
+    {
+      "player_id": "11571",
+      "full_name": "Isaiah Davis",
+      "first_name": "Isaiah",
+      "last_name": "Davis",
+      "position": "RB",
+      "team": "NYJ",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 2,
+      "age": 24,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 3,
+      "college": "South Dakota State",
+      "search_rank": 999,
+      "count": 2322
     },
     {
       "player_id": "9999",
@@ -2047,7 +2047,7 @@
       "depth_chart_order": 4,
       "college": "Kentucky",
       "search_rank": 999,
-      "count": 2400
+      "count": 2280
     },
     {
       "player_id": "11562",
@@ -2067,27 +2067,7 @@
       "depth_chart_order": 1,
       "college": "South Carolina",
       "search_rank": 999,
-      "count": 2392
-    },
-    {
-      "player_id": "8129",
-      "full_name": "Dameon Pierce",
-      "first_name": "Dameon",
-      "last_name": "Pierce",
-      "position": "RB",
-      "team": "PHI",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 26,
-      "fantasy_positions": [
-        "RB"
-      ],
-      "depth_chart_position": "RB",
-      "depth_chart_order": 4,
-      "college": "Florida",
-      "search_rank": 999,
-      "count": 2304
+      "count": 2264
     },
     {
       "player_id": "13300",
@@ -2107,27 +2087,47 @@
       "depth_chart_order": null,
       "college": null,
       "search_rank": 999,
-      "count": 2262
+      "count": 2220
     },
     {
-      "player_id": "9506",
-      "full_name": "Sean Tucker",
-      "first_name": "Sean",
-      "last_name": "Tucker",
+      "player_id": "8129",
+      "full_name": "Dameon Pierce",
+      "first_name": "Dameon",
+      "last_name": "Pierce",
       "position": "RB",
-      "team": "TB",
+      "team": "PHI",
       "status": "Active",
       "injury_status": null,
-      "years_exp": 3,
-      "age": 24,
+      "years_exp": 4,
+      "age": 26,
       "fantasy_positions": [
         "RB"
       ],
       "depth_chart_position": "RB",
+      "depth_chart_order": 4,
+      "college": "Florida",
+      "search_rank": 999,
+      "count": 2216
+    },
+    {
+      "player_id": "10226",
+      "full_name": "Andrei Iosivas",
+      "first_name": "Andrei",
+      "last_name": "Iosivas",
+      "position": "WR",
+      "team": "CIN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 3,
+      "age": 26,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
       "depth_chart_order": 3,
-      "college": "Syracuse",
-      "search_rank": 155,
-      "count": 2241
+      "college": "Princeton",
+      "search_rank": 999,
+      "count": 2187
     }
   ],
   "available_player_sample_by_position": {
