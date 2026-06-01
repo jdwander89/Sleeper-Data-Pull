@@ -1,0 +1,354 @@
+{
+  "generated_from": {
+    "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
+    "generated_at": "2026-06-01T19:34:53.479555Z",
+    "league_id": "1312581067286282240",
+    "season": "2026",
+    "weeks_included": [
+      1
+    ],
+    "current_week": 0,
+    "summary_files": [
+      "league_context_summary",
+      "team_roster_and_picks_summary",
+      "draft_board_summary",
+      "trade_market_summary",
+      "transactions_summary",
+      "matchups_standings_summary",
+      "waiver_summary"
+    ],
+    "how_to_read": [
+      "Use the summary files first for normal analysis.",
+      "Use sleeper_chatgpt.json only as the full source-of-truth archive.",
+      "Use team_roster_and_picks_summary for roster and pick inventory questions.",
+      "Use draft_board_summary for live draft questions.",
+      "Use trade_market_summary for trade strategy.",
+      "Use transactions_summary for trade/history questions.",
+      "Use waiver_summary for waiver/free-agent questions.",
+      "Use league_context_summary for scoring/settings questions."
+    ],
+    "excluded_sections": [
+      "birth date",
+      "high school",
+      "hometown",
+      "physical attributes",
+      "athletic testing",
+      "headshots and visuals",
+      "avatars and media",
+      "taxi squad raw objects",
+      "raw Sleeper payload dumps"
+    ]
+  },
+  "standings": [
+    {
+      "roster_id": 1,
+      "team_name": "It’s Herbie Hancock",
+      "owner_name": "jwander",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 2,
+      "team_name": "A B CeeDee",
+      "owner_name": "Logs24",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 3,
+      "team_name": "Pol Hol",
+      "owner_name": "GarrettHol",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 4,
+      "team_name": "Puka Troopas",
+      "owner_name": "TonsOfBuns",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 5,
+      "team_name": "White Ice",
+      "owner_name": "jchrz",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 6,
+      "team_name": "andrewwelle",
+      "owner_name": "andrewwelle",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 7,
+      "team_name": "I ❤️ Commish",
+      "owner_name": "lex11",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 8,
+      "team_name": "Back to the Future",
+      "owner_name": "johnwander",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 9,
+      "team_name": "alexwelle",
+      "owner_name": "alexwelle",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 10,
+      "team_name": "Goin in Ra",
+      "owner_name": "NC79",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 11,
+      "team_name": "MOJO",
+      "owner_name": "amoritko",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    },
+    {
+      "roster_id": 12,
+      "team_name": "gullickson",
+      "owner_name": "gullickson",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0,
+      "potential_points": null
+    }
+  ],
+  "weekly_results": {
+    "1": {
+      "week": 1,
+      "matchups": []
+    }
+  },
+  "playoff_brackets": {
+    "winners": [
+      {
+        "m": 1,
+        "r": 1,
+        "l": null,
+        "w": null,
+        "t1": 5,
+        "t2": 3
+      },
+      {
+        "m": 2,
+        "r": 1,
+        "l": null,
+        "w": null,
+        "t1": 12,
+        "t2": 2
+      },
+      {
+        "m": 3,
+        "r": 2,
+        "l": null,
+        "w": null,
+        "t1": 8,
+        "t2": null,
+        "t2_from": {
+          "w": 1
+        }
+      },
+      {
+        "m": 4,
+        "r": 2,
+        "l": null,
+        "w": null,
+        "t1": 10,
+        "t2": null,
+        "t2_from": {
+          "w": 2
+        }
+      },
+      {
+        "p": 5,
+        "m": 5,
+        "r": 2,
+        "l": null,
+        "w": null,
+        "t1": null,
+        "t2": null,
+        "t2_from": {
+          "l": 2
+        },
+        "t1_from": {
+          "l": 1
+        }
+      },
+      {
+        "p": 1,
+        "m": 6,
+        "r": 3,
+        "l": null,
+        "w": null,
+        "t1": null,
+        "t2": null,
+        "t2_from": {
+          "w": 4
+        },
+        "t1_from": {
+          "w": 3
+        }
+      },
+      {
+        "p": 3,
+        "m": 7,
+        "r": 3,
+        "l": null,
+        "w": null,
+        "t1": null,
+        "t2": null,
+        "t2_from": {
+          "l": 4
+        },
+        "t1_from": {
+          "l": 3
+        }
+      }
+    ],
+    "losers": [
+      {
+        "m": 1,
+        "r": 1,
+        "l": null,
+        "w": null,
+        "t1": 7,
+        "t2": 6
+      },
+      {
+        "m": 2,
+        "r": 1,
+        "l": null,
+        "w": null,
+        "t1": 11,
+        "t2": 1
+      },
+      {
+        "m": 3,
+        "r": 2,
+        "l": null,
+        "w": null,
+        "t1": 9,
+        "t2": null,
+        "t2_from": {
+          "w": 1
+        }
+      },
+      {
+        "m": 4,
+        "r": 2,
+        "l": null,
+        "w": null,
+        "t1": 4,
+        "t2": null,
+        "t2_from": {
+          "w": 2
+        }
+      },
+      {
+        "m": 5,
+        "p": 5,
+        "r": 2,
+        "l": null,
+        "w": null,
+        "t1": null,
+        "t2": null,
+        "t2_from": {
+          "l": 2
+        },
+        "t1_from": {
+          "l": 1
+        }
+      },
+      {
+        "m": 6,
+        "p": 1,
+        "r": 3,
+        "l": null,
+        "w": null,
+        "t1": null,
+        "t2": null,
+        "t2_from": {
+          "w": 4
+        },
+        "t1_from": {
+          "w": 3
+        }
+      },
+      {
+        "m": 7,
+        "p": 3,
+        "r": 3,
+        "l": null,
+        "w": null,
+        "t1": null,
+        "t2": null,
+        "t2_from": {
+          "l": 4
+        },
+        "t1_from": {
+          "l": 3
+        }
+      }
+    ]
+  }
+}
