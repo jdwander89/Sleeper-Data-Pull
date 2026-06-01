@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-01T19:34:53.479555Z",
+  "league_id": "1312581067286282240",
+  "season": "2026",
+  "files": {
+    "main": "sleeper_chatgpt.json",
+    "league_context_summary": "sleeper_chatgpt_league_context_summary.json",
+    "team_roster_and_picks_summary": "sleeper_chatgpt_team_roster_and_picks_summary.json",
+    "draft_board_summary": "sleeper_chatgpt_draft_board_summary.json",
+    "trade_market_summary": "sleeper_chatgpt_trade_market_summary.json",
+    "transactions_summary": "sleeper_chatgpt_transactions_summary.json",
+    "matchups_standings_summary": "sleeper_chatgpt_matchups_standings_summary.json",
+    "waiver_summary": "sleeper_chatgpt_waiver_summary.json"
+  },
+  "recommended_usage": {
+    "start_here": "sleeper_chatgpt_manifest.json",
+    "settings": "sleeper_chatgpt_league_context_summary.json",
+    "team_rosters_and_picks": "sleeper_chatgpt_team_roster_and_picks_summary.json",
+    "draft_monitoring": "sleeper_chatgpt_draft_board_summary.json",
+    "trade_analysis": "sleeper_chatgpt_trade_market_summary.json",
+    "transaction_history": "sleeper_chatgpt_transactions_summary.json",
+    "standings_and_matchups": "sleeper_chatgpt_matchups_standings_summary.json",
+    "waivers": "sleeper_chatgpt_waiver_summary.json"
+  }
+}
