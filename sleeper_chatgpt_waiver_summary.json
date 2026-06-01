@@ -1,7 +1,7 @@
 {
   "generated_from": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-01T20:04:13.097324Z",
+    "generated_at": "2026-06-01T20:10:35.449209Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -145,7 +145,7 @@
       "depth_chart_order": 5,
       "college": "LSU",
       "search_rank": 999,
-      "count": 108493
+      "count": 109620
     },
     {
       "player_id": "13411",
@@ -165,7 +165,7 @@
       "depth_chart_order": null,
       "college": "LSU",
       "search_rank": 9999999,
-      "count": 13158
+      "count": 13257
     },
     {
       "player_id": "13324",
@@ -185,7 +185,7 @@
       "depth_chart_order": null,
       "college": "SMU",
       "search_rank": 999,
-      "count": 8974
+      "count": 9037
     },
     {
       "player_id": "13296",
@@ -205,7 +205,7 @@
       "depth_chart_order": null,
       "college": "Texas Tech",
       "search_rank": 999,
-      "count": 6968
+      "count": 7016
     },
     {
       "player_id": "8180",
@@ -245,7 +245,7 @@
       "depth_chart_order": null,
       "college": "Kentucky",
       "search_rank": 999,
-      "count": 5856
+      "count": 5912
     },
     {
       "player_id": "13413",
@@ -265,7 +265,7 @@
       "depth_chart_order": null,
       "college": "Cincinnati",
       "search_rank": 9999999,
-      "count": 5310
+      "count": 5334
     },
     {
       "player_id": "13306",
@@ -285,27 +285,7 @@
       "depth_chart_order": null,
       "college": "Arkansas",
       "search_rank": 999,
-      "count": 4488
-    },
-    {
-      "player_id": "8161",
-      "full_name": "Malik Willis",
-      "first_name": "Malik",
-      "last_name": "Willis",
-      "position": "QB",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 27,
-      "fantasy_positions": [
-        "QB"
-      ],
-      "depth_chart_position": "QB",
-      "depth_chart_order": 1,
-      "college": "Liberty",
-      "search_rank": 109,
-      "count": 4459
+      "count": 4528
     },
     {
       "player_id": "11581",
@@ -325,7 +305,27 @@
       "depth_chart_order": 2,
       "college": "USC",
       "search_rank": 999,
-      "count": 4455
+      "count": 4491
+    },
+    {
+      "player_id": "8161",
+      "full_name": "Malik Willis",
+      "first_name": "Malik",
+      "last_name": "Willis",
+      "position": "QB",
+      "team": "MIA",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 4,
+      "age": 27,
+      "fantasy_positions": [
+        "QB"
+      ],
+      "depth_chart_position": "QB",
+      "depth_chart_order": 1,
+      "college": "Liberty",
+      "search_rank": 109,
+      "count": 4480
     },
     {
       "player_id": "13348",
@@ -345,7 +345,7 @@
       "depth_chart_order": null,
       "college": "Virginia",
       "search_rank": 999,
-      "count": 3780
+      "count": 3816
     },
     {
       "player_id": "13392",
@@ -365,7 +365,7 @@
       "depth_chart_order": null,
       "college": "Cincinnati",
       "search_rank": 999,
-      "count": 3699
+      "count": 3708
     },
     {
       "player_id": "8172",
@@ -385,7 +385,7 @@
       "depth_chart_order": 2,
       "college": "UCLA",
       "search_rank": 9999999,
-      "count": 3308
+      "count": 3322
     },
     {
       "player_id": "13414",
@@ -405,7 +405,7 @@
       "depth_chart_order": null,
       "college": "Indiana",
       "search_rank": 999,
-      "count": 3136
+      "count": 3157
     },
     {
       "player_id": "13421",
@@ -425,7 +425,7 @@
       "depth_chart_order": null,
       "college": "Notre Dame",
       "search_rank": 999,
-      "count": 3031
+      "count": 3059
     },
     {
       "player_id": "4017",
@@ -445,7 +445,7 @@
       "depth_chart_order": 3,
       "college": "Clemson",
       "search_rank": 397,
-      "count": 2880
+      "count": 2928
     },
     {
       "player_id": "13403",
@@ -465,7 +465,7 @@
       "depth_chart_order": null,
       "college": "Alabama",
       "search_rank": 999,
-      "count": 2871
+      "count": 2889
     },
     {
       "player_id": "13400",
@@ -485,7 +485,7 @@
       "depth_chart_order": null,
       "college": "North Carolina State",
       "search_rank": 999,
-      "count": 2840
+      "count": 2850
     },
     {
       "player_id": "11783",
@@ -505,7 +505,7 @@
       "depth_chart_order": 5,
       "college": "Southeast Missouri State",
       "search_rank": 199,
-      "count": 2504
+      "count": 2512
     },
     {
       "player_id": "13303",
@@ -565,7 +565,7 @@
       "depth_chart_order": null,
       "college": "Clemson",
       "search_rank": 999,
-      "count": 2345
+      "count": 2352
     },
     {
       "player_id": "13401",
@@ -605,7 +605,7 @@
       "depth_chart_order": null,
       "college": "Oklahoma",
       "search_rank": 9999999,
-      "count": 2169
+      "count": 2181
     },
     {
       "player_id": "13420",
@@ -625,7 +625,7 @@
       "depth_chart_order": null,
       "college": "North Dakota State",
       "search_rank": 999,
-      "count": 2110
+      "count": 2135
     },
     {
       "player_id": "13434",
@@ -645,7 +645,7 @@
       "depth_chart_order": null,
       "college": "Ohio State",
       "search_rank": 9999999,
-      "count": 2004
+      "count": 2020
     },
     {
       "player_id": "8800",
@@ -685,7 +685,7 @@
       "depth_chart_order": null,
       "college": "Georgia",
       "search_rank": 9999999,
-      "count": 1854
+      "count": 1872
     },
     {
       "player_id": "13289",
@@ -705,7 +705,7 @@
       "depth_chart_order": null,
       "college": "Penn State",
       "search_rank": 999,
-      "count": 1791
+      "count": 1800
     },
     {
       "player_id": "13435",
@@ -725,7 +725,7 @@
       "depth_chart_order": null,
       "college": "Cincinnati",
       "search_rank": 9999999,
-      "count": 1719
+      "count": 1746
     },
     {
       "player_id": "13335",
@@ -745,7 +745,7 @@
       "depth_chart_order": null,
       "college": "North Dakota State",
       "search_rank": 999,
-      "count": 1668
+      "count": 1698
     },
     {
       "player_id": "13322",
@@ -765,7 +765,7 @@
       "depth_chart_order": null,
       "college": "Stanford",
       "search_rank": 999,
-      "count": 1631
+      "count": 1638
     },
     {
       "player_id": "13319",
@@ -785,7 +785,7 @@
       "depth_chart_order": null,
       "college": "Georgia",
       "search_rank": 999,
-      "count": 1608
+      "count": 1620
     },
     {
       "player_id": "8117",
@@ -805,7 +805,7 @@
       "depth_chart_order": 1,
       "college": "South Alabama",
       "search_rank": 999,
-      "count": 1568
+      "count": 1576
     },
     {
       "player_id": "11610",
@@ -825,7 +825,7 @@
       "depth_chart_order": 3,
       "college": "Virginia",
       "search_rank": 999,
-      "count": 1560
+      "count": 1568
     },
     {
       "player_id": "8188",
@@ -845,7 +845,7 @@
       "depth_chart_order": 4,
       "college": "Baylor",
       "search_rank": 999,
-      "count": 1526
+      "count": 1540
     },
     {
       "player_id": "12462",
@@ -865,7 +865,7 @@
       "depth_chart_order": 4,
       "college": "Miami (FL)",
       "search_rank": 999,
-      "count": 1455
+      "count": 1475
     },
     {
       "player_id": "13282",
@@ -885,7 +885,7 @@
       "depth_chart_order": null,
       "college": "Texas",
       "search_rank": 999,
-      "count": 1430
+      "count": 1445
     },
     {
       "player_id": "10219",
@@ -925,7 +925,7 @@
       "depth_chart_order": 3,
       "college": "Princeton",
       "search_rank": 999,
-      "count": 1359
+      "count": 1368
     },
     {
       "player_id": "12502",
@@ -945,7 +945,7 @@
       "depth_chart_order": 1,
       "college": "Texas",
       "search_rank": 153,
-      "count": 1358
+      "count": 1365
     },
     {
       "player_id": "5995",
@@ -965,7 +965,7 @@
       "depth_chart_order": 2,
       "college": "Oklahoma State",
       "search_rank": 999,
-      "count": 1314
+      "count": 1341
     },
     {
       "player_id": "9506",
@@ -985,7 +985,7 @@
       "depth_chart_order": 3,
       "college": "Syracuse",
       "search_rank": 155,
-      "count": 1305
+      "count": 1314
     },
     {
       "player_id": "11571",
@@ -1025,7 +1025,7 @@
       "depth_chart_order": null,
       "college": "Miami (FL)",
       "search_rank": 999,
-      "count": 1204
+      "count": 1216
     },
     {
       "player_id": "13329",
@@ -1045,7 +1045,7 @@
       "depth_chart_order": null,
       "college": "Oregon",
       "search_rank": 999,
-      "count": 1140
+      "count": 1146
     },
     {
       "player_id": "13307",
@@ -1065,7 +1065,7 @@
       "depth_chart_order": null,
       "college": "Michigan",
       "search_rank": 999,
-      "count": 1110
+      "count": 1120
     },
     {
       "player_id": "LAR",
@@ -1085,7 +1085,7 @@
       "depth_chart_order": null,
       "college": null,
       "search_rank": null,
-      "count": 1101
+      "count": 1117
     },
     {
       "player_id": "7528",
@@ -1105,7 +1105,7 @@
       "depth_chart_order": null,
       "college": "Alabama",
       "search_rank": 219,
-      "count": 1045
+      "count": 1055
     },
     {
       "player_id": "6149",
@@ -1125,7 +1125,7 @@
       "depth_chart_order": 4,
       "college": "Auburn",
       "search_rank": 999,
-      "count": 1032
+      "count": 1044
     }
   ],
   "trending_drops": [
@@ -1147,7 +1147,7 @@
       "depth_chart_order": null,
       "college": "Georgia Tech",
       "search_rank": 249,
-      "count": 9243
+      "count": 9297
     },
     {
       "player_id": "1234",
@@ -1167,7 +1167,7 @@
       "depth_chart_order": null,
       "college": "Wisconsin",
       "search_rank": 272,
-      "count": 7900
+      "count": 7985
     },
     {
       "player_id": "1339",
@@ -1187,7 +1187,7 @@
       "depth_chart_order": null,
       "college": "Stanford",
       "search_rank": 275,
-      "count": 6480
+      "count": 6498
     },
     {
       "player_id": "12455",
@@ -1207,7 +1207,7 @@
       "depth_chart_order": 3,
       "college": "SMU",
       "search_rank": 182,
-      "count": 5390
+      "count": 5425
     },
     {
       "player_id": "6130",
@@ -1227,7 +1227,7 @@
       "depth_chart_order": 3,
       "college": "Florida Atlantic",
       "search_rank": 999,
-      "count": 5058
+      "count": 5085
     },
     {
       "player_id": "8125",
@@ -1247,7 +1247,7 @@
       "depth_chart_order": 3,
       "college": "Memphis",
       "search_rank": 999,
-      "count": 4959
+      "count": 5031
     },
     {
       "player_id": "4144",
@@ -1267,7 +1267,7 @@
       "depth_chart_order": null,
       "college": "Florida International",
       "search_rank": 206,
-      "count": 4781
+      "count": 4830
     },
     {
       "player_id": "12670",
@@ -1287,7 +1287,7 @@
       "depth_chart_order": 4,
       "college": "Auburn",
       "search_rank": 999,
-      "count": 4491
+      "count": 4518
     },
     {
       "player_id": "11630",
@@ -1307,7 +1307,7 @@
       "depth_chart_order": 3,
       "college": "Michigan",
       "search_rank": 999,
-      "count": 4239
+      "count": 4257
     },
     {
       "player_id": "4098",
@@ -1327,7 +1327,7 @@
       "depth_chart_order": null,
       "college": "Toledo",
       "search_rank": 242,
-      "count": 4084
+      "count": 4132
     },
     {
       "player_id": "12500",
@@ -1367,27 +1367,7 @@
       "depth_chart_order": 3,
       "college": "Texas",
       "search_rank": 999,
-      "count": 3627
-    },
-    {
-      "player_id": "9494",
-      "full_name": "Marvin Mims",
-      "first_name": "Marvin",
-      "last_name": "Mims",
-      "position": "WR",
-      "team": "DEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 3,
-      "age": 24,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
-      "college": "Oklahoma",
-      "search_rank": 192,
-      "count": 3537
+      "count": 3654
     },
     {
       "player_id": "CLE",
@@ -1407,27 +1387,27 @@
       "depth_chart_order": null,
       "college": null,
       "search_rank": null,
-      "count": 3528
+      "count": 3584
     },
     {
-      "player_id": "11834",
-      "full_name": "Devaughn Vele",
-      "first_name": "Devaughn",
-      "last_name": "Vele",
+      "player_id": "9494",
+      "full_name": "Marvin Mims",
+      "first_name": "Marvin",
+      "last_name": "Mims",
       "position": "WR",
-      "team": "NO",
+      "team": "DEN",
       "status": "Active",
       "injury_status": null,
-      "years_exp": 2,
-      "age": 28,
+      "years_exp": 3,
+      "age": 24,
       "fantasy_positions": [
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 2,
-      "college": "Utah",
-      "search_rank": 209,
-      "count": 3507
+      "depth_chart_order": 3,
+      "college": "Oklahoma",
+      "search_rank": 192,
+      "count": 3555
     },
     {
       "player_id": "12503",
@@ -1447,7 +1427,27 @@
       "depth_chart_order": 4,
       "college": "Texas",
       "search_rank": 999,
-      "count": 3505
+      "count": 3545
+    },
+    {
+      "player_id": "11834",
+      "full_name": "Devaughn Vele",
+      "first_name": "Devaughn",
+      "last_name": "Vele",
+      "position": "WR",
+      "team": "NO",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 2,
+      "age": 28,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 2,
+      "college": "Utah",
+      "search_rank": 209,
+      "count": 3528
     },
     {
       "player_id": "11650",
@@ -1467,7 +1467,7 @@
       "depth_chart_order": 5,
       "college": "Rice",
       "search_rank": 999,
-      "count": 3423
+      "count": 3444
     },
     {
       "player_id": "8147",
@@ -1487,7 +1487,7 @@
       "depth_chart_order": 6,
       "college": "Alabama",
       "search_rank": 999,
-      "count": 3423
+      "count": 3437
     },
     {
       "player_id": "12641",
@@ -1507,27 +1507,7 @@
       "depth_chart_order": 4,
       "college": "Virginia Tech",
       "search_rank": 999,
-      "count": 3384
-    },
-    {
-      "player_id": "12540",
-      "full_name": "Chimere Dike",
-      "first_name": "Chimere",
-      "last_name": "Dike",
-      "position": "WR",
-      "team": "TEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 1,
-      "age": 24,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
-      "college": "Florida",
-      "search_rank": 175,
-      "count": 3258
+      "count": 3416
     },
     {
       "player_id": "1479",
@@ -1547,7 +1527,7 @@
       "depth_chart_order": null,
       "college": "California",
       "search_rank": 116,
-      "count": 3248
+      "count": 3288
     },
     {
       "player_id": "4381",
@@ -1567,7 +1547,27 @@
       "depth_chart_order": null,
       "college": "BYU",
       "search_rank": 321,
-      "count": 3241
+      "count": 3269
+    },
+    {
+      "player_id": "12540",
+      "full_name": "Chimere Dike",
+      "first_name": "Chimere",
+      "last_name": "Dike",
+      "position": "WR",
+      "team": "TEN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 24,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 4,
+      "college": "Florida",
+      "search_rank": 175,
+      "count": 3267
     },
     {
       "player_id": "11625",
@@ -1587,7 +1587,7 @@
       "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 162,
-      "count": 3200
+      "count": 3224
     },
     {
       "player_id": "12523",
@@ -1607,7 +1607,7 @@
       "depth_chart_order": 5,
       "college": "Colorado",
       "search_rank": 999,
-      "count": 3199
+      "count": 3206
     },
     {
       "player_id": "6865",
@@ -1627,7 +1627,7 @@
       "depth_chart_order": 3,
       "college": "Stanford",
       "search_rank": 136,
-      "count": 3198
+      "count": 3204
     },
     {
       "player_id": "19",
@@ -1687,7 +1687,7 @@
       "depth_chart_order": 2,
       "college": "Tulane",
       "search_rank": 194,
-      "count": 2925
+      "count": 2943
     },
     {
       "player_id": "12486",
@@ -1707,7 +1707,7 @@
       "depth_chart_order": 2,
       "college": "Oregon",
       "search_rank": 999,
-      "count": 2919
+      "count": 2940
     },
     {
       "player_id": "8135",
@@ -1727,7 +1727,7 @@
       "depth_chart_order": 7,
       "college": "Arkansas",
       "search_rank": 999,
-      "count": 2891
+      "count": 2905
     },
     {
       "player_id": "6151",
@@ -1747,7 +1747,7 @@
       "depth_chart_order": null,
       "college": "Penn State",
       "search_rank": 290,
-      "count": 2862
+      "count": 2871
     },
     {
       "player_id": "7607",
@@ -1767,7 +1767,7 @@
       "depth_chart_order": 5,
       "college": "North Carolina",
       "search_rank": 999,
-      "count": 2832
+      "count": 2852
     },
     {
       "player_id": "12472",
@@ -1787,27 +1787,7 @@
       "depth_chart_order": 3,
       "college": "South Carolina",
       "search_rank": 999,
-      "count": 2808
-    },
-    {
-      "player_id": "4066",
-      "full_name": "Evan Engram",
-      "first_name": "Evan",
-      "last_name": "Engram",
-      "position": "TE",
-      "team": "DEN",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 9,
-      "age": 31,
-      "fantasy_positions": [
-        "TE"
-      ],
-      "depth_chart_position": "TE",
-      "depth_chart_order": 1,
-      "college": "Ole Miss",
-      "search_rank": 999,
-      "count": 2800
+      "count": 2840
     },
     {
       "player_id": "11435",
@@ -1827,7 +1807,27 @@
       "depth_chart_order": 3,
       "college": "Fort Valley State",
       "search_rank": 161,
-      "count": 2799
+      "count": 2817
+    },
+    {
+      "player_id": "4066",
+      "full_name": "Evan Engram",
+      "first_name": "Evan",
+      "last_name": "Engram",
+      "position": "TE",
+      "team": "DEN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 9,
+      "age": 31,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": 1,
+      "college": "Ole Miss",
+      "search_rank": 999,
+      "count": 2808
     },
     {
       "player_id": "12718",
@@ -1847,7 +1847,7 @@
       "depth_chart_order": 4,
       "college": "Pittsburgh",
       "search_rank": 999,
-      "count": 2754
+      "count": 2763
     },
     {
       "player_id": "6149",
@@ -1867,7 +1867,7 @@
       "depth_chart_order": 4,
       "college": "Auburn",
       "search_rank": 999,
-      "count": 2742
+      "count": 2760
     },
     {
       "player_id": "5995",
@@ -1907,7 +1907,7 @@
       "depth_chart_order": null,
       "college": "Alabama",
       "search_rank": 219,
-      "count": 2625
+      "count": 2665
     },
     {
       "player_id": "10235",
@@ -1927,7 +1927,7 @@
       "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 999,
-      "count": 2536
+      "count": 2544
     },
     {
       "player_id": "8800",
@@ -1947,7 +1947,7 @@
       "depth_chart_order": 5,
       "college": "Florida",
       "search_rank": 999,
-      "count": 2430
+      "count": 2439
     },
     {
       "player_id": "11589",
@@ -1967,7 +1967,7 @@
       "depth_chart_order": 2,
       "college": "Florida State",
       "search_rank": 114,
-      "count": 2412
+      "count": 2418
     },
     {
       "player_id": "11571",
@@ -1987,27 +1987,7 @@
       "depth_chart_order": 3,
       "college": "South Dakota State",
       "search_rank": 999,
-      "count": 2403
-    },
-    {
-      "player_id": "8117",
-      "full_name": "Jalen Tolbert",
-      "first_name": "Jalen",
-      "last_name": "Tolbert",
-      "position": "WR",
-      "team": "MIA",
-      "status": "Active",
-      "injury_status": null,
-      "years_exp": 4,
-      "age": 27,
-      "fantasy_positions": [
-        "WR"
-      ],
-      "depth_chart_position": "LWR",
-      "depth_chart_order": 1,
-      "college": "South Alabama",
-      "search_rank": 999,
-      "count": 2384
+      "count": 2412
     },
     {
       "player_id": "11581",
@@ -2027,7 +2007,27 @@
       "depth_chart_order": 2,
       "college": "USC",
       "search_rank": 999,
-      "count": 2367
+      "count": 2394
+    },
+    {
+      "player_id": "8117",
+      "full_name": "Jalen Tolbert",
+      "first_name": "Jalen",
+      "last_name": "Tolbert",
+      "position": "WR",
+      "team": "MIA",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 4,
+      "age": 27,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "LWR",
+      "depth_chart_order": 1,
+      "college": "South Alabama",
+      "search_rank": 999,
+      "count": 2392
     },
     {
       "player_id": "11562",
@@ -2047,7 +2047,7 @@
       "depth_chart_order": 1,
       "college": "South Carolina",
       "search_rank": 999,
-      "count": 2312
+      "count": 2328
     },
     {
       "player_id": "9999",
@@ -2067,7 +2067,7 @@
       "depth_chart_order": 4,
       "college": "Kentucky",
       "search_rank": 999,
-      "count": 2296
+      "count": 2312
     },
     {
       "player_id": "13300",
@@ -2087,7 +2087,7 @@
       "depth_chart_order": null,
       "college": null,
       "search_rank": 999,
-      "count": 2262
+      "count": 2268
     },
     {
       "player_id": "8129",
@@ -2107,7 +2107,7 @@
       "depth_chart_order": 4,
       "college": "Florida",
       "search_rank": 999,
-      "count": 2240
+      "count": 2248
     },
     {
       "player_id": "10226",
@@ -2127,7 +2127,7 @@
       "depth_chart_order": 3,
       "college": "Princeton",
       "search_rank": 999,
-      "count": 2223
+      "count": 2241
     }
   ],
   "available_player_sample_by_position": {
