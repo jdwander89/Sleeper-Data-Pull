@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-01T21:05:10.582751Z",
+    "generated_at": "2026-06-02T19:02:42.651858Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -65,9 +65,9 @@
     "draft_id": "1312581067298836480",
     "current_nfl_state": {
       "week": 0,
-      "leg": 0,
-      "season": "2026",
       "season_type": "off",
+      "season": "2026",
+      "leg": 0,
       "league_season": "2026",
       "previous_season": "2025",
       "season_start_date": null,
@@ -284,9 +284,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "50",
+      "current_pick_no": "39",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471415316501491712"
+      "on_the_clock_user_id": "471717089472671744"
     }
   },
   "users": {
@@ -1726,7 +1726,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780346888322,
+        "last_picked": 1780391634278,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -3680,6 +3680,37 @@
                 "player_id": "12487",
                 "sport": "nfl",
                 "news_updated": "1778783734141",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 38,
+              "round": 4,
+              "draft_slot": 2,
+              "player_id": "8698",
+              "roster": {
+                "roster_id": 4,
+                "team_name": "Puka Troopas",
+                "owner_name": "TonsOfBuns"
+              },
+              "picked_by_user_id": "471415316501491712",
+              "picked_by_name": "TonsOfBuns",
+              "picked_by_team_name": "Puka Troopas",
+              "metadata": {
+                "first_name": "Jake",
+                "last_name": "Tonges",
+                "position": "TE",
+                "team": "SF",
+                "status": "Active",
+                "injury_status": "Questionable",
+                "years_exp": "4",
+                "number": "88",
+                "player_id": "8698",
+                "sport": "nfl",
+                "news_updated": "1780078839745",
                 "team_abbr": "",
                 "team_changed_at": ""
               },
@@ -6259,7 +6290,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "Washington State",
       "search_rank": 195
     },
@@ -6499,7 +6530,7 @@
       "position": "RB",
       "team": "TEN",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 0,
       "age": 22,
       "fantasy_positions": [
@@ -6537,13 +6568,13 @@
       "position": "WR",
       "team": "PHI",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 0,
-      "age": 21,
+      "age": 22,
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "SWR",
+      "depth_chart_position": "RWR",
       "depth_chart_order": null,
       "college": "USC",
       "search_rank": 77
@@ -7304,7 +7335,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 5,
+      "depth_chart_order": 6,
       "college": "North Carolina",
       "search_rank": 999
     },
@@ -7684,7 +7715,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Oklahoma",
       "search_rank": 999
     },
@@ -8082,7 +8113,7 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "SWR",
+      "depth_chart_position": null,
       "depth_chart_order": 4,
       "college": "Arizona State",
       "search_rank": 177
@@ -8310,8 +8341,8 @@
       "fantasy_positions": [
         "WR"
       ],
-      "depth_chart_position": "RWR",
-      "depth_chart_order": 2,
+      "depth_chart_position": "LWR",
+      "depth_chart_order": 1,
       "college": "Alabama",
       "search_rank": 53
     },
@@ -8634,7 +8665,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "Nevada",
       "search_rank": 117
     },
@@ -9189,6 +9220,25 @@
       "college": "Weber State",
       "search_rank": 162
     },
+    "8698": {
+      "player_id": "8698",
+      "full_name": "Jake Tonges",
+      "first_name": "Jake",
+      "last_name": "Tonges",
+      "position": "TE",
+      "team": "SF",
+      "status": "Active",
+      "injury_status": "Questionable",
+      "years_exp": 4,
+      "age": 26,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": 3,
+      "college": "California",
+      "search_rank": 178
+    },
     "9221": {
       "player_id": "9221",
       "full_name": "Jahmyr Gibbs",
@@ -9337,7 +9387,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 3,
       "college": "Virginia",
       "search_rank": 999
     },
@@ -9451,7 +9501,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 5,
       "college": "LSU",
       "search_rank": 164
     },
