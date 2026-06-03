@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-02T19:02:42.651858Z",
+    "generated_at": "2026-06-03T20:00:22.699762Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -65,13 +65,13 @@
     "draft_id": "1312581067298836480",
     "current_nfl_state": {
       "week": 0,
-      "season_type": "off",
-      "season": "2026",
       "leg": 0,
+      "season": "2026",
+      "season_type": "off",
       "league_season": "2026",
       "previous_season": "2025",
       "season_start_date": null,
-      "display_week": 1,
+      "display_week": 0,
       "league_create_season": "2026",
       "season_has_scores": true
     },
@@ -284,9 +284,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "39",
+      "current_pick_no": "48",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471717089472671744"
+      "on_the_clock_user_id": "471724614532198400"
     }
   },
   "users": {
@@ -991,7 +991,7 @@
           "QB": 28.0,
           "RB": 24.2,
           "TE": 29.0,
-          "WR": 24.64
+          "WR": 24.82
         }
       },
       "players_by_position": {
@@ -1726,7 +1726,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780391634278,
+        "last_picked": 1780516638325,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -3716,6 +3716,285 @@
               },
               "is_keeper": null,
               "picked_at": null
+            },
+            {
+              "pick_no": 39,
+              "round": 4,
+              "draft_slot": 3,
+              "player_id": "12536",
+              "roster": {
+                "roster_id": 10,
+                "team_name": "Goin in Ra",
+                "owner_name": "NC79"
+              },
+              "picked_by_user_id": "471717089472671744",
+              "picked_by_name": "NC79",
+              "picked_by_team_name": "Goin in Ra",
+              "metadata": {
+                "first_name": "Jaylin",
+                "last_name": "Noel",
+                "position": "WR",
+                "team": "HOU",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "1",
+                "number": "13",
+                "player_id": "12536",
+                "sport": "nfl",
+                "news_updated": "1778877343174",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 40,
+              "round": 4,
+              "draft_slot": 4,
+              "player_id": "12544",
+              "roster": {
+                "roster_id": 1,
+                "team_name": "It’s Herbie Hancock",
+                "owner_name": "jwander"
+              },
+              "picked_by_user_id": "464915162038530048",
+              "picked_by_name": "jwander",
+              "picked_by_team_name": "It’s Herbie Hancock",
+              "metadata": {
+                "first_name": "LeQuint",
+                "last_name": "Allen",
+                "position": "RB",
+                "team": "JAX",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "1",
+                "number": "5",
+                "player_id": "12544",
+                "sport": "nfl",
+                "news_updated": "1780244452233",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 41,
+              "round": 4,
+              "draft_slot": 5,
+              "player_id": "13347",
+              "roster": {
+                "roster_id": 1,
+                "team_name": "It’s Herbie Hancock",
+                "owner_name": "jwander"
+              },
+              "picked_by_user_id": "464915162038530048",
+              "picked_by_name": "jwander",
+              "picked_by_team_name": "It’s Herbie Hancock",
+              "metadata": {
+                "first_name": "Demond",
+                "last_name": "Claiborne",
+                "position": "RB",
+                "team": "MIN",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "21",
+                "player_id": "13347",
+                "sport": "nfl",
+                "news_updated": "1778776833729",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 42,
+              "round": 4,
+              "draft_slot": 6,
+              "player_id": "13414",
+              "roster": {
+                "roster_id": 7,
+                "team_name": "I ❤️ Commish",
+                "owner_name": "lex11"
+              },
+              "picked_by_user_id": "459751268567478272",
+              "picked_by_name": "lex11",
+              "picked_by_team_name": "I ❤️ Commish",
+              "metadata": {
+                "first_name": "Kaelon",
+                "last_name": "Black",
+                "position": "RB",
+                "team": "SF",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "26",
+                "player_id": "13414",
+                "sport": "nfl",
+                "news_updated": "1778732430218",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 43,
+              "round": 4,
+              "draft_slot": 7,
+              "player_id": "12521",
+              "roster": {
+                "roster_id": 8,
+                "team_name": "Back to the Future",
+                "owner_name": "johnwander"
+              },
+              "picked_by_user_id": "471457570825957376",
+              "picked_by_name": "johnwander",
+              "picked_by_team_name": "Back to the Future",
+              "metadata": {
+                "first_name": "Elijah",
+                "last_name": "Arroyo",
+                "position": "TE",
+                "team": "SEA",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "1",
+                "number": "18",
+                "player_id": "12521",
+                "sport": "nfl",
+                "news_updated": "1779118804842",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 44,
+              "round": 4,
+              "draft_slot": 8,
+              "player_id": "13420",
+              "roster": {
+                "roster_id": 6,
+                "team_name": "andrewwelle",
+                "owner_name": "andrewwelle"
+              },
+              "picked_by_user_id": "471451909446692864",
+              "picked_by_name": "andrewwelle",
+              "picked_by_team_name": "andrewwelle",
+              "metadata": {
+                "first_name": "Bryce",
+                "last_name": "Lance",
+                "position": "WR",
+                "team": "NO",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "18",
+                "player_id": "13420",
+                "sport": "nfl",
+                "news_updated": "1780433148575",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 45,
+              "round": 4,
+              "draft_slot": 9,
+              "player_id": "13380",
+              "roster": {
+                "roster_id": 9,
+                "team_name": "alexwelle",
+                "owner_name": "alexwelle"
+              },
+              "picked_by_user_id": "471501409838166016",
+              "picked_by_name": "alexwelle",
+              "picked_by_team_name": "alexwelle",
+              "metadata": {
+                "first_name": "Brenen",
+                "last_name": "Thompson",
+                "position": "WR",
+                "team": "LAC",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "89",
+                "player_id": "13380",
+                "sport": "nfl",
+                "news_updated": "1779462947424",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 46,
+              "round": 4,
+              "draft_slot": 10,
+              "player_id": "4018",
+              "roster": {
+                "roster_id": 5,
+                "team_name": "White Ice",
+                "owner_name": "jchrz"
+              },
+              "picked_by_user_id": "471424563457028096",
+              "picked_by_name": "jchrz",
+              "picked_by_team_name": "White Ice",
+              "metadata": {
+                "first_name": "Joe",
+                "last_name": "Mixon",
+                "position": "RB",
+                "team": "",
+                "status": "Active",
+                "injury_status": "Questionable",
+                "years_exp": "9",
+                "number": "28",
+                "player_id": "4018",
+                "sport": "nfl",
+                "news_updated": "1779567656936",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 47,
+              "round": 4,
+              "draft_slot": 11,
+              "player_id": "13348",
+              "roster": {
+                "roster_id": 3,
+                "team_name": "Pol Hol",
+                "owner_name": "GarrettHol"
+              },
+              "picked_by_user_id": "471415197991432192",
+              "picked_by_name": "GarrettHol",
+              "picked_by_team_name": "Pol Hol",
+              "metadata": {
+                "first_name": "J'Mari",
+                "last_name": "Taylor",
+                "position": "RB",
+                "team": "JAX",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "30",
+                "player_id": "13348",
+                "sport": "nfl",
+                "news_updated": "1779717610057",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
             }
           ]
         },
@@ -5087,7 +5366,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 2,
-      "age": 23,
+      "age": 24,
       "fantasy_positions": [
         "WR"
       ],
@@ -5541,7 +5820,7 @@
       "position": "RB",
       "team": "NO",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 1,
       "age": 22,
       "fantasy_positions": [
@@ -5790,7 +6069,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 1,
-      "age": 22,
+      "age": 23,
       "fantasy_positions": [
         "WR"
       ],
@@ -6046,6 +6325,25 @@
       "college": "Missouri",
       "search_rank": 40
     },
+    "12521": {
+      "player_id": "12521",
+      "full_name": "Elijah Arroyo",
+      "first_name": "Elijah",
+      "last_name": "Arroyo",
+      "position": "TE",
+      "team": "SEA",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 23,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": 1,
+      "college": "Miami (FL)",
+      "search_rank": 999
+    },
     "12522": {
       "player_id": "12522",
       "full_name": "Cam Ward",
@@ -6218,6 +6516,25 @@
       "college": "Arkansas",
       "search_rank": 184
     },
+    "12536": {
+      "player_id": "12536",
+      "full_name": "Jaylin Noel",
+      "first_name": "Jaylin",
+      "last_name": "Noel",
+      "position": "WR",
+      "team": "HOU",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 23,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 3,
+      "college": "Iowa State",
+      "search_rank": 190
+    },
     "12540": {
       "player_id": "12540",
       "full_name": "Chimere Dike",
@@ -6254,6 +6571,25 @@
       "depth_chart_position": "RB",
       "depth_chart_order": 2,
       "college": "Texas Tech",
+      "search_rank": 999
+    },
+    "12544": {
+      "player_id": "12544",
+      "full_name": "LeQuint Allen",
+      "first_name": "LeQuint",
+      "last_name": "Allen",
+      "position": "RB",
+      "team": "JAX",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 1,
+      "age": 21,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 3,
+      "college": "Syracuse",
       "search_rank": 999
     },
     "12545": {
@@ -6530,7 +6866,7 @@
       "position": "RB",
       "team": "TEN",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 0,
       "age": 22,
       "fantasy_positions": [
@@ -6788,6 +7124,44 @@
       "college": "Washington",
       "search_rank": 153
     },
+    "13347": {
+      "player_id": "13347",
+      "full_name": "Demond Claiborne",
+      "first_name": "Demond",
+      "last_name": "Claiborne",
+      "position": "RB",
+      "team": "MIN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 22,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": null,
+      "college": "Wake Forest",
+      "search_rank": 176
+    },
+    "13348": {
+      "player_id": "13348",
+      "full_name": "J'Mari Taylor",
+      "first_name": "J'Mari",
+      "last_name": "Taylor",
+      "position": "RB",
+      "team": "JAX",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 24,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": null,
+      "college": "Virginia",
+      "search_rank": 999
+    },
     "13349": {
       "player_id": "13349",
       "full_name": "Eli Stowers",
@@ -6825,6 +7199,25 @@
       "depth_chart_order": null,
       "college": "Tennessee",
       "search_rank": 202
+    },
+    "13380": {
+      "player_id": "13380",
+      "full_name": "Brenen Thompson",
+      "first_name": "Brenen",
+      "last_name": "Thompson",
+      "position": "WR",
+      "team": "LAC",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 22,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "RWR",
+      "depth_chart_order": null,
+      "college": "Mississippi State",
+      "search_rank": 999
     },
     "13402": {
       "player_id": "13402",
@@ -6864,6 +7257,25 @@
       "college": "Penn State",
       "search_rank": 157
     },
+    "13414": {
+      "player_id": "13414",
+      "full_name": "Kaelon Black",
+      "first_name": "Kaelon",
+      "last_name": "Black",
+      "position": "RB",
+      "team": "SF",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 24,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": null,
+      "college": "Indiana",
+      "search_rank": 999
+    },
     "13417": {
       "player_id": "13417",
       "full_name": "De'Zhaun Stribling",
@@ -6882,6 +7294,25 @@
       "depth_chart_order": null,
       "college": "Ole Miss",
       "search_rank": 214
+    },
+    "13420": {
+      "player_id": "13420",
+      "full_name": "Bryce Lance",
+      "first_name": "Bryce",
+      "last_name": "Lance",
+      "position": "WR",
+      "team": "NO",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 23,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "LWR",
+      "depth_chart_order": null,
+      "college": "North Dakota State",
+      "search_rank": 999
     },
     "1466": {
       "player_id": "1466",
@@ -7594,7 +8025,7 @@
       "position": "TE",
       "team": "HOU",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 8,
       "age": 29,
       "fantasy_positions": [
@@ -8506,7 +8937,7 @@
       "position": "WR",
       "team": "BAL",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 5,
       "age": 26,
       "fantasy_positions": [
