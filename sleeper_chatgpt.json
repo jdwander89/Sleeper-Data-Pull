@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-03T20:00:22.699762Z",
+    "generated_at": "2026-06-04T17:33:42.950721Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -284,9 +284,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "48",
+      "current_pick_no": "49",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471724614532198400"
+      "on_the_clock_user_id": "471744678006353920"
     }
   },
   "users": {
@@ -1472,7 +1472,7 @@
           "QB": 28.5,
           "RB": 26.17,
           "TE": 26.0,
-          "WR": 27.5
+          "WR": 27.62
         }
       },
       "players_by_position": {
@@ -1726,7 +1726,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780516638325,
+        "last_picked": 1780517308813,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -3995,6 +3995,37 @@
               },
               "is_keeper": null,
               "picked_at": null
+            },
+            {
+              "pick_no": 48,
+              "round": 4,
+              "draft_slot": 12,
+              "player_id": "9228",
+              "roster": {
+                "roster_id": 11,
+                "team_name": "MOJO",
+                "owner_name": "amoritko"
+              },
+              "picked_by_user_id": "471724614532198400",
+              "picked_by_name": "amoritko",
+              "picked_by_team_name": "MOJO",
+              "metadata": {
+                "first_name": "Bryce",
+                "last_name": "Young",
+                "position": "QB",
+                "team": "CAR",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "3",
+                "number": "9",
+                "player_id": "9228",
+                "sport": "nfl",
+                "news_updated": "1780323059977",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
             }
           ]
         },
@@ -5516,7 +5547,7 @@
       "position": "WR",
       "team": "NYG",
       "status": "Active",
-      "injury_status": "IR",
+      "injury_status": "Questionable",
       "years_exp": 2,
       "age": 22,
       "fantasy_positions": [
@@ -7645,7 +7676,7 @@
       "position": "RB",
       "team": "NO",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 9,
       "age": 30,
       "fantasy_positions": [
@@ -7816,7 +7847,7 @@
       "position": "TE",
       "team": "SF",
       "status": "Active",
-      "injury_status": "IR",
+      "injury_status": "Questionable",
       "years_exp": 9,
       "age": 32,
       "fantasy_positions": [
@@ -8141,7 +8172,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 7,
-      "age": 28,
+      "age": 29,
       "fantasy_positions": [
         "WR"
       ],
@@ -8215,7 +8246,7 @@
       "position": "QB",
       "team": "IND",
       "status": "Active",
-      "injury_status": "IR",
+      "injury_status": "Questionable",
       "years_exp": 7,
       "age": 29,
       "fantasy_positions": [
@@ -9746,6 +9777,25 @@
       "college": "Texas A&M",
       "search_rank": 10
     },
+    "9228": {
+      "player_id": "9228",
+      "full_name": "Bryce Young",
+      "first_name": "Bryce",
+      "last_name": "Young",
+      "position": "QB",
+      "team": "CAR",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 3,
+      "age": 24,
+      "fantasy_positions": [
+        "QB"
+      ],
+      "depth_chart_position": "QB",
+      "depth_chart_order": 1,
+      "college": "Alabama",
+      "search_rank": 98
+    },
     "9480": {
       "player_id": "9480",
       "full_name": "Brenton Strange",
@@ -10039,7 +10089,7 @@
       "position": "RB",
       "team": "SEA",
       "status": "Active",
-      "injury_status": "IR",
+      "injury_status": "Questionable",
       "years_exp": 3,
       "age": 25,
       "fantasy_positions": [
