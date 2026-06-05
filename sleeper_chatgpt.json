@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-04T17:33:42.950721Z",
+    "generated_at": "2026-06-05T16:15:50.145139Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -284,9 +284,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "49",
+      "current_pick_no": "50",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471744678006353920"
+      "on_the_clock_user_id": "471415316501491712"
     }
   },
   "users": {
@@ -1469,7 +1469,7 @@
           "WR": 5
         },
         "average_age_by_position": {
-          "QB": 28.5,
+          "QB": 29.0,
           "RB": 26.17,
           "TE": 26.0,
           "WR": 27.62
@@ -1726,7 +1726,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780517308813,
+        "last_picked": 1780603711134,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -4021,6 +4021,39 @@
                 "player_id": "9228",
                 "sport": "nfl",
                 "news_updated": "1780323059977",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            }
+          ],
+          "5": [
+            {
+              "pick_no": 49,
+              "round": 5,
+              "draft_slot": 1,
+              "player_id": "11647",
+              "roster": {
+                "roster_id": 12,
+                "team_name": "gullickson",
+                "owner_name": "gullickson"
+              },
+              "picked_by_user_id": "471744678006353920",
+              "picked_by_name": "gullickson",
+              "picked_by_team_name": "gullickson",
+              "metadata": {
+                "first_name": "Kimani",
+                "last_name": "Vidal",
+                "position": "RB",
+                "team": "LAC",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "2",
+                "number": "28",
+                "player_id": "11647",
+                "sport": "nfl",
+                "news_updated": "1779628502548",
                 "team_abbr": "",
                 "team_changed_at": ""
               },
@@ -7963,7 +7996,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 8,
-      "age": 28,
+      "age": 29,
       "fantasy_positions": [
         "QB"
       ],
