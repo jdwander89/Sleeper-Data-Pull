@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-05T16:15:50.145139Z",
+    "generated_at": "2026-06-06T11:12:22.497316Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -284,9 +284,9 @@
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "50",
+      "current_pick_no": "51",
       "keeper_deadline": "0",
-      "on_the_clock_user_id": "471415316501491712"
+      "on_the_clock_user_id": "471717089472671744"
     }
   },
   "users": {
@@ -1087,7 +1087,7 @@
         },
         "average_age_by_position": {
           "QB": 23.0,
-          "RB": 25.75,
+          "RB": 25.88,
           "TE": 26.5,
           "WR": 27.56
         }
@@ -1726,7 +1726,7 @@
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780603711134,
+        "last_picked": 1780683295159,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -4054,6 +4054,37 @@
                 "player_id": "11647",
                 "sport": "nfl",
                 "news_updated": "1779628502548",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 50,
+              "round": 5,
+              "draft_slot": 2,
+              "player_id": "8111",
+              "roster": {
+                "roster_id": 4,
+                "team_name": "Puka Troopas",
+                "owner_name": "TonsOfBuns"
+              },
+              "picked_by_user_id": "471415316501491712",
+              "picked_by_name": "TonsOfBuns",
+              "picked_by_team_name": "Puka Troopas",
+              "metadata": {
+                "first_name": "Cade",
+                "last_name": "Otton",
+                "position": "TE",
+                "team": "TB",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "4",
+                "number": "88",
+                "player_id": "8111",
+                "sport": "nfl",
+                "news_updated": "1779914429502",
                 "team_abbr": "",
                 "team_changed_at": ""
               },
@@ -6552,7 +6583,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 1,
-      "age": 23,
+      "age": 24,
       "fantasy_positions": [
         "RB"
       ],
@@ -9125,6 +9156,25 @@
       "depth_chart_order": 1,
       "college": "Wisconsin",
       "search_rank": 97
+    },
+    "8111": {
+      "player_id": "8111",
+      "full_name": "Cade Otton",
+      "first_name": "Cade",
+      "last_name": "Otton",
+      "position": "TE",
+      "team": "TB",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 4,
+      "age": 27,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": 1,
+      "college": "Washington",
+      "search_rank": 148
     },
     "8112": {
       "player_id": "8112",
