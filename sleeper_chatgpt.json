@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-09T16:20:17.386807Z",
+    "generated_at": "2026-06-10T17:44:58.129285Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -58,7 +58,7 @@
     "season": "2026",
     "season_type": "regular",
     "sport": "nfl",
-    "status": "drafting",
+    "status": "in_season",
     "league_type": null,
     "total_rosters": 12,
     "previous_league_id": "1257102737267503104",
@@ -66,12 +66,12 @@
     "current_nfl_state": {
       "week": 0,
       "leg": 0,
-      "season": "2026",
       "season_type": "off",
+      "season": "2026",
       "league_season": "2026",
       "previous_season": "2025",
       "season_start_date": null,
-      "display_week": 1,
+      "display_week": 0,
       "league_create_season": "2026",
       "season_has_scores": true
     },
@@ -280,13 +280,12 @@
       "offseason_adds": 0,
       "leg": 1,
       "reserve_slots": 2,
-      "reserve_allow_cov": 1
+      "reserve_allow_cov": 1,
+      "daily_waivers_last_ran": 9
     },
     "metadata": {
       "auto_continue": "on",
-      "current_pick_no": "58",
-      "keeper_deadline": "0",
-      "on_the_clock_user_id": "471424563457028096"
+      "keeper_deadline": "0"
     }
   },
   "users": {
@@ -596,14 +595,14 @@
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 18,
+        "total_players": 23,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
           "QB": 3,
-          "RB": 5,
-          "TE": 2,
-          "WR": 8
+          "RB": 9,
+          "TE": 4,
+          "WR": 7
         },
         "starter_position_counts": {
           "QB": 1,
@@ -613,9 +612,9 @@
         },
         "average_age_by_position": {
           "QB": 25.0,
-          "RB": 24.0,
-          "TE": 24.0,
-          "WR": 23.38
+          "RB": 22.89,
+          "TE": 23.75,
+          "WR": 23.0
         }
       },
       "players_by_position": {
@@ -625,24 +624,29 @@
           "7523"
         ],
         "RB": [
+          "13302",
           "11576",
+          "13347",
           "12533",
           "11643",
+          "12544",
+          "13305",
           "8136",
           "12529"
         ],
         "TE": [
           "10236",
+          "9479",
+          "13349",
           "12498"
         ],
         "WR": [
-          "12540",
           "8112",
-          "12503",
           "9756",
+          "13281",
           "9504",
           "12501",
-          "12485",
+          "13402",
           "11624"
         ]
       },
@@ -653,13 +657,14 @@
         "8112",
         "9756",
         "10236",
-        "12501",
+        "13281",
         "11624",
-        "12540"
+        "12501"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
@@ -685,18 +690,18 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 3,
+        "waiver_position": 8,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 19,
+        "total_players": 23,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
           "QB": 2,
           "RB": 7,
-          "TE": 2,
-          "WR": 8
+          "TE": 3,
+          "WR": 11
         },
         "starter_position_counts": {
           "QB": 1,
@@ -706,9 +711,9 @@
         },
         "average_age_by_position": {
           "QB": 25.5,
-          "RB": 25.14,
-          "TE": 29.0,
-          "WR": 25.5
+          "RB": 25.71,
+          "TE": 28.0,
+          "WR": 24.73
         }
       },
       "players_by_position": {
@@ -717,22 +722,26 @@
           "6904"
         ],
         "RB": [
-          "12455",
           "5892",
           "12469",
           "7588",
           "8408",
           "5850",
+          "8800",
           "12495"
         ],
         "TE": [
+          "8210",
           "12517",
           "1466"
         ],
         "WR": [
           "5859",
           "6786",
+          "13413",
+          "13417",
           "6783",
+          "13294",
           "9487",
           "12492",
           "9754",
@@ -744,21 +753,22 @@
         "6904",
         "5850",
         "7588",
-        "5859",
         "6786",
-        "1466",
+        "5859",
         "12517",
-        "9487",
-        "5892"
+        "5892",
+        "1466",
+        "9487"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 3,
+        "waiver_position": 8,
         "wins": 0
       }
     },
@@ -779,35 +789,35 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 5,
+        "waiver_position": 2,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 20,
+        "total_players": 23,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
           "QB": 4,
-          "RB": 6,
+          "RB": 7,
           "TE": 3,
-          "WR": 7
+          "WR": 9
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 4,
+          "RB": 3,
           "TE": 1,
-          "WR": 3
+          "WR": 4
         },
         "average_age_by_position": {
-          "QB": 31.5,
-          "RB": 25.17,
-          "TE": 28.33,
-          "WR": 28.43
+          "QB": 26.5,
+          "RB": 25.0,
+          "TE": 27.67,
+          "WR": 27.56
         }
       },
       "players_by_position": {
         "QB": [
-          "96",
+          "13269",
           "6804",
           "8161",
           "4046"
@@ -815,45 +825,49 @@
         "RB": [
           "9509",
           "11584",
+          "13348",
           "6813",
           "7528",
           "9506",
           "11655"
         ],
         "TE": [
-          "2505",
+          "4066",
           "8110",
           "10859"
         ],
         "WR": [
           "6149",
           "7525",
+          "13268",
           "8147",
           "6819",
           "2216",
           "8121",
-          "2449"
+          "2449",
+          "9502"
         ]
       },
       "starters": [
-        "8161",
+        "4046",
         "9509",
         "6813",
-        "2216",
         "7525",
-        "8110",
-        "11655",
-        "2449",
-        "11584"
+        "2216",
+        "10859",
+        "11584",
+        "8121",
+        "6819"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 5,
+        "waiver_position": 2,
         "wins": 0
       }
     },
@@ -874,30 +888,30 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 8,
+        "waiver_position": 11,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 19,
+        "total_players": 24,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
           "QB": 2,
-          "RB": 7,
-          "TE": 3,
-          "WR": 7
+          "RB": 8,
+          "TE": 5,
+          "WR": 9
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 2,
+          "RB": 3,
           "TE": 1,
-          "WR": 5
+          "WR": 4
         },
         "average_age_by_position": {
           "QB": 27.5,
-          "RB": 26.86,
-          "TE": 26.0,
-          "WR": 24.86
+          "RB": 26.25,
+          "TE": 26.2,
+          "WR": 24.11
         }
       },
       "players_by_position": {
@@ -910,6 +924,7 @@
           "8155",
           "7594",
           "12457",
+          "13345",
           "4988",
           "5967",
           "8132"
@@ -917,11 +932,15 @@
         "TE": [
           "11603",
           "9480",
-          "4033"
+          "8111",
+          "4033",
+          "8698"
         ],
         "WR": [
           "11631",
+          "13279",
           "4037",
+          "13293",
           "12519",
           "11610",
           "9493",
@@ -932,22 +951,23 @@
       "starters": [
         "8183",
         "8155",
-        "7594",
+        "5967",
         "9493",
-        "4037",
+        "12519",
         "9480",
-        "11631",
-        "12530",
-        "12519"
+        "13279",
+        "7594",
+        "11631"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 8,
+        "waiver_position": 11,
         "wins": 0
       }
     },
@@ -968,30 +988,30 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 4,
+        "waiver_position": 3,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 20,
+        "total_players": 25,
         "starter_count": 9,
         "reserve_count": 2,
         "position_counts": {
           "QB": 2,
-          "RB": 5,
-          "TE": 2,
-          "WR": 11
+          "RB": 8,
+          "TE": 3,
+          "WR": 12
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 2,
+          "RB": 3,
           "TE": 1,
-          "WR": 5
+          "WR": 4
         },
         "average_age_by_position": {
           "QB": 28.0,
-          "RB": 24.2,
-          "TE": 29.0,
-          "WR": 24.82
+          "RB": 24.25,
+          "TE": 26.67,
+          "WR": 24.5
         }
       },
       "players_by_position": {
@@ -1003,11 +1023,15 @@
           "11586",
           "9224",
           "9221",
+          "4018",
+          "12467",
+          "13288",
           "9225",
           "11589"
         ],
         "TE": [
           "5001",
+          "13282",
           "7002"
         ],
         "WR": [
@@ -1020,20 +1044,21 @@
           "8134",
           "7569",
           "11620",
+          "13317",
           "12497",
           "10213"
         ]
       },
       "starters": [
-        "3294",
+        "11560",
         "9221",
         "9224",
-        "8137",
         "7569",
-        "7002",
-        "8134",
+        "8137",
+        "5001",
         "8148",
-        "7049"
+        "11620",
+        "11586"
       ],
       "reserve": [
         "11589",
@@ -1041,11 +1066,12 @@
       ],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 4,
+        "waiver_position": 3,
         "wins": 0
       }
     },
@@ -1066,34 +1092,35 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 11,
+        "waiver_position": 5,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 20,
+        "total_players": 25,
         "starter_count": 9,
         "reserve_count": 2,
         "position_counts": {
-          "QB": 1,
+          "QB": 2,
           "RB": 8,
           "TE": 2,
-          "WR": 9
+          "WR": 13
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 3,
+          "RB": 4,
           "TE": 1,
-          "WR": 4
+          "WR": 3
         },
         "average_age_by_position": {
-          "QB": 23.0,
+          "QB": 23.5,
           "RB": 26.0,
           "TE": 26.5,
-          "WR": 27.56
+          "WR": 26.0
         }
       },
       "players_by_position": {
         "QB": [
+          "13404",
           "12508"
         ],
         "RB": [
@@ -1112,11 +1139,15 @@
         ],
         "WR": [
           "6803",
+          "13420",
+          "13353",
           "5872",
           "11834",
           "8146",
+          "12483",
           "1479",
           "11628",
+          "13276",
           "11638",
           "11627",
           "2374"
@@ -1124,14 +1155,14 @@
       },
       "starters": [
         "12508",
-        "12527",
         "4034",
-        "1479",
+        "12527",
+        "8146",
         "5872",
         "12506",
         "12534",
-        "11628",
-        "11638"
+        "6806",
+        "11628"
       ],
       "reserve": [
         "4217",
@@ -1139,11 +1170,12 @@
       ],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 11,
+        "waiver_position": 5,
         "wins": 0
       }
     },
@@ -1164,18 +1196,18 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 10,
+        "waiver_position": 7,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 19,
+        "total_players": 23,
         "starter_count": 9,
-        "reserve_count": 1,
+        "reserve_count": 0,
         "position_counts": {
-          "QB": 4,
+          "QB": 5,
           "RB": 6,
-          "TE": 1,
-          "WR": 8
+          "TE": 2,
+          "WR": 10
         },
         "starter_position_counts": {
           "QB": 1,
@@ -1184,10 +1216,10 @@
           "WR": 5
         },
         "average_age_by_position": {
-          "QB": 26.75,
-          "RB": 24.5,
-          "TE": 24.0,
-          "WR": 24.0
+          "QB": 26.0,
+          "RB": 24.83,
+          "TE": 23.5,
+          "WR": 23.5
         }
       },
       "players_by_position": {
@@ -1195,24 +1227,28 @@
           "4892",
           "11559",
           "12524",
+          "13275",
           "12545"
         ],
         "RB": [
-          "12471",
           "8205",
+          "13414",
           "12504",
           "7567",
           "12543",
           "12474"
         ],
         "TE": [
+          "11600",
           "12518"
         ],
         "WR": [
+          "13311",
           "8167",
           "12535",
           "9488",
           "10222",
+          "13298",
           "11637",
           "12547",
           "11632",
@@ -1221,25 +1257,24 @@
       },
       "starters": [
         "4892",
-        "12474",
         "7567",
+        "12474",
         "9488",
-        "12526",
+        "11632",
         "12518",
         "8167",
-        "12535",
-        "10222"
+        "12526",
+        "13298"
       ],
-      "reserve": [
-        "11632"
-      ],
+      "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 10,
+        "waiver_position": 7,
         "wins": 0
       }
     },
@@ -1260,30 +1295,31 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 1,
+        "waiver_position": 6,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 19,
+        "total_players": 24,
         "starter_count": 9,
         "reserve_count": 1,
         "position_counts": {
           "QB": 2,
-          "RB": 7,
-          "TE": 2,
-          "WR": 8
+          "RB": 8,
+          "TE": 3,
+          "WR": 11
         },
         "starter_position_counts": {
           "QB": 1,
           "RB": 3,
           "TE": 1,
-          "WR": 4
+          "UNKNOWN": 1,
+          "WR": 3
         },
         "average_age_by_position": {
           "QB": 25.5,
-          "RB": 25.43,
-          "TE": 26.0,
-          "WR": 24.62
+          "RB": 24.88,
+          "TE": 25.0,
+          "WR": 24.0
         }
       },
       "players_by_position": {
@@ -1298,15 +1334,20 @@
           "8150",
           "11581",
           "7611",
+          "12531",
           "9753"
         ],
         "TE": [
+          "12521",
           "8131",
           "8130"
         ],
         "WR": [
           "8142",
+          "13301",
+          "13270",
           "8125",
+          "13346",
           "12514",
           "11646",
           "12484",
@@ -1322,20 +1363,21 @@
         "6794",
         "12514",
         "8130",
+        "7611",
         "8142",
-        "11581",
-        "12484"
+        "0"
       ],
       "reserve": [
         "9753"
       ],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 1,
+        "waiver_position": 6,
         "wins": 0
       }
     },
@@ -1356,34 +1398,36 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 7,
+        "waiver_position": 4,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 18,
+        "total_players": 23,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
-          "QB": 3,
-          "RB": 6,
-          "TE": 3,
-          "WR": 6
+          "QB": 5,
+          "RB": 7,
+          "TE": 4,
+          "WR": 7
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 3,
-          "TE": 2,
+          "RB": 4,
+          "TE": 1,
           "WR": 3
         },
         "average_age_by_position": {
-          "QB": 28.0,
-          "RB": 24.5,
-          "TE": 24.0,
-          "WR": 27.0
+          "QB": 25.8,
+          "RB": 24.29,
+          "TE": 23.25,
+          "WR": 25.71
         }
       },
       "players_by_position": {
         "QB": [
+          "13303",
+          "13272",
           "11565",
           "3257",
           "5849"
@@ -1393,42 +1437,46 @@
           "10219",
           "9226",
           "11583",
+          "13405",
           "12507",
           "12489"
         ],
         "TE": [
+          "13330",
           "7553",
           "12493",
           "11597"
         ],
         "WR": [
-          "10444",
+          "13380",
           "8144",
           "7090",
           "7564",
+          "13285",
           "10229",
           "3321"
         ]
       },
       "starters": [
         "5849",
-        "12507",
         "9226",
+        "12507",
         "7564",
-        "10229",
-        "7553",
         "8144",
+        "7553",
+        "10229",
         "12489",
-        "12493"
+        "8154"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 7,
+        "waiver_position": 4,
         "wins": 0
       }
     },
@@ -1449,30 +1497,30 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 2,
+        "waiver_position": 10,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 19,
+        "total_players": 24,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
           "QB": 2,
-          "RB": 6,
-          "TE": 3,
-          "WR": 8
+          "RB": 8,
+          "TE": 4,
+          "WR": 10
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 2,
+          "RB": 3,
           "TE": 1,
-          "WR": 5
+          "WR": 4
         },
         "average_age_by_position": {
           "QB": 29.0,
-          "RB": 26.17,
-          "TE": 26.0,
-          "WR": 27.62
+          "RB": 25.12,
+          "TE": 26.25,
+          "WR": 27.0
         }
       },
       "players_by_position": {
@@ -1484,12 +1532,15 @@
           "12490",
           "6790",
           "3198",
+          "13337",
+          "13286",
           "8143",
           "9511",
           "8122"
         ],
         "TE": [
           "9481",
+          "7600",
           "5844",
           "9484"
         ],
@@ -1498,31 +1549,34 @@
           "4950",
           "5846",
           "5947",
+          "12536",
           "5848",
+          "11783",
           "5927",
           "8126",
           "11626"
         ]
       },
       "starters": [
-        "4943",
+        "4881",
         "3198",
-        "6790",
+        "12490",
+        "7547",
         "5927",
-        "11626",
-        "9481",
-        "8126",
-        "5947",
-        "7547"
+        "9484",
+        "6790",
+        "5846",
+        "5947"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 2,
+        "waiver_position": 10,
         "wins": 0
       }
     },
@@ -1543,18 +1597,18 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 12,
+        "waiver_position": 1,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 21,
+        "total_players": 23,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
-          "QB": 2,
+          "QB": 3,
           "RB": 8,
           "TE": 4,
-          "WR": 7
+          "WR": 8
         },
         "starter_position_counts": {
           "QB": 1,
@@ -1563,32 +1617,33 @@
           "WR": 3
         },
         "average_age_by_position": {
-          "QB": 28.0,
+          "QB": 26.67,
           "RB": 26.5,
-          "TE": 29.0,
-          "WR": 29.57
+          "TE": 25.25,
+          "WR": 28.12
         }
       },
       "players_by_position": {
         "QB": [
           "11563",
+          "9228",
           "4984"
         ],
         "RB": [
           "12481",
           "8138",
           "8228",
-          "12472",
           "11575",
           "7021",
           "4147",
+          "13424",
           "6039"
         ],
         "TE": [
           "11604",
-          "6865",
+          "12502",
           "3214",
-          "4381"
+          "9482"
         ],
         "WR": [
           "10226",
@@ -1596,29 +1651,31 @@
           "5045",
           "2133",
           "7526",
-          "4177",
-          "6801"
+          "6271",
+          "6801",
+          "13320"
         ]
       },
       "starters": [
         "4984",
         "8138",
-        "8228",
-        "7526",
+        "12481",
         "6801",
+        "7526",
         "11604",
-        "7021",
         "2133",
-        "12481"
+        "8228",
+        "7021"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 12,
+        "waiver_position": 1,
         "wins": 0
       }
     },
@@ -1639,30 +1696,30 @@
         "potential_points_decimal": null
       },
       "waivers": {
-        "waiver_position": 6,
+        "waiver_position": 12,
         "waiver_budget_used": 0
       },
       "team_summary": {
-        "total_players": 18,
+        "total_players": 23,
         "starter_count": 9,
         "reserve_count": 0,
         "position_counts": {
           "QB": 3,
-          "RB": 5,
-          "TE": 2,
-          "WR": 8
+          "RB": 7,
+          "TE": 4,
+          "WR": 9
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 3,
+          "RB": 4,
           "TE": 1,
-          "WR": 4
+          "WR": 3
         },
         "average_age_by_position": {
           "QB": 32.67,
-          "RB": 26.4,
-          "TE": 30.5,
-          "WR": 26.75
+          "RB": 25.29,
+          "TE": 26.5,
+          "WR": 26.22
         }
       },
       "players_by_position": {
@@ -1672,7 +1729,9 @@
           "421"
         ],
         "RB": [
+          "13287",
           "4219",
+          "11647",
           "12512",
           "4866",
           "7543",
@@ -1680,10 +1739,13 @@
         ],
         "TE": [
           "5022",
-          "5012"
+          "5012",
+          "13278",
+          "12487"
         ],
         "WR": [
           "4983",
+          "13274",
           "11618",
           "8180",
           "7670",
@@ -1695,23 +1757,24 @@
       },
       "starters": [
         "6770",
-        "7543",
         "4866",
-        "9997",
-        "10232",
-        "5022",
+        "13287",
         "11635",
-        "9508",
+        "9997",
+        "5022",
+        "7543",
+        "12512",
         "4983"
       ],
       "reserve": [],
       "settings": {
         "fpts": 0,
+        "fpts_decimal": 0,
         "losses": 0,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 6,
+        "waiver_position": 12,
         "wins": 0
       }
     }
@@ -1721,12 +1784,12 @@
       {
         "draft_id": "1312581067298836480",
         "season": "2026",
-        "status": "drafting",
+        "status": "complete",
         "type": "linear",
         "sport": "nfl",
         "start_time": 1779484580973,
         "created": 1767306222322,
-        "last_picked": 1780998973106,
+        "last_picked": 1781035053351,
         "settings": {
           "alpha_sort": 0,
           "autopause_enabled": 0,
@@ -4307,6 +4370,99 @@
               },
               "is_keeper": null,
               "picked_at": null
+            },
+            {
+              "pick_no": 58,
+              "round": 5,
+              "draft_slot": 10,
+              "player_id": "13282",
+              "roster": {
+                "roster_id": 5,
+                "team_name": "White Ice",
+                "owner_name": "jchrz"
+              },
+              "picked_by_user_id": "471424563457028096",
+              "picked_by_name": "jchrz",
+              "picked_by_team_name": "White Ice",
+              "metadata": {
+                "first_name": "Jack",
+                "last_name": "Endries",
+                "position": "TE",
+                "team": "CIN",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "0",
+                "number": "84",
+                "player_id": "13282",
+                "sport": "nfl",
+                "news_updated": "1779727510767",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 59,
+              "round": 5,
+              "draft_slot": 11,
+              "player_id": "4066",
+              "roster": {
+                "roster_id": 3,
+                "team_name": "Pol Hol",
+                "owner_name": "GarrettHol"
+              },
+              "picked_by_user_id": "471415197991432192",
+              "picked_by_name": "GarrettHol",
+              "picked_by_team_name": "Pol Hol",
+              "metadata": {
+                "first_name": "Evan",
+                "last_name": "Engram",
+                "position": "TE",
+                "team": "DEN",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "9",
+                "number": "1",
+                "player_id": "4066",
+                "sport": "nfl",
+                "news_updated": "1781012737680",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
+            },
+            {
+              "pick_no": 60,
+              "round": 5,
+              "draft_slot": 12,
+              "player_id": "9482",
+              "roster": {
+                "roster_id": 11,
+                "team_name": "MOJO",
+                "owner_name": "amoritko"
+              },
+              "picked_by_user_id": "471724614532198400",
+              "picked_by_name": "amoritko",
+              "picked_by_team_name": "MOJO",
+              "metadata": {
+                "first_name": "Michael",
+                "last_name": "Mayer",
+                "position": "TE",
+                "team": "LV",
+                "status": "Active",
+                "injury_status": "",
+                "years_exp": "3",
+                "number": "87",
+                "player_id": "9482",
+                "sport": "nfl",
+                "news_updated": "1778638221796",
+                "team_abbr": "",
+                "team_changed_at": ""
+              },
+              "is_keeper": null,
+              "picked_at": null
             }
           ]
         },
@@ -4314,6 +4470,7 @@
           {
             "round": 5,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 1,
             "owner_id": 2,
             "previous_owner_id": 1
@@ -4321,6 +4478,7 @@
           {
             "round": 3,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 2,
             "owner_id": 1,
             "previous_owner_id": 2
@@ -4328,6 +4486,7 @@
           {
             "round": 4,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 2,
             "owner_id": 1,
             "previous_owner_id": 2
@@ -4335,6 +4494,7 @@
           {
             "round": 5,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 2,
             "owner_id": 10,
             "previous_owner_id": 2
@@ -4342,6 +4502,7 @@
           {
             "round": 3,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 7,
             "owner_id": 12,
             "previous_owner_id": 7
@@ -4349,6 +4510,7 @@
           {
             "round": 3,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 10,
             "owner_id": 2,
             "previous_owner_id": 10
@@ -4356,6 +4518,7 @@
           {
             "round": 2,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 11,
             "owner_id": 1,
             "previous_owner_id": 11
@@ -4363,6 +4526,7 @@
           {
             "round": 3,
             "season": "2026",
+            "draft_id": 1312581067298836480,
             "roster_id": 12,
             "owner_id": 7,
             "previous_owner_id": 12
@@ -4467,11 +4631,1519 @@
   "weekly_results": {
     "1": {
       "week": 1,
-      "matchups": []
+      "matchups": [
+        {
+          "roster": {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          },
+          "matchup_id": 1,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "10236",
+            "11566",
+            "11576",
+            "11624",
+            "11643",
+            "12498",
+            "12501",
+            "12522",
+            "12529",
+            "12533",
+            "12544",
+            "13281",
+            "13302",
+            "13305",
+            "13347",
+            "13349",
+            "13402",
+            "7523",
+            "8112",
+            "8136",
+            "9479",
+            "9504",
+            "9756"
+          ],
+          "starters": [
+            "11566",
+            "12529",
+            "12533",
+            "8112",
+            "9756",
+            "10236",
+            "13281",
+            "11624",
+            "12501"
+          ],
+          "players_points": {
+            "10236": 0.0,
+            "11566": 0.0,
+            "11576": 0.0,
+            "11624": 0.0,
+            "11643": 0.0,
+            "12498": 0.0,
+            "12501": 0.0,
+            "12522": 0.0,
+            "12529": 0.0,
+            "12533": 0.0,
+            "12544": 0.0,
+            "13281": 0.0,
+            "13302": 0.0,
+            "13305": 0.0,
+            "13347": 0.0,
+            "13349": 0.0,
+            "13402": 0.0,
+            "7523": 0.0,
+            "8112": 0.0,
+            "8136": 0.0,
+            "9479": 0.0,
+            "9504": 0.0,
+            "9756": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          },
+          "matchup_id": 4,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "12469",
+            "12492",
+            "12495",
+            "12509",
+            "12517",
+            "13294",
+            "13413",
+            "13417",
+            "1466",
+            "5850",
+            "5859",
+            "5892",
+            "6783",
+            "6786",
+            "6904",
+            "7588",
+            "8210",
+            "8408",
+            "8676",
+            "8800",
+            "9487",
+            "9754",
+            "9758"
+          ],
+          "starters": [
+            "6904",
+            "5850",
+            "7588",
+            "6786",
+            "5859",
+            "12517",
+            "5892",
+            "1466",
+            "9487"
+          ],
+          "players_points": {
+            "12469": 0.0,
+            "12492": 0.0,
+            "12495": 0.0,
+            "12509": 0.0,
+            "12517": 0.0,
+            "13294": 0.0,
+            "13413": 0.0,
+            "13417": 0.0,
+            "1466": 0.0,
+            "5850": 0.0,
+            "5859": 0.0,
+            "5892": 0.0,
+            "6783": 0.0,
+            "6786": 0.0,
+            "6904": 0.0,
+            "7588": 0.0,
+            "8210": 0.0,
+            "8408": 0.0,
+            "8676": 0.0,
+            "8800": 0.0,
+            "9487": 0.0,
+            "9754": 0.0,
+            "9758": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 3,
+            "team_name": "Pol Hol",
+            "owner_name": "GarrettHol"
+          },
+          "matchup_id": 3,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "10859",
+            "11584",
+            "11655",
+            "13268",
+            "13269",
+            "13348",
+            "2216",
+            "2449",
+            "4046",
+            "4066",
+            "6149",
+            "6804",
+            "6813",
+            "6819",
+            "7525",
+            "7528",
+            "8110",
+            "8121",
+            "8147",
+            "8161",
+            "9502",
+            "9506",
+            "9509"
+          ],
+          "starters": [
+            "4046",
+            "9509",
+            "6813",
+            "7525",
+            "2216",
+            "10859",
+            "11584",
+            "8121",
+            "6819"
+          ],
+          "players_points": {
+            "10859": 0.0,
+            "11584": 0.0,
+            "11655": 0.0,
+            "13268": 0.0,
+            "13269": 0.0,
+            "13348": 0.0,
+            "2216": 0.0,
+            "2449": 0.0,
+            "4046": 0.0,
+            "4066": 0.0,
+            "6149": 0.0,
+            "6804": 0.0,
+            "6813": 0.0,
+            "6819": 0.0,
+            "7525": 0.0,
+            "7528": 0.0,
+            "8110": 0.0,
+            "8121": 0.0,
+            "8147": 0.0,
+            "8161": 0.0,
+            "9502": 0.0,
+            "9506": 0.0,
+            "9509": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 4,
+            "team_name": "Puka Troopas",
+            "owner_name": "TonsOfBuns"
+          },
+          "matchup_id": 2,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "11603",
+            "11610",
+            "11631",
+            "12457",
+            "12519",
+            "12530",
+            "13279",
+            "13293",
+            "13345",
+            "4033",
+            "4035",
+            "4037",
+            "4988",
+            "5870",
+            "5967",
+            "7571",
+            "7594",
+            "8111",
+            "8132",
+            "8155",
+            "8183",
+            "8698",
+            "9480",
+            "9493"
+          ],
+          "starters": [
+            "8183",
+            "8155",
+            "5967",
+            "9493",
+            "12519",
+            "9480",
+            "13279",
+            "7594",
+            "11631"
+          ],
+          "players_points": {
+            "11603": 0.0,
+            "11610": 0.0,
+            "11631": 0.0,
+            "12457": 0.0,
+            "12519": 0.0,
+            "12530": 0.0,
+            "13279": 0.0,
+            "13293": 0.0,
+            "13345": 0.0,
+            "4033": 0.0,
+            "4035": 0.0,
+            "4037": 0.0,
+            "4988": 0.0,
+            "5870": 0.0,
+            "5967": 0.0,
+            "7571": 0.0,
+            "7594": 0.0,
+            "8111": 0.0,
+            "8132": 0.0,
+            "8155": 0.0,
+            "8183": 0.0,
+            "8698": 0.0,
+            "9480": 0.0,
+            "9493": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 5,
+            "team_name": "White Ice",
+            "owner_name": "jchrz"
+          },
+          "matchup_id": 6,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "10213",
+            "11560",
+            "11586",
+            "11589",
+            "11620",
+            "11625",
+            "12467",
+            "12497",
+            "12499",
+            "13282",
+            "13288",
+            "13317",
+            "3294",
+            "4018",
+            "5001",
+            "7002",
+            "7049",
+            "7569",
+            "8134",
+            "8137",
+            "8148",
+            "9221",
+            "9224",
+            "9225",
+            "9486"
+          ],
+          "starters": [
+            "11560",
+            "9221",
+            "9224",
+            "7569",
+            "8137",
+            "5001",
+            "8148",
+            "11620",
+            "11586"
+          ],
+          "players_points": {
+            "10213": 0.0,
+            "11560": 0.0,
+            "11586": 0.0,
+            "11589": 0.0,
+            "11620": 0.0,
+            "11625": 0.0,
+            "12467": 0.0,
+            "12497": 0.0,
+            "12499": 0.0,
+            "13282": 0.0,
+            "13288": 0.0,
+            "13317": 0.0,
+            "3294": 0.0,
+            "4018": 0.0,
+            "5001": 0.0,
+            "7002": 0.0,
+            "7049": 0.0,
+            "7569": 0.0,
+            "8134": 0.0,
+            "8137": 0.0,
+            "8148": 0.0,
+            "9221": 0.0,
+            "9224": 0.0,
+            "9225": 0.0,
+            "9486": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 6,
+            "team_name": "andrewwelle",
+            "owner_name": "andrewwelle"
+          },
+          "matchup_id": 4,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "11571",
+            "11627",
+            "11628",
+            "11638",
+            "11834",
+            "12476",
+            "12483",
+            "12506",
+            "12508",
+            "12527",
+            "12534",
+            "13276",
+            "13353",
+            "13404",
+            "13420",
+            "1479",
+            "2374",
+            "4034",
+            "4199",
+            "4217",
+            "5872",
+            "6130",
+            "6803",
+            "6806",
+            "8146"
+          ],
+          "starters": [
+            "12508",
+            "4034",
+            "12527",
+            "8146",
+            "5872",
+            "12506",
+            "12534",
+            "6806",
+            "11628"
+          ],
+          "players_points": {
+            "11571": 0.0,
+            "11627": 0.0,
+            "11628": 0.0,
+            "11638": 0.0,
+            "11834": 0.0,
+            "12476": 0.0,
+            "12483": 0.0,
+            "12506": 0.0,
+            "12508": 0.0,
+            "12527": 0.0,
+            "12534": 0.0,
+            "13276": 0.0,
+            "13353": 0.0,
+            "13404": 0.0,
+            "13420": 0.0,
+            "1479": 0.0,
+            "2374": 0.0,
+            "4034": 0.0,
+            "4199": 0.0,
+            "4217": 0.0,
+            "5872": 0.0,
+            "6130": 0.0,
+            "6803": 0.0,
+            "6806": 0.0,
+            "8146": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          },
+          "matchup_id": 6,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "10222",
+            "11559",
+            "11600",
+            "11632",
+            "11637",
+            "12474",
+            "12504",
+            "12518",
+            "12524",
+            "12526",
+            "12535",
+            "12543",
+            "12545",
+            "12547",
+            "13275",
+            "13298",
+            "13311",
+            "13414",
+            "4892",
+            "7567",
+            "8167",
+            "8205",
+            "9488"
+          ],
+          "starters": [
+            "4892",
+            "7567",
+            "12474",
+            "9488",
+            "11632",
+            "12518",
+            "8167",
+            "12526",
+            "13298"
+          ],
+          "players_points": {
+            "10222": 0.0,
+            "11559": 0.0,
+            "11600": 0.0,
+            "11632": 0.0,
+            "11637": 0.0,
+            "12474": 0.0,
+            "12504": 0.0,
+            "12518": 0.0,
+            "12524": 0.0,
+            "12526": 0.0,
+            "12535": 0.0,
+            "12543": 0.0,
+            "12545": 0.0,
+            "12547": 0.0,
+            "13275": 0.0,
+            "13298": 0.0,
+            "13311": 0.0,
+            "13414": 0.0,
+            "4892": 0.0,
+            "7567": 0.0,
+            "8167": 0.0,
+            "8205": 0.0,
+            "9488": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 8,
+            "team_name": "Back to the Future",
+            "owner_name": "johnwander"
+          },
+          "matchup_id": 5,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "11435",
+            "11564",
+            "11569",
+            "11581",
+            "11630",
+            "11646",
+            "12484",
+            "12514",
+            "12521",
+            "12531",
+            "13270",
+            "13301",
+            "13346",
+            "6794",
+            "6797",
+            "7611",
+            "8125",
+            "8130",
+            "8131",
+            "8142",
+            "8150",
+            "8151",
+            "9500",
+            "9753"
+          ],
+          "starters": [
+            "11564",
+            "8151",
+            "8150",
+            "6794",
+            "12514",
+            "8130",
+            "7611",
+            "8142",
+            "0"
+          ],
+          "players_points": {
+            "11435": 0.0,
+            "11564": 0.0,
+            "11569": 0.0,
+            "11581": 0.0,
+            "11630": 0.0,
+            "11646": 0.0,
+            "12484": 0.0,
+            "12514": 0.0,
+            "12521": 0.0,
+            "12531": 0.0,
+            "13270": 0.0,
+            "13301": 0.0,
+            "13346": 0.0,
+            "6794": 0.0,
+            "6797": 0.0,
+            "7611": 0.0,
+            "8125": 0.0,
+            "8130": 0.0,
+            "8131": 0.0,
+            "8142": 0.0,
+            "8150": 0.0,
+            "8151": 0.0,
+            "9500": 0.0,
+            "9753": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          },
+          "matchup_id": 5,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "10219",
+            "10229",
+            "11565",
+            "11583",
+            "11597",
+            "12489",
+            "12493",
+            "12507",
+            "13272",
+            "13285",
+            "13303",
+            "13330",
+            "13380",
+            "13405",
+            "3257",
+            "3321",
+            "5849",
+            "7090",
+            "7553",
+            "7564",
+            "8144",
+            "8154",
+            "9226"
+          ],
+          "starters": [
+            "5849",
+            "9226",
+            "12507",
+            "7564",
+            "8144",
+            "7553",
+            "10229",
+            "12489",
+            "8154"
+          ],
+          "players_points": {
+            "10219": 0.0,
+            "10229": 0.0,
+            "11565": 0.0,
+            "11583": 0.0,
+            "11597": 0.0,
+            "12489": 0.0,
+            "12493": 0.0,
+            "12507": 0.0,
+            "13272": 0.0,
+            "13285": 0.0,
+            "13303": 0.0,
+            "13330": 0.0,
+            "13380": 0.0,
+            "13405": 0.0,
+            "3257": 0.0,
+            "3321": 0.0,
+            "5849": 0.0,
+            "7090": 0.0,
+            "7553": 0.0,
+            "7564": 0.0,
+            "8144": 0.0,
+            "8154": 0.0,
+            "9226": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 10,
+            "team_name": "Goin in Ra",
+            "owner_name": "NC79"
+          },
+          "matchup_id": 3,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "11626",
+            "11783",
+            "12490",
+            "12536",
+            "13286",
+            "13337",
+            "3198",
+            "4881",
+            "4943",
+            "4950",
+            "5844",
+            "5846",
+            "5848",
+            "5927",
+            "5947",
+            "6790",
+            "7547",
+            "7600",
+            "8122",
+            "8126",
+            "8143",
+            "9481",
+            "9484",
+            "9511"
+          ],
+          "starters": [
+            "4881",
+            "3198",
+            "12490",
+            "7547",
+            "5927",
+            "9484",
+            "6790",
+            "5846",
+            "5947"
+          ],
+          "players_points": {
+            "11626": 0.0,
+            "11783": 0.0,
+            "12490": 0.0,
+            "12536": 0.0,
+            "13286": 0.0,
+            "13337": 0.0,
+            "3198": 0.0,
+            "4881": 0.0,
+            "4943": 0.0,
+            "4950": 0.0,
+            "5844": 0.0,
+            "5846": 0.0,
+            "5848": 0.0,
+            "5927": 0.0,
+            "5947": 0.0,
+            "6790": 0.0,
+            "7547": 0.0,
+            "7600": 0.0,
+            "8122": 0.0,
+            "8126": 0.0,
+            "8143": 0.0,
+            "9481": 0.0,
+            "9484": 0.0,
+            "9511": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          },
+          "matchup_id": 1,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "10226",
+            "11563",
+            "11575",
+            "11604",
+            "12481",
+            "12502",
+            "13320",
+            "13424",
+            "2133",
+            "3214",
+            "4039",
+            "4147",
+            "4984",
+            "5045",
+            "6039",
+            "6271",
+            "6801",
+            "7021",
+            "7526",
+            "8138",
+            "8228",
+            "9228",
+            "9482"
+          ],
+          "starters": [
+            "4984",
+            "8138",
+            "12481",
+            "6801",
+            "7526",
+            "11604",
+            "2133",
+            "8228",
+            "7021"
+          ],
+          "players_points": {
+            "10226": 0.0,
+            "11563": 0.0,
+            "11575": 0.0,
+            "11604": 0.0,
+            "12481": 0.0,
+            "12502": 0.0,
+            "13320": 0.0,
+            "13424": 0.0,
+            "2133": 0.0,
+            "3214": 0.0,
+            "4039": 0.0,
+            "4147": 0.0,
+            "4984": 0.0,
+            "5045": 0.0,
+            "6039": 0.0,
+            "6271": 0.0,
+            "6801": 0.0,
+            "7021": 0.0,
+            "7526": 0.0,
+            "8138": 0.0,
+            "8228": 0.0,
+            "9228": 0.0,
+            "9482": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "roster": {
+            "roster_id": 12,
+            "team_name": "gullickson",
+            "owner_name": "gullickson"
+          },
+          "matchup_id": 2,
+          "points": 0.0,
+          "custom_points": null,
+          "players": [
+            "10232",
+            "11618",
+            "11635",
+            "11647",
+            "12487",
+            "12512",
+            "13274",
+            "13278",
+            "13287",
+            "3163",
+            "3200",
+            "421",
+            "4219",
+            "4866",
+            "4983",
+            "5012",
+            "5022",
+            "6770",
+            "7543",
+            "7670",
+            "8180",
+            "9508",
+            "9997"
+          ],
+          "starters": [
+            "6770",
+            "4866",
+            "13287",
+            "11635",
+            "9997",
+            "5022",
+            "7543",
+            "12512",
+            "4983"
+          ],
+          "players_points": {
+            "10232": 0.0,
+            "11618": 0.0,
+            "11635": 0.0,
+            "11647": 0.0,
+            "12487": 0.0,
+            "12512": 0.0,
+            "13274": 0.0,
+            "13278": 0.0,
+            "13287": 0.0,
+            "3163": 0.0,
+            "3200": 0.0,
+            "421": 0.0,
+            "4219": 0.0,
+            "4866": 0.0,
+            "4983": 0.0,
+            "5012": 0.0,
+            "5022": 0.0,
+            "6770": 0.0,
+            "7543": 0.0,
+            "7670": 0.0,
+            "8180": 0.0,
+            "9508": 0.0,
+            "9997": 0.0
+          },
+          "starters_points": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
     }
   },
   "transactions": {
     "1": [
+      {
+        "transaction_id": "1370429368752422912",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781098332158,
+        "creator": "471403228244733952",
+        "roster_ids": [
+          2
+        ],
+        "teams": [
+          {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "8800",
+            "to": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "12455",
+            "from": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          2
+        ]
+      },
+      {
+        "transaction_id": "1370199337103024128",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781043488340,
+        "creator": "471501409838166016",
+        "roster_ids": [
+          9
+        ],
+        "teams": [
+          {
+            "roster_id": 9,
+            "team_name": "alexwelle",
+            "owner_name": "alexwelle"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "13303",
+            "to": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "10444",
+            "from": {
+              "roster_id": 9,
+              "team_name": "alexwelle",
+              "owner_name": "alexwelle"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          9
+        ]
+      },
+      {
+        "transaction_id": "1370169980426936320",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781036489162,
+        "creator": "459751268567478272",
+        "roster_ids": [
+          7
+        ],
+        "teams": [
+          {
+            "roster_id": 7,
+            "team_name": "I ❤️ Commish",
+            "owner_name": "lex11"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "12471",
+            "from": {
+              "roster_id": 7,
+              "team_name": "I ❤️ Commish",
+              "owner_name": "lex11"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          7
+        ]
+      },
+      {
+        "transaction_id": "1370168806407700480",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781036209255,
+        "creator": "464915162038530048",
+        "roster_ids": [
+          1
+        ],
+        "teams": [
+          {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "9479",
+            "to": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "12540",
+            "from": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          1
+        ]
+      },
+      {
+        "transaction_id": "1370168095481565184",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781036039756,
+        "creator": "471415197991432192",
+        "roster_ids": [
+          3
+        ],
+        "teams": [
+          {
+            "roster_id": 3,
+            "team_name": "Pol Hol",
+            "owner_name": "GarrettHol"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "96",
+            "from": {
+              "roster_id": 3,
+              "team_name": "Pol Hol",
+              "owner_name": "GarrettHol"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          3
+        ]
+      },
+      {
+        "transaction_id": "1370167993950035968",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781036015549,
+        "creator": "471415197991432192",
+        "roster_ids": [
+          3
+        ],
+        "teams": [
+          {
+            "roster_id": 3,
+            "team_name": "Pol Hol",
+            "owner_name": "GarrettHol"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "2505",
+            "from": {
+              "roster_id": 3,
+              "team_name": "Pol Hol",
+              "owner_name": "GarrettHol"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          3
+        ]
+      },
+      {
+        "transaction_id": "1370167491719868416",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781035895809,
+        "creator": "464915162038530048",
+        "roster_ids": [
+          1
+        ],
+        "teams": [
+          {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "12485",
+            "from": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          1
+        ]
+      },
+      {
+        "transaction_id": "1370166809898000384",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781035733249,
+        "creator": "464915162038530048",
+        "roster_ids": [
+          1
+        ],
+        "teams": [
+          {
+            "roster_id": 1,
+            "team_name": "It’s Herbie Hancock",
+            "owner_name": "jwander"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "12503",
+            "from": {
+              "roster_id": 1,
+              "team_name": "It’s Herbie Hancock",
+              "owner_name": "jwander"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          1
+        ]
+      },
+      {
+        "transaction_id": "1370166119096139776",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781035568549,
+        "creator": "471724614532198400",
+        "roster_ids": [
+          11
+        ],
+        "teams": [
+          {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "13424",
+            "to": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "4177",
+            "from": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          11
+        ]
+      },
+      {
+        "transaction_id": "1370165353530793984",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781035386024,
+        "creator": "471724614532198400",
+        "roster_ids": [
+          11
+        ],
+        "teams": [
+          {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "6271",
+            "to": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "12472",
+            "from": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          11
+        ]
+      },
+      {
+        "transaction_id": "1370164941369122816",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781035287757,
+        "creator": "471403228244733952",
+        "roster_ids": [
+          2
+        ],
+        "teams": [
+          {
+            "roster_id": 2,
+            "team_name": "A B CeeDee",
+            "owner_name": "Logs24"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "13413",
+            "to": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "13338",
+            "from": {
+              "roster_id": 2,
+              "team_name": "A B CeeDee",
+              "owner_name": "Logs24"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          2
+        ]
+      },
+      {
+        "transaction_id": "1370164070111535104",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781035080034,
+        "creator": "471724614532198400",
+        "roster_ids": [
+          11
+        ],
+        "teams": [
+          {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "6865",
+            "from": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          11
+        ]
+      },
+      {
+        "transaction_id": "1370164047051259904",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781035074535,
+        "creator": "471724614532198400",
+        "roster_ids": [
+          11
+        ],
+        "teams": [
+          {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "4381",
+            "from": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          11
+        ]
+      },
       {
         "transaction_id": "1366107338628403200",
         "type": "trade",
@@ -4932,23 +6604,23 @@
         "r": 1,
         "l": null,
         "w": null,
-        "t1": 5,
-        "t2": 3
+        "t1": 9,
+        "t2": 6
       },
       {
         "m": 2,
         "r": 1,
         "l": null,
         "w": null,
-        "t1": 12,
-        "t2": 2
+        "t1": 8,
+        "t2": 5
       },
       {
         "m": 3,
         "r": 2,
         "l": null,
         "w": null,
-        "t1": 8,
+        "t1": 11,
         "t2": null,
         "t2_from": {
           "w": 1
@@ -4959,15 +6631,15 @@
         "r": 2,
         "l": null,
         "w": null,
-        "t1": 10,
+        "t1": 3,
         "t2": null,
         "t2_from": {
           "w": 2
         }
       },
       {
-        "m": 5,
         "p": 5,
+        "m": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -4981,8 +6653,8 @@
         }
       },
       {
-        "m": 6,
         "p": 1,
+        "m": 6,
         "r": 3,
         "l": null,
         "w": null,
@@ -4996,8 +6668,8 @@
         }
       },
       {
-        "m": 7,
         "p": 3,
+        "m": 7,
         "r": 3,
         "l": null,
         "w": null,
@@ -5017,15 +6689,15 @@
         "r": 1,
         "l": null,
         "w": null,
-        "t1": 7,
-        "t2": 6
+        "t1": 10,
+        "t2": 4
       },
       {
         "m": 2,
         "r": 1,
         "l": null,
         "w": null,
-        "t1": 11,
+        "t1": 12,
         "t2": 1
       },
       {
@@ -5033,7 +6705,7 @@
         "r": 2,
         "l": null,
         "w": null,
-        "t1": 9,
+        "t1": 7,
         "t2": null,
         "t2_from": {
           "w": 1
@@ -5044,15 +6716,15 @@
         "r": 2,
         "l": null,
         "w": null,
-        "t1": 4,
+        "t1": 2,
         "t2": null,
         "t2_from": {
           "w": 2
         }
       },
       {
-        "p": 5,
         "m": 5,
+        "p": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -5066,8 +6738,8 @@
         }
       },
       {
-        "p": 1,
         "m": 6,
+        "p": 1,
         "r": 3,
         "l": null,
         "w": null,
@@ -5081,8 +6753,8 @@
         }
       },
       {
-        "p": 3,
         "m": 7,
+        "p": 3,
         "r": 3,
         "l": null,
         "w": null,
@@ -5098,6 +6770,10 @@
     ]
   },
   "players_lookup": {
+    "0": {
+      "player_id": "0",
+      "full_name": "0"
+    },
     "10213": {
       "player_id": "10213",
       "full_name": "Tre Tucker",
@@ -6189,7 +7865,7 @@
       "position": "RB",
       "team": "NYG",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 1,
       "age": 24,
       "fantasy_positions": [
@@ -6512,7 +8188,7 @@
       "position": "TE",
       "team": "CLE",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 1,
       "age": 21,
       "fantasy_positions": [
@@ -6740,7 +8416,7 @@
       "position": "WR",
       "team": "CAR",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 1,
       "age": 23,
       "fantasy_positions": [
@@ -7189,6 +8865,25 @@
       "college": "Arizona State",
       "search_rank": 70
     },
+    "13282": {
+      "player_id": "13282",
+      "full_name": "Jack Endries",
+      "first_name": "Jack",
+      "last_name": "Endries",
+      "position": "TE",
+      "team": "CIN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 22,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": null,
+      "college": "Texas",
+      "search_rank": 999
+    },
     "13285": {
       "player_id": "13285",
       "full_name": "Malachi Fields",
@@ -7359,6 +9054,25 @@
       "depth_chart_order": null,
       "college": "Clemson",
       "search_rank": 999
+    },
+    "13303": {
+      "player_id": "13303",
+      "full_name": "Cade Klubnik",
+      "first_name": "Cade",
+      "last_name": "Klubnik",
+      "position": "QB",
+      "team": "NYJ",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 22,
+      "fantasy_positions": [
+        "QB"
+      ],
+      "depth_chart_position": "QB",
+      "depth_chart_order": null,
+      "college": "Clemson",
+      "search_rank": 398
     },
     "13305": {
       "player_id": "13305",
@@ -7683,6 +9397,25 @@
       "college": "Penn State",
       "search_rank": 157
     },
+    "13413": {
+      "player_id": "13413",
+      "full_name": "Cyrus Allen",
+      "first_name": "Cyrus",
+      "last_name": "Allen",
+      "position": "WR",
+      "team": "KC",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 23,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": null,
+      "college": "Cincinnati",
+      "search_rank": 9999999
+    },
     "13414": {
       "player_id": "13414",
       "full_name": "Kaelon Black",
@@ -7738,6 +9471,25 @@
       "depth_chart_position": "LWR",
       "depth_chart_order": null,
       "college": "North Dakota State",
+      "search_rank": 999
+    },
+    "13424": {
+      "player_id": "13424",
+      "full_name": "Seth McGowan",
+      "first_name": "Seth",
+      "last_name": "McGowan",
+      "position": "RB",
+      "team": "IND",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 24,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": null,
+      "college": "Kentucky",
       "search_rank": 999
     },
     "1466": {
@@ -8138,6 +9890,25 @@
       "depth_chart_order": 1,
       "college": "Texas Tech",
       "search_rank": 26
+    },
+    "4066": {
+      "player_id": "4066",
+      "full_name": "Evan Engram",
+      "first_name": "Evan",
+      "last_name": "Engram",
+      "position": "TE",
+      "team": "DEN",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 9,
+      "age": 31,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": 1,
+      "college": "Ole Miss",
+      "search_rank": 999
     },
     "4098": {
       "player_id": "4098",
@@ -8821,6 +10592,25 @@
       "depth_chart_position": "RWR",
       "depth_chart_order": 4,
       "college": "Auburn",
+      "search_rank": 999
+    },
+    "6271": {
+      "player_id": "6271",
+      "full_name": "Olamide Zaccheaus",
+      "first_name": "Olamide",
+      "last_name": "Zaccheaus",
+      "position": "WR",
+      "team": "ATL",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 7,
+      "age": 28,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 3,
+      "college": "Virginia",
       "search_rank": 999
     },
     "6770": {
@@ -10134,6 +11924,25 @@
       "college": "California",
       "search_rank": 178
     },
+    "8800": {
+      "player_id": "8800",
+      "full_name": "Malik Davis",
+      "first_name": "Malik",
+      "last_name": "Davis",
+      "position": "RB",
+      "team": "DAL",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 4,
+      "age": 27,
+      "fantasy_positions": [
+        "RB"
+      ],
+      "depth_chart_position": "RB",
+      "depth_chart_order": 5,
+      "college": "Florida",
+      "search_rank": 999
+    },
     "9221": {
       "player_id": "9221",
       "full_name": "Jahmyr Gibbs",
@@ -10229,6 +12038,25 @@
       "college": "Alabama",
       "search_rank": 98
     },
+    "9479": {
+      "player_id": "9479",
+      "full_name": "Darnell Washington",
+      "first_name": "Darnell",
+      "last_name": "Washington",
+      "position": "TE",
+      "team": "PIT",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 3,
+      "age": 24,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": 2,
+      "college": "Georgia",
+      "search_rank": 999
+    },
     "9480": {
       "player_id": "9480",
       "full_name": "Brenton Strange",
@@ -10265,6 +12093,25 @@
       "depth_chart_position": "TE",
       "depth_chart_order": 2,
       "college": "Oregon State",
+      "search_rank": 999
+    },
+    "9482": {
+      "player_id": "9482",
+      "full_name": "Michael Mayer",
+      "first_name": "Michael",
+      "last_name": "Mayer",
+      "position": "TE",
+      "team": "LV",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 3,
+      "age": 24,
+      "fantasy_positions": [
+        "TE"
+      ],
+      "depth_chart_position": "TE",
+      "depth_chart_order": 2,
+      "college": "Notre Dame",
       "search_rank": 999
     },
     "9484": {
