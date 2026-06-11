@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-10T17:44:58.129285Z",
+    "generated_at": "2026-06-11T17:58:43.850305Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -909,7 +909,7 @@
         },
         "average_age_by_position": {
           "QB": 27.5,
-          "RB": 26.25,
+          "RB": 26.38,
           "TE": 26.2,
           "WR": 24.11
         }
@@ -1413,8 +1413,8 @@
         },
         "starter_position_counts": {
           "QB": 1,
-          "RB": 4,
-          "TE": 1,
+          "RB": 3,
+          "TE": 2,
           "WR": 3
         },
         "average_age_by_position": {
@@ -1466,7 +1466,7 @@
         "7553",
         "10229",
         "12489",
-        "8154"
+        "12493"
       ],
       "reserve": [],
       "settings": {
@@ -1620,7 +1620,7 @@
           "QB": 26.67,
           "RB": 26.5,
           "TE": 25.25,
-          "WR": 28.12
+          "WR": 27.38
         }
       },
       "players_by_position": {
@@ -1651,9 +1651,9 @@
           "5045",
           "2133",
           "7526",
-          "6271",
           "6801",
-          "13320"
+          "13320",
+          "13411"
         ]
       },
       "starters": [
@@ -5343,7 +5343,7 @@
             "7553",
             "10229",
             "12489",
-            "8154"
+            "12493"
           ],
           "players_points": {
             "10219": 0.0,
@@ -5483,6 +5483,7 @@
             "12481",
             "12502",
             "13320",
+            "13411",
             "13424",
             "2133",
             "3214",
@@ -5491,7 +5492,6 @@
             "4984",
             "5045",
             "6039",
-            "6271",
             "6801",
             "7021",
             "7526",
@@ -5519,6 +5519,7 @@
             "12481": 0.0,
             "12502": 0.0,
             "13320": 0.0,
+            "13411": 0.0,
             "13424": 0.0,
             "2133": 0.0,
             "3214": 0.0,
@@ -5527,7 +5528,6 @@
             "4984": 0.0,
             "5045": 0.0,
             "6039": 0.0,
-            "6271": 0.0,
             "6801": 0.0,
             "7021": 0.0,
             "7526": 0.0,
@@ -5635,6 +5635,50 @@
   },
   "transactions": {
     "1": [
+      {
+        "transaction_id": "1370636600928669696",
+        "type": "free_agent",
+        "status": "complete",
+        "created": 1781147740160,
+        "creator": "471724614532198400",
+        "roster_ids": [
+          11
+        ],
+        "teams": [
+          {
+            "roster_id": 11,
+            "team_name": "MOJO",
+            "owner_name": "amoritko"
+          }
+        ],
+        "adds": [
+          {
+            "player_id": "13411",
+            "to": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "6271",
+            "from": {
+              "roster_id": 11,
+              "team_name": "MOJO",
+              "owner_name": "amoritko"
+            }
+          }
+        ],
+        "draft_picks": [],
+        "waiver_budget": [],
+        "settings": null,
+        "metadata": null,
+        "consenter_ids": [
+          11
+        ]
+      },
       {
         "transaction_id": "1370429368752422912",
         "type": "free_agent",
@@ -6638,8 +6682,8 @@
         }
       },
       {
-        "p": 5,
         "m": 5,
+        "p": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -6653,8 +6697,8 @@
         }
       },
       {
-        "p": 1,
         "m": 6,
+        "p": 1,
         "r": 3,
         "l": null,
         "w": null,
@@ -6668,8 +6712,8 @@
         }
       },
       {
-        "p": 3,
         "m": 7,
+        "p": 3,
         "r": 3,
         "l": null,
         "w": null,
@@ -6723,8 +6767,8 @@
         }
       },
       {
-        "m": 5,
         "p": 5,
+        "m": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -6738,8 +6782,8 @@
         }
       },
       {
-        "m": 6,
         "p": 1,
+        "m": 6,
         "r": 3,
         "l": null,
         "w": null,
@@ -6753,8 +6797,8 @@
         }
       },
       {
-        "m": 7,
         "p": 3,
+        "m": 7,
         "r": 3,
         "l": null,
         "w": null,
@@ -6865,7 +6909,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "SMU",
       "search_rank": 33
     },
@@ -6922,7 +6966,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 5,
       "college": "Tennessee",
       "search_rank": 999
     },
@@ -7093,7 +7137,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "Auburn",
       "search_rank": 191
     },
@@ -7131,7 +7175,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Kentucky",
       "search_rank": 167
     },
@@ -7169,7 +7213,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "USC",
       "search_rank": 999
     },
@@ -7188,7 +7232,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 4,
+      "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 144
     },
@@ -7245,7 +7289,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 4,
       "college": "Florida State",
       "search_rank": 114
     },
@@ -7302,7 +7346,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Michigan",
       "search_rank": 126
     },
@@ -7397,7 +7441,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "Texas",
       "search_rank": 122
     },
@@ -7416,7 +7460,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Texas",
       "search_rank": 162
     },
@@ -7435,7 +7479,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 5,
       "college": "South Carolina",
       "search_rank": 999
     },
@@ -7454,7 +7498,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 5,
+      "depth_chart_order": 3,
       "college": "Oregon",
       "search_rank": 171
     },
@@ -7492,7 +7536,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "Michigan",
       "search_rank": 999
     },
@@ -7511,7 +7555,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "LSU",
       "search_rank": 79
     },
@@ -7568,7 +7612,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 4,
       "college": "Florida State",
       "search_rank": 206
     },
@@ -7606,7 +7650,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Tennessee",
       "search_rank": 174
     },
@@ -7625,7 +7669,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Holy Cross",
       "search_rank": 132
     },
@@ -7644,7 +7688,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 4,
+      "depth_chart_order": 3,
       "college": "Troy",
       "search_rank": 141
     },
@@ -7663,7 +7707,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "Purdue",
       "search_rank": 110
     },
@@ -7682,7 +7726,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 5,
+      "depth_chart_order": 3,
       "college": "Southeast Missouri State",
       "search_rank": 199
     },
@@ -7701,7 +7745,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Utah",
       "search_rank": 209
     },
@@ -7739,7 +7783,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Texas",
       "search_rank": 189
     },
@@ -7758,7 +7802,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 4,
+      "depth_chart_order": 2,
       "college": "Oregon",
       "search_rank": 999
     },
@@ -7815,7 +7859,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "South Carolina",
       "search_rank": 999
     },
@@ -7872,7 +7916,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Arizona State",
       "search_rank": 41
     },
@@ -7891,7 +7935,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 3,
       "college": "TCU",
       "search_rank": 208
     },
@@ -7929,7 +7973,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 5,
       "college": "Oregon",
       "search_rank": 999
     },
@@ -7948,7 +7992,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Oregon",
       "search_rank": 141
     },
@@ -7967,7 +8011,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "UCF",
       "search_rank": 40
     },
@@ -8024,7 +8068,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Syracuse",
       "search_rank": 83
     },
@@ -8043,7 +8087,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Oklahoma State",
       "search_rank": 999
     },
@@ -8062,7 +8106,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 3,
       "college": "Colorado State",
       "search_rank": 199
     },
@@ -8081,7 +8125,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "LSU",
       "search_rank": 138
     },
@@ -8100,7 +8144,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 5,
       "college": "Stanford",
       "search_rank": 185
     },
@@ -8119,7 +8163,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 1,
+      "depth_chart_order": 3,
       "college": "Texas",
       "search_rank": 158
     },
@@ -8157,7 +8201,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 6,
       "college": "Texas",
       "search_rank": 999
     },
@@ -8176,7 +8220,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 1,
+      "depth_chart_order": 3,
       "college": "Iowa",
       "search_rank": 173
     },
@@ -8252,7 +8296,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Ole Miss",
       "search_rank": 179
     },
@@ -8366,7 +8410,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "Miami (FL)",
       "search_rank": 999
     },
@@ -8404,7 +8448,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "Colorado",
       "search_rank": 222
     },
@@ -8416,7 +8460,7 @@
       "position": "WR",
       "team": "CAR",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 1,
       "age": 23,
       "fantasy_positions": [
@@ -8481,7 +8525,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 4,
       "college": "Colorado",
       "search_rank": 157
     },
@@ -8500,7 +8544,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 4,
       "college": "Georgia",
       "search_rank": 999
     },
@@ -8538,7 +8582,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Rutgers",
       "search_rank": 61
     },
@@ -8576,7 +8620,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "Iowa State",
       "search_rank": 190
     },
@@ -8614,7 +8658,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Texas Tech",
       "search_rank": 999
     },
@@ -8652,7 +8696,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Louisville",
       "search_rank": 81
     },
@@ -8671,7 +8715,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 6,
       "college": "Washington State",
       "search_rank": 195
     },
@@ -8690,7 +8734,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "Indiana",
       "search_rank": 201
     },
@@ -8709,7 +8753,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": null,
+      "depth_chart_order": 1,
       "college": "Indiana",
       "search_rank": 39
     },
@@ -8728,7 +8772,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 5,
       "college": "Miami (FL)",
       "search_rank": 999
     },
@@ -8747,7 +8791,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Miami (FL)",
       "search_rank": 416
     },
@@ -8766,7 +8810,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Alabama",
       "search_rank": 194
     },
@@ -8785,7 +8829,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Alabama",
       "search_rank": 141
     },
@@ -8804,7 +8848,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Indiana",
       "search_rank": 151
     },
@@ -8823,7 +8867,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "Ohio State",
       "search_rank": 212
     },
@@ -8842,7 +8886,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 1,
       "college": "Ohio State",
       "search_rank": 61
     },
@@ -8861,7 +8905,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Arizona State",
       "search_rank": 70
     },
@@ -8880,7 +8924,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": null,
+      "depth_chart_order": 5,
       "college": "Texas",
       "search_rank": 999
     },
@@ -8899,7 +8943,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "Notre Dame",
       "search_rank": 210
     },
@@ -8918,7 +8962,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 1,
       "college": "Notre Dame",
       "search_rank": 101
     },
@@ -8937,7 +8981,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 1,
       "college": "Notre Dame",
       "search_rank": 15
     },
@@ -8956,7 +9000,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Penn State",
       "search_rank": 167
     },
@@ -8975,7 +9019,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "USC",
       "search_rank": 182
     },
@@ -8994,7 +9038,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "USC",
       "search_rank": 77
     },
@@ -9013,7 +9057,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 1,
       "college": "Texas A&M",
       "search_rank": 129
     },
@@ -9032,7 +9076,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Clemson",
       "search_rank": 156
     },
@@ -9051,7 +9095,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Clemson",
       "search_rank": 999
     },
@@ -9063,14 +9107,14 @@
       "position": "QB",
       "team": "NYJ",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 0,
       "age": 22,
       "fantasy_positions": [
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Clemson",
       "search_rank": 398
     },
@@ -9089,7 +9133,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Arkansas",
       "search_rank": 139
     },
@@ -9108,7 +9152,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 1,
       "college": "Louisville",
       "search_rank": 203
     },
@@ -9127,7 +9171,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "Georgia State",
       "search_rank": 196
     },
@@ -9146,7 +9190,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Georgia",
       "search_rank": 185
     },
@@ -9165,7 +9209,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": null,
+      "depth_chart_order": 1,
       "college": "Oregon",
       "search_rank": 109
     },
@@ -9184,7 +9228,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Nebraska",
       "search_rank": 113
     },
@@ -9203,7 +9247,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 7,
       "college": "Missouri",
       "search_rank": 999
     },
@@ -9222,7 +9266,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Washington",
       "search_rank": 118
     },
@@ -9241,7 +9285,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Washington",
       "search_rank": 153
     },
@@ -9260,7 +9304,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Wake Forest",
       "search_rank": 176
     },
@@ -9279,7 +9323,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "Virginia",
       "search_rank": 999
     },
@@ -9291,14 +9335,14 @@
       "position": "TE",
       "team": "PHI",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 0,
       "age": 23,
       "fantasy_positions": [
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": null,
+      "depth_chart_order": 2,
       "college": "Vanderbilt",
       "search_rank": 140
     },
@@ -9317,7 +9361,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Tennessee",
       "search_rank": 202
     },
@@ -9336,7 +9380,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "Mississippi State",
       "search_rank": 999
     },
@@ -9355,7 +9399,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "UConn",
       "search_rank": 999
     },
@@ -9374,7 +9418,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "LSU",
       "search_rank": 329
     },
@@ -9393,9 +9437,28 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Penn State",
       "search_rank": 157
+    },
+    "13411": {
+      "player_id": "13411",
+      "full_name": "Zavion Thomas",
+      "first_name": "Zavion",
+      "last_name": "Thomas",
+      "position": "WR",
+      "team": "CHI",
+      "status": "Active",
+      "injury_status": null,
+      "years_exp": 0,
+      "age": 22,
+      "fantasy_positions": [
+        "WR"
+      ],
+      "depth_chart_position": "SWR",
+      "depth_chart_order": 5,
+      "college": "LSU",
+      "search_rank": 9999999
     },
     "13413": {
       "player_id": "13413",
@@ -9412,7 +9475,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 5,
       "college": "Cincinnati",
       "search_rank": 9999999
     },
@@ -9431,7 +9494,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Indiana",
       "search_rank": 999
     },
@@ -9450,7 +9513,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 4,
       "college": "Ole Miss",
       "search_rank": 214
     },
@@ -9469,7 +9532,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": null,
+      "depth_chart_order": 5,
       "college": "North Dakota State",
       "search_rank": 999
     },
@@ -9488,7 +9551,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": null,
+      "depth_chart_order": 3,
       "college": "Kentucky",
       "search_rank": 999
     },
@@ -9716,7 +9779,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "North Carolina State",
       "search_rank": 201
     },
@@ -9792,7 +9855,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "Miami (FL)",
       "search_rank": 131
     },
@@ -9830,7 +9893,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "Tennessee",
       "search_rank": 119
     },
@@ -9868,7 +9931,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "Eastern Washington",
       "search_rank": 206
     },
@@ -9944,7 +10007,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Oklahoma",
       "search_rank": 999
     },
@@ -9963,7 +10026,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 6,
+      "depth_chart_order": 5,
       "college": "North Carolina",
       "search_rank": 999
     },
@@ -10039,7 +10102,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 4,
+      "depth_chart_order": 5,
       "college": "Boise State",
       "search_rank": 999
     },
@@ -10153,7 +10216,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 5,
       "college": "Texas A&M",
       "search_rank": 210
     },
@@ -10286,7 +10349,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "SMU",
       "search_rank": 72
     },
@@ -10343,7 +10406,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Oklahoma",
       "search_rank": 999
     },
@@ -10552,7 +10615,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Maryland",
       "search_rank": 999
     },
@@ -10590,7 +10653,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 2,
       "college": "Auburn",
       "search_rank": 999
     },
@@ -10609,7 +10672,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "Virginia",
       "search_rank": 999
     },
@@ -10647,7 +10710,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 1,
+      "depth_chart_order": 3,
       "college": "Alabama",
       "search_rank": 160
     },
@@ -10761,7 +10824,7 @@
         "WR"
       ],
       "depth_chart_position": null,
-      "depth_chart_order": 4,
+      "depth_chart_order": 3,
       "college": "Arizona State",
       "search_rank": 177
     },
@@ -10799,7 +10862,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Ohio State",
       "search_rank": 75
     },
@@ -10856,7 +10919,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Stanford",
       "search_rank": 136
     },
@@ -10913,7 +10976,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 1,
       "college": "South Carolina",
       "search_rank": 65
     },
@@ -10932,7 +10995,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Tennessee",
       "search_rank": 123
     },
@@ -10951,7 +11014,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Tulane",
       "search_rank": 194
     },
@@ -11008,7 +11071,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Alabama",
       "search_rank": 42
     },
@@ -11046,7 +11109,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Clemson",
       "search_rank": 30
     },
@@ -11193,7 +11256,7 @@
       "status": "Active",
       "injury_status": null,
       "years_exp": 5,
-      "age": 26,
+      "age": 27,
       "fantasy_positions": [
         "RB"
       ],
@@ -11236,7 +11299,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 5,
+      "depth_chart_order": 4,
       "college": "North Carolina",
       "search_rank": 999
     },
@@ -11274,7 +11337,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 5,
       "college": "Tennessee",
       "search_rank": 999
     },
@@ -11369,7 +11432,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 4,
+      "depth_chart_order": 5,
       "college": "North Carolina State",
       "search_rank": 999
     },
@@ -11388,7 +11451,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 5,
       "college": "Memphis",
       "search_rank": 999
     },
@@ -11464,7 +11527,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "BYU",
       "search_rank": 89
     },
@@ -11483,7 +11546,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Boise State",
       "search_rank": 120
     },
@@ -11502,7 +11565,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Arizona State",
       "search_rank": 125
     },
@@ -11559,7 +11622,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Cincinnati",
       "search_rank": 88
     },
@@ -11578,7 +11641,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 4,
       "college": "Cincinnati",
       "search_rank": 999
     },
@@ -11590,7 +11653,7 @@
       "position": "WR",
       "team": "NO",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 4,
       "age": 25,
       "fantasy_positions": [
@@ -11635,7 +11698,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 6,
+      "depth_chart_order": 4,
       "college": "Alabama",
       "search_rank": 999
     },
@@ -11768,7 +11831,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 1,
       "college": "North Dakota State",
       "search_rank": 64
     },
@@ -11787,7 +11850,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 1,
       "college": "Michigan State",
       "search_rank": 197
     },
@@ -11920,7 +11983,7 @@
         "TE"
       ],
       "depth_chart_position": "TE",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "California",
       "search_rank": 178
     },
@@ -11939,7 +12002,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 5,
+      "depth_chart_order": 2,
       "college": "Florida",
       "search_rank": 999
     },
@@ -12084,7 +12147,7 @@
       "position": "TE",
       "team": "GB",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 3,
       "age": 25,
       "fantasy_positions": [
@@ -12148,7 +12211,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "Virginia",
       "search_rank": 999
     },
@@ -12167,7 +12230,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 1,
       "college": "Penn State",
       "search_rank": 90
     },
@@ -12224,7 +12287,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "North Carolina",
       "search_rank": 133
     },
@@ -12243,7 +12306,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 6,
+      "depth_chart_order": 3,
       "college": "Houston",
       "search_rank": 187
     },
@@ -12262,7 +12325,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 5,
+      "depth_chart_order": 3,
       "college": "LSU",
       "search_rank": 164
     },
@@ -12376,7 +12439,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 1,
+      "depth_chart_order": 2,
       "college": "UCLA",
       "search_rank": 101
     },
@@ -12395,7 +12458,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "TCU",
       "search_rank": 110
     },
@@ -12414,7 +12477,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "USC",
       "search_rank": 99
     },
