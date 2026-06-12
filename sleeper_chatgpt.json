@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-11T17:58:43.850305Z",
+    "generated_at": "2026-06-12T16:34:36.726165Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -6682,8 +6682,8 @@
         }
       },
       {
-        "m": 5,
         "p": 5,
+        "m": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -6697,8 +6697,8 @@
         }
       },
       {
-        "m": 6,
         "p": 1,
+        "m": 6,
         "r": 3,
         "l": null,
         "w": null,
@@ -6712,8 +6712,8 @@
         }
       },
       {
-        "m": 7,
         "p": 3,
+        "m": 7,
         "r": 3,
         "l": null,
         "w": null,
@@ -6767,8 +6767,8 @@
         }
       },
       {
-        "p": 5,
         "m": 5,
+        "p": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -6782,8 +6782,8 @@
         }
       },
       {
-        "p": 1,
         "m": 6,
+        "p": 1,
         "r": 3,
         "l": null,
         "w": null,
@@ -6797,8 +6797,8 @@
         }
       },
       {
-        "p": 3,
         "m": 7,
+        "p": 3,
         "r": 3,
         "l": null,
         "w": null,
@@ -11330,7 +11330,7 @@
       "position": "WR",
       "team": "BUF",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 5,
       "age": 26,
       "fantasy_positions": [
