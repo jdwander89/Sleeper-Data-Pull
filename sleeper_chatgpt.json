@@ -1,7 +1,7 @@
 {
   "read_me_first": {
     "purpose": "ChatGPT-optimized Sleeper fantasy football league export.",
-    "generated_at": "2026-06-12T16:34:36.726165Z",
+    "generated_at": "2026-06-13T12:10:18.718186Z",
     "league_id": "1312581067286282240",
     "season": "2026",
     "weeks_included": [
@@ -66,8 +66,8 @@
     "current_nfl_state": {
       "week": 0,
       "leg": 0,
-      "season_type": "off",
       "season": "2026",
+      "season_type": "off",
       "league_season": "2026",
       "previous_season": "2025",
       "season_start_date": null,
@@ -6767,8 +6767,8 @@
         }
       },
       {
-        "m": 5,
         "p": 5,
+        "m": 5,
         "r": 2,
         "l": null,
         "w": null,
@@ -6782,8 +6782,8 @@
         }
       },
       {
-        "m": 6,
         "p": 1,
+        "m": 6,
         "r": 3,
         "l": null,
         "w": null,
@@ -6797,8 +6797,8 @@
         }
       },
       {
-        "m": 7,
         "p": 3,
+        "m": 7,
         "r": 3,
         "l": null,
         "w": null,
@@ -6966,7 +6966,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 5,
+      "depth_chart_order": 6,
       "college": "Tennessee",
       "search_rank": 999
     },
@@ -7384,7 +7384,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 3,
+      "depth_chart_order": 2,
       "college": "Virginia",
       "search_rank": 999
     },
@@ -7612,7 +7612,7 @@
         "WR"
       ],
       "depth_chart_position": "LWR",
-      "depth_chart_order": 4,
+      "depth_chart_order": 5,
       "college": "Florida State",
       "search_rank": 206
     },
@@ -7764,7 +7764,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 3,
+      "depth_chart_order": 4,
       "college": "SMU",
       "search_rank": 182
     },
@@ -8201,7 +8201,7 @@
         "WR"
       ],
       "depth_chart_position": "SWR",
-      "depth_chart_order": 6,
+      "depth_chart_order": 5,
       "college": "Texas",
       "search_rank": 999
     },
@@ -8448,7 +8448,7 @@
         "QB"
       ],
       "depth_chart_position": "QB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 1,
       "college": "Colorado",
       "search_rank": 222
     },
@@ -9228,7 +9228,7 @@
         "RB"
       ],
       "depth_chart_position": "RB",
-      "depth_chart_order": 2,
+      "depth_chart_order": 3,
       "college": "Nebraska",
       "search_rank": 113
     },
@@ -10703,7 +10703,7 @@
       "position": "WR",
       "team": "CLE",
       "status": "Active",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "years_exp": 6,
       "age": 27,
       "fantasy_positions": [
@@ -11337,7 +11337,7 @@
         "WR"
       ],
       "depth_chart_position": "RWR",
-      "depth_chart_order": 5,
+      "depth_chart_order": 4,
       "college": "Tennessee",
       "search_rank": 999
     },
@@ -11634,7 +11634,7 @@
       "position": "RB",
       "team": "WAS",
       "status": "Active",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "years_exp": 4,
       "age": 26,
       "fantasy_positions": [
